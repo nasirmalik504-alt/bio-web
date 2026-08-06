@@ -1,0 +1,181 @@
+[
+  {
+    "id": "bb-fil-sf-sterile-pes",
+    "sku": "BB-SF-ST-PES",
+    "name": "Sterile PES Syringe Filters",
+    "series": "Biobusiness Premier Sterile Filtration",
+    "model": "SF-ST-PES",
+    "category": "Filtration",
+    "subcategory": "Sterile Syringe Filters",
+    "type": "Sterile Syringe Filter",
+    "material": "PES (Polyethersulfone)",
+    "sterile": true,
+    "description": "Individually blister-packed sterile PES syringe filters providing rapid, low-binding sterilization of biological solutions, media, and protein buffers.",
+    "features": [
+      "Ethylene Oxide (ETO) sterilized and certified non-pyrogenic",
+      "Individually packaged in peelable medical-grade blister packs",
+      "High flow rate with extremely low protein absorption",
+      "Bacterial retention validation according to ISO & ASTM standards"
+    ],
+    "applications": [
+      "Sterilization of Cell Culture Media & Additives",
+      "Filter Sterilization of Biological Buffers & Reagents",
+      "Biopharmaceutical Solution Preparation",
+      "Sterile Sample Filtration for Microbiology"
+    ],
+    "technicalSpecifications": {
+      "Filter Media": "PES (Polyethersulfone)",
+      "Sterilization": "Ethylene Oxide (ETO) / Gamma",
+      "Pyrogenicity": "Non-Pyrogenic (< 0.25 EU/ml)",
+      "Wettability": "Hydrophilic",
+      "Housing": "Medical Polypropylene (PP)"
+    },
+    "variants": [
+      {
+        "catNo": "BB-SF-ST-PES-13-022",
+        "diameter": "13 mm",
+        "micron": "0.22 µm",
+        "pack": "50",
+        "internalPricing": {
+          "unitPrice": 65,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-SF-ST-PES-25-022",
+        "diameter": "25 mm",
+        "micron": "0.22 µm",
+        "pack": "50",
+        "internalPricing": {
+          "unitPrice": 85,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-SF-ST-PES-33-022",
+        "diameter": "33 mm",
+        "micron": "0.22 µm",
+        "pack": "50",
+        "internalPricing": {
+          "unitPrice": 110,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-sf-sterile-pes.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-sf-sterile-pes.webp"
+    ],
+    "searchTerms": [
+      "sterile",
+      "pes",
+      "syringe filter",
+      "0.22",
+      "blister pack",
+      "eto",
+      "cell culture"
+    ],
+    "relatedProducts": [
+      "bb-fil-sf-sterile-pvdf",
+      "bb-fil-sf-sterile-nylon"
+    ],
+    "slug": "sterile-pes-syringe-filters",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-SF-ST-PES",
+    "manufacturerCatNo": "SF-ST-PES",
+    "manufacturerModel": "SF-ST-PES"
+  },
+  {
+    "id": "bb-fil-sf-sterile-pvdf",
+    "sku": "BB-SF-ST-PVDF",
+    "name": "Sterile PVDF Syringe Filters",
+    "series": "Biobusiness Premier Sterile Filtration",
+    "model": "SF-ST-PVDF",
+    "category": "Filtration",
+    "subcategory": "Sterile Syringe Filters",
+    "type": "Sterile Syringe Filter",
+    "material": "PVDF",
+    "sterile": true,
+    "description": "Individually wrapped sterile PVDF syringe filters engineered for critical sterilization of delicate enzyme and protein solutions.",
+    "features": [
+      "Certified sterile, endotoxin-free, and non-pyrogenic",
+      "Ultra-low protein adsorption for maximum enzyme recovery",
+      "Polypropylene housing with secure Luer Lock connection"
+    ],
+    "applications": [
+      "Enzyme & Growth Factor Sterilization",
+      "Biological Fluid Clarification",
+      "Pharmacological Formulation Prep"
+    ],
+    "technicalSpecifications": {
+      "Filter Media": "PVDF",
+      "Sterilization": "Gamma Radiation / ETO",
+      "Wettability": "Hydrophilic",
+      "Housing": "Medical Polypropylene"
+    },
+    "variants": [
+      {
+        "catNo": "BB-SF-ST-PVDF-13-022",
+        "diameter": "13 mm",
+        "micron": "0.22 µm",
+        "pack": "50",
+        "internalPricing": {
+          "unitPrice": 72,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-SF-ST-PVDF-25-022",
+        "diameter": "25 mm",
+        "micron": "0.22 µm",
+        "pack": "50",
+        "internalPricing": {
+          "unitPrice": 92,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-SF-ST-PVDF-33-022",
+        "diameter": "33 mm",
+        "micron": "0.22 µm",
+        "pack": "50",
+        "internalPricing": {
+          "unitPrice": 120,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-sf-sterile-pvdf.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-sf-sterile-pvdf.webp"
+    ],
+    "searchTerms": [
+      "sterile",
+      "pvdf",
+      "syringe filter",
+      "0.22",
+      "low protein binding",
+      "gamma sterile"
+    ],
+    "relatedProducts": [
+      "bb-fil-sf-sterile-pes"
+    ],
+    "slug": "sterile-pvdf-syringe-filters",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-SF-ST-PVDF",
+    "manufacturerCatNo": "SF-ST-PVDF",
+    "manufacturerModel": "SF-ST-PVDF"
+  }
+]

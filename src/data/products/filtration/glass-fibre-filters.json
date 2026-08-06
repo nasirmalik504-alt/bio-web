@@ -1,0 +1,190 @@
+[
+  {
+    "id": "bb-fil-gf-grade-a",
+    "sku": "BB-GF-A",
+    "name": "Glass Microfibre Filters Grade GF/A",
+    "series": "Biobusiness Analytical Depth Media",
+    "model": "GF-A",
+    "category": "Filtration",
+    "subcategory": "Glass Fibre Filters",
+    "type": "Glass Fibre Circle",
+    "material": "100% Borosilicate Glass Microfibre (Binder-Free)",
+    "sterile": false,
+    "description": "High-efficiency 1.6 µm binder-free glass microfibre filter papers offering rapid flow rates, high loading capacity, and temperature resistance up to 500 °C.",
+    "features": [
+      "100% pure borosilicate glass microfibres - organic binder free",
+      "High loading capacity for fine particulate collection",
+      "Temperature resistant up to 500 °C",
+      "Excellent retention of fine analytical precipitates"
+    ],
+    "applications": [
+      "Gravimetric Analysis of Air Pollutants",
+      "Total Suspended Solids (TSS) Water Testing",
+      "Biochemical Clarification & Scintillation Counting"
+    ],
+    "technicalSpecifications": {
+      "Particle Retention": "1.6 µm",
+      "Basis Weight": "52 g/m²",
+      "Thickness": "260 µm",
+      "Max Temperature": "500 °C",
+      "Binder": "Binder-Free"
+    },
+    "variants": [
+      {
+        "catNo": "BB-GF-A-25",
+        "diameter": "25 mm",
+        "micron": "1.6 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 380,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-GF-A-47",
+        "diameter": "47 mm",
+        "micron": "1.6 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 520,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-GF-A-90",
+        "diameter": "90 mm",
+        "micron": "1.6 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 980,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-GF-A-110",
+        "diameter": "110 mm",
+        "micron": "1.6 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 1250,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-gf-grade-a.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-gf-grade-a.webp"
+    ],
+    "searchTerms": [
+      "glass fibre",
+      "gf/a",
+      "1.6um",
+      "borosilicate",
+      "tss water testing",
+      "air monitoring",
+      "binder free"
+    ],
+    "relatedProducts": [
+      "bb-fil-gf-grade-c",
+      "bb-fil-paper-qual-1"
+    ],
+    "slug": "glass-microfibre-filters-grade-gfa",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-GF-A",
+    "manufacturerCatNo": "GF-A",
+    "manufacturerModel": "GF-A"
+  },
+  {
+    "id": "bb-fil-gf-grade-c",
+    "sku": "BB-GF-C",
+    "name": "Glass Microfibre Filters Grade GF/C",
+    "series": "Biobusiness Analytical Depth Media",
+    "model": "GF-C",
+    "category": "Filtration",
+    "subcategory": "Glass Fibre Filters",
+    "type": "Glass Fibre Circle",
+    "material": "100% Borosilicate Glass Microfibre",
+    "sterile": false,
+    "description": "Standard 1.2 µm glass microfibre filter paper specified globally for Total Suspended Solids (TSS) determination in potable and industrial wastewater.",
+    "features": [
+      "Standard filter media for EPA Method 1684 and EN 872 TSS testing",
+      "High flow rate with fine retention",
+      "Thermal stability up to 500 °C"
+    ],
+    "applications": [
+      "Total Suspended Solids (TSS) Wastewater Analysis",
+      "Drinking Water Quality Monitoring",
+      "Cell Harvesting & Liquid Scintillation"
+    ],
+    "technicalSpecifications": {
+      "Particle Retention": "1.2 µm",
+      "Basis Weight": "54 g/m²",
+      "Thickness": "260 µm",
+      "Max Temperature": "500 °C"
+    },
+    "variants": [
+      {
+        "catNo": "BB-GF-C-25",
+        "diameter": "25 mm",
+        "micron": "1.2 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 420,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-GF-C-47",
+        "diameter": "47 mm",
+        "micron": "1.2 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 580,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-GF-C-90",
+        "diameter": "90 mm",
+        "micron": "1.2 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 1050,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-gf-grade-c.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-gf-grade-c.webp"
+    ],
+    "searchTerms": [
+      "glass fibre",
+      "gf/c",
+      "1.2um",
+      "tss",
+      "suspended solids",
+      "wastewater"
+    ],
+    "relatedProducts": [
+      "bb-fil-gf-grade-a"
+    ],
+    "slug": "glass-microfibre-filters-grade-gfc",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-GF-C",
+    "manufacturerCatNo": "GF-C",
+    "manufacturerModel": "GF-C"
+  }
+]

@@ -1,0 +1,82 @@
+[
+  {
+    "id": "bb-fil-vac-pump-30",
+    "sku": "BB-VP-30",
+    "name": "Oil-Free Diaphragm Vacuum Pump (30 L/min)",
+    "series": "Biobusiness Quiet Vacuum Tech",
+    "model": "VP-30",
+    "category": "Filtration",
+    "subcategory": "Vacuum Filtration",
+    "type": "Diaphragm Vacuum Pump",
+    "material": "Aluminum / PTFE Coated",
+    "sterile": false,
+    "description": "Quiet, compact oil-free diaphragm vacuum pump delivering 30 L/min flow rate and 750 mmHg ultimate vacuum for laboratory vacuum filtration systems.",
+    "features": [
+      "100% oil-free operation - eliminates oil vapor contamination and maintenance",
+      "Low noise output (< 50 dB) and vibration-damped feet",
+      "Built-in vacuum gauge and moisture trap with regulating valve",
+      "Thermal overload protection circuit"
+    ],
+    "applications": [
+      "Vacuum Filtration of Solvents & Media",
+      "Solvent Degassing for HPLC",
+      "Vacuum Desiccators & Air Sampling"
+    ],
+    "technicalSpecifications": {
+      "Flow Rate": "30 L/min",
+      "Ultimate Vacuum": "750 mmHg (50 mbar)",
+      "Power": "160 W",
+      "Noise Level": "< 50 dB",
+      "Motor Speed": "1450 RPM"
+    },
+    "variants": [
+      {
+        "catNo": "BB-VP30-220V",
+        "model": "VP-30 Standard",
+        "flowRate": "30 L/min",
+        "pack": "1 Unit",
+        "internalPricing": {
+          "unitPrice": 14500,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-VP30-PTFE",
+        "model": "VP-30 Chemical Resistant (PTFE)",
+        "flowRate": "30 L/min",
+        "pack": "1 Unit",
+        "internalPricing": {
+          "unitPrice": 21500,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-vac-pump-30.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-vac-pump-30.webp"
+    ],
+    "searchTerms": [
+      "vacuum pump",
+      "diaphragm pump",
+      "oil free",
+      "30 l/min",
+      "750 mmhg",
+      "filtration pump"
+    ],
+    "relatedProducts": [
+      "bb-fil-holder-glass-47",
+      "bb-fil-holder-ss-manifold"
+    ],
+    "slug": "oil-free-diaphragm-vacuum-pump-30l",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-VP-30",
+    "manufacturerCatNo": "VP-30",
+    "manufacturerModel": "VP-30"
+  }
+]

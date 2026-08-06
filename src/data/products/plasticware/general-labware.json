@@ -1,0 +1,651 @@
+[
+  {
+    "id": "self-v-enting-labeled-w-bb-pw-0024",
+    "sku": "SI/PW/206",
+    "internalSKU": "BB-PW-0024",
+    "manufacturerCatNo": "SI/PW/206",
+    "manufacturerModel": "Self-Venting Labeled W",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Self-Venting Labeled W",
+    "model": "Self-Venting Labeled W",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 9,
+    "description": "Official Biobrand Self-Venting Labeled W manufactured from high grade laboratory polymer. Page 9.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/self-v-enting-labeled-w.webp",
+    "gallery": [
+      "/images/products/plasticware/self-v-enting-labeled-w.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/206",
+        "capacity": "500ml Acetone 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/207",
+        "capacity": "500ml Ethanol 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/208",
+        "capacity": "500ml Isopropanol 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/209",
+        "capacity": "500ml Methanol 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/210",
+        "capacity": "500ml Sodium Hypochlorite 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/211",
+        "capacity": "500ml Distilled Water 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/212",
+        "capacity": "1000ml Acetone 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/213",
+        "capacity": "1000ml Ethanol 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/214",
+        "capacity": "1000ml Isopropanol 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/215",
+        "capacity": "1000ml Methanol 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/216",
+        "capacity": "1000ml Sodium Hypochlorite 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/217",
+        "capacity": "1000ml Distilled Water 6Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "self-Venting labeled w",
+      "plasticware",
+      "biobrand",
+      "si/pw/206"
+    ],
+    "relatedProducts": [],
+    "slug": "product/self-v-enting-labeled-w",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "hand-operated-vacuum-pump-bb-pw-0042",
+    "sku": "SI/PW/270",
+    "internalSKU": "BB-PW-0042",
+    "manufacturerCatNo": "SI/PW/270",
+    "manufacturerModel": "Hand operated Vacuum pump",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Hand operated Vacuum pump",
+    "model": "Hand operated Vacuum pump",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 12,
+    "description": "Official Biobrand Hand operated Vacuum pump manufactured from high grade laboratory polymer. Page 12.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/hand-operated-vacuum-pump.webp",
+    "gallery": [
+      "/images/products/plasticware/hand-operated-vacuum-pump.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/270",
+        "capacity": "1Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "hand operated vacuum pump",
+      "plasticware",
+      "biobrand",
+      "si/pw/270"
+    ],
+    "relatedProducts": [],
+    "slug": "product/hand-operated-vacuum-pump",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "test-t-ube-w-ith-screw-cap-bb-pw-0087",
+    "sku": "SI/PW/GEN-087",
+    "internalSKU": "BB-PW-0087",
+    "manufacturerCatNo": "SI/PW/GEN-087",
+    "manufacturerModel": "Test Tube With Screw Cap",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Test Tube With Screw Cap",
+    "model": "Test Tube With Screw Cap",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 19,
+    "description": "Official Biobrand Test Tube With Screw Cap manufactured from high grade laboratory polymer. Page 19.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/test-t-ube-w-ith-screw-cap.webp",
+    "gallery": [
+      "/images/products/plasticware/test-t-ube-w-ith-screw-cap.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/GEN-087",
+        "capacity": "Standard",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "test Tube With screw cap",
+      "plasticware",
+      "biobrand",
+      "si/pw/gen-087"
+    ],
+    "relatedProducts": [],
+    "slug": "product/test-t-ube-w-ith-screw-cap",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "tes-t-tube-s-tand-wire-pattern-bb-pw-0113",
+    "sku": "SI/PW/489",
+    "internalSKU": "BB-PW-0113",
+    "manufacturerCatNo": "SI/PW/489",
+    "manufacturerModel": "Test Tube Stand (Wire Pattern)",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Test Tube Stand (Wire Pattern)",
+    "model": "Test Tube Stand (Wire Pattern)",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 24,
+    "description": "Official Biobrand Test Tube Stand (Wire Pattern) manufactured from high grade laboratory polymer. Page 24.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/tes-t-tube-s-tand-wire-pattern.webp",
+    "gallery": [
+      "/images/products/plasticware/tes-t-tube-s-tand-wire-pattern.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/489",
+        "capacity": "13mmX90Tubes 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/490",
+        "capacity": "16mmX60Tubes 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/491",
+        "capacity": "20mmX40Tubes 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/492",
+        "capacity": "25mmX24Tubes 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/493",
+        "capacity": "30mmX21Tubes 6Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "Test tube Stand (wire pattern)",
+      "plasticware",
+      "biobrand",
+      "si/pw/489"
+    ],
+    "relatedProducts": [],
+    "slug": "product/tes-t-tube-s-tand-wire-pattern",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "reagent-reservoir-bb-pw-0120",
+    "sku": "SI/PW/503",
+    "internalSKU": "BB-PW-0120",
+    "manufacturerCatNo": "SI/PW/503",
+    "manufacturerModel": "Reagent Reservoir",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Reagent Reservoir",
+    "model": "Reagent Reservoir",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 25,
+    "description": "Official Biobrand Reagent Reservoir manufactured from high grade laboratory polymer. Page 25.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/reagent-reservoir.webp",
+    "gallery": [
+      "/images/products/plasticware/reagent-reservoir.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/503",
+        "capacity": "75ml 12Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "reagent reservoir",
+      "plasticware",
+      "biobrand",
+      "si/pw/503"
+    ],
+    "relatedProducts": [],
+    "slug": "product/reagent-reservoir",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "univers-al-r-egeant-r-es-ervoir-bb-pw-0123",
+    "sku": "SI/PW/504",
+    "internalSKU": "BB-PW-0123",
+    "manufacturerCatNo": "SI/PW/504",
+    "manufacturerModel": "Universal Reagent Reservoir",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Universal Reagent Reservoir",
+    "model": "Universal Reagent Reservoir",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 25,
+    "description": "Official Biobrand Universal Reagent Reservoir manufactured from high grade laboratory polymer. Page 25.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/univers-al-r-egeant-r-es-ervoir.webp",
+    "gallery": [
+      "/images/products/plasticware/univers-al-r-egeant-r-es-ervoir.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/504",
+        "capacity": "50ml 6Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "univers al Reagent Reservoir",
+      "plasticware",
+      "biobrand",
+      "si/pw/504"
+    ],
+    "relatedProducts": [],
+    "slug": "product/univers-al-r-egeant-r-es-ervoir",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "stirring-rods-bb-pw-0134",
+    "sku": "SI/PW/553",
+    "internalSKU": "BB-PW-0134",
+    "manufacturerCatNo": "SI/PW/553",
+    "manufacturerModel": "Stirring Rods",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Stirring Rods",
+    "model": "Stirring Rods",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 28,
+    "description": "Official Biobrand Stirring Rods manufactured from high grade laboratory polymer. Page 28.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/stirring-rods.webp",
+    "gallery": [
+      "/images/products/plasticware/stirring-rods.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/553",
+        "capacity": "16x16 12Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "stirring rods",
+      "plasticware",
+      "biobrand",
+      "si/pw/553"
+    ],
+    "relatedProducts": [],
+    "slug": "product/stirring-rods",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "l-s-haped-s-preader-r-adiation-sterile-bb-pw-0135",
+    "sku": "SI/PW/557",
+    "internalSKU": "BB-PW-0135",
+    "manufacturerCatNo": "SI/PW/557",
+    "manufacturerModel": "L Shaped Spreader - Radiation Sterile",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "L Shaped Spreader - Radiation Sterile",
+    "model": "L Shaped Spreader - Radiation Sterile",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 28,
+    "description": "Official Biobrand L Shaped Spreader - Radiation Sterile manufactured from high grade laboratory polymer. Page 28.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/l-s-haped-s-preader-r-adiation-sterile.webp",
+    "gallery": [
+      "/images/products/plasticware/l-s-haped-s-preader-r-adiation-sterile.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/557",
+        "capacity": "L Shaped Spreader Pouch of 5 100Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "l s haped Spreader - r adiation sterile",
+      "plasticware",
+      "biobrand",
+      "si/pw/557"
+    ],
+    "relatedProducts": [],
+    "slug": "product/l-s-haped-s-preader-r-adiation-sterile",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "s-coop-bb-pw-0159",
+    "sku": "SI/PW/622",
+    "internalSKU": "BB-PW-0159",
+    "manufacturerCatNo": "SI/PW/622",
+    "manufacturerModel": "Scoop",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Scoop",
+    "model": "Scoop",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 32,
+    "description": "Official Biobrand Scoop manufactured from high grade laboratory polymer. Page 32.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/s-coop.webp",
+    "gallery": [
+      "/images/products/plasticware/s-coop.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/622",
+        "capacity": "250 6",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/623",
+        "capacity": "6",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/624",
+        "capacity": "2000 6",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "Scoop",
+      "plasticware",
+      "biobrand",
+      "si/pw/622"
+    ],
+    "relatedProducts": [],
+    "slug": "product/s-coop",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "s-pares-bb-pw-0170",
+    "sku": "SI/PW/646",
+    "internalSKU": "BB-PW-0170",
+    "manufacturerCatNo": "SI/PW/646",
+    "manufacturerModel": "Spares",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Spares",
+    "model": "Spares",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 34,
+    "description": "Official Biobrand Spares manufactured from high grade laboratory polymer. Page 34.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/s-pares.webp",
+    "gallery": [
+      "/images/products/plasticware/s-pares.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/646",
+        "capacity": "Casting Tray 7 x 7 cm 1",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/647",
+        "capacity": "Casting Tray 7 x 10 cm 1",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/648",
+        "capacity": "Comb Set 2",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/649",
+        "capacity": "Electrode Set 2",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "Spares",
+      "plasticware",
+      "biobrand",
+      "si/pw/646"
+    ],
+    "relatedProducts": [],
+    "slug": "product/s-pares",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "s-pares-2-bb-pw-0173",
+    "sku": "SI/PW/651",
+    "internalSKU": "BB-PW-0173",
+    "manufacturerCatNo": "SI/PW/651",
+    "manufacturerModel": "Spares",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Spares",
+    "model": "Spares",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 34,
+    "description": "Official Biobrand Spares manufactured from high grade laboratory polymer. Page 34.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/s-pares-2.webp",
+    "gallery": [
+      "/images/products/plasticware/s-pares-2.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/651",
+        "capacity": "Casting Tray 15x10 cm 1",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/652",
+        "capacity": "Comb Set 1",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/653",
+        "capacity": "Electrode Set 2",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "Spares",
+      "plasticware",
+      "biobrand",
+      "si/pw/651"
+    ],
+    "relatedProducts": [],
+    "slug": "product/s-pares-2",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "id": "bb-fil-mem-nylon",
+    "sku": "BB-MEM-NY",
+    "name": "Nylon Membrane Filter Discs",
+    "series": "Biobusiness Precision Membrane",
+    "model": "MEM-NY",
+    "category": "Filtration",
+    "subcategory": "Membrane Filters",
+    "type": "Membrane Disc",
+    "material": "Nylon (Hydrophilic)",
+    "sterile": false,
+    "description": "High-purity hydrophilic Nylon membrane discs for vacuum filtration manifolds, solvent clarification, and microbiological analysis.",
+    "features": [
+      "Flexible, durable membrane with high tensile strength",
+      "Hydrophilic - excellent wettability with aqueous solvents",
+      "Autoclavable at 121 °C for 30 minutes"
+    ],
+    "applications": [
+      "HPLC Mobile Phase Solvent Filtration",
+      "Vacuum Filtration Systems",
+      "Air & Liquid Particle Analysis"
+    ],
+    "technicalSpecifications": {
+      "Material": "Nylon",
+      "Wettability": "Hydrophilic",
+      "Autoclavable": "Yes (121 °C)",
+      "Thickness": "120 - 160 µm"
+    },
+    "variants": [
+      {
+        "catNo": "BB-MEM-NY-47-022",
+        "diameter": "47 mm",
+        "micron": "0.22 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 450,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-MEM-NY-47-045",
+        "diameter": "47 mm",
+        "micron": "0.45 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 450,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-MEM-NY-90-022",
+        "diameter": "90 mm",
+        "micron": "0.22 µm",
+        "pack": "50",
+        "internalPricing": {
+          "unitPrice": 750,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-MEM-NY-90-045",
+        "diameter": "90 mm",
+        "micron": "0.45 µm",
+        "pack": "50",
+        "internalPricing": {
+          "unitPrice": 750,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-mem-nylon.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-mem-nylon.webp"
+    ],
+    "searchTerms": [
+      "nylon",
+      "membrane filter",
+      "disc",
+      "47mm",
+      "90mm",
+      "0.22",
+      "0.45",
+      "solvent filtration"
+    ],
+    "relatedProducts": [
+      "bb-fil-mem-grid-mce"
+    ],
+    "slug": "nylon-membrane-filter-discs",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-MEM-NY",
+    "manufacturerCatNo": "MEM-NY",
+    "manufacturerModel": "MEM-NY"
+  }
+]

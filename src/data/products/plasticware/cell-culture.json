@@ -1,0 +1,383 @@
+[
+  {
+    "id": "petri-dish-bb-pw-0064",
+    "sku": "SI/PW/351",
+    "internalSKU": "BB-PW-0064",
+    "manufacturerCatNo": "SI/PW/351",
+    "manufacturerModel": "Petri Dish",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Petri Dish",
+    "model": "Petri Dish",
+    "category": "Plasticware",
+    "subcategory": "Petri Dishes & Cell Culture",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 16,
+    "description": "Official Biobrand Petri Dish manufactured from high grade laboratory polymer. Page 16.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/petri-dish.webp",
+    "gallery": [
+      "/images/products/plasticware/petri-dish.webp",
+      "/images/products/plasticware/petri-dish-bb-pw-0064-plasticus-photo-2.webp",
+      "/images/products/plasticware/petri-dish-bb-pw-0064-plasticus-photo-3.webp",
+      "/images/products/plasticware/petri-dish-bb-pw-0064-plasticus-photo-4.webp",
+      "/images/products/plasticware/petri-dish-bb-pw-0064-plasticus-photo-5.webp",
+      "/images/products/plasticware/petri-dish-bb-pw-0064-plasticus-photo-6.webp",
+      "/images/products/plasticware/petri-dish-bb-pw-0064-plasticus-photo-7.webp",
+      "/images/products/plasticware/petri-dish-bb-pw-0064-plasticus-photo-8.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/351",
+        "capacity": "50mm 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/352",
+        "capacity": "75mm 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/353",
+        "capacity": "100mm 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/354",
+        "capacity": "125mm 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "PD-90-2",
+        "capacity": "90 mm 2-Room Vented",
+        "pack": "500 Pcs/Case"
+      },
+      {
+        "manufacturerCatNo": "PD-90-3",
+        "capacity": "90 mm 3-Room Vented",
+        "pack": "500 Pcs/Case"
+      },
+      {
+        "manufacturerCatNo": "PD-90-1",
+        "capacity": "90 mm 1-Room Vented",
+        "pack": "500 Pcs/Case"
+      },
+      {
+        "manufacturerCatNo": "PD-60",
+        "capacity": "60 mm Vented",
+        "pack": "500 Pcs/Case"
+      },
+      {
+        "manufacturerCatNo": "PD-150",
+        "capacity": "150 mm Vented",
+        "pack": "100 Pcs/Case"
+      }
+    ],
+    "searchTerms": [
+      "petri dish",
+      "plasticware",
+      "biobrand",
+      "si/pw/351"
+    ],
+    "relatedProducts": [],
+    "slug": "product/petri-dish",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "petri-dish-disposable-bb-pw-0065",
+    "sku": "SI/PW/359",
+    "internalSKU": "BB-PW-0065",
+    "manufacturerCatNo": "SI/PW/359",
+    "manufacturerModel": "Petri Dish ( Disposable )",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Petri Dish ( Disposable )",
+    "model": "Petri Dish ( Disposable )",
+    "category": "Plasticware",
+    "subcategory": "Petri Dishes & Cell Culture",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 16,
+    "description": "Official Biobrand Petri Dish ( Disposable ) manufactured from high grade laboratory polymer. Page 16.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/petri-dish-disposable.webp",
+    "gallery": [
+      "/images/products/plasticware/petri-dish-disposable.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/359",
+        "capacity": "90mm Radiation Stz. 460Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/360",
+        "capacity": "60mm Radiation Stz. 300Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/361",
+        "capacity": "35mm Radiation Stz. 500Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "petri dish ( disposable )",
+      "plasticware",
+      "biobrand",
+      "si/pw/359"
+    ],
+    "relatedProducts": [],
+    "slug": "product/petri-dish-disposable",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "a-petri-dish-culture-r-e-bb-pw-0067",
+    "sku": "SI/PW/355",
+    "internalSKU": "BB-PW-0067",
+    "manufacturerCatNo": "SI/PW/355",
+    "manufacturerModel": "A Petri Dish ( Culture )",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "A Petri Dish ( Culture )",
+    "model": "A Petri Dish ( Culture )",
+    "category": "Plasticware",
+    "subcategory": "Petri Dishes & Cell Culture",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 16,
+    "description": "Official Biobrand A Petri Dish ( Culture ) manufactured from high grade laboratory polymer. Page 16.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/a-petri-dish-culture.webp",
+    "gallery": [
+      "/images/products/a-petri-dish-culture.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/355",
+        "capacity": "50mm 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/356",
+        "capacity": "75mm 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/357",
+        "capacity": "100mm 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/358",
+        "capacity": "125mm 12Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "a petri dish ( culture ) r e",
+      "plasticware",
+      "biobrand",
+      "si/pw/355"
+    ],
+    "relatedProducts": [],
+    "slug": "product/a-petri-dish-culture-r-e",
+    "badge": "Catalog Verification Required",
+    "gemApproved": false
+  },
+  {
+    "id": "rack-for-petri-dishes-bb-pw-0105",
+    "sku": "SI/PW/462",
+    "internalSKU": "BB-PW-0105",
+    "manufacturerCatNo": "SI/PW/462",
+    "manufacturerModel": "Rack For Petri Dishes",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Rack For Petri Dishes",
+    "model": "Rack For Petri Dishes",
+    "category": "Plasticware",
+    "subcategory": "Petri Dishes & Cell Culture",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 22,
+    "description": "Official Biobrand Rack For Petri Dishes manufactured from high grade laboratory polymer. Page 22.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/rack-for-petri-dishes.webp",
+    "gallery": [
+      "/images/products/plasticware/rack-for-petri-dishes.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/462",
+        "capacity": "60 90 2Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/463",
+        "capacity": "56 60 2Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "rack for petri dishes",
+      "plasticware",
+      "biobrand",
+      "si/pw/462"
+    ],
+    "relatedProducts": [],
+    "slug": "product/rack-for-petri-dishes",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "a-soft-loop-sterile-r-e-bb-pw-0137",
+    "sku": "SI/PW/554",
+    "internalSKU": "BB-PW-0137",
+    "manufacturerCatNo": "SI/PW/554",
+    "manufacturerModel": "A Soft Loop Sterile",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "A Soft Loop Sterile",
+    "model": "A Soft Loop Sterile",
+    "category": "Plasticware",
+    "subcategory": "Petri Dishes & Cell Culture",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 28,
+    "description": "Official Biobrand A Soft Loop Sterile manufactured from high grade laboratory polymer. Page 28.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/a-soft-loop-sterile-r-e.webp",
+    "gallery": [
+      "/images/products/plasticware/a-soft-loop-sterile-r-e.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/554",
+        "capacity": "Soft loopes - 1µl Pouch of 10 100Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/555",
+        "capacity": "Soft loopes - 10µl Pouch of 10 100Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/556",
+        "capacity": "Inoculation Needle Pouch of 20 100Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "a soft loop sterile r e",
+      "plasticware",
+      "biobrand",
+      "si/pw/554"
+    ],
+    "relatedProducts": [],
+    "slug": "product/a-soft-loop-sterile-r-e",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "a-magenta-box-r-e-bb-pw-0149",
+    "sku": "SI/PW/580",
+    "internalSKU": "BB-PW-0149",
+    "manufacturerCatNo": "SI/PW/580",
+    "manufacturerModel": "A Magenta Box",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "A Magenta Box",
+    "model": "A Magenta Box",
+    "category": "Plasticware",
+    "subcategory": "Petri Dishes & Cell Culture",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 30,
+    "description": "Official Biobrand A Magenta Box manufactured from high grade laboratory polymer. Page 30.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/a-magenta-box-r-e.webp",
+    "gallery": [
+      "/images/products/plasticware/a-magenta-box-r-e.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/580",
+        "capacity": "Magenta Box 12Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "a magenta box r e",
+      "plasticware",
+      "biobrand",
+      "si/pw/580"
+    ],
+    "relatedProducts": [],
+    "slug": "product/a-magenta-box-r-e",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  }
+]

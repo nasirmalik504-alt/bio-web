@@ -1,0 +1,1805 @@
+[
+  {
+    "id": "beaker-pf-bb-pw-0001",
+    "sku": "SI/PW/100",
+    "internalSKU": "BB-PW-0001",
+    "manufacturerCatNo": "SI/PW/100",
+    "manufacturerModel": "Beaker (PF",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Beaker (PF",
+    "model": "Beaker (PF",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 5,
+    "description": "Official Biobrand Beaker (PF manufactured from high grade laboratory polymer. Page 5.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/beaker-pf.webp",
+    "gallery": [
+      "/images/products/plasticware/beaker-pf.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/100",
+        "capacity": "25 ml 1",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/101",
+        "capacity": "50 ml 1",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/102",
+        "capacity": "100 ml 1",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/103",
+        "capacity": "250 ml 1",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/104",
+        "capacity": "500 ml 1",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/105",
+        "capacity": "1000 ml 1",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "beaker (pf",
+      "plasticware",
+      "biobrand",
+      "si/pw/100"
+    ],
+    "relatedProducts": [],
+    "slug": "product/beaker-pf",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "beaker-pp-bb-pw-0002",
+    "sku": "SI/PW/106",
+    "internalSKU": "BB-PW-0002",
+    "manufacturerCatNo": "SI/PW/106",
+    "manufacturerModel": "Beaker (PP)",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Beaker (PP)",
+    "model": "Beaker (PP)",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 5,
+    "description": "Official Biobrand Beaker (PP) manufactured from high grade laboratory polymer. Page 5.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/beaker-pp.webp",
+    "gallery": [
+      "/images/products/plasticware/beaker-pp.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/106",
+        "capacity": "50 ml 12",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/107",
+        "capacity": "100ml 12",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/108",
+        "capacity": "250 ml 12",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/109",
+        "capacity": "500 ml 6",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/110",
+        "capacity": "1000ml 4",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/111",
+        "capacity": "2000ml 4",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/112",
+        "capacity": "5000ml 2",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/113",
+        "capacity": "10000ml 1",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "beaker (pp)",
+      "plasticware",
+      "biobrand",
+      "si/pw/106"
+    ],
+    "relatedProducts": [],
+    "slug": "product/beaker-pp",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "burette-bb-pw-0003",
+    "sku": "SI/PW/122",
+    "internalSKU": "BB-PW-0003",
+    "manufacturerCatNo": "SI/PW/122",
+    "manufacturerModel": "Burette",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Burette",
+    "model": "Burette",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 5,
+    "description": "Official Biobrand Burette manufactured from high grade laboratory polymer. Page 5.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/burette.webp",
+    "gallery": [
+      "/images/products/burette.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/122",
+        "capacity": "25 ml 10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/123",
+        "capacity": "50ml 10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/124",
+        "capacity": "100ml 10",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "burette",
+      "plasticware",
+      "biobrand",
+      "si/pw/122"
+    ],
+    "relatedProducts": [],
+    "slug": "product/burette",
+    "badge": "Catalog Verification Required",
+    "gemApproved": false
+  },
+  {
+    "id": "beaker-pmp-bb-pw-0004",
+    "sku": "SI/PW/114",
+    "internalSKU": "BB-PW-0004",
+    "manufacturerCatNo": "SI/PW/114",
+    "manufacturerModel": "Beaker (PMP)",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Beaker (PMP)",
+    "model": "Beaker (PMP)",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 5,
+    "description": "Official Biobrand Beaker (PMP) manufactured from high grade laboratory polymer. Page 5.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/beaker-pmp.webp",
+    "gallery": [
+      "/images/products/plasticware/beaker-pmp.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/114",
+        "capacity": "50 ml 12",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/115",
+        "capacity": "100ml 12",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/116",
+        "capacity": "250 ml 12",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/117",
+        "capacity": "500 ml 6",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/118",
+        "capacity": "1000ml 4",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/119",
+        "capacity": "2000ml 4",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/120",
+        "capacity": "5000ml 2",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/121",
+        "capacity": "10000ml 1",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "beaker (pmp)",
+      "plasticware",
+      "biobrand",
+      "si/pw/114"
+    ],
+    "relatedProducts": [],
+    "slug": "product/beaker-pmp",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "conical-flask-pc-bb-pw-0026",
+    "sku": "SI/PW/226",
+    "internalSKU": "BB-PW-0026",
+    "manufacturerCatNo": "SI/PW/226",
+    "manufacturerModel": "Conical Flask (PC)",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Conical Flask (PC)",
+    "model": "Conical Flask (PC)",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 9,
+    "description": "Official Biobrand Conical Flask (PC) manufactured from high grade laboratory polymer. Page 9.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/conical-flask-pc.webp",
+    "gallery": [
+      "/images/products/conical-flask-pc.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/226",
+        "capacity": "250ml. 6Pcs",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "conical flask (pc)",
+      "plasticware",
+      "biobrand",
+      "si/pw/226"
+    ],
+    "relatedProducts": [],
+    "slug": "product/conical-flask-pc",
+    "badge": "Catalog Verification Required",
+    "gemApproved": false
+  },
+  {
+    "id": "conical-flask-with-screw-cap-bb-pw-0029",
+    "sku": "SI/PW/227",
+    "internalSKU": "BB-PW-0029",
+    "manufacturerCatNo": "SI/PW/227",
+    "manufacturerModel": "Conical Flask with Screw Cap",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Conical Flask with Screw Cap",
+    "model": "Conical Flask with Screw Cap",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 9,
+    "description": "Official Biobrand Conical Flask with Screw Cap manufactured from high grade laboratory polymer. Page 9.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/conical-flask-with-screw-cap.webp",
+    "gallery": [
+      "/images/products/plasticware/conical-flask-with-screw-cap.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/227",
+        "capacity": "250ml. 6Pcs",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "conical flask with screw cap",
+      "plasticware",
+      "biobrand",
+      "si/pw/227"
+    ],
+    "relatedProducts": [],
+    "slug": "product/conical-flask-with-screw-cap",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "conical-flask-pp-bb-pw-0030",
+    "sku": "SI/PW/228",
+    "internalSKU": "BB-PW-0030",
+    "manufacturerCatNo": "SI/PW/228",
+    "manufacturerModel": "Conical Flask (PP)",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Conical Flask (PP)",
+    "model": "Conical Flask (PP)",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 10,
+    "description": "Official Biobrand Conical Flask (PP) manufactured from high grade laboratory polymer. Page 10.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/conical-flask-pp.webp",
+    "gallery": [
+      "/images/products/plasticware/conical-flask-pp.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/228",
+        "capacity": "100ml. 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/229",
+        "capacity": "250ml. 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/230",
+        "capacity": "500ml. 6Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "conical flask (pp)",
+      "plasticware",
+      "biobrand",
+      "si/pw/228"
+    ],
+    "relatedProducts": [],
+    "slug": "product/conical-flask-pp",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "volumetric-flask-class-a-bb-pw-0031",
+    "sku": "SI/PW/232",
+    "internalSKU": "BB-PW-0031",
+    "manufacturerCatNo": "SI/PW/232",
+    "manufacturerModel": "Volumetric Flask Class A",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Volumetric Flask Class A",
+    "model": "Volumetric Flask Class A",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 10,
+    "description": "Official Biobrand Volumetric Flask Class A manufactured from high grade laboratory polymer. Page 10.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/volumetric-flask-class-a.webp",
+    "gallery": [
+      "/images/products/plasticware/volumetric-flask-class-a.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/232",
+        "capacity": "10 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/233",
+        "capacity": "25 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/234",
+        "capacity": "50 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/235",
+        "capacity": "100 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/236",
+        "capacity": "250 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/237",
+        "capacity": "500 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/238",
+        "capacity": "1000 1Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "volumetric flask class a",
+      "plasticware",
+      "biobrand",
+      "si/pw/232"
+    ],
+    "relatedProducts": [],
+    "slug": "product/volumetric-flask-class-a",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "volumetric-flask-b-bb-pw-0032",
+    "sku": "SI/PW/445",
+    "internalSKU": "BB-PW-0032",
+    "manufacturerCatNo": "SI/PW/445",
+    "manufacturerModel": "Volumetric Flask B",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Volumetric Flask B",
+    "model": "Volumetric Flask B",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 10,
+    "description": "Official Biobrand Volumetric Flask B manufactured from high grade laboratory polymer. Page 10.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/volumetric-flask-b.webp",
+    "gallery": [
+      "/images/products/plasticware/volumetric-flask-b.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/445",
+        "capacity": "10ml 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/446",
+        "capacity": "25ml 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/447",
+        "capacity": "50ml 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/448",
+        "capacity": "100ml 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/449",
+        "capacity": "250ml 5Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/450",
+        "capacity": "500ml 4Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/451",
+        "capacity": "1000ml 3Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "volumetric flask b",
+      "plasticware",
+      "biobrand",
+      "si/pw/445"
+    ],
+    "relatedProducts": [],
+    "slug": "product/volumetric-flask-b",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "amber-volumetric-flask-class-a-bb-pw-0034",
+    "sku": "SI/PW/239",
+    "internalSKU": "BB-PW-0034",
+    "manufacturerCatNo": "SI/PW/239",
+    "manufacturerModel": "Amber Volumetric Flask Class A",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Amber Volumetric Flask Class A",
+    "model": "Amber Volumetric Flask Class A",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 10,
+    "description": "Official Biobrand Amber Volumetric Flask Class A manufactured from high grade laboratory polymer. Page 10.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/amber-volumetric-flask-class-a.webp",
+    "gallery": [
+      "/images/products/plasticware/amber-volumetric-flask-class-a.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/239",
+        "capacity": "10 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/240",
+        "capacity": "25 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/241",
+        "capacity": "50 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/242",
+        "capacity": "100 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/243",
+        "capacity": "250 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/244",
+        "capacity": "500 1Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "amber volumetric flask class a",
+      "plasticware",
+      "biobrand",
+      "si/pw/239"
+    ],
+    "relatedProducts": [],
+    "slug": "product/amber-volumetric-flask-class-a",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "imho-setting-cone-bb-pw-0035",
+    "sku": "SI/PW/252",
+    "internalSKU": "BB-PW-0035",
+    "manufacturerCatNo": "SI/PW/252",
+    "manufacturerModel": "Imhoﬀ Setting Cone",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Imhoﬀ Setting Cone",
+    "model": "Imhoﬀ Setting Cone",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 10,
+    "description": "Official Biobrand Imhoﬀ Setting Cone manufactured from high grade laboratory polymer. Page 10.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/imho-setting-cone.webp",
+    "gallery": [
+      "/images/products/plasticware/imho-setting-cone.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/252",
+        "capacity": "1000 1Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "imhoﬀ setting cone",
+      "plasticware",
+      "biobrand",
+      "si/pw/252"
+    ],
+    "relatedProducts": [],
+    "slug": "product/imho-setting-cone",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "measuring-beaker-with-handle-bb-pw-0036",
+    "sku": "SI/PW/253",
+    "internalSKU": "BB-PW-0036",
+    "manufacturerCatNo": "SI/PW/253",
+    "manufacturerModel": "Measuring Beaker with handle",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Measuring Beaker with handle",
+    "model": "Measuring Beaker with handle",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 11,
+    "description": "Official Biobrand Measuring Beaker with handle manufactured from high grade laboratory polymer. Page 11.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/measuring-beaker-with-handle.webp",
+    "gallery": [
+      "/images/products/plasticware/measuring-beaker-with-handle.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/253",
+        "capacity": "100 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/254",
+        "capacity": "250 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/255",
+        "capacity": "500 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/256",
+        "capacity": "1000 4Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/257",
+        "capacity": "2000 4Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/258",
+        "capacity": "5000 2Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "measuring beaker with handle",
+      "plasticware",
+      "biobrand",
+      "si/pw/253"
+    ],
+    "relatedProducts": [],
+    "slug": "product/measuring-beaker-with-handle",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "pfa-round-bottom-flask-bb-pw-0039",
+    "sku": "SI/PW/259",
+    "internalSKU": "BB-PW-0039",
+    "manufacturerCatNo": "SI/PW/259",
+    "manufacturerModel": "PFA Round Bottom Flask",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "PFA Round Bottom Flask",
+    "model": "PFA Round Bottom Flask",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 11,
+    "description": "Official Biobrand PFA Round Bottom Flask manufactured from high grade laboratory polymer. Page 11.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/pfa-round-bottom-flask.webp",
+    "gallery": [
+      "/images/products/plasticware/pfa-round-bottom-flask.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/259",
+        "capacity": "100 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/260",
+        "capacity": "250 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/261",
+        "capacity": "500 6Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "pfa round bottom flask",
+      "plasticware",
+      "biobrand",
+      "si/pw/259"
+    ],
+    "relatedProducts": [],
+    "slug": "product/pfa-round-bottom-flask",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "flask-stand-bb-pw-0044",
+    "sku": "SI/PW/274",
+    "internalSKU": "BB-PW-0044",
+    "manufacturerCatNo": "SI/PW/274",
+    "manufacturerModel": "Flask Stand",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Flask Stand",
+    "model": "Flask Stand",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 12,
+    "description": "Official Biobrand Flask Stand manufactured from high grade laboratory polymer. Page 12.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/flask-stand.webp",
+    "gallery": [
+      "/images/products/plasticware/flask-stand.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/274",
+        "capacity": "160 ml 6Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "flask stand",
+      "plasticware",
+      "biobrand",
+      "si/pw/274"
+    ],
+    "relatedProducts": [],
+    "slug": "product/flask-stand",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "test-tube-cap-bb-pw-0088",
+    "sku": "SI/PW/415",
+    "internalSKU": "BB-PW-0088",
+    "manufacturerCatNo": "SI/PW/415",
+    "manufacturerModel": "Test Tube Cap",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Test Tube Cap",
+    "model": "Test Tube Cap",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 20,
+    "description": "Official Biobrand Test Tube Cap manufactured from high grade laboratory polymer. Page 20.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/test-tube-cap.webp",
+    "gallery": [
+      "/images/products/plasticware/test-tube-cap.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/415",
+        "capacity": "25mm 100Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "test tube cap",
+      "plasticware",
+      "biobrand",
+      "si/pw/415"
+    ],
+    "relatedProducts": [],
+    "slug": "product/test-tube-cap",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "test-tube-stand-bb-pw-0107",
+    "sku": "SI/PW/467",
+    "internalSKU": "BB-PW-0107",
+    "manufacturerCatNo": "SI/PW/467",
+    "manufacturerModel": "Test Tube Stand",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Test Tube Stand",
+    "model": "Test Tube Stand",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 23,
+    "description": "Official Biobrand Test Tube Stand manufactured from high grade laboratory polymer. Page 23.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/test-tube-stand.webp",
+    "gallery": [
+      "/images/products/plasticware/test-tube-stand.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/467",
+        "capacity": "16mm & 25mm Ø Tubes 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/468",
+        "capacity": "25mm Ø Tubes 12Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "test tube stand",
+      "plasticware",
+      "biobrand",
+      "si/pw/467"
+    ],
+    "relatedProducts": [],
+    "slug": "product/test-tube-stand",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "nestler-cylinder-stand-bb-pw-0109",
+    "sku": "SI/PW/465",
+    "internalSKU": "BB-PW-0109",
+    "manufacturerCatNo": "SI/PW/465",
+    "manufacturerModel": "Nestler Cylinder Stand",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Nestler Cylinder Stand",
+    "model": "Nestler Cylinder Stand",
+    "category": "Plasticware",
+    "subcategory": "Measuring Cylinders & Jugs",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 23,
+    "description": "Official Biobrand Nestler Cylinder Stand manufactured from high grade laboratory polymer. Page 23.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/nestler-cylinder-stand.webp",
+    "gallery": [
+      "/images/products/plasticware/nestler-cylinder-stand.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/465",
+        "capacity": "6 50ml 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/466",
+        "capacity": "6 100ml 6Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "nestler cylinder stand",
+      "plasticware",
+      "biobrand",
+      "si/pw/465"
+    ],
+    "relatedProducts": [],
+    "slug": "product/nestler-cylinder-stand",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "test-tube-stand-round-bb-pw-0110",
+    "sku": "SI/PW/469",
+    "internalSKU": "BB-PW-0110",
+    "manufacturerCatNo": "SI/PW/469",
+    "manufacturerModel": "Test Tube Stand ( Round )",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Test Tube Stand ( Round )",
+    "model": "Test Tube Stand ( Round )",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 23,
+    "description": "Official Biobrand Test Tube Stand ( Round ) manufactured from high grade laboratory polymer. Page 23.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/test-tube-stand-round.webp",
+    "gallery": [
+      "/images/products/plasticware/test-tube-stand-round.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/469",
+        "capacity": "19mm & 25mm Ø Tubes 2Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "test tube stand ( round )",
+      "plasticware",
+      "biobrand",
+      "si/pw/469"
+    ],
+    "relatedProducts": [],
+    "slug": "product/test-tube-stand-round",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "test-tube-stand-3-tier-bb-pw-0112",
+    "sku": "SI/PW/474",
+    "internalSKU": "BB-PW-0112",
+    "manufacturerCatNo": "SI/PW/474",
+    "manufacturerModel": "Test Tube Stand (3 Tier)",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Test Tube Stand (3 Tier)",
+    "model": "Test Tube Stand (3 Tier)",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 24,
+    "description": "Official Biobrand Test Tube Stand ( 3 Tier ) manufactured from high grade laboratory polymer. Page 24.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/test-tube-stand-3-tier.webp",
+    "gallery": [
+      "/images/products/plasticware/test-tube-stand-3-tier.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/474",
+        "capacity": "31 13 4Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/475",
+        "capacity": "31 16 4Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/476",
+        "capacity": "20 20 4Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/477",
+        "capacity": "18 25 4Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/478",
+        "capacity": "12 32 4Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/479",
+        "capacity": "31 13 4Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/480",
+        "capacity": "62 13 2Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/481",
+        "capacity": "31 16 4Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/482",
+        "capacity": "62 16 2Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/483",
+        "capacity": "20 20 4Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/484",
+        "capacity": "40 20 2Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/485",
+        "capacity": "18 25 4Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/486",
+        "capacity": "36 25 2Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/487",
+        "capacity": "12 32 4Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/488",
+        "capacity": "24 32 2Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "test tube stand ( 3 tier )",
+      "plasticware",
+      "biobrand",
+      "si/pw/474"
+    ],
+    "relatedProducts": [],
+    "slug": "product/test-tube-stand-3-tier",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "test-tube-baskets-bb-pw-0114",
+    "sku": "SI/PW/495",
+    "internalSKU": "BB-PW-0114",
+    "manufacturerCatNo": "SI/PW/495",
+    "manufacturerModel": "Test Tube Baskets",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Test Tube Baskets",
+    "model": "Test Tube Baskets",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 24,
+    "description": "Official Biobrand Test Tube Baskets manufactured from high grade laboratory polymer. Page 24.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/test-tube-baskets.webp",
+    "gallery": [
+      "/images/products/plasticware/test-tube-baskets.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/495",
+        "capacity": "110X120X150mm 6Pcs. Can be used for autoclaving also.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/496",
+        "capacity": "180X170X160mm 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/497",
+        "capacity": "230X230X230mm 4Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "test tube baskets",
+      "plasticware",
+      "biobrand",
+      "si/pw/495"
+    ],
+    "relatedProducts": [],
+    "slug": "product/test-tube-baskets",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "measuring-cylinders-bb-pw-0125",
+    "sku": "SI/PW/514",
+    "internalSKU": "BB-PW-0125",
+    "manufacturerCatNo": "SI/PW/514",
+    "manufacturerModel": "Measuring Cylinders",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Measuring Cylinders",
+    "model": "Measuring Cylinders",
+    "category": "Plasticware",
+    "subcategory": "Measuring Cylinders & Jugs",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 26,
+    "description": "Official Biobrand Measuring Cylinders manufactured from high grade laboratory polymer. Page 26.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/measuring-cylinders.webp",
+    "gallery": [
+      "/images/products/plasticware/measuring-cylinders.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/514",
+        "capacity": "10 ml 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/515",
+        "capacity": "25ml 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/516",
+        "capacity": "50ml 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/517",
+        "capacity": "100ml 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/518",
+        "capacity": "250ml 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/519",
+        "capacity": "500ml 3Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/521",
+        "capacity": "2000ml 3Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "measuring cylinders",
+      "plasticware",
+      "biobrand",
+      "si/pw/514"
+    ],
+    "relatedProducts": [],
+    "slug": "product/measuring-cylinders",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "a-measuring-cylinder-class-a-r-e-bb-pw-0126",
+    "sku": "SI/PW/507",
+    "internalSKU": "BB-PW-0126",
+    "manufacturerCatNo": "SI/PW/507",
+    "manufacturerModel": "A Measuring Cylinder Class A",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "A Measuring Cylinder Class A",
+    "model": "A Measuring Cylinder Class A",
+    "category": "Plasticware",
+    "subcategory": "Measuring Cylinders & Jugs",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 26,
+    "description": "Official Biobrand A Measuring Cylinder Class A manufactured from high grade laboratory polymer. Page 26.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/a-measuring-cylinder-class-a-r-e.webp",
+    "gallery": [
+      "/images/products/plasticware/a-measuring-cylinder-class-a-r-e.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/507",
+        "capacity": "25 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/508",
+        "capacity": "50 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/509",
+        "capacity": "100 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/510",
+        "capacity": "250 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/514-P26-5",
+        "capacity": "500 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/512",
+        "capacity": "1000 1Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/513",
+        "capacity": "2000 1Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "a measuring cylinder class a r e",
+      "plasticware",
+      "biobrand",
+      "si/pw/507"
+    ],
+    "relatedProducts": [],
+    "slug": "product/a-measuring-cylinder-class-a-r-e",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "measuring-cylinders-2-bb-pw-0127",
+    "sku": "SI/PW/522",
+    "internalSKU": "BB-PW-0127",
+    "manufacturerCatNo": "SI/PW/522",
+    "manufacturerModel": "Measuring Cylinders",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Measuring Cylinders",
+    "model": "Measuring Cylinders",
+    "category": "Plasticware",
+    "subcategory": "Measuring Cylinders & Jugs",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 26,
+    "description": "Official Biobrand Measuring Cylinders manufactured from high grade laboratory polymer. Page 26.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/measuring-cylinders.webp",
+    "gallery": [
+      "/images/products/measuring-cylinders.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/522",
+        "capacity": "10 ml 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/523",
+        "capacity": "25ml 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/524",
+        "capacity": "50ml 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/525",
+        "capacity": "100ml 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/526",
+        "capacity": "250ml 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/527",
+        "capacity": "500ml 3Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/529",
+        "capacity": "2000ml 3Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "measuring cylinders",
+      "plasticware",
+      "biobrand",
+      "si/pw/522"
+    ],
+    "relatedProducts": [],
+    "slug": "product/measuring-cylinders-2",
+    "badge": "Catalog Verification Required",
+    "gemApproved": false
+  },
+  {
+    "id": "measuring-jugs-bb-pw-0128",
+    "sku": "SI/PW/530",
+    "internalSKU": "BB-PW-0128",
+    "manufacturerCatNo": "SI/PW/530",
+    "manufacturerModel": "Measuring Jugs",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Measuring Jugs",
+    "model": "Measuring Jugs",
+    "category": "Plasticware",
+    "subcategory": "Measuring Cylinders & Jugs",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 27,
+    "description": "Official Biobrand Measuring Jugs manufactured from high grade laboratory polymer. Page 27.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/measuring-jugs.webp",
+    "gallery": [
+      "/images/products/plasticware/measuring-jugs.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/530",
+        "capacity": "250ml 10ml 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/531",
+        "capacity": "500ml 10ml 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/532",
+        "capacity": "1000ml 10ml 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/533",
+        "capacity": "2000ml 20ml 6Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "measuring jugs",
+      "plasticware",
+      "biobrand",
+      "si/pw/530"
+    ],
+    "relatedProducts": [],
+    "slug": "product/measuring-jugs",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "conical-measures-bb-pw-0129",
+    "sku": "SI/PW/539",
+    "internalSKU": "BB-PW-0129",
+    "manufacturerCatNo": "SI/PW/539",
+    "manufacturerModel": "Conical Measures",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Conical Measures",
+    "model": "Conical Measures",
+    "category": "Plasticware",
+    "subcategory": "Measuring Cylinders & Jugs",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 27,
+    "description": "Official Biobrand Conical Measures manufactured from high grade laboratory polymer. Page 27.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/conical-measures.webp",
+    "gallery": [
+      "/images/products/plasticware/conical-measures.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/539",
+        "capacity": "12ml 1ml 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/540",
+        "capacity": "25ml 1ml 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/541",
+        "capacity": "50ml 2ml 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/542",
+        "capacity": "125ml 5ml 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/543",
+        "capacity": "250ml 5ml 6Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "conical measures",
+      "plasticware",
+      "biobrand",
+      "si/pw/539"
+    ],
+    "relatedProducts": [],
+    "slug": "product/conical-measures",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "measuring-jugs-euro-design-bb-pw-0131",
+    "sku": "SI/PW/534",
+    "internalSKU": "BB-PW-0131",
+    "manufacturerCatNo": "SI/PW/534",
+    "manufacturerModel": "Measuring Jugs (Euro Design)",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Measuring Jugs (Euro Design)",
+    "model": "Measuring Jugs (Euro Design)",
+    "category": "Plasticware",
+    "subcategory": "Measuring Cylinders & Jugs",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 27,
+    "description": "Official Biobrand Measuring Jugs (Euro Design) manufactured from high grade laboratory polymer. Page 27.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/measuring-jugs-euro-design.webp",
+    "gallery": [
+      "/images/products/plasticware/measuring-jugs-euro-design.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/534",
+        "capacity": "500ml 12Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/535",
+        "capacity": "1000ml 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/536",
+        "capacity": "2000ml 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/537",
+        "capacity": "3000ml 6Pcs.",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/538",
+        "capacity": "5000ml 4Pcs.",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "measuring jugs (euro design)",
+      "plasticware",
+      "biobrand",
+      "si/pw/534"
+    ],
+    "relatedProducts": [],
+    "slug": "product/measuring-jugs-euro-design",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "ne-s-t-tissue-culture-flask-s-erile-bb-pw-0157",
+    "sku": "SI/PW/610",
+    "internalSKU": "BB-PW-0157",
+    "manufacturerCatNo": "SI/PW/610",
+    "manufacturerModel": "NE S T Tissue Culture Flask-S erile",
+    "manufacturer": "Biobrand",
+    "brand": "Biobrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "NE S T Tissue Culture Flask-S erile",
+    "model": "NE S T Tissue Culture Flask-S erile",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "series": "Laboratory Plasticware",
+    "pageNumber": 31,
+    "description": "Official Biobrand NE S T Tissue Culture Flask-S erile manufactured from high grade laboratory polymer. Page 31.",
+    "features": [
+      "High chemical resistance and durability",
+      "Precision molded for consistent dimensions",
+      "Autoclavable and reusable"
+    ],
+    "applications": [
+      "General laboratory procedures",
+      "Analytical testing and sample handling"
+    ],
+    "image": "/images/products/plasticware/ne-s-t-tissue-culture-flask-s-erile.webp",
+    "gallery": [
+      "/images/products/plasticware/ne-s-t-tissue-culture-flask-s-erile.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/610",
+        "capacity": "25 200",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/611",
+        "capacity": "75 100",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "SI/PW/612",
+        "capacity": "175 40",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "ne s t tissue culture flask-s erile",
+      "plasticware",
+      "biobrand",
+      "si/pw/610"
+    ],
+    "relatedProducts": [],
+    "slug": "product/ne-s-t-tissue-culture-flask-s-erile",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  }
+]

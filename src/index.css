@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    --font-display: 'Space Grotesk', sans-serif;
+
+    /* Biobusiness Aurora Design System Tokens */
+    --color-primary-blue: #6EA8FE;
+    --color-primary-blue-hover: #5B95F5;
+    --color-primary-red: #F28B82;
+    --color-primary-red-hover: #EA7468;
+
+    --color-canvas: #FAFBFD;
+    --color-surface: #FFFFFF;
+    --color-surface-soft: #F4F8FC;
+
+    --color-heading: #23324D;
+    --color-body: #5F708A;
+    --color-muted: #9AA7BC;
+
+    --color-border: #E6ECF5;
+    --color-border-strong: #CDD8E7;
+
+    /* Pastels */
+    --color-sky: #DCEEFF;
+    --color-mint: #EAF7F2;
+    --color-lavender: #EEE8FF;
+    --color-peach: #FFF0E8;
+    --color-rose: #FCECEF;
+    --color-safety-yellow: #FFF8D9;
+    --color-soft-cyan: #EDF8FF;
+    --color-ice-blue: #E8F4FF;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-body);
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, .font-display {
+    color: var(--color-heading);
+    font-family: var(--font-display);
+  }
+}
+
+/* Pristine White Laboratory Bench Card */
+.bench-card {
+  background-color: #FFFFFF;
+  border: 1px solid #E6ECF5;
+  box-shadow: 0 2px 12px -2px rgba(35, 50, 77, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.bench-card:hover {
+  border-color: #CDD8E7;
+  box-shadow: 0 8px 24px -4px rgba(35, 50, 77, 0.08);
+  transform: translateY(-2px);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border: 1px solid #E6ECF5;
+}
+
+/* Category Accent Classes */
+.bg-cat-glassware { background-color: #DCEEFF; color: #23324D; }
+.bg-cat-plasticware { background-color: #EAF7F2; color: #23324D; }
+.bg-cat-chemicals { background-color: #FFF0E8; color: #23324D; }
+.bg-cat-instruments { background-color: #EEE8FF; color: #23324D; }
+.bg-cat-media { background-color: #FCECEF; color: #23324D; }
+.bg-cat-safety { background-color: #FFF8D9; color: #23324D; }
+.bg-cat-consumables { background-color: #E8F4FF; color: #23324D; }
+.bg-cat-liquid { background-color: #EDF8FF; color: #23324D; }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #FAFBFD;
+}
+::-webkit-scrollbar-thumb {
+  background: #CDD8E7;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6EA8FE;
+}

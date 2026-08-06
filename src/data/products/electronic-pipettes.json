@@ -1,0 +1,346 @@
+[
+  {
+    "id": "microlit-aqua-single-channel-electronic-pipette",
+    "sku": "AQU-001",
+    "internalSKU": "BB-AQU-001",
+    "manufacturerCatNo": "AQU-001",
+    "manufacturerModel": "Microlit AQUA Single Channel Electronic Micropipette",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit AQUA Single Channel Electronic Micropipette",
+    "model": "Microlit AQUA Single Channel Electronic Micropipette",
+    "category": "Liquid Handling",
+    "subcategory": "Electronic Pipettes",
+    "series": "Laboratory Liquid Handling",
+    "description": "State-of-the-art motorized electronic micropipette featuring microprocessor controlled stepper motor for zero volume discrepancy.",
+    "features": [
+      "Microprocessor controlled motor",
+      "Graphical LCD display",
+      "Rechargeable Li-ion battery",
+      "Multiple operating modes (Pipetting, Stepper, Dilution)"
+    ],
+    "applications": [
+      "Genomics",
+      "High Throughput Assays",
+      "ELISA",
+      "Next Gen Sequencing"
+    ],
+    "image": "/images/products/liquid-handling/microlit-aqua-single-channel-electronic-micropipette.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-aqua-single-channel-electronic-micropipette.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "AQU-001",
+        "capacity": "AQS-10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "AQU-002",
+        "capacity": "AQS-20",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "AQU-003",
+        "capacity": "AQS-100",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "AQU-004",
+        "capacity": "AQS-200",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "AQU-005",
+        "capacity": "AQS-1000",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "AQU-006",
+        "capacity": "AQS-5000",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit aqua single channel electronic micropipette",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-aqua-single-channel-electronic-pipette",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "microlit-aqua-8-channel-electronic-pipette",
+    "sku": "AQU-007",
+    "internalSKU": "BB-AQU-007",
+    "manufacturerCatNo": "AQU-007",
+    "manufacturerModel": "Microlit AQUA 8-Channel Electronic Micropipette",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit AQUA 8-Channel Electronic Micropipette",
+    "model": "Microlit AQUA 8-Channel Electronic Micropipette",
+    "category": "Liquid Handling",
+    "subcategory": "Electronic Pipettes",
+    "series": "Laboratory Liquid Handling",
+    "description": "State-of-the-art motorized electronic micropipette featuring microprocessor controlled stepper motor for zero volume discrepancy.",
+    "features": [
+      "Microprocessor controlled motor",
+      "Graphical LCD display",
+      "Rechargeable Li-ion battery",
+      "Multiple operating modes (Pipetting, Stepper, Dilution)"
+    ],
+    "applications": [
+      "Genomics",
+      "High Throughput Assays",
+      "ELISA",
+      "Next Gen Sequencing"
+    ],
+    "image": "/images/products/liquid-handling/microlit-aqua-8-channel-electronic-micropipette.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-aqua-8-channel-electronic-micropipette.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "AQU-007",
+        "capacity": "AQE-10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "AQU-008",
+        "capacity": "AQE-100",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "AQU-009",
+        "capacity": "AQE-300",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit aqua 8-channel electronic micropipette",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-aqua-8-channel-electronic-pipette",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "microlit-aqua-12-channel-electronic-pipette",
+    "sku": "AQU-010",
+    "internalSKU": "BB-AQU-010",
+    "manufacturerCatNo": "AQU-010",
+    "manufacturerModel": "Microlit AQUA 12-Channel Electronic Micropipette",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit AQUA 12-Channel Electronic Micropipette",
+    "model": "Microlit AQUA 12-Channel Electronic Micropipette",
+    "category": "Liquid Handling",
+    "subcategory": "Electronic Pipettes",
+    "series": "Laboratory Liquid Handling",
+    "description": "State-of-the-art motorized electronic micropipette featuring microprocessor controlled stepper motor for zero volume discrepancy.",
+    "features": [
+      "Microprocessor controlled motor",
+      "Graphical LCD display",
+      "Rechargeable Li-ion battery",
+      "Multiple operating modes (Pipetting, Stepper, Dilution)"
+    ],
+    "applications": [
+      "Genomics",
+      "High Throughput Assays",
+      "ELISA",
+      "Next Gen Sequencing"
+    ],
+    "image": "/images/products/liquid-handling/microlit-aqua-12-channel-electronic-micropipette.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-aqua-12-channel-electronic-micropipette.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "AQU-010",
+        "capacity": "AQT-10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "AQU-011",
+        "capacity": "AQT-100",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "AQU-012",
+        "capacity": "AQT-300",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit aqua 12-channel electronic micropipette",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-aqua-12-channel-electronic-pipette",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "microlit-aqua-adjustable-spacing-electronic-pipette",
+    "sku": "AQU-013",
+    "internalSKU": "BB-AQU-013",
+    "manufacturerCatNo": "AQU-013",
+    "manufacturerModel": "Microlit AQUA Adjustable Spacing Electronic Pipette",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit AQUA Adjustable Spacing Electronic Pipette",
+    "model": "Microlit AQUA Adjustable Spacing Electronic Pipette",
+    "category": "Liquid Handling",
+    "subcategory": "Electronic Pipettes",
+    "series": "Laboratory Liquid Handling",
+    "description": "State-of-the-art motorized electronic micropipette featuring microprocessor controlled stepper motor for zero volume discrepancy.",
+    "features": [
+      "Microprocessor controlled motor",
+      "Graphical LCD display",
+      "Rechargeable Li-ion battery",
+      "Multiple operating modes (Pipetting, Stepper, Dilution)"
+    ],
+    "applications": [
+      "Genomics",
+      "High Throughput Assays",
+      "ELISA",
+      "Next Gen Sequencing"
+    ],
+    "image": "/images/products/liquid-handling/microlit-aqua-adjustable-spacing-electronic-pipette.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-aqua-adjustable-spacing-electronic-pipette.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "AQU-013",
+        "capacity": "AQVS-12",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "AQU-014",
+        "capacity": "AQVS-50",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "AQU-015",
+        "capacity": "AQVS-110",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "AQU-016",
+        "capacity": "AQVS-300",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit aqua adjustable spacing electronic pipette",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-aqua-adjustable-spacing-electronic-pipette",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "bb-ep-fill-001",
+    "sku": "BB-EAS-01",
+    "model": "EAS-01",
+    "name": "EASYAID Motorized Serological Pipette Controller (0.1 - 100 mL)",
+    "series": "EASYAID Series",
+    "category": "Liquid Handling",
+    "subcategory": "Electronic Pipettes",
+    "description": "Ergonomic motorized serological pipette controller designed for smooth aspiration and dispensing of glass and plastic pipettes.",
+    "features": [
+      "Powerful quiet pump filling 25ml in 5s",
+      "Dual speed modes (High / Low / Gravity)",
+      "Autoclavable nosepiece holder",
+      "Hydrophobic 0.2µm filter protection"
+    ],
+    "applications": [
+      "Cell Culture Media Preparation",
+      "Serological Dispensing",
+      "Buffer Preparation",
+      "Microbiology"
+    ],
+    "specifications": {
+      "Capacity Range": "0.1 - 100 mL",
+      "Battery": "Rechargeable NiMH / Li-ion",
+      "Filter": "0.2 µm Hydrophobic PTFE"
+    },
+    "volume": "0.1 - 100 mL",
+    "capacity": "100 mL",
+    "channels": "Single Channel",
+    "operation": "Motorized Electronic",
+    "autoclavable": false,
+    "manual": false,
+    "electronic": true,
+    "image": "/images/products/liquid-handling/electronic-pipettes/bb-ep-fill-001.webp",
+    "gallery": [
+      "/images/products/liquid-handling/electronic-pipettes/bb-ep-fill-001.webp"
+    ],
+    "documents": [],
+    "tags": [
+      "liquid handling",
+      "electronic pipettes",
+      "biobusiness easyaid series",
+      "eas-01",
+      "0.1 - 100 ml",
+      "motorized electronic",
+      "electronic"
+    ],
+    "searchTerms": [
+      "Microbiology",
+      "Serological Dispensing",
+      "EAS-01",
+      "Cell Culture Media Preparation",
+      "Powerful quiet pump filling 25ml in 5s",
+      "Dual speed modes (High / Low / Gravity)",
+      "BB-EAS-01",
+      "Buffer Preparation",
+      "Autoclavable nosepiece holder",
+      "100 mL",
+      "EASYAID Series",
+      "electronic pipettes",
+      "motorized electronic",
+      "eas-01",
+      "Hydrophobic 0.2µm filter protection",
+      "easyaid series",
+      "electronic",
+      "0.1 - 100 mL",
+      "Single Channel",
+      "0.1 - 100 ml",
+      "liquid handling",
+      "EASYAID Motorized Serological Pipette Controller (0.1 - 100 mL)"
+    ],
+    "relatedProducts": [],
+    "slug": "easyaid-motorized-serological-pipette-controller-01---100-ml",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.microlit.com",
+    "manufacturerLogo": "/images/brands/microlit.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-EAS-01",
+    "manufacturerCatNo": "EAS-01",
+    "manufacturerModel": "EAS-01"
+  }
+]

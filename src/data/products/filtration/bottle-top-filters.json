@@ -1,0 +1,80 @@
+[
+  {
+    "id": "bb-fil-bt-500",
+    "sku": "BB-BTF-500",
+    "name": "Sterile Vacuum Bottle Top Filter Units",
+    "series": "Biobusiness Sterile Media Prep",
+    "model": "BTF-500",
+    "category": "Filtration",
+    "subcategory": "Bottle Top Filters",
+    "type": "Vacuum Bottle Top Filter",
+    "material": "PES Membrane",
+    "sterile": true,
+    "description": "Complete sterile vacuum bottle top filter units featuring a high-flow asymmetric PES membrane, receiver flask, and GL45 thread adapter for tissue culture media preparation.",
+    "features": [
+      "Individually wrapped and certified sterile / non-pyrogenic",
+      "Low protein binding asymmetric PES membrane for maximum throughput",
+      "Angled hose barb connector prevents tubing kinks"
+    ],
+    "applications": [
+      "Cell Culture Media Sterilization",
+      "Serum & Biological Buffer Preparation",
+      "Sterile Solution Storage"
+    ],
+    "technicalSpecifications": {
+      "Funnel Capacity": "500 ml / 1000 ml",
+      "Membrane": "PES (0.22 µm)",
+      "Thread Size": "GL45",
+      "Sterility": "Gamma Sterilized"
+    },
+    "variants": [
+      {
+        "catNo": "BB-BTF-500-022",
+        "capacity": "500 ml",
+        "micron": "0.22 µm",
+        "pack": "12",
+        "internalPricing": {
+          "unitPrice": 4800,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-BTF-1000-022",
+        "capacity": "1000 ml",
+        "micron": "0.22 µm",
+        "pack": "12",
+        "internalPricing": {
+          "unitPrice": 7200,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-bt-500.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-bt-500.webp"
+    ],
+    "searchTerms": [
+      "bottle top filter",
+      "sterile",
+      "pes",
+      "500ml",
+      "1000ml",
+      "0.22",
+      "cell culture media"
+    ],
+    "relatedProducts": [
+      "bb-fil-sf-sterile-pes"
+    ],
+    "slug": "sterile-vacuum-bottle-top-filter-units",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-BTF-500",
+    "manufacturerCatNo": "BTF-500",
+    "manufacturerModel": "BTF-500"
+  }
+]

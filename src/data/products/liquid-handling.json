@@ -1,0 +1,765 @@
+[
+  {
+    "id": "ml-rambo-fixed",
+    "sku": "BB-LH-0001",
+    "internalSKU": "BB-LH-0001",
+    "manufacturerCatNo": "RAM-F-1000",
+    "manufacturerModel": "RAMBO Series Fixed Volume Micropipette",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.microlit.com",
+    "manufacturerLogo": "/images/brands/microlit.svg",
+    "name": "RAMBO Series Fixed Volume Micropipette",
+    "series": "RAMBO Series",
+    "model": "RAM-F",
+    "category": "Liquid Handling",
+    "subcategory": "Micropipettes",
+    "description": "Fully autoclavable fixed volume micropipette featuring Air Technology for high-accuracy liquid dispensing in demanding research environments.",
+    "features": [
+      "Fully autoclavable at 121°C",
+      "Air Technology plunger mechanism for ultra-low plunger force",
+      "Ergonomic click-stop volume lock",
+      "ISO 8655 calibrated with individual certificate of calibration"
+    ],
+    "applications": [
+      "PCR Setup",
+      "Clinical Assays",
+      "Cell Culture",
+      "Microbiology"
+    ],
+    "technicalSpecifications": {
+      "Volume": "1000 µL",
+      "Channels": "Single Channel",
+      "Autoclavable": "Yes (121°C)",
+      "Calibration Standard": "ISO 8655"
+    },
+    "variants": [
+      {
+        "manufacturerCatNo": "RAM-F-1",
+        "volume": "1 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 3200,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "RAM-F-2",
+        "volume": "2 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 3200,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "RAM-F-5",
+        "volume": "5 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 3200,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "RAM-F-10",
+        "volume": "10 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 3200,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "RAM-F-20",
+        "volume": "20 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 3200,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "RAM-F-50",
+        "volume": "50 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 3200,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "RAM-F-100",
+        "volume": "100 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 3200,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "RAM-F-200",
+        "volume": "200 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 3200,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "RAM-F-1000",
+        "volume": "1000 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 3200,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/liquid-handling/rambo-fixed.webp",
+    "gallery": [
+      "/images/products/liquid-handling/rambo-fixed.webp"
+    ],
+    "searchTerms": [
+      "microlit",
+      "rambo",
+      "fixed volume",
+      "micropipette",
+      "ram-f-2",
+      "ram-f-1000",
+      "1000ul",
+      "iso 8655"
+    ],
+    "relatedProducts": [
+      "ml-rambo-variable",
+      "ml-nero-variable"
+    ],
+    "slug": "microlit-rambo-fixed-volume-micropipette"
+  },
+  {
+    "id": "ml-rambo-variable",
+    "sku": "BB-LH-0002",
+    "internalSKU": "BB-LH-0002",
+    "manufacturerCatNo": "RAM-1000",
+    "manufacturerModel": "RAMBO Series Variable Volume Micropipette",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.microlit.com",
+    "manufacturerLogo": "/images/brands/microlit.svg",
+    "name": "RAMBO Series Variable Volume Micropipette",
+    "series": "RAMBO Series",
+    "model": "RAM-VAR",
+    "category": "Liquid Handling",
+    "subcategory": "Micropipettes",
+    "description": "High-precision variable volume micropipette engineered with digital display and soft plunger stroke for comfortable long-duration liquid handling.",
+    "features": [
+      "Fully autoclavable at 121°C without disassembly",
+      "Clear 4-digit volume counter display",
+      "Tip ejector with soft-touch mechanism",
+      "ISO 8655 compliant calibration"
+    ],
+    "applications": [
+      "Molecular Biology",
+      "Analytical QC",
+      "Reagent Preparation"
+    ],
+    "technicalSpecifications": {
+      "Volume Range": "100 - 1000 µL",
+      "Channels": "Single Channel",
+      "Autoclavable": "Yes (121°C)"
+    },
+    "variants": [
+      {
+        "manufacturerCatNo": "RAM-10",
+        "volume": "0.5 - 10 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 4100,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "RAM-20",
+        "volume": "2 - 20 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 4100,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "RAM-100",
+        "volume": "10 - 100 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 4100,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "RAM-200",
+        "volume": "20 - 200 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 4100,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "RAM-1000",
+        "volume": "100 - 1000 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 4100,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "RAM-5000",
+        "volume": "500 - 5000 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 4800,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/liquid-handling/rambo-variable.webp",
+    "gallery": [
+      "/images/products/liquid-handling/rambo-variable.webp"
+    ],
+    "searchTerms": [
+      "microlit",
+      "rambo",
+      "variable volume",
+      "ram-1000",
+      "ram-100",
+      "micropipette"
+    ],
+    "relatedProducts": [
+      "ml-rambo-fixed"
+    ],
+    "slug": "microlit-rambo-variable-volume-micropipette"
+  },
+  {
+    "id": "ml-nero-variable",
+    "sku": "BB-LH-0003",
+    "internalSKU": "BB-LH-0003",
+    "manufacturerCatNo": "NRO-1000",
+    "manufacturerModel": "NERO Series Single Channel Variable Micropipette",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.microlit.com",
+    "manufacturerLogo": "/images/brands/microlit.svg",
+    "name": "NERO Series Single Channel Variable Micropipette",
+    "series": "NERO Series",
+    "model": "NRO-VAR",
+    "category": "Liquid Handling",
+    "subcategory": "Micropipettes",
+    "description": "Ergonomic high-precision micropipette with magnetic assisted piston for effortless plunger operation and error-free dispensing.",
+    "features": [
+      "Magnet Assisted Piston for smooth plunger action",
+      "Fully autoclavable at 121°C",
+      "Uni-directional locking mechanism to avoid accidental volume change",
+      "Lightweight ergonomic handle design"
+    ],
+    "applications": [
+      "Genomics",
+      "Proteomics",
+      "Drug Discovery",
+      "Academic Research"
+    ],
+    "technicalSpecifications": {
+      "Volume Range": "100 - 1000 µL",
+      "Channels": "Single Channel",
+      "Autoclavable": "Yes (121°C)"
+    },
+    "variants": [
+      {
+        "manufacturerCatNo": "NRO-2.5",
+        "volume": "0.2 - 2.5 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 4900,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "NRO-10",
+        "volume": "0.5 - 10 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 4900,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "NRO-20",
+        "volume": "2 - 20 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 4900,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "NRO-100",
+        "volume": "10 - 100 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 4900,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "NRO-200",
+        "volume": "20 - 200 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 4900,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "NRO-1000",
+        "volume": "100 - 1000 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 4900,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "NRO-5000",
+        "volume": "500 - 5000 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 5600,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "NRO-10000",
+        "volume": "1000 - 10000 µL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 5600,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/liquid-handling/nero-variable.webp",
+    "gallery": [
+      "/images/products/liquid-handling/nero-variable.webp"
+    ],
+    "searchTerms": [
+      "microlit",
+      "nero",
+      "nro-1000",
+      "nro-200",
+      "variable volume",
+      "micropipette"
+    ],
+    "relatedProducts": [
+      "ml-nero-multichannel",
+      "ml-rambo-variable"
+    ],
+    "slug": "microlit-nero-variable-volume-micropipette"
+  },
+  {
+    "id": "ml-nero-multichannel",
+    "sku": "BB-LH-0004",
+    "internalSKU": "BB-LH-0004",
+    "manufacturerCatNo": "NRO-8-300",
+    "manufacturerModel": "NERO Series Multi-Channel Micropipette",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.microlit.com",
+    "manufacturerLogo": "/images/brands/microlit.svg",
+    "name": "NERO Series Multi-Channel Micropipette",
+    "series": "NERO Series",
+    "model": "NRO-MC",
+    "category": "Liquid Handling",
+    "subcategory": "Micropipettes",
+    "description": "8-channel and 12-channel high-throughput micropipettes with 360° rotating manifold for 96-well microplate applications.",
+    "features": [
+      "360° rotating lower manifold for optimal pipetting comfort",
+      "Individual channel piston assembly for easy servicing",
+      "Fully autoclavable at 121°C",
+      "Soft-touch tip ejection"
+    ],
+    "applications": [
+      "ELISA Assays",
+      "96-Well Microplates",
+      "High Throughput Screening"
+    ],
+    "technicalSpecifications": {
+      "Channels": "8 & 12 Channels",
+      "Autoclavable": "Yes (121°C)"
+    },
+    "variants": [
+      {
+        "manufacturerCatNo": "NRO-8-10",
+        "volume": "0.5 - 10 µL",
+        "pack": "8-Channel",
+        "internalPricing": {
+          "unitPrice": 14500,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "NRO-8-50",
+        "volume": "5 - 50 µL",
+        "pack": "8-Channel",
+        "internalPricing": {
+          "unitPrice": 14500,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "NRO-8-200",
+        "volume": "20 - 200 µL",
+        "pack": "8-Channel",
+        "internalPricing": {
+          "unitPrice": 14500,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "NRO-8-300",
+        "volume": "30 - 300 µL",
+        "pack": "8-Channel",
+        "internalPricing": {
+          "unitPrice": 14500,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "NRO-12-10",
+        "volume": "0.5 - 10 µL",
+        "pack": "12-Channel",
+        "internalPricing": {
+          "unitPrice": 17800,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "NRO-12-50",
+        "volume": "5 - 50 µL",
+        "pack": "12-Channel",
+        "internalPricing": {
+          "unitPrice": 17800,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "NRO-12-200",
+        "volume": "20 - 200 µL",
+        "pack": "12-Channel",
+        "internalPricing": {
+          "unitPrice": 17800,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "NRO-12-300",
+        "volume": "30 - 300 µL",
+        "pack": "12-Channel",
+        "internalPricing": {
+          "unitPrice": 17800,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/liquid-handling/nero-multichannel.webp",
+    "gallery": [
+      "/images/products/liquid-handling/nero-multichannel.webp"
+    ],
+    "searchTerms": [
+      "microlit",
+      "nero",
+      "8-channel",
+      "12-channel",
+      "nro-8-300",
+      "nro-12-300",
+      "elisa"
+    ],
+    "relatedProducts": [
+      "ml-nero-variable"
+    ],
+    "slug": "microlit-nero-multichannel-micropipette"
+  },
+  {
+    "id": "ml-aqua-electronic",
+    "sku": "BB-LH-0005",
+    "internalSKU": "BB-LH-0005",
+    "manufacturerCatNo": "AQS-1000",
+    "manufacturerModel": "AQUA Electronic Micropipette",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.microlit.com",
+    "manufacturerLogo": "/images/brands/microlit.svg",
+    "name": "AQUA Electronic Micropipette",
+    "series": "AQUA Series",
+    "model": "AQS",
+    "category": "Liquid Handling",
+    "subcategory": "Electronic Pipettes",
+    "description": "Motorized electronic micropipette offering multiple operational modes (Pipetting, Reverse Pipetting, Multi-Dispensing, Diluting, Mixing) for repetitive liquid handling.",
+    "features": [
+      "Motorized piston drive for fatigue-free operation",
+      "OLED graphical display screen",
+      "Rechargeable Li-ion battery with micro-USB charging",
+      "Auto-calibration function"
+    ],
+    "applications": [
+      "Repetitive Dispensing",
+      "Serial Dilution",
+      "Clinical Diagnostics"
+    ],
+    "technicalSpecifications": {
+      "Volume Range": "100 - 1000 µL",
+      "Modes": "5 Operating Modes",
+      "Power": "Li-ion Rechargeable"
+    },
+    "variants": [
+      {
+        "manufacturerCatNo": "AQS-10",
+        "volume": "0.5 - 10 µL",
+        "pack": "Single Channel",
+        "internalPricing": {
+          "unitPrice": 18500,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "AQS-100",
+        "volume": "10 - 100 µL",
+        "pack": "Single Channel",
+        "internalPricing": {
+          "unitPrice": 18500,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "AQS-200",
+        "volume": "20 - 200 µL",
+        "pack": "Single Channel",
+        "internalPricing": {
+          "unitPrice": 18500,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "AQS-1000",
+        "volume": "100 - 1000 µL",
+        "pack": "Single Channel",
+        "internalPricing": {
+          "unitPrice": 18500,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/liquid-handling/aqua-electronic.webp",
+    "gallery": [
+      "/images/products/liquid-handling/aqua-electronic.webp"
+    ],
+    "searchTerms": [
+      "microlit",
+      "aqua",
+      "electronic pipette",
+      "aqs-1000",
+      "aqs-10",
+      "motorized"
+    ],
+    "relatedProducts": [
+      "ml-scitus-btd"
+    ],
+    "slug": "microlit-aqua-electronic-micropipette"
+  },
+  {
+    "id": "ml-scitus-btd",
+    "sku": "BB-LH-0006",
+    "internalSKU": "BB-LH-0006",
+    "manufacturerCatNo": "SCT-10",
+    "manufacturerModel": "SCITUS Bottle Top Dispenser",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.microlit.com",
+    "manufacturerLogo": "/images/brands/microlit.svg",
+    "name": "SCITUS Bottle Top Dispenser with Springless Valve Technology",
+    "series": "SCITUS Series",
+    "model": "SCT",
+    "category": "Liquid Handling",
+    "subcategory": "Bottle Top Dispensers",
+    "description": "High-precision bottle top dispenser incorporating Springless Valve Technology (Springless Valve™) for smooth dispensing of acids, solvents, and reagents without valve jamming.",
+    "features": [
+      "Springless Valve™ Technology eliminates glass valve sticking",
+      "High chemical compatibility with PTFE piston seal",
+      "Easy volume adjustment knob",
+      "Fully autoclavable at 121°C"
+    ],
+    "applications": [
+      "Acid Dispensing",
+      "Solvent Aliquoting",
+      "Analytical Preparation"
+    ],
+    "technicalSpecifications": {
+      "Volume Range": "1.0 - 10.0 mL",
+      "Technology": "Springless Valve™",
+      "Autoclavable": "Yes (121°C)"
+    },
+    "variants": [
+      {
+        "manufacturerCatNo": "SCT-2.5",
+        "volume": "0.25 - 2.5 mL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 12500,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "SCT-5",
+        "volume": "0.5 - 5.0 mL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 12500,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "SCT-10",
+        "volume": "1.0 - 10.0 mL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 12500,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "SCT-30",
+        "volume": "2.5 - 30.0 mL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 16800,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "SCT-60",
+        "volume": "5.0 - 60.0 mL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 18900,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "SCT-100",
+        "volume": "10.0 - 100.0 mL",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 24500,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/liquid-handling/scitus-btd.webp",
+    "gallery": [
+      "/images/products/liquid-handling/scitus-btd.webp"
+    ],
+    "searchTerms": [
+      "microlit",
+      "scitus",
+      "bottle top dispenser",
+      "sct-10",
+      "sct-30",
+      "springless valve"
+    ],
+    "relatedProducts": [
+      "ml-eburette"
+    ],
+    "slug": "microlit-scitus-bottle-top-dispenser"
+  },
+  {
+    "id": "ml-eburette",
+    "sku": "BB-LH-0007",
+    "internalSKU": "BB-LH-0007",
+    "manufacturerCatNo": "E-BUR-50",
+    "manufacturerModel": "E-BURETTE Motorized Digital Titrator",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.microlit.com",
+    "manufacturerLogo": "/images/brands/microlit.svg",
+    "name": "E-BURETTE Motorized Digital Titrator",
+    "series": "E-BURETTE Series",
+    "model": "E-BUR",
+    "category": "Liquid Handling",
+    "subcategory": "Electronic Burettes",
+    "description": "Motorized electronic digital burette delivering 21 CFR Part 11 compliant digital titration with touch-screen controller and computer connectivity.",
+    "features": [
+      "Motorized motor drive eliminates manual hand-wheel turning",
+      "TFT Touch Screen control panel",
+      "21 CFR Part 11 compliance ready with data logging",
+      "Recirculation mode prevents reagent waste"
+    ],
+    "applications": [
+      "Acid-Base Titration",
+      "Redox Titration",
+      "Pharma QC Laboratories"
+    ],
+    "technicalSpecifications": {
+      "Volume Capacity": "50 mL",
+      "Accuracy": "± 0.07 %",
+      "Compliance": "21 CFR Part 11 Ready"
+    },
+    "variants": [
+      {
+        "manufacturerCatNo": "E-BUR-50",
+        "volume": "0.01 - 50.00 mL",
+        "pack": "Complete System",
+        "internalPricing": {
+          "unitPrice": 48500,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/liquid-handling/eburette.webp",
+    "gallery": [
+      "/images/products/liquid-handling/eburette.webp"
+    ],
+    "searchTerms": [
+      "microlit",
+      "e-burette",
+      "e-bur-50",
+      "digital titrator",
+      "electronic burette",
+      "21 cfr"
+    ],
+    "relatedProducts": [
+      "ml-scitus-btd"
+    ],
+    "slug": "microlit-eburette-motorized-digital-titrator"
+  }
+]

@@ -1,0 +1,161 @@
+[
+  {
+    "id": "bb-fil-holder-glass-47",
+    "sku": "BB-FH-GLASS-47",
+    "name": "47mm Glass Vacuum Filtration Assembly",
+    "series": "Biobusiness Analytical Hardware",
+    "model": "FH-GLASS-47",
+    "category": "Filtration",
+    "subcategory": "Filter Holders",
+    "type": "Glass Filtration Set",
+    "material": "Borosilicate Glass 3.3",
+    "sterile": false,
+    "description": "Complete 47mm all-glass vacuum filtration assembly featuring a 300ml graduated funnel, anodized aluminum clamp, sintered glass support base, and 1000ml ground-joint receiver flask.",
+    "features": [
+      "High-durability Borosilicate Glass 3.3 components",
+      "Autoclavable and resistant to aggressive solvents & acids",
+      "Sintered glass membrane support disk ensures uniform flow",
+      "Includes heavy-duty aluminum spring clamp"
+    ],
+    "applications": [
+      "HPLC Mobile Phase Solvent Filtration & Degassing",
+      "Particulate Contamination Analysis",
+      "Microbiological Filtration with 47mm Membranes"
+    ],
+    "technicalSpecifications": {
+      "Funnel Capacity": "300 ml (Graduated)",
+      "Flask Capacity": "1000 ml",
+      "Filter Diameter": "47 mm",
+      "Membrane Support": "Sintered Glass Disc (Grade 2)",
+      "Material": "Borosilicate Glass 3.3"
+    },
+    "variants": [
+      {
+        "catNo": "BB-FH-G47-1000",
+        "diameter": "47 mm",
+        "capacity": "1000 ml",
+        "pack": "1 Set",
+        "internalPricing": {
+          "unitPrice": 4200,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-FH-G47-2000",
+        "diameter": "47 mm",
+        "capacity": "2000 ml",
+        "pack": "1 Set",
+        "internalPricing": {
+          "unitPrice": 5800,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-holder-glass-47.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-holder-glass-47.webp"
+    ],
+    "searchTerms": [
+      "glass filter holder",
+      "vacuum filtration set",
+      "47mm",
+      "300ml funnel",
+      "1000ml flask",
+      "hplc solvent degassing"
+    ],
+    "relatedProducts": [
+      "bb-fil-holder-ss-manifold",
+      "bb-fil-vac-pump-30"
+    ],
+    "slug": "47mm-glass-vacuum-filtration-assembly",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-FH-GLASS-47",
+    "manufacturerCatNo": "FH-GLASS-47",
+    "manufacturerModel": "FH-GLASS-47"
+  },
+  {
+    "id": "bb-fil-holder-ss-manifold",
+    "sku": "BB-MANIFOLD-SS",
+    "name": "Stainless Steel Multi-Branch Vacuum Filtration Manifolds",
+    "series": "Biobusiness High-Throughput Hardware",
+    "model": "MANIFOLD-SS",
+    "category": "Filtration",
+    "subcategory": "Filter Assemblies",
+    "type": "Multi-Branch Manifold",
+    "material": "316L Stainless Steel",
+    "sterile": false,
+    "description": "Heavy-duty 316L stainless steel multi-branch vacuum filtration manifolds with independent control valves designed for simultaneous microbiological water testing.",
+    "features": [
+      "316L Stainless Steel construction - mirror polished and corrosion resistant",
+      "Individual PTFE stopcock valves for independent branch control",
+      "Autoclavable and flame sterilizable for microbiology",
+      "Compatible with 47mm glass, SS, or plastic filter funnels"
+    ],
+    "applications": [
+      "High-Throughput Water Quality Microbiology",
+      "Beverage & Brewery QC Testing",
+      "Pharmaceutical Bioburden Testing"
+    ],
+    "technicalSpecifications": {
+      "Material": "AISI 316L Stainless Steel",
+      "Branch Count": "3-Branch / 6-Branch",
+      "Valves": "Individual PTFE Control Valves",
+      "Autoclavable": "Yes (121 °C & Flame Sterilization)"
+    },
+    "variants": [
+      {
+        "catNo": "BB-SSM-3BRANCH",
+        "model": "3-Branch Manifold",
+        "branches": "3",
+        "pack": "1 Unit",
+        "internalPricing": {
+          "unitPrice": 18500,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-SSM-6BRANCH",
+        "model": "6-Branch Manifold",
+        "branches": "6",
+        "pack": "1 Unit",
+        "internalPricing": {
+          "unitPrice": 32000,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-holder-ss-manifold.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-holder-ss-manifold.webp"
+    ],
+    "searchTerms": [
+      "manifold",
+      "316l stainless steel",
+      "vacuum filtration",
+      "3 branch",
+      "6 branch",
+      "microbiology water testing"
+    ],
+    "relatedProducts": [
+      "bb-fil-holder-glass-47",
+      "bb-fil-vac-pump-30"
+    ],
+    "slug": "stainless-steel-multi-branch-filtration-manifolds",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-MANIFOLD-SS",
+    "manufacturerCatNo": "MANIFOLD-SS",
+    "manufacturerModel": "MANIFOLD-SS"
+  }
+]

@@ -1,0 +1,282 @@
+[
+  {
+    "id": "microlit-scitus-bottle-top-dispenser",
+    "sku": "BTD-001",
+    "internalSKU": "BB-BTD-001",
+    "manufacturerCatNo": "BTD-001",
+    "manufacturerModel": "Microlit SCITUS Bottle Top Dispenser",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit SCITUS Bottle Top Dispenser",
+    "model": "Microlit SCITUS Bottle Top Dispenser",
+    "category": "Liquid Handling",
+    "subcategory": "Bottle Top Dispensers",
+    "series": "Laboratory Liquid Handling",
+    "description": "Precision bottle top dispenser featuring Springless Valve technology for smooth, bubble-free reagent dispensing directly from stock chemical bottles.",
+    "features": [
+      "Springless valve mechanism eliminating metal contamination",
+      "100% autoclavable fluid path",
+      "Telescopic filling tube",
+      "GL45 thread with adapters"
+    ],
+    "applications": [
+      "Acid & Base Titration",
+      "Solvent Dispensing",
+      "Analytical QC",
+      "Environmental Labs"
+    ],
+    "image": "/images/products/liquid-handling/microlit-scitus-bottle-top-dispenser.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-scitus-bottle-top-dispenser.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BTD-001",
+        "capacity": "SCT-2.5",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-002",
+        "capacity": "SCT-5.0",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-003",
+        "capacity": "SCT-10.0",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-004",
+        "capacity": "SCT-30.0",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-005",
+        "capacity": "SCT-60.0",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-006",
+        "capacity": "SCT-100.0",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit scitus bottle top dispenser",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-scitus-bottle-top-dispenser",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "microlit-beatus-bottle-top-dispenser",
+    "sku": "BTD-007",
+    "internalSKU": "BB-BTD-007",
+    "manufacturerCatNo": "BTD-007",
+    "manufacturerModel": "Microlit BEATUS Bottle Top Dispenser with Recirculation Valve",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit BEATUS Bottle Top Dispenser with Recirculation Valve",
+    "model": "Microlit BEATUS Bottle Top Dispenser with Recirculation Valve",
+    "category": "Liquid Handling",
+    "subcategory": "Bottle Top Dispensers",
+    "series": "Laboratory Liquid Handling",
+    "description": "Precision bottle top dispenser featuring Recirculation Valve technology for smooth, bubble-free reagent dispensing directly from stock chemical bottles.",
+    "features": [
+      "Springless valve mechanism eliminating metal contamination",
+      "100% autoclavable fluid path",
+      "Telescopic filling tube",
+      "GL45 thread with adapters"
+    ],
+    "applications": [
+      "Acid & Base Titration",
+      "Solvent Dispensing",
+      "Analytical QC",
+      "Environmental Labs"
+    ],
+    "image": "/images/products/liquid-handling/microlit-beatus-bottle-top-dispenser-with-recirculation-valve.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-beatus-bottle-top-dispenser-with-recirculation-valve.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BTD-007",
+        "capacity": "BTS-2.5",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-008",
+        "capacity": "BTS-5.0",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-009",
+        "capacity": "BTS-10.0",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-010",
+        "capacity": "BTS-30.0",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-011",
+        "capacity": "BTS-60.0",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-012",
+        "capacity": "BTS-100.0",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit beatus bottle top dispenser with recirculation valve",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-beatus-bottle-top-dispenser",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "microlit-lentus-bottle-top-dispenser",
+    "sku": "BTD-013",
+    "internalSKU": "BB-BTD-013",
+    "manufacturerCatNo": "BTD-013",
+    "manufacturerModel": "Microlit LENTUS Bottle Top Dispenser for Hydrofluoric Acid",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit LENTUS Bottle Top Dispenser for Hydrofluoric Acid",
+    "model": "Microlit LENTUS Bottle Top Dispenser for Hydrofluoric Acid",
+    "category": "Liquid Handling",
+    "subcategory": "Bottle Top Dispensers",
+    "series": "Laboratory Liquid Handling",
+    "description": "Precision bottle top dispenser featuring HF Acid Grade technology for smooth, bubble-free reagent dispensing directly from stock chemical bottles.",
+    "features": [
+      "Springless valve mechanism eliminating metal contamination",
+      "100% autoclavable fluid path",
+      "Telescopic filling tube",
+      "GL45 thread with adapters"
+    ],
+    "applications": [
+      "Acid & Base Titration",
+      "Solvent Dispensing",
+      "Analytical QC",
+      "Environmental Labs"
+    ],
+    "image": "/images/products/liquid-handling/microlit-lentus-bottle-top-dispenser-for-hydrofluoric-acid.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-lentus-bottle-top-dispenser-for-hydrofluoric-acid.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BTD-013",
+        "capacity": "LNT-HF-5",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-014",
+        "capacity": "LNT-HF-10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-015",
+        "capacity": "LNT-HF-30",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-016",
+        "capacity": "LNT-HF-60",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit lentus bottle top dispenser for hydrofluoric acid",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-lentus-bottle-top-dispenser",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "microlit-ultimus-bottle-top-dispenser",
+    "sku": "BTD-017",
+    "internalSKU": "BB-BTD-017",
+    "manufacturerCatNo": "BTD-017",
+    "manufacturerModel": "Microlit ULTIMUS Bottle Top Dispenser",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit ULTIMUS Bottle Top Dispenser",
+    "model": "Microlit ULTIMUS Bottle Top Dispenser",
+    "category": "Liquid Handling",
+    "subcategory": "Bottle Top Dispensers",
+    "series": "Laboratory Liquid Handling",
+    "description": "Precision bottle top dispenser featuring Organic Solvent Grade technology for smooth, bubble-free reagent dispensing directly from stock chemical bottles.",
+    "features": [
+      "Springless valve mechanism eliminating metal contamination",
+      "100% autoclavable fluid path",
+      "Telescopic filling tube",
+      "GL45 thread with adapters"
+    ],
+    "applications": [
+      "Acid & Base Titration",
+      "Solvent Dispensing",
+      "Analytical QC",
+      "Environmental Labs"
+    ],
+    "image": "/images/products/liquid-handling/microlit-ultimus-bottle-top-dispenser.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-ultimus-bottle-top-dispenser.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BTD-017",
+        "capacity": "ULT-5",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-018",
+        "capacity": "ULT-10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-019",
+        "capacity": "ULT-30",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BTD-020",
+        "capacity": "ULT-60",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit ultimus bottle top dispenser",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-ultimus-bottle-top-dispenser",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  }
+]

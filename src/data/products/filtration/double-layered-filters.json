@@ -1,0 +1,104 @@
+[
+  {
+    "id": "bb-fil-dl-gf-nylon",
+    "sku": "BB-DL-GF-NY",
+    "name": "Glass Fibre + Nylon Double-Layer Syringe Filters",
+    "series": "Biobusiness High-Throughput Filtration",
+    "model": "DL-GF-NY",
+    "category": "Filtration",
+    "subcategory": "Double Layered Filters",
+    "type": "Pre-Filter Syringe Filter",
+    "material": "Glass Fibre + Nylon Membrane",
+    "sterile": false,
+    "description": "Double-layer syringe filters combining a binder-free Glass Fibre pre-filter (1.0 µm) with a final 0.22 µm or 0.45 µm Nylon membrane to prevent premature clogging when filtering particulate-heavy samples.",
+    "features": [
+      "Integrated Glass Microfibre pre-filter layer protects downstream membrane",
+      "Increases sample volume throughput by 200-400% on viscous or turbid samples",
+      "Reduces hand force and filtration time",
+      "Solvent resistant medical PP housing"
+    ],
+    "applications": [
+      "Dissolution Testing of Pharmaceutical Tablets",
+      "Filtration of Viscous & Particulate-Rich Samples",
+      "Fermentation Broth & Environmental Water Clarification",
+      "HPLC Sample Prep for Unrefined Extracts"
+    ],
+    "technicalSpecifications": {
+      "Pre-Filter Media": "Binder-Free Glass Microfibre (1.0 µm)",
+      "Final Membrane": "Nylon (0.22 / 0.45 µm)",
+      "Housing": "Heavy-Duty Polypropylene (PP)",
+      "Sterility": "Non-Sterile"
+    },
+    "variants": [
+      {
+        "catNo": "BB-DL-GF-NY-25-022",
+        "diameter": "25 mm",
+        "micron": "0.22 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 75,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-DL-GF-NY-25-045",
+        "diameter": "25 mm",
+        "micron": "0.45 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 75,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-DL-GF-NY-33-022",
+        "diameter": "33 mm",
+        "micron": "0.22 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 95,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-DL-GF-NY-33-045",
+        "diameter": "33 mm",
+        "micron": "0.45 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 95,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-dl-gf-nylon.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-dl-gf-nylon.webp"
+    ],
+    "searchTerms": [
+      "double layer",
+      "prefilter",
+      "glass fibre",
+      "nylon",
+      "25mm",
+      "33mm",
+      "dissolution",
+      "clog free"
+    ],
+    "relatedProducts": [
+      "bb-fil-sf-nylon",
+      "bb-fil-ml-multi-layer"
+    ],
+    "slug": "glass-fibre-nylon-double-layer-filters",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-DL-GF-NY",
+    "manufacturerCatNo": "DL-GF-NY",
+    "manufacturerModel": "DL-GF-NY"
+  }
+]

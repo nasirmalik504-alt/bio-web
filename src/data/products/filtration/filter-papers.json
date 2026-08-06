@@ -1,0 +1,194 @@
+[
+  {
+    "id": "bb-fil-paper-qual-1",
+    "sku": "BB-QUAL-1",
+    "name": "Qualitative Filter Paper Grade 1",
+    "series": "Biobusiness Classic Cellulose",
+    "model": "QUAL-1",
+    "category": "Filtration",
+    "subcategory": "Filter Papers",
+    "type": "Qualitative Filter Circle",
+    "material": "Alpha-Cotton Cellulose",
+    "sterile": false,
+    "description": "Standard medium-retention qualitative filter paper for general laboratory routine filtration, qualitative analytical separations, and soil testing.",
+    "features": [
+      "High alpha-cellulose content (> 98%)",
+      "Medium flow rate and medium particle retention (11 µm)",
+      "Smooth surface finish suitable for routine separations"
+    ],
+    "applications": [
+      "General Laboratory Routine Separations",
+      "Soil Analysis & Fertilizer Testing",
+      "Qualitative Chemical Precipitate Collection"
+    ],
+    "technicalSpecifications": {
+      "Particle Retention": "11 µm",
+      "Filtration Speed": "Medium",
+      "Ash Content": "< 0.06%"
+    },
+    "variants": [
+      {
+        "catNo": "BB-QUAL1-70",
+        "diameter": "70 mm",
+        "micron": "11 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 120,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-QUAL1-90",
+        "diameter": "90 mm",
+        "micron": "11 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 150,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-QUAL1-110",
+        "diameter": "110 mm",
+        "micron": "11 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 180,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-QUAL1-125",
+        "diameter": "125 mm",
+        "micron": "11 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 220,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-QUAL1-150",
+        "diameter": "150 mm",
+        "micron": "11 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 280,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-paper-qual-1.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-paper-qual-1.webp"
+    ],
+    "searchTerms": [
+      "filter paper",
+      "qualitative",
+      "grade 1",
+      "11um",
+      "cellulose",
+      "soil analysis"
+    ],
+    "relatedProducts": [
+      "bb-fil-paper-ashless-40"
+    ],
+    "slug": "qualitative-filter-paper-grade-1",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-QUAL-1",
+    "manufacturerCatNo": "QUAL-1",
+    "manufacturerModel": "QUAL-1"
+  },
+  {
+    "id": "bb-fil-paper-ashless-40",
+    "sku": "BB-ASHLESS-40",
+    "name": "Quantitative Ashless Filter Paper Grade 40",
+    "series": "Biobusiness Gravimetric Line",
+    "model": "ASHLESS-40",
+    "category": "Filtration",
+    "subcategory": "Filter Papers",
+    "type": "Ashless Filter Circle",
+    "material": "High-Purity Cotton Linters",
+    "sterile": false,
+    "description": "High-purity acid-washed quantitative ashless filter paper (ash content < 0.007%) designed for critical gravimetric analysis and analytical precipitate measurement.",
+    "features": [
+      "Ultra-low ash content (< 0.007%) for precise gravimetric measurement",
+      "Acid-washed to remove trace metallic impurities",
+      "Medium flow rate with 8 µm retention"
+    ],
+    "applications": [
+      "Gravimetric Determination of Barium Sulfate & Calcium Carbonate",
+      "Cement & Metallurgy QA/QC Analysis",
+      "Atomic Absorption Sample Prep"
+    ],
+    "technicalSpecifications": {
+      "Particle Retention": "8 µm",
+      "Ash Content": "< 0.007%",
+      "Filtration Speed": "Medium"
+    },
+    "variants": [
+      {
+        "catNo": "BB-ASH40-90",
+        "diameter": "90 mm",
+        "micron": "8 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 350,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-ASH40-110",
+        "diameter": "110 mm",
+        "micron": "8 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 440,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-ASH40-125",
+        "diameter": "125 mm",
+        "micron": "8 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 520,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-paper-ashless-40.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-paper-ashless-40.webp"
+    ],
+    "searchTerms": [
+      "ashless",
+      "quantitative",
+      "filter paper",
+      "grade 40",
+      "gravimetric",
+      "8um"
+    ],
+    "relatedProducts": [
+      "bb-fil-paper-qual-1"
+    ],
+    "slug": "quantitative-ashless-filter-paper-grade-40",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-ASHLESS-40",
+    "manufacturerCatNo": "ASHLESS-40",
+    "manufacturerModel": "ASHLESS-40"
+  }
+]

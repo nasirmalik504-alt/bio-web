@@ -1,0 +1,80 @@
+[
+  {
+    "id": "bb-fil-mdisc-grid-mce",
+    "sku": "BB-MDISC-GRID-MCE",
+    "name": "Sterile Gridded MCE Membrane Discs",
+    "series": "Biobusiness Microbiology Line",
+    "model": "MDISC-GRID-MCE",
+    "category": "Filtration",
+    "subcategory": "Membrane Discs",
+    "type": "Gridded Membrane Disc",
+    "material": "Mixed Cellulose Esters (MCE)",
+    "sterile": true,
+    "description": "Pre-sterilized 47mm gridded Mixed Cellulose Ester (MCE) membrane discs designed specifically for microbiological colony counting and water quality testing.",
+    "features": [
+      "High-contrast 3.1mm x 3.1mm black grid lines for effortless colony counting",
+      "Gamma-sterilized and individually sealed in envelope packs",
+      "High recovery rate for E. coli, coliforms, and yeasts"
+    ],
+    "applications": [
+      "Water Quality & Municipal Testing",
+      "Pharmaceutical Bioburden Testing",
+      "Food & Beverage Microbiology"
+    ],
+    "technicalSpecifications": {
+      "Material": "MCE (Mixed Cellulose Ester)",
+      "Grid": "Black Grid Lines (3.1mm)",
+      "Diameter": "47 mm",
+      "Sterility": "Sterile (Individually Wrapped)"
+    },
+    "variants": [
+      {
+        "catNo": "BB-MCE-GRID-47-022",
+        "diameter": "47 mm",
+        "micron": "0.22 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 850,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-MCE-GRID-47-045",
+        "diameter": "47 mm",
+        "micron": "0.45 µm",
+        "pack": "100",
+        "internalPricing": {
+          "unitPrice": 850,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-mdisc-grid-mce.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-mdisc-grid-mce.webp"
+    ],
+    "searchTerms": [
+      "mce",
+      "gridded membrane",
+      "microbiology",
+      "colony counting",
+      "47mm",
+      "0.45",
+      "sterile water testing"
+    ],
+    "relatedProducts": [
+      "bb-fil-mem-nylon"
+    ],
+    "slug": "sterile-gridded-mce-membrane-discs",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-MDISC-GRID-MCE",
+    "manufacturerCatNo": "MDISC-GRID-MCE",
+    "manufacturerModel": "MDISC-GRID-MCE"
+  }
+]

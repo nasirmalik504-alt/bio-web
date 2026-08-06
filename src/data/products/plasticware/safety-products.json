@@ -1,0 +1,693 @@
+[
+  {
+    "id": "n95-particulate-respirator-mask-bb-sf-012",
+    "sku": "BB/SF/050",
+    "internalSKU": "BB-SF-012",
+    "manufacturerCatNo": "BB/SF/050",
+    "manufacturerModel": "N95 Particulate Respirator Mask",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "N95 Particulate Respirator Safety Mask",
+    "model": "N95 Respirator Mask",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "3-Ply & N95 Respirator Masks",
+    "series": "BioBrand Safety",
+    "description": "NIOSH/CE certified N95 particulate respirator mask with 5-layer meltblown filtration for bioaerosol and pathogen protection.",
+    "features": [
+      "≥95% filtration efficiency for 0.3 micron particles",
+      "Adjustable nose clip and cushioned foam bridge",
+      "Soft elastic earloops for extended shift wear"
+    ],
+    "applications": [
+      "Biosafety laboratory work",
+      "Aerosol generating procedures",
+      "Pathogen protection"
+    ],
+    "image": "/images/products/safety/n95-respirator-masks.webp",
+    "gallery": [
+      "/images/products/safety/n95-respirator-masks.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BB/SF/050",
+        "capacity": "N95 Certified",
+        "pack": "20 Pcs/Box"
+      }
+    ],
+    "slug": "product/n95-respirator-masks",
+    "badge": "BioBrand Certified",
+    "gemApproved": true
+  },
+  {
+    "id": "3-ply-surgical-face-mask-bb-sf-013",
+    "sku": "BB/SF/051",
+    "internalSKU": "BB-SF-013",
+    "manufacturerCatNo": "BB/SF/051",
+    "manufacturerModel": "3-Ply Medical Surgical Face Mask",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "3-Ply Premium Medical Surgical Face Mask",
+    "model": "3-Ply Surgical Mask",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "3-Ply & N95 Respirator Masks",
+    "series": "BioBrand Safety",
+    "description": "High BFE (>99%) 3-ply non-woven medical face mask with ultrasonic earloop welding for routine lab procedure protection.",
+    "features": [
+      "Outer hydrophobic non-woven layer",
+      "Meltblown middle filter barrier",
+      "Inner skin-friendly hydrophilic layer"
+    ],
+    "applications": [
+      "General lab work",
+      "Clinical specimen prep"
+    ],
+    "image": "/images/products/safety/3-ply-surgical-face-masks.webp",
+    "gallery": [
+      "/images/products/safety/3-ply-surgical-face-masks.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BB/SF/051",
+        "capacity": "Universal Size",
+        "pack": "50 Pcs/Box"
+      }
+    ],
+    "slug": "product/3-ply-surgical-face-masks",
+    "badge": "BioBrand Certified",
+    "gemApproved": true
+  },
+  {
+    "id": "surgical-mask-with-eye-shield-bb-sf-014",
+    "sku": "BB/SF/052",
+    "internalSKU": "BB-SF-014",
+    "manufacturerCatNo": "BB/SF/052",
+    "manufacturerModel": "Surgical Mask with Eye Visor Shield",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Fluid-Resistant Surgical Mask with Eye Shield Visor",
+    "model": "Mask with Eye Visor",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "3-Ply & N95 Respirator Masks",
+    "series": "BioBrand Safety",
+    "description": "Combined 4-ply fluid splash resistant mask with integrated anti-fog optical visor shield for full face splash protection.",
+    "features": [
+      "Anti-fog PET optical clear visor",
+      "Fluid resistance up to 160 mmHg",
+      "Full facial barrier against liquid sprays"
+    ],
+    "applications": [
+      "Autopsy and pathology",
+      "Chemical splash risk procedures"
+    ],
+    "image": "/images/products/safety/surgical-mask-with-visor.webp",
+    "gallery": [
+      "/images/products/safety/surgical-mask-with-visor.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BB/SF/052",
+        "capacity": "Universal Fit",
+        "pack": "25 Pcs/Box"
+      }
+    ],
+    "slug": "product/surgical-mask-with-visor",
+    "badge": "BioBrand Certified",
+    "gemApproved": true
+  },
+  {
+    "id": "powder-free-nitrile-exam-gloves-bb-sf-003",
+    "sku": "BB/SF/201",
+    "internalSKU": "BB-SF-003",
+    "manufacturerCatNo": "BB/SF/201",
+    "manufacturerModel": "Powder-Free Nitrile Examination Gloves",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Powder-Free Nitrile Examination Gloves",
+    "model": "Nitrile Exam Gloves",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "Nitrile, Latex & Cryo Gloves",
+    "series": "BioBrand Safety",
+    "description": "Medical-grade powder-free blue nitrile gloves providing high puncture resistance and chemical splash protection.",
+    "features": [
+      "Textured fingertips for enhanced grip",
+      "Latex-free and allergen-safe formulation",
+      "Beaded cuff to prevent roll-down"
+    ],
+    "applications": [
+      "Analytical chemistry",
+      "Biomedical research",
+      "Clinical sample handling"
+    ],
+    "image": "/images/products/safety/powder-free-nitrile-gloves.webp",
+    "gallery": [
+      "/images/products/safety/powder-free-nitrile-gloves.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BB/SF/201-S",
+        "capacity": "Small",
+        "pack": "100 Pcs/Box"
+      },
+      {
+        "manufacturerCatNo": "BB/SF/201-M",
+        "capacity": "Medium",
+        "pack": "100 Pcs/Box"
+      },
+      {
+        "manufacturerCatNo": "BB/SF/201-L",
+        "capacity": "Large",
+        "pack": "100 Pcs/Box"
+      }
+    ],
+    "slug": "product/powder-free-nitrile-gloves",
+    "badge": "BioBrand Certified",
+    "gemApproved": true
+  },
+  {
+    "id": "powder-free-latex-medical-gloves-bb-sf-015",
+    "sku": "BB/SF/204",
+    "internalSKU": "BB-SF-015",
+    "manufacturerCatNo": "BB/SF/204",
+    "manufacturerModel": "Powder-Free Latex Medical Gloves",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "High-Tactility Latex Medical Examination Gloves",
+    "model": "Latex Exam Gloves",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "Nitrile, Latex & Cryo Gloves",
+    "series": "BioBrand Safety",
+    "description": "Natural rubber latex gloves engineered for high tactile sensitivity, elasticity, and micro-precision lab manipulation.",
+    "features": [
+      "100% natural latex rubber",
+      "Micro-textured palm finish",
+      "Low protein formulation to minimize allergenicity"
+    ],
+    "applications": [
+      "Precision micropipetting",
+      "Dissection and microscopy"
+    ],
+    "image": "/images/products/safety/latex-examination-gloves.webp",
+    "gallery": [
+      "/images/products/safety/latex-examination-gloves.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BB/SF/204-M",
+        "capacity": "Medium",
+        "pack": "100 Pcs/Box"
+      },
+      {
+        "manufacturerCatNo": "BB/SF/204-L",
+        "capacity": "Large",
+        "pack": "100 Pcs/Box"
+      }
+    ],
+    "slug": "product/latex-examination-gloves",
+    "badge": "BioBrand Certified",
+    "gemApproved": true
+  },
+  {
+    "id": "heavy-duty-neoprene-chemical-gloves-bb-sf-004",
+    "sku": "BB/SF/202",
+    "internalSKU": "BB-SF-004",
+    "manufacturerCatNo": "BB/SF/202",
+    "manufacturerModel": "Heavy-Duty Neoprene Gloves",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Heavy-Duty Neoprene Chemical Protection Gloves",
+    "model": "Neoprene Chemical Gloves",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "Nitrile, Latex & Cryo Gloves",
+    "series": "BioBrand Safety",
+    "description": "Extra-thick 15 mil chemical gloves resistant to strong acids, solvents, oils, and hazardous liquid transfer.",
+    "features": [
+      "33 cm extended gauntlet length",
+      "Flock-lined interior for moisture absorption",
+      "High mechanical tear resistance"
+    ],
+    "applications": [
+      "Concentrated acid transfer",
+      "Industrial solvent handling"
+    ],
+    "image": "/images/products/safety/heavy-duty-neoprene-gloves.webp",
+    "gallery": [
+      "/images/products/safety/heavy-duty-neoprene-gloves.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BB/SF/202",
+        "capacity": "Large (10 inch)",
+        "pack": "1 Pair"
+      }
+    ],
+    "slug": "product/heavy-duty-neoprene-gloves",
+    "badge": "BioBrand Certified",
+    "gemApproved": true
+  },
+  {
+    "id": "cryo-protective-low-temp-gloves-bb-sf-005",
+    "sku": "BB/SF/203",
+    "internalSKU": "BB-SF-005",
+    "manufacturerCatNo": "BB/SF/203",
+    "manufacturerModel": "Cryo-Protective Low Temperature Gloves",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Cryo-Protective Thermal Insulation Gloves",
+    "model": "Cryo-Protective Gloves",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "Nitrile, Latex & Cryo Gloves",
+    "series": "BioBrand Safety",
+    "description": "Multi-layer thermal protection gloves engineered for safe handling of liquid nitrogen (-196°C) and ultra-low temperature freezers.",
+    "features": [
+      "Waterproof seamless lining",
+      "Thermal insulation down to -196°C",
+      "Mid-arm safety cuff length"
+    ],
+    "applications": [
+      "Liquid nitrogen tank handling",
+      "LN2 cryovial retrieval",
+      "Ultra-low freezer maintenance"
+    ],
+    "image": "/images/products/safety/cryo-protective-gloves.webp",
+    "gallery": [
+      "/images/products/safety/cryo-protective-gloves.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BB/SF/203",
+        "capacity": "Medium/Large",
+        "pack": "1 Pair"
+      }
+    ],
+    "slug": "product/cryo-protective-gloves",
+    "badge": "BioBrand Certified",
+    "gemApproved": true
+  },
+  {
+    "id": "autoclavable-lab-coat-cotton-bb-sf-001",
+    "sku": "BB/SF/101",
+    "internalSKU": "BB-SF-001",
+    "manufacturerCatNo": "BB/SF/101",
+    "manufacturerModel": "Autoclavable Cotton Lab Coat",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Autoclavable Cotton Laboratory Coat",
+    "model": "Autoclavable Cotton Lab Coat",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "Autoclavable Lab Coats & Apparel",
+    "series": "BioBrand Safety",
+    "description": "Premium 100% white cotton lab coat designed for autoclavability, splash resistance, and long shift comfort in research environments.",
+    "features": [
+      "100% High-Grade Cotton fabric",
+      "Autoclavable up to 121°C",
+      "Knee-length with reinforced pockets and press-stud closures"
+    ],
+    "applications": [
+      "General laboratory work",
+      "Chemical and biological sample prep"
+    ],
+    "image": "/images/products/safety/autoclavable-cotton-lab-coat.webp",
+    "gallery": [
+      "/images/products/safety/autoclavable-cotton-lab-coat.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BB/SF/101-S",
+        "capacity": "Small (S)",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BB/SF/101-M",
+        "capacity": "Medium (M)",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BB/SF/101-L",
+        "capacity": "Large (L)",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "BB/SF/101-XL",
+        "capacity": "Extra Large (XL)",
+        "pack": "1 Pc"
+      }
+    ],
+    "slug": "product/autoclavable-cotton-lab-coat",
+    "badge": "BioBrand Certified",
+    "gemApproved": true
+  },
+  {
+    "id": "disposable-pp-visitor-coat-bb-sf-002",
+    "sku": "BB/SF/102",
+    "internalSKU": "BB-SF-002",
+    "manufacturerCatNo": "BB/SF/102",
+    "manufacturerModel": "Disposable PP Visitor Coat",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Disposable Polypropylene Visitor Lab Coat",
+    "model": "Disposable Visitor Coat",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "Autoclavable Lab Coats & Apparel",
+    "series": "BioBrand Safety",
+    "description": "Non-woven fluid-resistant polypropylene coats for visitors, audit inspections, and cleanroom entry protection.",
+    "features": [
+      "Lightweight non-woven spunbond PP",
+      "Elasticated cuffs and front snap buttons",
+      "Breathable and dust-proof"
+    ],
+    "applications": [
+      "Cleanroom visitors",
+      "Food & pharma plant audits"
+    ],
+    "image": "/images/products/safety/disposable-visitor-lab-coat.webp",
+    "gallery": [
+      "/images/products/safety/disposable-visitor-lab-coat.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BB/SF/102",
+        "capacity": "Universal Size",
+        "pack": "10 Pcs/Pack"
+      }
+    ],
+    "slug": "product/disposable-visitor-lab-coat",
+    "badge": "BioBrand Certified",
+    "gemApproved": true
+  },
+  {
+    "id": "polycarbonate-full-face-shield-bb-sf-006",
+    "sku": "BB/SF/301",
+    "internalSKU": "BB-SF-006",
+    "manufacturerCatNo": "BB/SF/301",
+    "manufacturerModel": "Polycarbonate Full Face Shield",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Polycarbonate Full Face Shield with Ratchet Headgear",
+    "model": "Polycarbonate Face Shield",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "Polycarbonate Face Shields",
+    "series": "BioBrand Safety",
+    "description": "Clear high-impact optical visor providing full facial protection against chemical splashes, flying debris, and UV radiation.",
+    "features": [
+      "Adjustable ratchet headgear suspension",
+      "Clear 2mm optical polycarbonate visor",
+      "Fits comfortably over prescription eyeglasses"
+    ],
+    "applications": [
+      "Acid titrations",
+      "Grinding and autoclaving",
+      "Biocontainment labs"
+    ],
+    "image": "/images/products/safety/polycarbonate-face-shield.webp",
+    "gallery": [
+      "/images/products/safety/polycarbonate-face-shield.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BB/SF/301",
+        "capacity": "Universal Fit",
+        "pack": "1 Pc"
+      }
+    ],
+    "slug": "product/polycarbonate-face-shield",
+    "badge": "BioBrand Certified",
+    "gemApproved": true
+  },
+  {
+    "id": "uv-safety-goggles-bb-pw-0175",
+    "sku": "SI/PW/656",
+    "internalSKU": "BB-PW-0175",
+    "manufacturerCatNo": "SI/PW/656",
+    "manufacturerModel": "UV Safety Goggles",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "UV Protective Laboratory Safety Goggles",
+    "model": "UV Safety Goggles",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "UV & Splash Safety Goggles",
+    "series": "BioBrand Safety",
+    "pageNumber": 35,
+    "description": "Official BioBrand UV Safety Goggles manufactured from high-grade anti-fog optical polymer providing 99.9% UV protection.",
+    "features": [
+      "Indirect ventilation ports to prevent fogging",
+      "Soft vinyl frame for facial seal",
+      "Adjustable elastic headband"
+    ],
+    "applications": [
+      "UV transilluminator work",
+      "General chemistry lab safety"
+    ],
+    "image": "/images/products/safety/uv-safety-goggles.webp",
+    "gallery": [
+      "/images/products/safety/uv-safety-goggles.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "SI/PW/656",
+        "capacity": "Standard Fit",
+        "pack": "1 Pc"
+      }
+    ],
+    "slug": "product/uv-safety-goggles",
+    "badge": "BioBrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "chemical-splash-goggles-bb-sf-007",
+    "sku": "BB/SF/401",
+    "internalSKU": "BB-SF-007",
+    "manufacturerCatNo": "BB/SF/401",
+    "manufacturerModel": "Chemical Splash Safety Goggles",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Indirect Vent Chemical Splash Goggles",
+    "model": "Chemical Splash Goggles",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "UV & Splash Safety Goggles",
+    "series": "BioBrand Safety",
+    "description": "Heavy-duty indirect vent goggles designed to prevent chemical liquid droplets from reaching the eyes.",
+    "features": [
+      "Anti-scratch coated polycarbonate lens",
+      "Conforms to ANSI Z87.1 splash standards",
+      "Panoramic wide field of view"
+    ],
+    "applications": [
+      "Acid & solvent handling",
+      "Hazardous liquid pouring"
+    ],
+    "image": "/images/products/safety/chemical-splash-goggles.webp",
+    "gallery": [
+      "/images/products/safety/chemical-splash-goggles.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BB/SF/401",
+        "capacity": "Universal",
+        "pack": "1 Pc"
+      }
+    ],
+    "slug": "product/chemical-splash-goggles",
+    "badge": "BioBrand Certified",
+    "gemApproved": true
+  },
+  {
+    "id": "acid-base-chemical-spill-kit-bb-sf-008",
+    "sku": "BB/SF/501",
+    "internalSKU": "BB-SF-008",
+    "manufacturerCatNo": "BB/SF/501",
+    "manufacturerModel": "Acid & Base Chemical Spill Kit",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Universal Chemical & Acid Spill Response Kit (15L Capacity)",
+    "model": "Chemical Spill Kit 15L",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "Chemical & Acid Spill Kits",
+    "series": "BioBrand Safety",
+    "description": "Emergency laboratory spill response kit equipped with absorbent pads, neutralizer powder, biohazard disposal bags, and PPE.",
+    "features": [
+      "Absorbs up to 15 Liters of hazardous chemical liquids",
+      "Color-change acid neutralizer powder included",
+      "High-visibility waterproof carrying bucket"
+    ],
+    "applications": [
+      "Emergency laboratory spill response",
+      "Solvent & reagent cleanup"
+    ],
+    "image": "/images/products/safety/chemical-spill-kit.webp",
+    "gallery": [
+      "/images/products/safety/chemical-spill-kit.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BB/SF/501",
+        "capacity": "15 Liters Spill Capacity",
+        "pack": "1 Kit"
+      }
+    ],
+    "slug": "product/chemical-spill-kit",
+    "badge": "BioBrand Certified",
+    "gemApproved": true
+  },
+  {
+    "id": "flammable-storage-safety-cabinet-bb-sf-009",
+    "sku": "BB/SF/601",
+    "internalSKU": "BB-SF-009",
+    "manufacturerCatNo": "BB/SF/601",
+    "manufacturerModel": "Flammable Chemical Storage Cabinet 45Gal",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Flammable Chemical Safety Storage Cabinet (45 Gallon / 170L)",
+    "model": "Flammable Safety Cabinet 45G",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "Flammable Storage Cabinets",
+    "series": "BioBrand Safety",
+    "description": "Double-wall 18-gauge welded steel safety storage cabinet with self-closing doors, dual flame arrestor vents, and spill-containment sump.",
+    "features": [
+      "FM & OSHA Compliant 10-minute fire barrier",
+      "3-point latching system with key lock",
+      "Adjustable galvanized steel shelves"
+    ],
+    "applications": [
+      "Solvent & ethanol safe storage",
+      "Organic chemical isolation"
+    ],
+    "image": "/images/products/safety/flammable-storage-cabinet.webp",
+    "gallery": [
+      "/images/products/safety/flammable-storage-cabinet.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BB/SF/601",
+        "capacity": "45 Gallons (170 Liters)",
+        "pack": "1 Unit"
+      }
+    ],
+    "slug": "product/flammable-storage-cabinet",
+    "badge": "BioBrand Certified",
+    "gemApproved": true
+  },
+  {
+    "id": "biohazard-sharps-disposal-container-bb-sf-010",
+    "sku": "BB/SF/701",
+    "internalSKU": "BB-SF-010",
+    "manufacturerCatNo": "BB/SF/701",
+    "manufacturerModel": "Biohazard Sharps Container 5L",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Autoclavable Biohazard Sharps Disposal Container (5 Liters)",
+    "model": "Sharps Disposal Container 5L",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "Biohazard Waste Containers",
+    "series": "BioBrand Safety",
+    "description": "Puncture-resistant polypropylene biohazard sharps container with counterbalanced drop lid for syringes, needles, and broken glass disposal.",
+    "features": [
+      "High-density puncture-proof PP construction",
+      "Permanent snap-lock safety cap",
+      "Autoclavable and incinerable"
+    ],
+    "applications": [
+      "Needle & syringe disposal",
+      "Scalpel & Pasteur pipette disposal"
+    ],
+    "image": "/images/products/safety/biohazard-sharps-container.webp",
+    "gallery": [
+      "/images/products/safety/biohazard-sharps-container.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BB/SF/701",
+        "capacity": "5 Liters",
+        "pack": "1 Pc"
+      }
+    ],
+    "slug": "product/biohazard-sharps-container",
+    "badge": "BioBrand Certified",
+    "gemApproved": true
+  },
+  {
+    "id": "surface-disinfectant-spray-bb-sf-011",
+    "sku": "BB/SF/801",
+    "internalSKU": "BB-SF-011",
+    "manufacturerCatNo": "BB/SF/801",
+    "manufacturerModel": "Laboratory Surface Disinfectant Spray 1L",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Scientific",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Broad-Spectrum Laboratory Benchtop Disinfectant Spray (1 Liter)",
+    "model": "Lab Surface Disinfectant 1L",
+    "category": "Safety & Laboratory Essentials",
+    "subcategory": "Disinfectants & Lab Cleaners",
+    "series": "BioBrand Safety",
+    "description": "Fast-acting hospital-grade disinfectant spray effective against bacteria, viruses, fungi, and mycoplasma on lab benchtops and hood surfaces.",
+    "features": [
+      "Residue-free fast evaporating formula",
+      "Non-corrosive to stainless steel and acrylic",
+      "Active in 60 seconds"
+    ],
+    "applications": [
+      "Biosafety cabinet decontamination",
+      "Benchtop cleaning"
+    ],
+    "image": "/images/products/safety/surface-disinfectant-spray.webp",
+    "gallery": [
+      "/images/products/safety/surface-disinfectant-spray.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "BB/SF/801",
+        "capacity": "1 Liter Spray Bottle",
+        "pack": "1 Bottle"
+      }
+    ],
+    "slug": "product/surface-disinfectant-spray",
+    "badge": "BioBrand Certified",
+    "gemApproved": true
+  }
+]

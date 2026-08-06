@@ -1,0 +1,78 @@
+[
+  {
+    "id": "bb-fil-ml-multi-layer",
+    "sku": "BB-ML-ULTRA",
+    "name": "Multi-Layered High-Capacity Syringe Filters",
+    "series": "Biobusiness High-Throughput Filtration",
+    "model": "ML-ULTRA",
+    "category": "Filtration",
+    "subcategory": "Multi Layered Filters",
+    "type": "Multi-Stage Syringe Filter",
+    "material": "Graded Glass Microfibre + PES Membrane",
+    "sterile": false,
+    "description": "Advanced multi-stage filtration units containing multi-density glass fibre depth pre-filters paired with a PES final membrane for ultra-high loading capacity.",
+    "features": [
+      "Graded density depth pre-filter captures coarse, medium, and fine particles",
+      "Ideal for hard-to-filter, viscous, and colloidal samples",
+      "Reduces operating pressure and prevents sample loss"
+    ],
+    "applications": [
+      "Viscous Pharmaceutical Liquids",
+      "Botanical & Crude Plant Extracts",
+      "Food & Beverage Quality Control"
+    ],
+    "technicalSpecifications": {
+      "Pre-Filter": "Graded Glass Microfibre (10 µm -> 1.0 µm)",
+      "Final Layer": "PES (0.22 / 0.45 µm)",
+      "Housing": "Reinforced Polypropylene"
+    },
+    "variants": [
+      {
+        "catNo": "BB-ML-ULTRA-25-022",
+        "diameter": "25 mm",
+        "micron": "0.22 µm",
+        "pack": "50",
+        "internalPricing": {
+          "unitPrice": 120,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-ML-ULTRA-33-045",
+        "diameter": "33 mm",
+        "micron": "0.45 µm",
+        "pack": "50",
+        "internalPricing": {
+          "unitPrice": 145,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-ml-multi-layer.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-ml-multi-layer.webp"
+    ],
+    "searchTerms": [
+      "multi layer",
+      "high capacity",
+      "depth filter",
+      "viscous",
+      "25mm",
+      "33mm"
+    ],
+    "relatedProducts": [
+      "bb-fil-dl-gf-nylon"
+    ],
+    "slug": "multi-layered-syringe-filters",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-ML-ULTRA",
+    "manufacturerCatNo": "ML-ULTRA",
+    "manufacturerModel": "ML-ULTRA"
+  }
+]

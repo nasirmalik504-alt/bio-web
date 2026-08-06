@@ -1,0 +1,66 @@
+[
+  {
+    "id": "bb-fil-acc-forceps",
+    "sku": "BB-ACC-FORCEPS",
+    "name": "Stainless Steel Membrane Filter Forceps",
+    "series": "Biobusiness Lab Essentials",
+    "model": "ACC-FORCEPS",
+    "category": "Filtration",
+    "subcategory": "Accessories",
+    "type": "Filter Forceps",
+    "material": "316 Stainless Steel",
+    "sterile": false,
+    "description": "Smooth, flat-tip stainless steel forceps engineered for handling delicate membrane filter discs without puncturing or scratching.",
+    "features": [
+      "Smooth, bevelled flat tips prevent membrane damage",
+      "Corrosion-resistant 316 stainless steel construction",
+      "Autoclavable and flame sterilizable"
+    ],
+    "applications": [
+      "Membrane Disc Placement & Removal",
+      "Microbiological Colony Transfer",
+      "Cleanroom Filter Handling"
+    ],
+    "technicalSpecifications": {
+      "Material": "316 Stainless Steel",
+      "Tip Style": "Smooth Flat Bevel",
+      "Length": "115 mm"
+    },
+    "variants": [
+      {
+        "catNo": "BB-ACC-FORCEPS-115",
+        "length": "115 mm",
+        "pack": "1 Pc",
+        "internalPricing": {
+          "unitPrice": 240,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-acc-forceps.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-acc-forceps.webp"
+    ],
+    "searchTerms": [
+      "forceps",
+      "membrane forceps",
+      "flat tip",
+      "stainless steel",
+      "filter handling"
+    ],
+    "relatedProducts": [
+      "bb-fil-mdisc-grid-mce"
+    ],
+    "slug": "stainless-steel-membrane-filter-forceps",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-ACC-FORCEPS",
+    "manufacturerCatNo": "ACC-FORCEPS",
+    "manufacturerModel": "ACC-FORCEPS"
+  }
+]

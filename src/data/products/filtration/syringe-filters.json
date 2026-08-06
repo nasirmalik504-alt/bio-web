@@ -1,0 +1,191 @@
+[
+  {
+    "id": "ax-sf-nylon",
+    "sku": "BB-FIL-0001",
+    "internalSKU": "BB-FIL-0001",
+    "manufacturerCatNo": "SF-NY-25-022",
+    "manufacturerModel": "Axiva Nylon Syringe Filters",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "name": "Axiva Nylon Syringe Filters",
+    "series": "Axiva Precision Filtration",
+    "model": "SF-NY",
+    "category": "Filtration",
+    "subcategory": "Syringe Filters",
+    "description": "High-recovery hydrophilic Nylon membrane syringe filters manufactured by Axiva Sichem for HPLC sample preparation and solvent clarification.",
+    "features": [
+      "Naturally hydrophilic Nylon membrane requiring no wetting agents",
+      "Broad solvent compatibility and low HPLC background extractables",
+      "Medical-grade polypropylene housing with Female Luer-Lock inlet"
+    ],
+    "applications": [
+      "HPLC & UPLC Sample Prep",
+      "Solvent Clarification",
+      "Dissolution Testing"
+    ],
+    "technicalSpecifications": {
+      "Filter Media": "Hydrophilic Nylon",
+      "Housing": "Medical Polypropylene (PP)",
+      "Max Operating Pressure": "6.0 bar",
+      "Sterility": "Non-Sterile"
+    },
+    "variants": [
+      {
+        "manufacturerCatNo": "SF-NY-13-022",
+        "diameter": "13 mm",
+        "micron": "0.22 µm",
+        "pack": "100 Pcs",
+        "internalPricing": {
+          "unitPrice": 32,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "SF-NY-13-045",
+        "diameter": "13 mm",
+        "micron": "0.45 µm",
+        "pack": "100 Pcs",
+        "internalPricing": {
+          "unitPrice": 32,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "SF-NY-25-022",
+        "diameter": "25 mm",
+        "micron": "0.22 µm",
+        "pack": "100 Pcs",
+        "internalPricing": {
+          "unitPrice": 45,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "SF-NY-25-045",
+        "diameter": "25 mm",
+        "micron": "0.45 µm",
+        "pack": "100 Pcs",
+        "internalPricing": {
+          "unitPrice": 45,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "SF-NY-33-022",
+        "diameter": "33 mm",
+        "micron": "0.22 µm",
+        "pack": "100 Pcs",
+        "internalPricing": {
+          "unitPrice": 58,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/ax-sf-nylon.webp",
+    "gallery": [
+      "/images/products/filtration/ax-sf-nylon.webp"
+    ],
+    "searchTerms": [
+      "axiva",
+      "axiva sichem",
+      "nylon",
+      "syringe filter",
+      "sf-ny-25-022",
+      "0.22",
+      "0.45",
+      "25mm"
+    ],
+    "relatedProducts": [
+      "ax-sf-ptfe-ho"
+    ],
+    "slug": "axiva-nylon-syringe-filters"
+  },
+  {
+    "id": "ax-sf-ptfe-ho",
+    "sku": "BB-FIL-0002",
+    "internalSKU": "BB-FIL-0002",
+    "manufacturerCatNo": "SF-PTFE-HO-25-022",
+    "manufacturerModel": "Axiva Hydrophobic PTFE Syringe Filters",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "name": "Axiva Hydrophobic PTFE Syringe Filters",
+    "series": "Axiva Precision Filtration",
+    "model": "SF-PTFE-HO",
+    "category": "Filtration",
+    "subcategory": "Syringe Filters",
+    "description": "High chemical resistance hydrophobic PTFE syringe filters for aggressive organic solvents, acid/alkali filtration, and air venting.",
+    "features": [
+      "Maximum chemical inertness against organic solvents and strong acids",
+      "Hydrophobic membrane prevents water breakthrough in gas venting",
+      "Autoclavable up to 121 °C"
+    ],
+    "applications": [
+      "Aggressive Solvent Filtration",
+      "Gas Venting",
+      "Environmental Sampling"
+    ],
+    "technicalSpecifications": {
+      "Filter Media": "Hydrophobic PTFE",
+      "Housing": "Polypropylene (PP)",
+      "Autoclavable": "Yes (121°C)"
+    },
+    "variants": [
+      {
+        "manufacturerCatNo": "SF-PTFE-HO-13-022",
+        "diameter": "13 mm",
+        "micron": "0.22 µm",
+        "pack": "100 Pcs",
+        "internalPricing": {
+          "unitPrice": 36,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "SF-PTFE-HO-25-022",
+        "diameter": "25 mm",
+        "micron": "0.22 µm",
+        "pack": "100 Pcs",
+        "internalPricing": {
+          "unitPrice": 49,
+          "currency": "INR"
+        }
+      },
+      {
+        "manufacturerCatNo": "SF-PTFE-HO-25-045",
+        "diameter": "25 mm",
+        "micron": "0.45 µm",
+        "pack": "100 Pcs",
+        "internalPricing": {
+          "unitPrice": 49,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/ax-sf-ptfe-ho.webp",
+    "gallery": [
+      "/images/products/filtration/ax-sf-ptfe-ho.webp"
+    ],
+    "searchTerms": [
+      "axiva",
+      "ptfe",
+      "hydrophobic",
+      "sf-ptfe-ho-25-022",
+      "0.22",
+      "25mm"
+    ],
+    "relatedProducts": [
+      "ax-sf-nylon"
+    ],
+    "slug": "axiva-hydrophobic-ptfe-syringe-filters"
+  }
+]

@@ -1,0 +1,642 @@
+[
+  {
+    "id": "microlit-rbo-fixed-volume-micropipette",
+    "sku": "RAM-F-001",
+    "internalSKU": "BB-RAM-F-001",
+    "manufacturerCatNo": "RAM-F-001",
+    "manufacturerModel": "Microlit RBO Single Channel Fixed Volume Micropipette",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit RBO Single Channel Fixed Volume Micropipette",
+    "model": "Microlit RBO Single Channel Fixed Volume Micropipette",
+    "category": "Liquid Handling",
+    "subcategory": "Micropipettes",
+    "series": "Laboratory Liquid Handling",
+    "description": "Fully autoclavable fixed volume micropipette featuring Air Technology for high-accuracy liquid dispensing in demanding research environments.",
+    "features": [
+      "Fully autoclavable at 121°C",
+      "Air Technology plunger mechanism",
+      "Ergonomic click-stop volume lock",
+      "ISO 8655 calibrated"
+    ],
+    "applications": [
+      "PCR Setup",
+      "Clinical Assays",
+      "Cell Culture",
+      "Microbiology"
+    ],
+    "image": "/images/products/liquid-handling/microlit-rbo-single-channel-fixed-volume-micropipette.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-rbo-single-channel-fixed-volume-micropipette.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "RAM-F-001",
+        "capacity": "RAM-F-1",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-F-002",
+        "capacity": "RAM-F-2",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-F-003",
+        "capacity": "RAM-F-5",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-F-004",
+        "capacity": "RAM-F-10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-F-005",
+        "capacity": "RAM-F-20",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-F-006",
+        "capacity": "RAM-F-25",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-F-007",
+        "capacity": "RAM-F-50",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-F-008",
+        "capacity": "RAM-F-100",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-F-009",
+        "capacity": "RAM-F-200",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-F-010",
+        "capacity": "RAM-F-250",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-F-011",
+        "capacity": "RAM-F-500",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-F-012",
+        "capacity": "RAM-F-1000",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-F-013",
+        "capacity": "RAM-F-2000",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-F-014",
+        "capacity": "RAM-F-5000",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-F-015",
+        "capacity": "RAM-F-10000",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit rbo single channel fixed volume micropipette",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-rbo-fixed-volume-micropipette",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "microlit-rbo-variable-volume-micropipette",
+    "sku": "RAM-V-001",
+    "internalSKU": "BB-RAM-V-001",
+    "manufacturerCatNo": "RAM-V-001",
+    "manufacturerModel": "Microlit RBO Single Channel Variable Volume Micropipette",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit RBO Single Channel Variable Volume Micropipette",
+    "model": "Microlit RBO Single Channel Variable Volume Micropipette",
+    "category": "Liquid Handling",
+    "subcategory": "Micropipettes",
+    "series": "Laboratory Liquid Handling",
+    "description": "High precision variable volume micropipette designed for smooth volume adjustment and chemical-resistant performance.",
+    "features": [
+      "Fully autoclavable at 121°C",
+      "Smooth click-stop volume dial",
+      "Ergonomic tip ejector",
+      "ISO 8655 Certified"
+    ],
+    "applications": [
+      "Molecular Biology",
+      "Genomics",
+      "Biochemistry",
+      "Diagnostic Testing"
+    ],
+    "image": "/images/products/liquid-handling/microlit-rbo-single-channel-variable-volume-micropipette.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-rbo-single-channel-variable-volume-micropipette.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "RAM-V-001",
+        "capacity": "RAM-2",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-V-002",
+        "capacity": "RAM-10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-V-003",
+        "capacity": "RAM-20",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-V-004",
+        "capacity": "RAM-50",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-V-005",
+        "capacity": "RAM-100",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-V-006",
+        "capacity": "RAM-200",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-V-007",
+        "capacity": "RAM-1000",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-V-008",
+        "capacity": "RAM-5000",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-V-009",
+        "capacity": "RAM-10000",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit rbo single channel variable volume micropipette",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-rbo-variable-volume-micropipette",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "microlit-rbo-8-channel-micropipette",
+    "sku": "RAM-M-001",
+    "internalSKU": "BB-RAM-M-001",
+    "manufacturerCatNo": "RAM-M-001",
+    "manufacturerModel": "Microlit RBO 8-Channel Variable Volume Micropipette",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit RBO 8-Channel Variable Volume Micropipette",
+    "model": "Microlit RBO 8-Channel Variable Volume Micropipette",
+    "category": "Liquid Handling",
+    "subcategory": "Micropipettes",
+    "series": "Laboratory Liquid Handling",
+    "description": "Ergonomic multichannel micropipette designed for 96-well microplate dispensing with uniform volume distribution.",
+    "features": [
+      "360° rotating manifold",
+      "Fully autoclavable at 121°C",
+      "Individual piston assembly for easy servicing",
+      "ISO 8655 Certified"
+    ],
+    "applications": [
+      "ELISA Assays",
+      "Microplate Dispensing",
+      "High-Throughput Screening",
+      "Cell Culture"
+    ],
+    "image": "/images/products/liquid-handling/microlit-rbo-8-channel-variable-volume-micropipette.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-rbo-8-channel-variable-volume-micropipette.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "RAM-M-001",
+        "capacity": "RAM-E-10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-M-002",
+        "capacity": "RAM-E-20",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-M-003",
+        "capacity": "RAM-E-50",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-M-004",
+        "capacity": "RAM-E-100",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-M-005",
+        "capacity": "RAM-E-200",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-M-006",
+        "capacity": "RAM-E-300",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit rbo 8-channel variable volume micropipette",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-rbo-8-channel-micropipette",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "microlit-rbo-12-channel-micropipette",
+    "sku": "RAM-M-007",
+    "internalSKU": "BB-RAM-M-007",
+    "manufacturerCatNo": "RAM-M-007",
+    "manufacturerModel": "Microlit RBO 12-Channel Variable Volume Micropipette",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit RBO 12-Channel Variable Volume Micropipette",
+    "model": "Microlit RBO 12-Channel Variable Volume Micropipette",
+    "category": "Liquid Handling",
+    "subcategory": "Micropipettes",
+    "series": "Laboratory Liquid Handling",
+    "description": "Ergonomic multichannel micropipette designed for 96-well microplate dispensing with uniform volume distribution.",
+    "features": [
+      "360° rotating manifold",
+      "Fully autoclavable at 121°C",
+      "Individual piston assembly for easy servicing",
+      "ISO 8655 Certified"
+    ],
+    "applications": [
+      "ELISA Assays",
+      "Microplate Dispensing",
+      "High-Throughput Screening",
+      "Cell Culture"
+    ],
+    "image": "/images/products/liquid-handling/microlit-rbo-12-channel-variable-volume-micropipette.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-rbo-12-channel-variable-volume-micropipette.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "RAM-M-007",
+        "capacity": "RAM-T-10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-M-008",
+        "capacity": "RAM-T-20",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-M-009",
+        "capacity": "RAM-T-50",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-M-010",
+        "capacity": "RAM-T-100",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-M-011",
+        "capacity": "RAM-T-200",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "RAM-M-012",
+        "capacity": "RAM-T-300",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit rbo 12-channel variable volume micropipette",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-rbo-12-channel-micropipette",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "microlit-nero-single-channel-micropipette",
+    "sku": "NRO-001",
+    "internalSKU": "BB-NRO-001",
+    "manufacturerCatNo": "NRO-001",
+    "manufacturerModel": "Microlit NERO Single Channel Variable Volume Micropipette",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit NERO Single Channel Variable Volume Micropipette",
+    "model": "Microlit NERO Single Channel Variable Volume Micropipette",
+    "category": "Liquid Handling",
+    "subcategory": "Micropipettes",
+    "series": "Laboratory Liquid Handling",
+    "description": "Precision micropipette engineered with UniCal calibration technology and Air Technology for ultra-low plunger forces.",
+    "features": [
+      "UniCal calibration system",
+      "Fully autoclavable construction",
+      "Ultra-light weight body",
+      "ISO 8655 Compliant"
+    ],
+    "applications": [
+      "Molecular Biology",
+      "Clinical QC",
+      "PCR Assays",
+      "Drug Discovery"
+    ],
+    "image": "/images/products/liquid-handling/microlit-nero-single-channel-variable-volume-micropipette.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-nero-single-channel-variable-volume-micropipette.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "NRO-001",
+        "capacity": "NRO-10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "NRO-002",
+        "capacity": "NRO-100",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "NRO-003",
+        "capacity": "NRO-1000",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit nero single channel variable volume micropipette",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-nero-single-channel-micropipette",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "microlit-nero-multi-channel-micropipette",
+    "sku": "NRO-004",
+    "internalSKU": "BB-NRO-004",
+    "manufacturerCatNo": "NRO-004",
+    "manufacturerModel": "Microlit NERO Multi-Channel Variable Volume Micropipette",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit NERO Multi-Channel Variable Volume Micropipette",
+    "model": "Microlit NERO Multi-Channel Variable Volume Micropipette",
+    "category": "Liquid Handling",
+    "subcategory": "Micropipettes",
+    "series": "Laboratory Liquid Handling",
+    "description": "Precision micropipette engineered with UniCal calibration technology and Air Technology for ultra-low plunger forces.",
+    "features": [
+      "UniCal calibration system",
+      "Fully autoclavable construction",
+      "Ultra-light weight body",
+      "ISO 8655 Compliant"
+    ],
+    "applications": [
+      "Molecular Biology",
+      "Clinical QC",
+      "PCR Assays",
+      "Drug Discovery"
+    ],
+    "image": "/images/products/liquid-handling/microlit-nero-multi-channel-variable-volume-micropipette.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-nero-multi-channel-variable-volume-micropipette.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "NRO-004",
+        "capacity": "NRO-E-10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "NRO-005",
+        "capacity": "NRO-E-100",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "NRO-006",
+        "capacity": "NRO-T-300",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit nero multi-channel variable volume micropipette",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-nero-multi-channel-micropipette",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "microlit-lilpet-pro-miniature-micropipette",
+    "sku": "LPP-001",
+    "internalSKU": "BB-LPP-001",
+    "manufacturerCatNo": "LPP-001",
+    "manufacturerModel": "Microlit LILPET PRO Miniature Fixed Volume Micropipette",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit LILPET PRO Miniature Fixed Volume Micropipette",
+    "model": "Microlit LILPET PRO Miniature Fixed Volume Micropipette",
+    "category": "Liquid Handling",
+    "subcategory": "Micropipettes",
+    "series": "Laboratory Liquid Handling",
+    "description": "Compact miniature fixed volume micropipette designed for diagnostic field kits, education, and dedicated routine testing.",
+    "features": [
+      "Compact 130mm length",
+      "Two-step plunger for reverse pipetting",
+      "Integrated tip ejector (Pro Series)",
+      "Optimal for diagnostic kits"
+    ],
+    "applications": [
+      "Field Diagnostic Kits",
+      "Blood Testing Kits",
+      "Educational Labs",
+      "Routine Assays"
+    ],
+    "image": "/images/products/liquid-handling/microlit-lilpet-pro-miniature-fixed-volume-micropipette.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-lilpet-pro-miniature-fixed-volume-micropipette.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "LPP-001",
+        "capacity": "LPP-5",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "LPP-002",
+        "capacity": "LPP-10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "LPP-003",
+        "capacity": "LPP-20",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "LPP-004",
+        "capacity": "LPP-50",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "LPP-005",
+        "capacity": "LPP-100",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "LPP-006",
+        "capacity": "LPP-200",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "LPP-007",
+        "capacity": "LPT-5",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "LPP-008",
+        "capacity": "LPT-10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "LPP-009",
+        "capacity": "LPT-20",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "LPP-010",
+        "capacity": "LPT-100",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit lilpet pro miniature fixed volume micropipette",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-lilpet-pro-miniature-micropipette",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  },
+  {
+    "id": "microlit-lilpet-miniature-micropipette",
+    "sku": "LPP-007",
+    "internalSKU": "BB-LPP-007",
+    "manufacturerCatNo": "LPP-007",
+    "manufacturerModel": "Microlit LILPET Miniature Fixed Volume Micropipette",
+    "manufacturer": "BioBrand",
+    "brand": "BioBrand",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "countryOfOrigin": "India",
+    "name": "Microlit LILPET Miniature Fixed Volume Micropipette",
+    "model": "Microlit LILPET Miniature Fixed Volume Micropipette",
+    "category": "Liquid Handling",
+    "subcategory": "Micropipettes",
+    "series": "Laboratory Liquid Handling",
+    "description": "Compact miniature fixed volume micropipette designed for diagnostic field kits, education, and dedicated routine testing.",
+    "features": [
+      "Compact 130mm length",
+      "Two-step plunger for reverse pipetting",
+      "Integrated tip ejector (Pro Series)",
+      "Optimal for diagnostic kits"
+    ],
+    "applications": [
+      "Field Diagnostic Kits",
+      "Blood Testing Kits",
+      "Educational Labs",
+      "Routine Assays"
+    ],
+    "image": "/images/products/liquid-handling/microlit-lilpet-miniature-fixed-volume-micropipette.webp",
+    "gallery": [
+      "/images/products/liquid-handling/microlit-lilpet-miniature-fixed-volume-micropipette.webp"
+    ],
+    "variants": [
+      {
+        "manufacturerCatNo": "LPP-007",
+        "capacity": "LPT-5",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "LPP-008",
+        "capacity": "LPT-10",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "LPP-009",
+        "capacity": "LPT-20",
+        "pack": "1 Pc"
+      },
+      {
+        "manufacturerCatNo": "LPP-010",
+        "capacity": "LPT-100",
+        "pack": "1 Pc"
+      }
+    ],
+    "searchTerms": [
+      "microlit lilpet miniature fixed volume micropipette",
+      "biobrand",
+      "liquid handling"
+    ],
+    "relatedProducts": [],
+    "slug": "product/microlit-lilpet-miniature-micropipette",
+    "badge": "Biobrand Verified",
+    "gemApproved": true
+  }
+]

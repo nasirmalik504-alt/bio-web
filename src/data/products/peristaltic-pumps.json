@@ -1,0 +1,86 @@
+[
+  {
+    "id": "bb-pp-001",
+    "sku": "BB-DISP-100",
+    "model": "E-DISP-100",
+    "name": "E-DISPENSER Automated Peristaltic Dispensing System (0.1 - 9999 mL)",
+    "series": "Peristaltic Dispenser Series",
+    "category": "Liquid Handling",
+    "subcategory": "Peristaltic Pumps",
+    "description": "High-precision programable peristaltic dispensing pump engineered for serial filling of vials, tubes, and culture bottles.",
+    "features": [
+      "Calibrated peristaltic pump head",
+      "Multiple dispensing modes (Single, Serial, Stepper)",
+      "Foot pedal & hand dispenser remote activation",
+      "Touchscreen interface"
+    ],
+    "applications": [
+      "Media Filling into Tubes & Bottles",
+      "Reagent Production",
+      "Serial Dilutions",
+      "Bioprocess Labs"
+    ],
+    "specifications": {
+      "Dispensing Range": "0.1 - 9999 mL",
+      "Flow Rate": "Up to 1500 mL/min",
+      "Tubing": "Autoclavable Silicone"
+    },
+    "volume": "0.1 - 9999 mL",
+    "capacity": "9999 mL",
+    "channels": "Single Channel",
+    "operation": "Automated Motorized",
+    "autoclavable": false,
+    "manual": false,
+    "electronic": true,
+    "image": "/images/products/liquid-handling/peristaltic-pumps/bb-pp-001.webp",
+    "gallery": [
+      "/images/products/liquid-handling/peristaltic-pumps/bb-pp-001.webp"
+    ],
+    "documents": [],
+    "tags": [
+      "liquid handling",
+      "peristaltic pumps",
+      "biobusiness peristaltic dispenser series",
+      "e-disp-100",
+      "0.1 - 9999 ml",
+      "automated motorized",
+      "electronic"
+    ],
+    "searchTerms": [
+      "E-DISP-100",
+      "Calibrated peristaltic pump head",
+      "Serial Dilutions",
+      "peristaltic dispenser series",
+      "automated motorized",
+      "BB-DISP-100",
+      "Reagent Production",
+      "9999 mL",
+      "Foot pedal & hand dispenser remote activation",
+      "0.1 - 9999 mL",
+      "peristaltic pumps",
+      "electronic",
+      "Media Filling into Tubes & Bottles",
+      "Multiple dispensing modes (Single, Serial, Stepper)",
+      "e-disp-100",
+      "Peristaltic Dispenser Series",
+      "Single Channel",
+      "Touchscreen interface",
+      "E-DISPENSER Automated Peristaltic Dispensing System (0.1 - 9999 mL)",
+      "liquid handling",
+      "Bioprocess Labs",
+      "0.1 - 9999 ml"
+    ],
+    "relatedProducts": [],
+    "slug": "e-dispenser-automated-peristaltic-dispensing-system-01---9999-ml",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.microlit.com",
+    "manufacturerLogo": "/images/brands/microlit.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-DISP-100",
+    "manufacturerCatNo": "DISP-100",
+    "manufacturerModel": "E-DISP-100"
+  }
+]

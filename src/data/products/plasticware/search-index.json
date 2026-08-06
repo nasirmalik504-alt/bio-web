@@ -1,0 +1,2866 @@
+[
+  {
+    "id": "beaker-pf-bb-pw-0001",
+    "name": "Beaker (PF",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/100",
+    "slug": "product/beaker-pf",
+    "image": "/images/products/plasticware/beaker-pf.webp",
+    "searchTerms": [
+      "beaker (pf",
+      "plasticware",
+      "biobrand",
+      "si/pw/100"
+    ]
+  },
+  {
+    "id": "beaker-pp-bb-pw-0002",
+    "name": "Beaker (PP)",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/106",
+    "slug": "product/beaker-pp",
+    "image": "/images/products/plasticware/beaker-pp.webp",
+    "searchTerms": [
+      "beaker (pp)",
+      "plasticware",
+      "biobrand",
+      "si/pw/106"
+    ]
+  },
+  {
+    "id": "burette-bb-pw-0003",
+    "name": "Burette",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/122",
+    "slug": "product/burette",
+    "image": "",
+    "searchTerms": [
+      "burette",
+      "plasticware",
+      "biobrand",
+      "si/pw/122"
+    ]
+  },
+  {
+    "id": "beaker-pmp-bb-pw-0004",
+    "name": "Beaker (PMP)",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/114",
+    "slug": "product/beaker-pmp",
+    "image": "/images/products/plasticware/beaker-pmp.webp",
+    "searchTerms": [
+      "beaker (pmp)",
+      "plasticware",
+      "biobrand",
+      "si/pw/114"
+    ]
+  },
+  {
+    "id": "pipette-pump-bb-pw-0005",
+    "name": "Pipette Pump",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/125",
+    "slug": "product/pipette-pump",
+    "image": "/images/products/plasticware/pipette-pump.webp",
+    "searchTerms": [
+      "pipette pump",
+      "plasticware",
+      "biobrand",
+      "si/pw/125"
+    ]
+  },
+  {
+    "id": "dropping-bottles-bb-pw-0006",
+    "name": "Dropping Bottles",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/127",
+    "slug": "product/dropping-bottles",
+    "image": "/images/products/plasticware/dropping-bottles.webp",
+    "searchTerms": [
+      "dropping bottles",
+      "plasticware",
+      "biobrand",
+      "si/pw/127"
+    ]
+  },
+  {
+    "id": "r-eagent-bottles-narrow-mouth-bb-pw-0007",
+    "name": "R eagent Bottles (Narrow Mouth)",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/134",
+    "slug": "product/r-eagent-bottles-narrow-mouth",
+    "image": "/images/products/plasticware/r-eagent-bottles-narrow-mouth.webp",
+    "searchTerms": [
+      "r eagent bottles (narrow mouth)",
+      "plasticware",
+      "biobrand",
+      "si/pw/134"
+    ]
+  },
+  {
+    "id": "narrow-mouth-bottle-bb-pw-0008",
+    "name": "Narrow Mouth Bottle",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/150",
+    "slug": "product/narrow-mouth-bottle",
+    "image": "/images/products/plasticware/narrow-mouth-bottle.webp",
+    "searchTerms": [
+      "narrow mouth bottle",
+      "plasticware",
+      "biobrand",
+      "si/pw/150"
+    ]
+  },
+  {
+    "id": "dropping-bottles-a-r-e-euro-design-bb-pw-0009",
+    "name": "Dropping Bottles A (Euro Design)",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/129",
+    "slug": "product/dropping-bottles-a-r-e-euro-design",
+    "image": "/images/products/plasticware/dropping-bottles-a-r-e-euro-design.webp",
+    "searchTerms": [
+      "dropping bottles a r e (euro design)",
+      "plasticware",
+      "biobrand",
+      "si/pw/129"
+    ]
+  },
+  {
+    "id": "r-eagent-bottles-wide-mouth-bb-pw-0010",
+    "name": "R eagent Bottles (Wide Mouth)",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/143",
+    "slug": "product/r-eagent-bottles-wide-mouth",
+    "image": "/images/products/plasticware/r-eagent-bottles-wide-mouth.webp",
+    "searchTerms": [
+      "r eagent bottles (wide mouth)",
+      "plasticware",
+      "biobrand",
+      "si/pw/143"
+    ]
+  },
+  {
+    "id": "wide-mouth-bottle-with-handle-bb-pw-0011",
+    "name": "Wide Mouth Bottle With Handle",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/153",
+    "slug": "product/wide-mouth-bottle-with-handle",
+    "image": "/images/products/plasticware/wide-mouth-bottle-with-handle.webp",
+    "searchTerms": [
+      "wide mouth bottle with handle",
+      "plasticware",
+      "biobrand",
+      "si/pw/153"
+    ]
+  },
+  {
+    "id": "amber-narrow-mouth-bottle-bb-pw-0012",
+    "name": "Amber Narrow Mouth Bottle",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/155",
+    "slug": "product/amber-narrow-mouth-bottle",
+    "image": "/images/products/plasticware/amber-narrow-mouth-bottle.webp",
+    "searchTerms": [
+      "amber narrow mouth bottle",
+      "plasticware",
+      "biobrand",
+      "si/pw/155"
+    ]
+  },
+  {
+    "id": "jerrican-bb-pw-0013",
+    "name": "Jerrican",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/171",
+    "slug": "product/jerrican",
+    "image": "/images/products/plasticware/jerrican.webp",
+    "searchTerms": [
+      "jerrican",
+      "plasticware",
+      "biobrand",
+      "si/pw/171"
+    ]
+  },
+  {
+    "id": "carboy-bb-pw-0014",
+    "name": "Carboy",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/176",
+    "slug": "product/carboy",
+    "image": "/images/products/plasticware/carboy.webp",
+    "searchTerms": [
+      "carboy",
+      "plasticware",
+      "biobrand",
+      "si/pw/176"
+    ]
+  },
+  {
+    "id": "amber-wide-mouth-bottle-bb-pw-0015",
+    "name": "Amber Wide Mouth Bottle",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/164",
+    "slug": "product/amber-wide-mouth-bottle",
+    "image": "/images/products/plasticware/amber-wide-mouth-bottle.webp",
+    "searchTerms": [
+      "amber wide mouth bottle",
+      "plasticware",
+      "biobrand",
+      "si/pw/164"
+    ]
+  },
+  {
+    "id": "heavy-duty-vaccum-bottle-bb-pw-0016",
+    "name": "Heavy Duty Vaccum Bottle",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/174",
+    "slug": "product/heavy-duty-vaccum-bottle",
+    "image": "/images/products/plasticware/heavy-duty-vaccum-bottle.webp",
+    "searchTerms": [
+      "heavy duty vaccum bottle",
+      "plasticware",
+      "biobrand",
+      "si/pw/174"
+    ]
+  },
+  {
+    "id": "carboy-with-stop-cock-bb-pw-0017",
+    "name": "Carboy With Stop Cock",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/179",
+    "slug": "product/carboy-with-stop-cock",
+    "image": "/images/products/plasticware/carboy-with-stop-cock.webp",
+    "searchTerms": [
+      "carboy with stop cock",
+      "plasticware",
+      "biobrand",
+      "si/pw/179"
+    ]
+  },
+  {
+    "id": "aspirator-bottles-bb-pw-0018",
+    "name": "Aspirator Bottles",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/182",
+    "slug": "product/aspirator-bottles",
+    "image": "/images/products/plasticware/aspirator-bottles.webp",
+    "searchTerms": [
+      "aspirator bottles",
+      "plasticware",
+      "biobrand",
+      "si/pw/182"
+    ]
+  },
+  {
+    "id": "amber-rectangular-bottle-bb-pw-0019",
+    "name": "Amber Rectangular Bottle",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/191",
+    "slug": "product/amber-rectangular-bottle",
+    "image": "/images/products/plasticware/amber-rectangular-bottle.webp",
+    "searchTerms": [
+      "amber rectangular bottle",
+      "plasticware",
+      "biobrand",
+      "si/pw/191"
+    ]
+  },
+  {
+    "id": "narrow-mouth-wash-bottle-bb-pw-0020",
+    "name": "Narrow Mouth Wash Bottle",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/199",
+    "slug": "product/narrow-mouth-wash-bottle",
+    "image": "/images/products/plasticware/narrow-mouth-wash-bottle.webp",
+    "searchTerms": [
+      "narrow mouth wash bottle",
+      "plasticware",
+      "biobrand",
+      "si/pw/199"
+    ]
+  },
+  {
+    "id": "a-rectangular-bottle-r-e-bb-pw-0021",
+    "name": "A Rectangular Bottle",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/186",
+    "slug": "product/a-rectangular-bottle-r-e",
+    "image": "/images/products/plasticware/a-rectangular-bottle-r-e.webp",
+    "searchTerms": [
+      "a rectangular bottle r e",
+      "plasticware",
+      "biobrand",
+      "si/pw/186"
+    ]
+  },
+  {
+    "id": "rectangular-carboy-with-s-topcock-bb-pw-0022",
+    "name": "Rectangular Carboy with S topcock",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/196",
+    "slug": "product/rectangular-carboy-with-s-topcock",
+    "image": "/images/products/plasticware/rectangular-carboy-with-s-topcock.webp",
+    "searchTerms": [
+      "rectangular carboy with s topcock",
+      "plasticware",
+      "biobrand",
+      "si/pw/196"
+    ]
+  },
+  {
+    "id": "wide-mouth-was-h-bottle-bb-pw-0023",
+    "name": "Wide Mouth Was h Bottle",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/203",
+    "slug": "product/wide-mouth-was-h-bottle",
+    "image": "/images/products/plasticware/wide-mouth-was-h-bottle.webp",
+    "searchTerms": [
+      "wide mouth was h bottle",
+      "plasticware",
+      "biobrand",
+      "si/pw/203"
+    ]
+  },
+  {
+    "id": "self-v-enting-labeled-w-bb-pw-0024",
+    "name": "Self-Venting Labeled W",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "brand": "Biobrand",
+    "sku": "SI/PW/206",
+    "slug": "product/self-v-enting-labeled-w",
+    "image": "/images/products/plasticware/self-v-enting-labeled-w.webp",
+    "searchTerms": [
+      "self-Venting labeled w",
+      "plasticware",
+      "biobrand",
+      "si/pw/206"
+    ]
+  },
+  {
+    "id": "wash-bottles-bb-pw-0025",
+    "name": "Wash Bottles",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/218",
+    "slug": "product/wash-bottles",
+    "image": "/images/products/plasticware/wash-bottles.webp",
+    "searchTerms": [
+      "wash bottles",
+      "plasticware",
+      "biobrand",
+      "si/pw/218"
+    ]
+  },
+  {
+    "id": "conical-flask-pc-bb-pw-0026",
+    "name": "Conical Flask (PC)",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/226",
+    "slug": "product/conical-flask-pc",
+    "image": "",
+    "searchTerms": [
+      "conical flask (pc)",
+      "plasticware",
+      "biobrand",
+      "si/pw/226"
+    ]
+  },
+  {
+    "id": "ash-bottle-bb-pw-0027",
+    "name": "ash bottle",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/GEN-027",
+    "slug": "product/ash-bottle",
+    "image": "/images/products/plasticware/ash-bottle.webp",
+    "searchTerms": [
+      "ash bottle",
+      "plasticware",
+      "biobrand",
+      "si/pw/gen-027"
+    ]
+  },
+  {
+    "id": "wash-bottles-new-type-bb-pw-0028",
+    "name": "Wash Bottles (new Type)",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/222",
+    "slug": "product/wash-bottles-new-type",
+    "image": "/images/products/plasticware/wash-bottles-new-type.webp",
+    "searchTerms": [
+      "wash bottles (new type)",
+      "plasticware",
+      "biobrand",
+      "si/pw/222"
+    ]
+  },
+  {
+    "id": "conical-flask-with-screw-cap-bb-pw-0029",
+    "name": "Conical Flask with Screw Cap",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/227",
+    "slug": "product/conical-flask-with-screw-cap",
+    "image": "/images/products/plasticware/conical-flask-with-screw-cap.webp",
+    "searchTerms": [
+      "conical flask with screw cap",
+      "plasticware",
+      "biobrand",
+      "si/pw/227"
+    ]
+  },
+  {
+    "id": "conical-flask-pp-bb-pw-0030",
+    "name": "Conical Flask (PP)",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/228",
+    "slug": "product/conical-flask-pp",
+    "image": "/images/products/plasticware/conical-flask-pp.webp",
+    "searchTerms": [
+      "conical flask (pp)",
+      "plasticware",
+      "biobrand",
+      "si/pw/228"
+    ]
+  },
+  {
+    "id": "volumetric-flask-class-a-bb-pw-0031",
+    "name": "Volumetric Flask Class A",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/232",
+    "slug": "product/volumetric-flask-class-a",
+    "image": "/images/products/plasticware/volumetric-flask-class-a.webp",
+    "searchTerms": [
+      "volumetric flask class a",
+      "plasticware",
+      "biobrand",
+      "si/pw/232"
+    ]
+  },
+  {
+    "id": "volumetric-flask-b-bb-pw-0032",
+    "name": "Volumetric Flask B",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/445",
+    "slug": "product/volumetric-flask-b",
+    "image": "/images/products/plasticware/volumetric-flask-b.webp",
+    "searchTerms": [
+      "volumetric flask b",
+      "plasticware",
+      "biobrand",
+      "si/pw/445"
+    ]
+  },
+  {
+    "id": "a-specimen-jar-gas-jar-r-e-bb-pw-0033",
+    "name": "A Specimen Jar (gas Jar)",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/231",
+    "slug": "product/a-specimen-jar-gas-jar-r-e",
+    "image": "/images/products/plasticware/a-specimen-jar-gas-jar-r-e.webp",
+    "searchTerms": [
+      "a specimen jar (gas jar) r e",
+      "plasticware",
+      "biobrand",
+      "si/pw/231"
+    ]
+  },
+  {
+    "id": "amber-volumetric-flask-class-a-bb-pw-0034",
+    "name": "Amber Volumetric Flask Class A",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/239",
+    "slug": "product/amber-volumetric-flask-class-a",
+    "image": "/images/products/plasticware/amber-volumetric-flask-class-a.webp",
+    "searchTerms": [
+      "amber volumetric flask class a",
+      "plasticware",
+      "biobrand",
+      "si/pw/239"
+    ]
+  },
+  {
+    "id": "imho-setting-cone-bb-pw-0035",
+    "name": "Imhoﬀ Setting Cone",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/252",
+    "slug": "product/imho-setting-cone",
+    "image": "/images/products/plasticware/imho-setting-cone.webp",
+    "searchTerms": [
+      "imhoﬀ setting cone",
+      "plasticware",
+      "biobrand",
+      "si/pw/252"
+    ]
+  },
+  {
+    "id": "measuring-beaker-with-handle-bb-pw-0036",
+    "name": "Measuring Beaker with handle",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/253",
+    "slug": "product/measuring-beaker-with-handle",
+    "image": "/images/products/plasticware/measuring-beaker-with-handle.webp",
+    "searchTerms": [
+      "measuring beaker with handle",
+      "plasticware",
+      "biobrand",
+      "si/pw/253"
+    ]
+  },
+  {
+    "id": "rectangular-jar-bb-pw-0037",
+    "name": "Rectangular Jar",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/262",
+    "slug": "product/rectangular-jar",
+    "image": "/images/products/plasticware/rectangular-jar.webp",
+    "searchTerms": [
+      "rectangular jar",
+      "plasticware",
+      "biobrand",
+      "si/pw/262"
+    ]
+  },
+  {
+    "id": "funnel-holder-bb-pw-0038",
+    "name": "Funnel Holder",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/267",
+    "slug": "product/funnel-holder",
+    "image": "/images/products/plasticware/funnel-holder.webp",
+    "searchTerms": [
+      "funnel holder",
+      "plasticware",
+      "biobrand",
+      "si/pw/267"
+    ]
+  },
+  {
+    "id": "pfa-round-bottom-flask-bb-pw-0039",
+    "name": "PFA Round Bottom Flask",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/259",
+    "slug": "product/pfa-round-bottom-flask",
+    "image": "/images/products/plasticware/pfa-round-bottom-flask.webp",
+    "searchTerms": [
+      "pfa round bottom flask",
+      "plasticware",
+      "biobrand",
+      "si/pw/259"
+    ]
+  },
+  {
+    "id": "fisher-clamp-bb-pw-0040",
+    "name": "Fisher Clamp",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/265",
+    "slug": "product/fisher-clamp",
+    "image": "/images/products/plasticware/fisher-clamp.webp",
+    "searchTerms": [
+      "fisher clamp",
+      "plasticware",
+      "biobrand",
+      "si/pw/265"
+    ]
+  },
+  {
+    "id": "seperatory-funnel-holder-bb-pw-0041",
+    "name": "Seperatory Funnel Holder",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/269",
+    "slug": "product/seperatory-funnel-holder",
+    "image": "/images/products/plasticware/seperatory-funnel-holder.webp",
+    "searchTerms": [
+      "seperatory funnel holder",
+      "plasticware",
+      "biobrand",
+      "si/pw/269"
+    ]
+  },
+  {
+    "id": "hand-operated-vacuum-pump-bb-pw-0042",
+    "name": "Hand operated Vacuum pump",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "brand": "Biobrand",
+    "sku": "SI/PW/270",
+    "slug": "product/hand-operated-vacuum-pump",
+    "image": "/images/products/plasticware/hand-operated-vacuum-pump.webp",
+    "searchTerms": [
+      "hand operated vacuum pump",
+      "plasticware",
+      "biobrand",
+      "si/pw/270"
+    ]
+  },
+  {
+    "id": "pipette-was-her-bb-pw-0043",
+    "name": "Pipette Was her",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/272",
+    "slug": "product/pipette-was-her",
+    "image": "/images/products/plasticware/pipette-was-her.webp",
+    "searchTerms": [
+      "pipette was her",
+      "plasticware",
+      "biobrand",
+      "si/pw/272"
+    ]
+  },
+  {
+    "id": "flask-stand-bb-pw-0044",
+    "name": "Flask Stand",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/274",
+    "slug": "product/flask-stand",
+    "image": "/images/products/plasticware/flask-stand.webp",
+    "searchTerms": [
+      "flask stand",
+      "plasticware",
+      "biobrand",
+      "si/pw/274"
+    ]
+  },
+  {
+    "id": "a-pipette-bulb-r-e-bb-pw-0045",
+    "name": "A Pipette Bulb",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/271",
+    "slug": "product/a-pipette-bulb-r-e",
+    "image": "/images/products/plasticware/a-pipette-bulb-r-e.webp",
+    "searchTerms": [
+      "a pipette bulb r e",
+      "plasticware",
+      "biobrand",
+      "si/pw/271"
+    ]
+  },
+  {
+    "id": "magnetized-pipette-storage-rack-bb-pw-0046",
+    "name": "Magnetized Pipette Storage Rack",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/273",
+    "slug": "product/magnetized-pipette-storage-rack",
+    "image": "/images/products/plasticware/magnetized-pipette-storage-rack.webp",
+    "searchTerms": [
+      "magnetized pipette storage rack",
+      "plasticware",
+      "biobrand",
+      "si/pw/273"
+    ]
+  },
+  {
+    "id": "straight-connectors-bb-pw-0047",
+    "name": "Straight Connectors",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/275",
+    "slug": "product/straight-connectors",
+    "image": "/images/products/plasticware/straight-connectors.webp",
+    "searchTerms": [
+      "straight connectors",
+      "plasticware",
+      "biobrand",
+      "si/pw/275"
+    ]
+  },
+  {
+    "id": "elbow-connectors-bb-pw-0048",
+    "name": "Elbow Connectors",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/282",
+    "slug": "product/elbow-connectors",
+    "image": "/images/products/plasticware/elbow-connectors.webp",
+    "searchTerms": [
+      "elbow connectors",
+      "plasticware",
+      "biobrand",
+      "si/pw/282"
+    ]
+  },
+  {
+    "id": "y-connectors-bb-pw-0049",
+    "name": "Y Connectors",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/296",
+    "slug": "product/y-connectors",
+    "image": "/images/products/plasticware/y-connectors.webp",
+    "searchTerms": [
+      "y connectors",
+      "plasticware",
+      "biobrand",
+      "si/pw/296"
+    ]
+  },
+  {
+    "id": "water-bottle-bb-pw-0050",
+    "name": "Water Bottle",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/305",
+    "slug": "product/water-bottle",
+    "image": "/images/products/plasticware/water-bottle.webp",
+    "searchTerms": [
+      "water bottle",
+      "plasticware",
+      "biobrand",
+      "si/pw/305"
+    ]
+  },
+  {
+    "id": "t-connectors-bb-pw-0051",
+    "name": "T Connectors",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/289",
+    "slug": "product/t-connectors",
+    "image": "/images/products/plasticware/t-connectors.webp",
+    "searchTerms": [
+      "t connectors",
+      "plasticware",
+      "biobrand",
+      "si/pw/289"
+    ]
+  },
+  {
+    "id": "animal-cage-bb-pw-0052",
+    "name": "Animal Cage",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/301",
+    "slug": "product/animal-cage",
+    "image": "/images/products/plasticware/animal-cage.webp",
+    "searchTerms": [
+      "animal cage",
+      "plasticware",
+      "biobrand",
+      "si/pw/301"
+    ]
+  },
+  {
+    "id": "desiccator-vacuum-bb-pw-0053",
+    "name": "Desiccator ( Vacuum )",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/309",
+    "slug": "product/desiccator-vacuum",
+    "image": "/images/products/plasticware/desiccator-vacuum.webp",
+    "searchTerms": [
+      "desiccator ( vacuum )",
+      "plasticware",
+      "biobrand",
+      "si/pw/309"
+    ]
+  },
+  {
+    "id": "desiccator-vaccum-all-clear-bb-pw-0054",
+    "name": "Desiccator ( Vaccum ) All Clear",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/314",
+    "slug": "product/desiccator-vaccum-all-clear",
+    "image": "/images/products/plasticware/desiccator-vaccum-all-clear.webp",
+    "searchTerms": [
+      "desiccator ( vaccum ) all clear",
+      "plasticware",
+      "biobrand",
+      "si/pw/314"
+    ]
+  },
+  {
+    "id": "retort-stand-ss-rod-bb-pw-0055",
+    "name": "Retort Stand (SS Rod)",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/321",
+    "slug": "product/retort-stand-ss-rod",
+    "image": "/images/products/plasticware/retort-stand-ss-rod.webp",
+    "searchTerms": [
+      "retort stand (ss rod)",
+      "plasticware",
+      "biobrand",
+      "si/pw/321"
+    ]
+  },
+  {
+    "id": "kipp-s-apparatus-bb-pw-0056",
+    "name": "Kipp’ s Apparatus",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/329",
+    "slug": "product/kipp-s-apparatus",
+    "image": "/images/products/plasticware/kipp-s-apparatus.webp",
+    "searchTerms": [
+      "kipp’ s apparatus",
+      "plasticware",
+      "biobrand",
+      "si/pw/329"
+    ]
+  },
+  {
+    "id": "desiccator-plain-a-r-e-bb-pw-0057",
+    "name": "Desiccator (Plain) A",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/317",
+    "slug": "product/desiccator-plain-a-r-e",
+    "image": "/images/products/plasticware/desiccator-plain-a-r-e.webp",
+    "searchTerms": [
+      "desiccator (plain) a r e",
+      "plasticware",
+      "biobrand",
+      "si/pw/317"
+    ]
+  },
+  {
+    "id": "retort-stand-coated-rod-bb-pw-0058",
+    "name": "Retort Stand (Coated Rod)",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/328",
+    "slug": "product/retort-stand-coated-rod",
+    "image": "/images/products/plasticware/retort-stand-coated-rod.webp",
+    "searchTerms": [
+      "retort stand (coated rod)",
+      "plasticware",
+      "biobrand",
+      "si/pw/328"
+    ]
+  },
+  {
+    "id": "buchner-funnel-bb-pw-0059",
+    "name": "Buchner Funnel",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/GEN-059",
+    "slug": "product/buchner-funnel",
+    "image": "/images/products/plasticware/buchner-funnel.webp",
+    "searchTerms": [
+      "buchner funnel",
+      "plasticware",
+      "biobrand",
+      "si/pw/gen-059"
+    ]
+  },
+  {
+    "id": "funnels-bb-pw-0060",
+    "name": "Funnels",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/GEN-060",
+    "slug": "product/funnels",
+    "image": "/images/products/plasticware/funnels.webp",
+    "searchTerms": [
+      "funnels",
+      "plasticware",
+      "biobrand",
+      "si/pw/gen-060"
+    ]
+  },
+  {
+    "id": "powder-funnels-bb-pw-0061",
+    "name": "Powder Funnels",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/GEN-061",
+    "slug": "product/powder-funnels",
+    "image": "/images/products/plasticware/powder-funnels.webp",
+    "searchTerms": [
+      "powder funnels",
+      "plasticware",
+      "biobrand",
+      "si/pw/gen-061"
+    ]
+  },
+  {
+    "id": "funnels-shor-stem-bb-pw-0062",
+    "name": "Funnels - Shor Stem",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/GEN-062",
+    "slug": "product/funnels-shor-stem",
+    "image": "/images/products/plasticware/funnels-shor-stem.webp",
+    "searchTerms": [
+      "funnels - shor stem",
+      "plasticware",
+      "biobrand",
+      "si/pw/gen-062"
+    ]
+  },
+  {
+    "id": "large-carboy-funnels-bb-pw-0063",
+    "name": "Large Carboy Funnels",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/348",
+    "slug": "product/large-carboy-funnels",
+    "image": "/images/products/plasticware/large-carboy-funnels.webp",
+    "searchTerms": [
+      "large carboy funnels",
+      "plasticware",
+      "biobrand",
+      "si/pw/348"
+    ]
+  },
+  {
+    "id": "petri-dish-bb-pw-0064",
+    "name": "Petri Dish",
+    "category": "Plasticware",
+    "subcategory": "Petri Dishes & Cell Culture",
+    "brand": "Biobrand",
+    "sku": "SI/PW/351",
+    "slug": "product/petri-dish",
+    "image": "/images/products/plasticware/petri-dish.webp",
+    "searchTerms": [
+      "petri dish",
+      "plasticware",
+      "biobrand",
+      "si/pw/351"
+    ]
+  },
+  {
+    "id": "petri-dish-disposable-bb-pw-0065",
+    "name": "Petri Dish ( Disposable )",
+    "category": "Plasticware",
+    "subcategory": "Petri Dishes & Cell Culture",
+    "brand": "Biobrand",
+    "sku": "SI/PW/359",
+    "slug": "product/petri-dish-disposable",
+    "image": "/images/products/plasticware/petri-dish-disposable.webp",
+    "searchTerms": [
+      "petri dish ( disposable )",
+      "plasticware",
+      "biobrand",
+      "si/pw/359"
+    ]
+  },
+  {
+    "id": "atomic-model-euro-design-bb-pw-0066",
+    "name": "Atomic Model (Euro Design)",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/364",
+    "slug": "product/atomic-model-euro-design",
+    "image": "/images/products/plasticware/atomic-model-euro-design.webp",
+    "searchTerms": [
+      "atomic model (euro design)",
+      "plasticware",
+      "biobrand",
+      "si/pw/364"
+    ]
+  },
+  {
+    "id": "a-petri-dish-culture-r-e-bb-pw-0067",
+    "name": "A Petri Dish ( Culture )",
+    "category": "Plasticware",
+    "subcategory": "Petri Dishes & Cell Culture",
+    "brand": "Biobrand",
+    "sku": "SI/PW/355",
+    "slug": "product/a-petri-dish-culture-r-e",
+    "image": "",
+    "searchTerms": [
+      "a petri dish ( culture ) r e",
+      "plasticware",
+      "biobrand",
+      "si/pw/355"
+    ]
+  },
+  {
+    "id": "atomic-model-set-bb-pw-0068",
+    "name": "Atomic Model Set",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/362",
+    "slug": "product/atomic-model-set",
+    "image": "/images/products/plasticware/atomic-model-set.webp",
+    "searchTerms": [
+      "atomic model set",
+      "plasticware",
+      "biobrand",
+      "si/pw/362"
+    ]
+  },
+  {
+    "id": "crystal-model-set-bb-pw-0069",
+    "name": "Crystal Model Set",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/366",
+    "slug": "product/crystal-model-set",
+    "image": "/images/products/plasticware/crystal-model-set.webp",
+    "searchTerms": [
+      "crystal model set",
+      "plasticware",
+      "biobrand",
+      "si/pw/366"
+    ]
+  },
+  {
+    "id": "slide-mailer-bb-pw-0070",
+    "name": "Slide Mailer",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/369",
+    "slug": "product/slide-mailer",
+    "image": "/images/products/plasticware/slide-mailer.webp",
+    "searchTerms": [
+      "slide mailer",
+      "plasticware",
+      "biobrand",
+      "si/pw/369"
+    ]
+  },
+  {
+    "id": "slide-storage-rack-bb-pw-0071",
+    "name": "Slide Storage Rack",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/375",
+    "slug": "product/slide-storage-rack",
+    "image": "/images/products/plasticware/slide-storage-rack.webp",
+    "searchTerms": [
+      "slide storage rack",
+      "plasticware",
+      "biobrand",
+      "si/pw/375"
+    ]
+  },
+  {
+    "id": "pcr-t-ube-rack-bb-pw-0072",
+    "name": "PCR Tube Rack",
+    "category": "Plasticware",
+    "subcategory": "PCR Consumables & Plates",
+    "brand": "Biobrand",
+    "sku": "SI/PW/378",
+    "slug": "product/pcr-t-ube-rack",
+    "image": "/images/products/plasticware/pcr-t-ube-rack.webp",
+    "searchTerms": [
+      "pcr Tube rack",
+      "plasticware",
+      "biobrand",
+      "si/pw/378"
+    ]
+  },
+  {
+    "id": "slide-box-bb-pw-0073",
+    "name": "Slide Box",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/372",
+    "slug": "product/slide-box",
+    "image": "/images/products/plasticware/slide-box.webp",
+    "searchTerms": [
+      "slide box",
+      "plasticware",
+      "biobrand",
+      "si/pw/372"
+    ]
+  },
+  {
+    "id": "float-rack-bb-pw-0074",
+    "name": "Float Rack",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/376",
+    "slug": "product/float-rack",
+    "image": "/images/products/plasticware/float-rack.webp",
+    "searchTerms": [
+      "float rack",
+      "plasticware",
+      "biobrand",
+      "si/pw/376"
+    ]
+  },
+  {
+    "id": "pcr-t-ube-rack-w-ith-cover-bb-pw-0075",
+    "name": "PCR Tube Rack With Cover",
+    "category": "Plasticware",
+    "subcategory": "PCR Consumables & Plates",
+    "brand": "Biobrand",
+    "sku": "SI/PW/379",
+    "slug": "product/pcr-t-ube-rack-w-ith-cover",
+    "image": "/images/products/plasticware/pcr-t-ube-rack-w-ith-cover.webp",
+    "searchTerms": [
+      "pcr Tube rack With cover",
+      "plasticware",
+      "biobrand",
+      "si/pw/379"
+    ]
+  },
+  {
+    "id": "pcr-tube-rack-bb-pw-0076",
+    "name": "PCR Tube Rack",
+    "category": "Plasticware",
+    "subcategory": "PCR Consumables & Plates",
+    "brand": "Biobrand",
+    "sku": "SI/PW/380",
+    "slug": "product/pcr-tube-rack",
+    "image": "/images/products/plasticware/pcr-tube-rack.webp",
+    "searchTerms": [
+      "pcr tube rack",
+      "plasticware",
+      "biobrand",
+      "si/pw/380"
+    ]
+  },
+  {
+    "id": "micro-centrifuge-tube-bb-pw-0077",
+    "name": "Micro Centrifuge Tube",
+    "category": "Plasticware",
+    "subcategory": "Centrifuge Tubes & Microtubes",
+    "brand": "Biobrand",
+    "sku": "SI/PW/387",
+    "slug": "product/micro-centrifuge-tube",
+    "image": "/images/products/plasticware/micro-centrifuge-tube.webp",
+    "searchTerms": [
+      "micro centrifuge tube",
+      "plasticware",
+      "biobrand",
+      "si/pw/387"
+    ]
+  },
+  {
+    "id": "centrifuge-tube-conical-bottom-bb-pw-0078",
+    "name": "Centrifuge Tube Conical Bottom",
+    "category": "Plasticware",
+    "subcategory": "Centrifuge Tubes & Microtubes",
+    "brand": "Biobrand",
+    "sku": "SI/PW/394",
+    "slug": "product/centrifuge-tube-conical-bottom",
+    "image": "/images/products/plasticware/centrifuge-tube-conical-bottom.webp",
+    "searchTerms": [
+      "centrifuge tube conical bottom",
+      "plasticware",
+      "biobrand",
+      "si/pw/394"
+    ]
+  },
+  {
+    "id": "a-centrifuge-tube-round-r-e-bottom-bb-pw-0079",
+    "name": "A Centrifuge Tube Round Bottom",
+    "category": "Plasticware",
+    "subcategory": "Centrifuge Tubes & Microtubes",
+    "brand": "Biobrand",
+    "sku": "SI/PW/381",
+    "slug": "product/a-centrifuge-tube-round-r-e-bottom",
+    "image": "/images/products/plasticware/a-centrifuge-tube-round-r-e-bottom.webp",
+    "searchTerms": [
+      "a centrifuge tube round r e bottom",
+      "plasticware",
+      "biobrand",
+      "si/pw/381"
+    ]
+  },
+  {
+    "id": "amber-micro-centrifuge-tube-bb-pw-0080",
+    "name": "Amber Micro Centrifuge Tube",
+    "category": "Plasticware",
+    "subcategory": "Centrifuge Tubes & Microtubes",
+    "brand": "Biobrand",
+    "sku": "SI/PW/391",
+    "slug": "product/amber-micro-centrifuge-tube",
+    "image": "/images/products/plasticware/amber-micro-centrifuge-tube.webp",
+    "searchTerms": [
+      "amber micro centrifuge tube",
+      "plasticware",
+      "biobrand",
+      "si/pw/391"
+    ]
+  },
+  {
+    "id": "amber-centrifuge-tube-conical-bottem-bb-pw-0081",
+    "name": "Amber Centrifuge Tube Conical Bottem",
+    "category": "Plasticware",
+    "subcategory": "Centrifuge Tubes & Microtubes",
+    "brand": "Biobrand",
+    "sku": "SI/PW/3-P18-1",
+    "slug": "product/amber-centrifuge-tube-conical-bottem",
+    "image": "/images/products/plasticware/amber-centrifuge-tube-conical-bottem.webp",
+    "searchTerms": [
+      "amber centrifuge tube conical bottem",
+      "plasticware",
+      "biobrand",
+      "si/pw/3-p18-1"
+    ]
+  },
+  {
+    "id": "urine-container-bb-pw-0082",
+    "name": "Urine Container",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/402",
+    "slug": "product/urine-container",
+    "image": "/images/products/plasticware/urine-container.webp",
+    "searchTerms": [
+      "urine container",
+      "plasticware",
+      "biobrand",
+      "si/pw/402"
+    ]
+  },
+  {
+    "id": "stool-container-bb-pw-0083",
+    "name": "Stool Container",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/406",
+    "slug": "product/stool-container",
+    "image": "/images/products/plasticware/stool-container.webp",
+    "searchTerms": [
+      "stool container",
+      "plasticware",
+      "biobrand",
+      "si/pw/406"
+    ]
+  },
+  {
+    "id": "ria-vial-bb-pw-0084",
+    "name": "Ria Vial",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/GEN-084",
+    "slug": "product/ria-vial",
+    "image": "/images/products/plasticware/ria-vial.webp",
+    "searchTerms": [
+      "ria vial",
+      "plasticware",
+      "biobrand",
+      "si/pw/gen-084"
+    ]
+  },
+  {
+    "id": "stool-container-2-bb-pw-0085",
+    "name": "Stool Container",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/GEN-085",
+    "slug": "product/stool-container-2",
+    "image": "/images/products/plasticware/stool-container-2.webp",
+    "searchTerms": [
+      "stool container",
+      "plasticware",
+      "biobrand",
+      "si/pw/gen-085"
+    ]
+  },
+  {
+    "id": "oak-ridge-centrifuge-tubes-bb-pw-0086",
+    "name": "Oak Ridge Centrifuge Tubes",
+    "category": "Plasticware",
+    "subcategory": "Centrifuge Tubes & Microtubes",
+    "brand": "Biobrand",
+    "sku": "SI/PW/407",
+    "slug": "product/oak-ridge-centrifuge-tubes",
+    "image": "/images/products/plasticware/oak-ridge-centrifuge-tubes.webp",
+    "searchTerms": [
+      "oak ridge centrifuge tubes",
+      "plasticware",
+      "biobrand",
+      "si/pw/407"
+    ]
+  },
+  {
+    "id": "test-t-ube-w-ith-screw-cap-bb-pw-0087",
+    "name": "Test Tube With Screw Cap",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "brand": "Biobrand",
+    "sku": "SI/PW/GEN-087",
+    "slug": "product/test-t-ube-w-ith-screw-cap",
+    "image": "/images/products/plasticware/test-t-ube-w-ith-screw-cap.webp",
+    "searchTerms": [
+      "test Tube With screw cap",
+      "plasticware",
+      "biobrand",
+      "si/pw/gen-087"
+    ]
+  },
+  {
+    "id": "test-tube-cap-bb-pw-0088",
+    "name": "Test Tube Cap",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/415",
+    "slug": "product/test-tube-cap",
+    "image": "/images/products/plasticware/test-tube-cap.webp",
+    "searchTerms": [
+      "test tube cap",
+      "plasticware",
+      "biobrand",
+      "si/pw/415"
+    ]
+  },
+  {
+    "id": "amber-storage-vial-bb-pw-0089",
+    "name": "Amber Storage Vial",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/418",
+    "slug": "product/amber-storage-vial",
+    "image": "/images/products/plasticware/amber-storage-vial.webp",
+    "searchTerms": [
+      "amber storage vial",
+      "plasticware",
+      "biobrand",
+      "si/pw/418"
+    ]
+  },
+  {
+    "id": "scintillation-vial-bb-pw-0090",
+    "name": "Scintillation Vial",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/424",
+    "slug": "product/scintillation-vial",
+    "image": "",
+    "searchTerms": [
+      "scintillation vial",
+      "plasticware",
+      "biobrand",
+      "si/pw/424"
+    ]
+  },
+  {
+    "id": "a-storage-vial-r-e-bb-pw-0091",
+    "name": "A Storage Vial",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/416",
+    "slug": "product/a-storage-vial-r-e",
+    "image": "/images/products/plasticware/a-storage-vial-r-e.webp",
+    "searchTerms": [
+      "a storage vial r e",
+      "plasticware",
+      "biobrand",
+      "si/pw/416"
+    ]
+  },
+  {
+    "id": "storage-vial-bb-pw-0092",
+    "name": "Storage Vial",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/420",
+    "slug": "product/storage-vial",
+    "image": "/images/products/plasticware/storage-vial.webp",
+    "searchTerms": [
+      "storage vial",
+      "plasticware",
+      "biobrand",
+      "si/pw/420"
+    ]
+  },
+  {
+    "id": "rack-for-scintillation-vial-bb-pw-0093",
+    "name": "Rack For Scintillation Vial",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/426",
+    "slug": "product/rack-for-scintillation-vial",
+    "image": "/images/products/plasticware/rack-for-scintillation-vial.webp",
+    "searchTerms": [
+      "rack for scintillation vial",
+      "plasticware",
+      "biobrand",
+      "si/pw/426"
+    ]
+  },
+  {
+    "id": "cryo-v-ial-internal-thread-bb-pw-0094",
+    "name": "Cryo Vial-internal Thread",
+    "category": "Plasticware",
+    "subcategory": "Cryogenic Storage",
+    "brand": "Biobrand",
+    "sku": "SI/PW/428",
+    "slug": "product/cryo-v-ial-internal-thread",
+    "image": "/images/products/plasticware/cryo-v-ial-internal-thread.webp",
+    "searchTerms": [
+      "cryo Vial-internal thread",
+      "plasticware",
+      "biobrand",
+      "si/pw/428"
+    ]
+  },
+  {
+    "id": "cryo-coders-bb-pw-0095",
+    "name": "Cryo Coders",
+    "category": "Plasticware",
+    "subcategory": "Cryogenic Storage",
+    "brand": "Biobrand",
+    "sku": "SI/PW/432",
+    "slug": "product/cryo-coders",
+    "image": "/images/products/plasticware/cryo-coders.webp",
+    "searchTerms": [
+      "cryo coders",
+      "plasticware",
+      "biobrand",
+      "si/pw/432"
+    ]
+  },
+  {
+    "id": "cryo-box-pc-bb-pw-0096",
+    "name": "Cryo Box ( PC )",
+    "category": "Plasticware",
+    "subcategory": "Cryogenic Storage",
+    "brand": "Biobrand",
+    "sku": "SI/PW/438",
+    "slug": "product/cryo-box-pc",
+    "image": "/images/products/plasticware/cryo-box-pc.webp",
+    "searchTerms": [
+      "cryo box ( pc )",
+      "plasticware",
+      "biobrand",
+      "si/pw/438"
+    ]
+  },
+  {
+    "id": "cryo-v-ial-bb-pw-0097",
+    "name": "Cryo Vial",
+    "category": "Plasticware",
+    "subcategory": "Cryogenic Storage",
+    "brand": "Biobrand",
+    "sku": "SI/PW/429",
+    "slug": "product/cryo-v-ial",
+    "image": "/images/products/plasticware/cryo-v-ial.webp",
+    "searchTerms": [
+      "cryo Vial",
+      "plasticware",
+      "biobrand",
+      "si/pw/429"
+    ]
+  },
+  {
+    "id": "cryo-rack-bb-pw-0098",
+    "name": "Cryo Rack",
+    "category": "Plasticware",
+    "subcategory": "Cryogenic Storage",
+    "brand": "Biobrand",
+    "sku": "SI/PW/437",
+    "slug": "product/cryo-rack",
+    "image": "/images/products/plasticware/cryo-rack.webp",
+    "searchTerms": [
+      "cryo rack",
+      "plasticware",
+      "biobrand",
+      "si/pw/437"
+    ]
+  },
+  {
+    "id": "cryo-box-pp-bb-pw-0099",
+    "name": "Cryo Box ( PP )",
+    "category": "Plasticware",
+    "subcategory": "Cryogenic Storage",
+    "brand": "Biobrand",
+    "sku": "SI/PW/442",
+    "slug": "product/cryo-box-pp",
+    "image": "/images/products/plasticware/cryo-box-pp.webp",
+    "searchTerms": [
+      "cryo box ( pp )",
+      "plasticware",
+      "biobrand",
+      "si/pw/442"
+    ]
+  },
+  {
+    "id": "micro-t-est-plates-bb-pw-0100",
+    "name": "Micro T est Plates",
+    "category": "Plasticware",
+    "subcategory": "PCR Consumables & Plates",
+    "brand": "Biobrand",
+    "sku": "SI/PW/445-P22-1",
+    "slug": "product/micro-t-est-plates",
+    "image": "/images/products/plasticware/micro-t-est-plates.webp",
+    "searchTerms": [
+      "micro t est plates",
+      "plasticware",
+      "biobrand",
+      "si/pw/445-p22-1"
+    ]
+  },
+  {
+    "id": "micro-tip-box-new-bb-pw-0101",
+    "name": "Micro Tip Box ( New )",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/451-P22-1",
+    "slug": "product/micro-tip-box-new",
+    "image": "/images/products/plasticware/micro-tip-box-new.webp",
+    "searchTerms": [
+      "micro tip box ( new )",
+      "plasticware",
+      "biobrand",
+      "si/pw/451-p22-1"
+    ]
+  },
+  {
+    "id": "coplin-jar-bb-pw-0102",
+    "name": "Coplin Jar",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/461",
+    "slug": "product/coplin-jar",
+    "image": "/images/products/plasticware/coplin-jar.webp",
+    "searchTerms": [
+      "coplin jar",
+      "plasticware",
+      "biobrand",
+      "si/pw/461"
+    ]
+  },
+  {
+    "id": "a-micro-tip-box-r-e-bb-pw-0103",
+    "name": "A Micro Tip Box",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/448-P22-1",
+    "slug": "product/a-micro-tip-box-r-e",
+    "image": "/images/products/plasticware/a-micro-tip-box-r-e.webp",
+    "searchTerms": [
+      "a micro tip box r e",
+      "plasticware",
+      "biobrand",
+      "si/pw/448-p22-1"
+    ]
+  },
+  {
+    "id": "staining-box-bb-pw-0104",
+    "name": "Staining Box",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/455",
+    "slug": "product/staining-box",
+    "image": "/images/products/plasticware/staining-box.webp",
+    "searchTerms": [
+      "staining box",
+      "plasticware",
+      "biobrand",
+      "si/pw/455"
+    ]
+  },
+  {
+    "id": "rack-for-petri-dishes-bb-pw-0105",
+    "name": "Rack For Petri Dishes",
+    "category": "Plasticware",
+    "subcategory": "Petri Dishes & Cell Culture",
+    "brand": "Biobrand",
+    "sku": "SI/PW/462",
+    "slug": "product/rack-for-petri-dishes",
+    "image": "/images/products/plasticware/rack-for-petri-dishes.webp",
+    "searchTerms": [
+      "rack for petri dishes",
+      "plasticware",
+      "biobrand",
+      "si/pw/462"
+    ]
+  },
+  {
+    "id": "universal-multi-rack-bb-pw-0106",
+    "name": "Universal Multi Rack",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/464",
+    "slug": "product/universal-multi-rack",
+    "image": "/images/products/plasticware/universal-multi-rack.webp",
+    "searchTerms": [
+      "universal multi rack",
+      "plasticware",
+      "biobrand",
+      "si/pw/464"
+    ]
+  },
+  {
+    "id": "test-tube-stand-bb-pw-0107",
+    "name": "Test Tube Stand",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/467",
+    "slug": "product/test-tube-stand",
+    "image": "/images/products/plasticware/test-tube-stand.webp",
+    "searchTerms": [
+      "test tube stand",
+      "plasticware",
+      "biobrand",
+      "si/pw/467"
+    ]
+  },
+  {
+    "id": "rack-for-micro-centrifuge-tubes-bb-pw-0108",
+    "name": "Rack For Micro Centrifuge Tubes",
+    "category": "Plasticware",
+    "subcategory": "Centrifuge Tubes & Microtubes",
+    "brand": "Biobrand",
+    "sku": "SI/PW/470",
+    "slug": "product/rack-for-micro-centrifuge-tubes",
+    "image": "/images/products/plasticware/rack-for-micro-centrifuge-tubes.webp",
+    "searchTerms": [
+      "rack for micro centrifuge tubes",
+      "plasticware",
+      "biobrand",
+      "si/pw/470"
+    ]
+  },
+  {
+    "id": "nestler-cylinder-stand-bb-pw-0109",
+    "name": "Nestler Cylinder Stand",
+    "category": "Plasticware",
+    "subcategory": "Measuring Cylinders & Jugs",
+    "brand": "Biobrand",
+    "sku": "SI/PW/465",
+    "slug": "product/nestler-cylinder-stand",
+    "image": "/images/products/plasticware/nestler-cylinder-stand.webp",
+    "searchTerms": [
+      "nestler cylinder stand",
+      "plasticware",
+      "biobrand",
+      "si/pw/465"
+    ]
+  },
+  {
+    "id": "test-tube-stand-round-bb-pw-0110",
+    "name": "Test Tube Stand ( Round )",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/469",
+    "slug": "product/test-tube-stand-round",
+    "image": "/images/products/plasticware/test-tube-stand-round.webp",
+    "searchTerms": [
+      "test tube stand ( round )",
+      "plasticware",
+      "biobrand",
+      "si/pw/469"
+    ]
+  },
+  {
+    "id": "tes-t-tube-page-rack-bb-pw-0111",
+    "name": "Test Tube Page Rack",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/472",
+    "slug": "product/tes-t-tube-page-rack",
+    "image": "/images/products/plasticware/tes-t-tube-page-rack.webp",
+    "searchTerms": [
+      "Test tube page rack",
+      "plasticware",
+      "biobrand",
+      "si/pw/472"
+    ]
+  },
+  {
+    "id": "test-tube-stand-3-tier-bb-pw-0112",
+    "name": "Test Tube Stand (3 Tier)",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/474",
+    "slug": "product/test-tube-stand-3-tier",
+    "image": "/images/products/plasticware/test-tube-stand-3-tier.webp",
+    "searchTerms": [
+      "test tube stand ( 3 tier )",
+      "plasticware",
+      "biobrand",
+      "si/pw/474"
+    ]
+  },
+  {
+    "id": "tes-t-tube-s-tand-wire-pattern-bb-pw-0113",
+    "name": "Test Tube Stand (Wire Pattern)",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "brand": "Biobrand",
+    "sku": "SI/PW/489",
+    "slug": "product/tes-t-tube-s-tand-wire-pattern",
+    "image": "/images/products/plasticware/tes-t-tube-s-tand-wire-pattern.webp",
+    "searchTerms": [
+      "Test tube Stand (wire pattern)",
+      "plasticware",
+      "biobrand",
+      "si/pw/489"
+    ]
+  },
+  {
+    "id": "test-tube-baskets-bb-pw-0114",
+    "name": "Test Tube Baskets",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/495",
+    "slug": "product/test-tube-baskets",
+    "image": "/images/products/plasticware/test-tube-baskets.webp",
+    "searchTerms": [
+      "test tube baskets",
+      "plasticware",
+      "biobrand",
+      "si/pw/495"
+    ]
+  },
+  {
+    "id": "rack-for-micro-centrifuge-folding-bb-pw-0116",
+    "name": "Rack For Micro Centrifuge Folding",
+    "category": "Plasticware",
+    "subcategory": "Centrifuge Tubes & Microtubes",
+    "brand": "Biobrand",
+    "sku": "SI/PW/494",
+    "slug": "product/rack-for-micro-centrifuge-folding",
+    "image": "/images/products/plasticware/rack-for-micro-centrifuge-folding.webp",
+    "searchTerms": [
+      "rack for micro centrifuge folding",
+      "plasticware",
+      "biobrand",
+      "si/pw/494"
+    ]
+  },
+  {
+    "id": "draining-baskets-bb-pw-0117",
+    "name": "Draining Baskets",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/498",
+    "slug": "product/draining-baskets",
+    "image": "/images/products/plasticware/draining-baskets.webp",
+    "searchTerms": [
+      "draining baskets",
+      "plasticware",
+      "biobrand",
+      "si/pw/498"
+    ]
+  },
+  {
+    "id": "pipette-stand-horizontal-bb-pw-0118",
+    "name": "Pipette Stand Horizontal",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/499",
+    "slug": "product/pipette-stand-horizontal",
+    "image": "/images/products/plasticware/pipette-stand-horizontal.webp",
+    "searchTerms": [
+      "pipette stand horizontal",
+      "plasticware",
+      "biobrand",
+      "si/pw/499"
+    ]
+  },
+  {
+    "id": "pipette-s-tand-vertical-r-otary-bb-pw-0119",
+    "name": "Pipette Stand Vertical Rotary",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/501",
+    "slug": "product/pipette-s-tand-vertical-r-otary",
+    "image": "/images/products/plasticware/pipette-s-tand-vertical-r-otary.webp",
+    "searchTerms": [
+      "pipette Stand vertical r otary",
+      "plasticware",
+      "biobrand",
+      "si/pw/501"
+    ]
+  },
+  {
+    "id": "reagent-reservoir-bb-pw-0120",
+    "name": "Reagent Reservoir",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "brand": "Biobrand",
+    "sku": "SI/PW/503",
+    "slug": "product/reagent-reservoir",
+    "image": "/images/products/plasticware/reagent-reservoir.webp",
+    "searchTerms": [
+      "reagent reservoir",
+      "plasticware",
+      "biobrand",
+      "si/pw/503"
+    ]
+  },
+  {
+    "id": "pipette-stand-vertical-bb-pw-0121",
+    "name": "Pipette Stand Vertical",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/500",
+    "slug": "product/pipette-stand-vertical",
+    "image": "/images/products/plasticware/pipette-stand-vertical.webp",
+    "searchTerms": [
+      "pipette stand vertical",
+      "plasticware",
+      "biobrand",
+      "si/pw/500"
+    ]
+  },
+  {
+    "id": "pipette-box-bb-pw-0122",
+    "name": "Pipette Box",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/502",
+    "slug": "product/pipette-box",
+    "image": "/images/products/plasticware/pipette-box.webp",
+    "searchTerms": [
+      "pipette box",
+      "plasticware",
+      "biobrand",
+      "si/pw/502"
+    ]
+  },
+  {
+    "id": "univers-al-r-egeant-r-es-ervoir-bb-pw-0123",
+    "name": "Universal Reagent Reservoir",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "brand": "Biobrand",
+    "sku": "SI/PW/504",
+    "slug": "product/univers-al-r-egeant-r-es-ervoir",
+    "image": "/images/products/plasticware/univers-al-r-egeant-r-es-ervoir.webp",
+    "searchTerms": [
+      "univers al Reagent Reservoir",
+      "plasticware",
+      "biobrand",
+      "si/pw/504"
+    ]
+  },
+  {
+    "id": "ice-bucket-bb-pw-0124",
+    "name": "Ice bucket",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/505",
+    "slug": "product/ice-bucket",
+    "image": "/images/products/plasticware/ice-bucket.webp",
+    "searchTerms": [
+      "ice bucket",
+      "plasticware",
+      "biobrand",
+      "si/pw/505"
+    ]
+  },
+  {
+    "id": "measuring-cylinders-bb-pw-0125",
+    "name": "Measuring Cylinders",
+    "category": "Plasticware",
+    "subcategory": "Measuring Cylinders & Jugs",
+    "brand": "Biobrand",
+    "sku": "SI/PW/514",
+    "slug": "product/measuring-cylinders",
+    "image": "/images/products/plasticware/measuring-cylinders.webp",
+    "searchTerms": [
+      "measuring cylinders",
+      "plasticware",
+      "biobrand",
+      "si/pw/514"
+    ]
+  },
+  {
+    "id": "a-measuring-cylinder-class-a-r-e-bb-pw-0126",
+    "name": "A Measuring Cylinder Class A",
+    "category": "Plasticware",
+    "subcategory": "Measuring Cylinders & Jugs",
+    "brand": "Biobrand",
+    "sku": "SI/PW/507",
+    "slug": "product/a-measuring-cylinder-class-a-r-e",
+    "image": "/images/products/plasticware/a-measuring-cylinder-class-a-r-e.webp",
+    "searchTerms": [
+      "a measuring cylinder class a r e",
+      "plasticware",
+      "biobrand",
+      "si/pw/507"
+    ]
+  },
+  {
+    "id": "measuring-cylinders-2-bb-pw-0127",
+    "name": "Measuring Cylinders",
+    "category": "Plasticware",
+    "subcategory": "Measuring Cylinders & Jugs",
+    "brand": "Biobrand",
+    "sku": "SI/PW/522",
+    "slug": "product/measuring-cylinders-2",
+    "image": "",
+    "searchTerms": [
+      "measuring cylinders",
+      "plasticware",
+      "biobrand",
+      "si/pw/522"
+    ]
+  },
+  {
+    "id": "measuring-jugs-bb-pw-0128",
+    "name": "Measuring Jugs",
+    "category": "Plasticware",
+    "subcategory": "Measuring Cylinders & Jugs",
+    "brand": "Biobrand",
+    "sku": "SI/PW/530",
+    "slug": "product/measuring-jugs",
+    "image": "/images/products/plasticware/measuring-jugs.webp",
+    "searchTerms": [
+      "measuring jugs",
+      "plasticware",
+      "biobrand",
+      "si/pw/530"
+    ]
+  },
+  {
+    "id": "conical-measures-bb-pw-0129",
+    "name": "Conical Measures",
+    "category": "Plasticware",
+    "subcategory": "Measuring Cylinders & Jugs",
+    "brand": "Biobrand",
+    "sku": "SI/PW/539",
+    "slug": "product/conical-measures",
+    "image": "/images/products/plasticware/conical-measures.webp",
+    "searchTerms": [
+      "conical measures",
+      "plasticware",
+      "biobrand",
+      "si/pw/539"
+    ]
+  },
+  {
+    "id": "spatula-bb-pw-0130",
+    "name": "Spatula",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/546",
+    "slug": "product/spatula",
+    "image": "/images/products/plasticware/spatula.webp",
+    "searchTerms": [
+      "spatula",
+      "plasticware",
+      "biobrand",
+      "si/pw/546"
+    ]
+  },
+  {
+    "id": "measuring-jugs-euro-design-bb-pw-0131",
+    "name": "Measuring Jugs (Euro Design)",
+    "category": "Plasticware",
+    "subcategory": "Measuring Cylinders & Jugs",
+    "brand": "Biobrand",
+    "sku": "SI/PW/534",
+    "slug": "product/measuring-jugs-euro-design",
+    "image": "/images/products/plasticware/measuring-jugs-euro-design.webp",
+    "searchTerms": [
+      "measuring jugs (euro design)",
+      "plasticware",
+      "biobrand",
+      "si/pw/534"
+    ]
+  },
+  {
+    "id": "seperatory-funnel-bb-pw-0132",
+    "name": "Seperatory Funnel",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/544",
+    "slug": "product/seperatory-funnel",
+    "image": "/images/products/plasticware/seperatory-funnel.webp",
+    "searchTerms": [
+      "seperatory funnel",
+      "plasticware",
+      "biobrand",
+      "si/pw/544"
+    ]
+  },
+  {
+    "id": "stirrer-bb-pw-0133",
+    "name": "Stirrer",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/548",
+    "slug": "product/stirrer",
+    "image": "/images/products/plasticware/stirrer.webp",
+    "searchTerms": [
+      "stirrer",
+      "plasticware",
+      "biobrand",
+      "si/pw/548"
+    ]
+  },
+  {
+    "id": "stirring-rods-bb-pw-0134",
+    "name": "Stirring Rods",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "brand": "Biobrand",
+    "sku": "SI/PW/553",
+    "slug": "product/stirring-rods",
+    "image": "/images/products/plasticware/stirring-rods.webp",
+    "searchTerms": [
+      "stirring rods",
+      "plasticware",
+      "biobrand",
+      "si/pw/553"
+    ]
+  },
+  {
+    "id": "l-s-haped-s-preader-r-adiation-sterile-bb-pw-0135",
+    "name": "L Shaped Spreader - Radiation Sterile",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "brand": "Biobrand",
+    "sku": "SI/PW/557",
+    "slug": "product/l-s-haped-s-preader-r-adiation-sterile",
+    "image": "/images/products/plasticware/l-s-haped-s-preader-r-adiation-sterile.webp",
+    "searchTerms": [
+      "l s haped Spreader - r adiation sterile",
+      "plasticware",
+      "biobrand",
+      "si/pw/557"
+    ]
+  },
+  {
+    "id": "pneumatic-trough-bb-pw-0136",
+    "name": "Pneumatic Trough",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/559",
+    "slug": "product/pneumatic-trough",
+    "image": "/images/products/plasticware/pneumatic-trough.webp",
+    "searchTerms": [
+      "pneumatic trough",
+      "plasticware",
+      "biobrand",
+      "si/pw/559"
+    ]
+  },
+  {
+    "id": "a-soft-loop-sterile-r-e-bb-pw-0137",
+    "name": "A Soft Loop Sterile",
+    "category": "Plasticware",
+    "subcategory": "Petri Dishes & Cell Culture",
+    "brand": "Biobrand",
+    "sku": "SI/PW/554",
+    "slug": "product/a-soft-loop-sterile-r-e",
+    "image": "/images/products/plasticware/a-soft-loop-sterile-r-e.webp",
+    "searchTerms": [
+      "a soft loop sterile r e",
+      "plasticware",
+      "biobrand",
+      "si/pw/554"
+    ]
+  },
+  {
+    "id": "micro-pestle-bb-pw-0138",
+    "name": "Micro Pestle",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/558",
+    "slug": "product/micro-pestle",
+    "image": "/images/products/plasticware/micro-pestle.webp",
+    "searchTerms": [
+      "micro pestle",
+      "plasticware",
+      "biobrand",
+      "si/pw/558"
+    ]
+  },
+  {
+    "id": "plantation-pots-bb-pw-0139",
+    "name": "Plantation Pots",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/552-P28-1",
+    "slug": "product/plantation-pots",
+    "image": "/images/products/plasticware/plantation-pots.webp",
+    "searchTerms": [
+      "plantation pots",
+      "plasticware",
+      "biobrand",
+      "si/pw/552-p28-1"
+    ]
+  },
+  {
+    "id": "laboratory-tray-bb-pw-0140",
+    "name": "Laboratory Tray",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/566",
+    "slug": "product/laboratory-tray",
+    "image": "/images/products/plasticware/laboratory-tray.webp",
+    "searchTerms": [
+      "laboratory tray",
+      "plasticware",
+      "biobrand",
+      "si/pw/566"
+    ]
+  },
+  {
+    "id": "carrier-tray-bb-pw-0141",
+    "name": "Carrier Tray",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/572",
+    "slug": "product/carrier-tray",
+    "image": "/images/products/plasticware/carrier-tray.webp",
+    "searchTerms": [
+      "carrier tray",
+      "plasticware",
+      "biobrand",
+      "si/pw/572"
+    ]
+  },
+  {
+    "id": "draining-rack-bb-pw-0142",
+    "name": "Draining Rack",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/575",
+    "slug": "product/draining-rack",
+    "image": "/images/products/plasticware/draining-rack.webp",
+    "searchTerms": [
+      "draining rack",
+      "plasticware",
+      "biobrand",
+      "si/pw/575"
+    ]
+  },
+  {
+    "id": "utility-tray-bb-pw-0143",
+    "name": "Utility Tray",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/568",
+    "slug": "product/utility-tray",
+    "image": "/images/products/plasticware/utility-tray.webp",
+    "searchTerms": [
+      "utility tray",
+      "plasticware",
+      "biobrand",
+      "si/pw/568"
+    ]
+  },
+  {
+    "id": "instrument-tray-bb-pw-0144",
+    "name": "Instrument Tray",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/573",
+    "slug": "product/instrument-tray",
+    "image": "/images/products/plasticware/instrument-tray.webp",
+    "searchTerms": [
+      "instrument tray",
+      "plasticware",
+      "biobrand",
+      "si/pw/573"
+    ]
+  },
+  {
+    "id": "draining-rack-2-bb-pw-0145",
+    "name": "Draining Rack",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/576",
+    "slug": "product/draining-rack-2",
+    "image": "/images/products/plasticware/draining-rack-2.webp",
+    "searchTerms": [
+      "draining rack",
+      "plasticware",
+      "biobrand",
+      "si/pw/576"
+    ]
+  },
+  {
+    "id": "storage-boxes-bb-pw-0146",
+    "name": "Storage Boxes",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/577",
+    "slug": "product/storage-boxes",
+    "image": "/images/products/plasticware/storage-boxes.webp",
+    "searchTerms": [
+      "storage boxes",
+      "plasticware",
+      "biobrand",
+      "si/pw/577"
+    ]
+  },
+  {
+    "id": "simple-cell-pot-bb-pw-0147",
+    "name": "Simple Cell Pot",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/581",
+    "slug": "product/simple-cell-pot",
+    "image": "/images/products/plasticware/simple-cell-pot.webp",
+    "searchTerms": [
+      "simple cell pot",
+      "plasticware",
+      "biobrand",
+      "si/pw/581"
+    ]
+  },
+  {
+    "id": "medicine-cup-bb-pw-0148",
+    "name": "Medicine Cup",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/584",
+    "slug": "product/medicine-cup",
+    "image": "/images/products/plasticware/medicine-cup.webp",
+    "searchTerms": [
+      "medicine cup",
+      "plasticware",
+      "biobrand",
+      "si/pw/584"
+    ]
+  },
+  {
+    "id": "a-magenta-box-r-e-bb-pw-0149",
+    "name": "A Magenta Box",
+    "category": "Plasticware",
+    "subcategory": "Petri Dishes & Cell Culture",
+    "brand": "Biobrand",
+    "sku": "SI/PW/580",
+    "slug": "product/a-magenta-box-r-e",
+    "image": "/images/products/plasticware/a-magenta-box-r-e.webp",
+    "searchTerms": [
+      "a magenta box r e",
+      "plasticware",
+      "biobrand",
+      "si/pw/580"
+    ]
+  },
+  {
+    "id": "sample-container-bb-pw-0150",
+    "name": "Sample Container",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/582",
+    "slug": "product/sample-container",
+    "image": "/images/products/plasticware/sample-container.webp",
+    "searchTerms": [
+      "sample container",
+      "plasticware",
+      "biobrand",
+      "si/pw/582"
+    ]
+  },
+  {
+    "id": "laclanche-cell-pot-bb-pw-0151",
+    "name": "Laclanche Cell Pot",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/585",
+    "slug": "product/laclanche-cell-pot",
+    "image": "/images/products/plasticware/laclanche-cell-pot.webp",
+    "searchTerms": [
+      "laclanche cell pot",
+      "plasticware",
+      "biobrand",
+      "si/pw/585"
+    ]
+  },
+  {
+    "id": "o-c-mini-cooler-bb-pw-0152",
+    "name": "O C Mini Cooler",
+    "category": "Plasticware",
+    "subcategory": "Cryogenic Storage",
+    "brand": "Biobrand",
+    "sku": "SI/PW/586",
+    "slug": "product/o-c-mini-cooler",
+    "image": "/images/products/plasticware/o-c-mini-cooler.webp",
+    "searchTerms": [
+      "o c mini cooler",
+      "plasticware",
+      "biobrand",
+      "si/pw/586"
+    ]
+  },
+  {
+    "id": "quick-freeze-bb-pw-0153",
+    "name": "Quick Freeze",
+    "category": "Plasticware",
+    "subcategory": "Cryogenic Storage",
+    "brand": "Biobrand",
+    "sku": "SI/PW/593",
+    "slug": "product/quick-freeze",
+    "image": "/images/products/plasticware/quick-freeze.webp",
+    "searchTerms": [
+      "quick freeze",
+      "plasticware",
+      "biobrand",
+      "si/pw/593"
+    ]
+  },
+  {
+    "id": "cryo-apron-bb-pw-0154",
+    "name": "Cryo Apron",
+    "category": "Plasticware",
+    "subcategory": "Cryogenic Storage",
+    "brand": "Biobrand",
+    "sku": "SI/PW/606",
+    "slug": "product/cryo-apron",
+    "image": "/images/products/plasticware/cryo-apron.webp",
+    "searchTerms": [
+      "cryo apron",
+      "plasticware",
+      "biobrand",
+      "si/pw/606"
+    ]
+  },
+  {
+    "id": "20-o-c-mini-cooler-bb-pw-0155",
+    "name": "-20 O C Mini Cooler",
+    "category": "Plasticware",
+    "subcategory": "Cryogenic Storage",
+    "brand": "Biobrand",
+    "sku": "SI/PW/590",
+    "slug": "product/20-o-c-mini-cooler",
+    "image": "/images/products/plasticware/20-o-c-mini-cooler.webp",
+    "searchTerms": [
+      "-20 o c mini cooler",
+      "plasticware",
+      "biobrand",
+      "si/pw/590"
+    ]
+  },
+  {
+    "id": "cryo-gloves-bb-pw-0156",
+    "name": "Cryo Gloves",
+    "category": "Plasticware",
+    "subcategory": "Cryogenic Storage",
+    "brand": "Biobrand",
+    "sku": "SI/PW/594",
+    "slug": "product/cryo-gloves",
+    "image": "/images/products/plasticware/cryo-gloves.webp",
+    "searchTerms": [
+      "cryo gloves",
+      "plasticware",
+      "biobrand",
+      "si/pw/594"
+    ]
+  },
+  {
+    "id": "ne-s-t-tissue-culture-flask-s-erile-bb-pw-0157",
+    "name": "NE S T Tissue Culture Flask-S erile",
+    "category": "Plasticware",
+    "subcategory": "Flasks & Beakers",
+    "brand": "Biobrand",
+    "sku": "SI/PW/610",
+    "slug": "product/ne-s-t-tissue-culture-flask-s-erile",
+    "image": "/images/products/plasticware/ne-s-t-tissue-culture-flask-s-erile.webp",
+    "searchTerms": [
+      "ne s t tissue culture flask-s erile",
+      "plasticware",
+      "biobrand",
+      "si/pw/610"
+    ]
+  },
+  {
+    "id": "serological-pipette-r-adiation-sterile-bb-pw-0158",
+    "name": "Serological Pipette - Radiation Sterile",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/613",
+    "slug": "product/serological-pipette-r-adiation-sterile",
+    "image": "/images/products/plasticware/serological-pipette-r-adiation-sterile.webp",
+    "searchTerms": [
+      "serological pipette - r adiation sterile",
+      "plasticware",
+      "biobrand",
+      "si/pw/613"
+    ]
+  },
+  {
+    "id": "s-coop-bb-pw-0159",
+    "name": "Scoop",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "brand": "Biobrand",
+    "sku": "SI/PW/622",
+    "slug": "product/s-coop",
+    "image": "/images/products/plasticware/s-coop.webp",
+    "searchTerms": [
+      "Scoop",
+      "plasticware",
+      "biobrand",
+      "si/pw/622"
+    ]
+  },
+  {
+    "id": "contact-plate-triple-vent-flat-base-r-adiation-sterile-bb-pw-0160",
+    "name": "Contact Plate, Triple vent, Flat Base Radiation Sterile",
+    "category": "Plasticware",
+    "subcategory": "PCR Consumables & Plates",
+    "brand": "Biobrand",
+    "sku": "SI/PW/627",
+    "slug": "product/contact-plate-triple-vent-flat-base-r-adiation-sterile",
+    "image": "/images/products/plasticware/contact-plate-triple-vent-flat-base-r-adiation-sterile.webp",
+    "searchTerms": [
+      "contact plate, triple vent, flat base r adiation sterile",
+      "plasticware",
+      "biobrand",
+      "si/pw/627"
+    ]
+  },
+  {
+    "id": "a-pasteur-pipette-r-e-bb-pw-0161",
+    "name": "A Pasteur Pipette",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/618",
+    "slug": "product/a-pasteur-pipette-r-e",
+    "image": "/images/products/plasticware/a-pasteur-pipette-r-e.webp",
+    "searchTerms": [
+      "a pasteur pipette r e",
+      "plasticware",
+      "biobrand",
+      "si/pw/618"
+    ]
+  },
+  {
+    "id": "amber-ria-vial-bb-pw-0162",
+    "name": "Amber RIA Vial",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/625",
+    "slug": "product/amber-ria-vial",
+    "image": "/images/products/plasticware/amber-ria-vial.webp",
+    "searchTerms": [
+      "amber ria vial",
+      "plasticware",
+      "biobrand",
+      "si/pw/625"
+    ]
+  },
+  {
+    "id": "ml-pcr-tube-with-cap-bb-pw-0163",
+    "name": "ml PCR ® Tube with Cap",
+    "category": "Plasticware",
+    "subcategory": "PCR Consumables & Plates",
+    "brand": "Biobrand",
+    "sku": "SI/PW/628",
+    "slug": "product/ml-pcr-tube-with-cap",
+    "image": "/images/products/plasticware/ml-pcr-tube-with-cap.webp",
+    "searchTerms": [
+      "ml pcr ® tube with cap",
+      "plasticware",
+      "biobrand",
+      "si/pw/628"
+    ]
+  },
+  {
+    "id": "ml-pcr-tube-with-cap-2-bb-pw-0164",
+    "name": "ml PCR ® Tube with Cap",
+    "category": "Plasticware",
+    "subcategory": "PCR Consumables & Plates",
+    "brand": "Biobrand",
+    "sku": "SI/PW/630",
+    "slug": "product/ml-pcr-tube-with-cap-2",
+    "image": "/images/products/plasticware/ml-pcr-tube-with-cap-2.webp",
+    "searchTerms": [
+      "ml pcr ® tube with cap",
+      "plasticware",
+      "biobrand",
+      "si/pw/630"
+    ]
+  },
+  {
+    "id": "ml-8-pcr-tube-strip-with-cap-bb-pw-0165",
+    "name": "ml 8 PCR ® Tube Strip with Cap",
+    "category": "Plasticware",
+    "subcategory": "PCR Consumables & Plates",
+    "brand": "Biobrand",
+    "sku": "SI/PW/632",
+    "slug": "product/ml-8-pcr-tube-strip-with-cap",
+    "image": "/images/products/plasticware/ml-8-pcr-tube-strip-with-cap.webp",
+    "searchTerms": [
+      "ml 8 pcr ® tube strip with cap",
+      "plasticware",
+      "biobrand",
+      "si/pw/632"
+    ]
+  },
+  {
+    "id": "ml-8-pcr-tube-strip-with-cap-low-pro-le-bb-pw-0166",
+    "name": "ml 8 PCR ® Tube Strip with Cap Low Proﬁle",
+    "category": "Plasticware",
+    "subcategory": "PCR Consumables & Plates",
+    "brand": "Biobrand",
+    "sku": "SI/PW/634",
+    "slug": "product/ml-8-pcr-tube-strip-with-cap-low-pro-le",
+    "image": "/images/products/plasticware/ml-8-pcr-tube-strip-with-cap-low-pro-le.webp",
+    "searchTerms": [
+      "ml 8 pcr ® tube strip with cap low proﬁle",
+      "plasticware",
+      "biobrand",
+      "si/pw/634"
+    ]
+  },
+  {
+    "id": "student-labware-kit-bb-pw-0167",
+    "name": "Student Labware Kit",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/636",
+    "slug": "product/student-labware-kit",
+    "image": "/images/products/plasticware/student-labware-kit.webp",
+    "searchTerms": [
+      "student labware kit",
+      "plasticware",
+      "biobrand",
+      "si/pw/636"
+    ]
+  },
+  {
+    "id": "tygon-l-aboratory-tubing-bb-pw-0168",
+    "name": "Tygon L aboratory Tubing",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/637",
+    "slug": "product/tygon-l-aboratory-tubing",
+    "image": "/images/products/plasticware/tygon-l-aboratory-tubing.webp",
+    "searchTerms": [
+      "tygon l aboratory tubing",
+      "plasticware",
+      "biobrand",
+      "si/pw/637"
+    ]
+  },
+  {
+    "id": "mini-submarine-electrophoresis-unit-bb-pw-0169",
+    "name": "Mini Submarine Electrophoresis Unit",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/644",
+    "slug": "product/mini-submarine-electrophoresis-unit",
+    "image": "/images/products/plasticware/mini-submarine-electrophoresis-unit.webp",
+    "searchTerms": [
+      "mini submarine electrophoresis unit",
+      "plasticware",
+      "biobrand",
+      "si/pw/644"
+    ]
+  },
+  {
+    "id": "s-pares-bb-pw-0170",
+    "name": "Spares",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "brand": "Biobrand",
+    "sku": "SI/PW/646",
+    "slug": "product/s-pares",
+    "image": "/images/products/plasticware/s-pares.webp",
+    "searchTerms": [
+      "Spares",
+      "plasticware",
+      "biobrand",
+      "si/pw/646"
+    ]
+  },
+  {
+    "id": "gel-caster-for-submarine-electrophoresis-unit-bb-pw-0171",
+    "name": "Gel Caster for Submarine Electrophoresis Unit",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/654",
+    "slug": "product/gel-caster-for-submarine-electrophoresis-unit",
+    "image": "",
+    "searchTerms": [
+      "gel caster for submarine electrophoresis unit",
+      "plasticware",
+      "biobrand",
+      "si/pw/654"
+    ]
+  },
+  {
+    "id": "a-midi-submarine-r-e-electrophoresis-unit-bb-pw-0172",
+    "name": "A Midi Submarine Electrophoresis Unit",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/650",
+    "slug": "product/a-midi-submarine-r-e-electrophoresis-unit",
+    "image": "/images/products/plasticware/a-midi-submarine-r-e-electrophoresis-unit.webp",
+    "searchTerms": [
+      "a midi submarine r e electrophoresis unit",
+      "plasticware",
+      "biobrand",
+      "si/pw/650"
+    ]
+  },
+  {
+    "id": "s-pares-2-bb-pw-0173",
+    "name": "Spares",
+    "category": "Plasticware",
+    "subcategory": "General Labware",
+    "brand": "Biobrand",
+    "sku": "SI/PW/651",
+    "slug": "product/s-pares-2",
+    "image": "/images/products/plasticware/s-pares-2.webp",
+    "searchTerms": [
+      "Spares",
+      "plasticware",
+      "biobrand",
+      "si/pw/651"
+    ]
+  },
+  {
+    "id": "electrophoresis-power-supply-unit-bb-pw-0174",
+    "name": "Electrophoresis Power Supply Unit",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/655",
+    "slug": "product/electrophoresis-power-supply-unit",
+    "image": "",
+    "searchTerms": [
+      "electrophoresis power supply unit",
+      "plasticware",
+      "biobrand",
+      "si/pw/655"
+    ]
+  },
+  {
+    "id": "uv-safety-g-oggles-bb-pw-0175",
+    "name": "UV Safety G oggles",
+    "category": "Plasticware",
+    "subcategory": "Safety & Biohazard",
+    "brand": "Biobrand",
+    "sku": "SI/PW/656",
+    "slug": "product/uv-safety-g-oggles",
+    "image": "/images/products/plasticware/uv-safety-g-oggles.webp",
+    "searchTerms": [
+      "uv safety g oggles",
+      "plasticware",
+      "biobrand",
+      "si/pw/656"
+    ]
+  },
+  {
+    "id": "b-iohazardous-waste-container-bb-pw-0176",
+    "name": "Biohazardous Waste Container",
+    "category": "Plasticware",
+    "subcategory": "Reagent & Storage Bottles",
+    "brand": "Biobrand",
+    "sku": "SI/PW/659",
+    "slug": "product/b-iohazardous-waste-container",
+    "image": "/images/products/plasticware/b-iohazardous-waste-container.webp",
+    "searchTerms": [
+      "Biohazardous waste container",
+      "plasticware",
+      "biobrand",
+      "si/pw/659"
+    ]
+  },
+  {
+    "id": "cylindrical-tank-with-c-over-bb-pw-0177",
+    "name": "Cylindrical Tank with Cover",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/661",
+    "slug": "product/cylindrical-tank-with-c-over",
+    "image": "",
+    "searchTerms": [
+      "cylindrical tank with Cover",
+      "plasticware",
+      "biobrand",
+      "si/pw/661"
+    ]
+  },
+  {
+    "id": "safety-g-oggles-bb-pw-0178",
+    "name": "Safety G oggles",
+    "category": "Plasticware",
+    "subcategory": "Safety & Biohazard",
+    "brand": "Biobrand",
+    "sku": "SI/PW/657",
+    "slug": "product/safety-g-oggles",
+    "image": "/images/products/plasticware/safety-g-oggles.webp",
+    "searchTerms": [
+      "safety g oggles",
+      "plasticware",
+      "biobrand",
+      "si/pw/657"
+    ]
+  },
+  {
+    "id": "safety-e-yewear-box-bb-pw-0179",
+    "name": "Safety E yewear Box",
+    "category": "Plasticware",
+    "subcategory": "Safety & Biohazard",
+    "brand": "Biobrand",
+    "sku": "SI/PW/658",
+    "slug": "product/safety-e-yewear-box",
+    "image": "/images/products/plasticware/safety-e-yewear-box.webp",
+    "searchTerms": [
+      "safety e yewear box",
+      "plasticware",
+      "biobrand",
+      "si/pw/658"
+    ]
+  },
+  {
+    "id": "stop-cocks-bb-pw-0180",
+    "name": "Stop Cocks",
+    "category": "Plasticware",
+    "subcategory": "Racks, Stands & Accessories",
+    "brand": "Biobrand",
+    "sku": "SI/PW/662",
+    "slug": "product/stop-cocks",
+    "image": "",
+    "searchTerms": [
+      "stop cocks",
+      "plasticware",
+      "biobrand",
+      "si/pw/662"
+    ]
+  }
+]

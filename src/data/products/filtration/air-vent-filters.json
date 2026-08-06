@@ -1,0 +1,81 @@
+[
+  {
+    "id": "bb-fil-vent-50",
+    "sku": "BB-VENT-50",
+    "name": "50mm Hydrophobic PTFE Air Vent Filters",
+    "series": "Biobusiness Bioprocess Vents",
+    "model": "VENT-50",
+    "category": "Filtration",
+    "subcategory": "Air Vent Filters",
+    "type": "Disc Vent Filter",
+    "material": "Hydrophobic PTFE",
+    "sterile": false,
+    "description": "Autoclavable 50mm hydrophobic PTFE disc vent filters designed for sterile gas venting of carboys, fermenters, bioreactors, and storage tanks.",
+    "features": [
+      "High-flow hydrophobic PTFE membrane stops water and bacterial ingress",
+      "Autoclavable up to 50 times at 121 °C",
+      "Stepped hose barb inlet/outlet (6mm - 12mm tubing ID)"
+    ],
+    "applications": [
+      "Sterile Venting of Carboys & Storage Vessels",
+      "Bioreactor & Fermenter Air Exhaust",
+      "Autoclave Vacuum Relief & Gas Purging"
+    ],
+    "technicalSpecifications": {
+      "Diameter": "50 mm",
+      "Filter Media": "Hydrophobic PTFE",
+      "Micron Rating": "0.22 µm / 0.45 µm",
+      "Housing": "Medical Polypropylene",
+      "Autoclavable": "Yes (121 °C, 50 cycles)"
+    },
+    "variants": [
+      {
+        "catNo": "BB-VENT50-022",
+        "diameter": "50 mm",
+        "micron": "0.22 µm",
+        "pack": "10",
+        "internalPricing": {
+          "unitPrice": 1200,
+          "currency": "INR"
+        }
+      },
+      {
+        "catNo": "BB-VENT50-045",
+        "diameter": "50 mm",
+        "micron": "0.45 µm",
+        "pack": "10",
+        "internalPricing": {
+          "unitPrice": 1200,
+          "currency": "INR"
+        }
+      }
+    ],
+    "image": "/images/products/filtration/bb-fil-vent-50.webp",
+    "gallery": [
+      "/images/products/filtration/bb-fil-vent-50.webp"
+    ],
+    "searchTerms": [
+      "air vent filter",
+      "ptfe",
+      "hydrophobic",
+      "50mm",
+      "carboy vent",
+      "bioreactor",
+      "0.22"
+    ],
+    "relatedProducts": [
+      "bb-fil-sf-ptfe-hydrophobic"
+    ],
+    "slug": "50mm-hydrophobic-ptfe-air-vent-filters",
+    "manufacturer": "Axiva Sichem",
+    "brand": "Axiva",
+    "countryOfOrigin": "India",
+    "manufacturerWebsite": "https://www.axiva.com",
+    "manufacturerLogo": "/images/brands/axiva.svg",
+    "supplier": "Biobusiness Development Agency",
+    "authorizedDistributor": true,
+    "internalSKU": "BB-VENT-50",
+    "manufacturerCatNo": "VENT-50",
+    "manufacturerModel": "VENT-50"
+  }
+]
