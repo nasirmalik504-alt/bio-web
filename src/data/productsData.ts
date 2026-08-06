@@ -132,18 +132,18 @@ export const TIMELINE_EVENTS: TimelineEvent[] = [
 
 export const TEAM_MEMBERS: TeamMember[] = [
   {
-    name: 'Surender K Sharma',
-    role: 'Founder & Managing Director',
+    name: 'Harbhajan Singh',
+    role: 'Founder & Chairman',
     experience: '30+ Years Experience',
     bio: 'Pioneered government laboratory procurement in North India, establishing long-standing partnerships with ICAR, CSIR, and premier universities.',
-    image: '/assets/person 1.jpg'
+    image: '/images/team/harbhajan-singh.webp'
   },
   {
-    name: 'Anuj Sharma',
-    role: 'Head of Technical Operations',
+    name: 'Mohammad Nasir',
+    role: 'Chief Executive Officer (CEO)',
     experience: '15+ Years Experience',
     bio: 'Specializes in GeM tender compliance, institutional BOQ preparation, and high-precision analytical equipment consultation.',
-    image: '/assets/person 2.jpg'
+    image: '/images/team/mohammad-nasir.webp'
   }
 ];
 
