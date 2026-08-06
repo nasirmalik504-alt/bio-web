@@ -1,47 +1,45 @@
 @import "tailwindcss";
 
+@theme {
+  --font-sans: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+
+  --color-primary-blue: #6EA8FE;
+  --color-primary-blue-hover: #5B95F5;
+  --color-primary-red: #F28B82;
+  --color-primary-red-hover: #EA7468;
+
+  --color-canvas: #FAFBFD;
+  --color-surface: #FFFFFF;
+  --color-surface-soft: #F4F8FC;
+
+  --color-heading: #23324D;
+  --color-body: #5F708A;
+  --color-muted: #9AA7BC;
+
+  --color-border: #E6ECF5;
+  --color-border-strong: #CDD8E7;
+
+  --color-sky: #DCEEFF;
+  --color-mint: #EAF7F2;
+  --color-lavender: #EEE8FF;
+  --color-peach: #FFF0E8;
+  --color-rose: #FCECEF;
+  --color-safety-yellow: #FFF8D9;
+  --color-soft-cyan: #EDF8FF;
+  --color-ice-blue: #E8F4FF;
+}
+
 @layer base {
-  :root {
-    --font-sans: 'Plus Jakarta Sans', 'Inter', sans-serif;
-    --font-display: 'Space Grotesk', sans-serif;
-
-    /* Biobusiness Aurora Design System Tokens */
-    --color-primary-blue: #6EA8FE;
-    --color-primary-blue-hover: #5B95F5;
-    --color-primary-red: #F28B82;
-    --color-primary-red-hover: #EA7468;
-
-    --color-canvas: #FAFBFD;
-    --color-surface: #FFFFFF;
-    --color-surface-soft: #F4F8FC;
-
-    --color-heading: #23324D;
-    --color-body: #5F708A;
-    --color-muted: #9AA7BC;
-
-    --color-border: #E6ECF5;
-    --color-border-strong: #CDD8E7;
-
-    /* Pastels */
-    --color-sky: #DCEEFF;
-    --color-mint: #EAF7F2;
-    --color-lavender: #EEE8FF;
-    --color-peach: #FFF0E8;
-    --color-rose: #FCECEF;
-    --color-safety-yellow: #FFF8D9;
-    --color-soft-cyan: #EDF8FF;
-    --color-ice-blue: #E8F4FF;
-  }
-
   body {
-    background-color: var(--color-canvas);
-    color: var(--color-body);
-    font-family: var(--font-sans);
+    background-color: #FAFBFD;
+    color: #5F708A;
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
   }
 
   h1, h2, h3, h4, .font-display {
-    color: var(--color-heading);
-    font-family: var(--font-display);
+    color: #23324D;
+    font-family: 'Space Grotesk', sans-serif;
   }
 }
 
