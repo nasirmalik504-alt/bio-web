@@ -146,7 +146,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                   <div className="relative w-full h-72 rounded-2xl bg-[#FAFBFD] border border-[#E6ECF5] flex items-center justify-center p-4">
                     {displayImage && !displayImage.includes('no-image') ? (
                       <img
-                        src={displayImage.includes('?') ? displayImage : `${displayImage}?v=20260808`}
+                        src={displayImage.includes('?') ? displayImage : `${displayImage}?v=20260808_v3`}
                         alt={product.name}
                         className="max-h-full max-w-full object-contain"
                       />

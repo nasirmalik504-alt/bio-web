@@ -53,7 +53,7 @@ export const ProductCardItem: React.FC<ProductCardItemProps> = ({
             <div className="absolute inset-0 bg-[#E6ECF5]/60 animate-pulse rounded-2xl" />
           )}
           <img
-            src={product.image.includes('?') ? product.image : `${product.image}?v=20260808`}
+            src={product.image.includes('?') ? product.image : `${product.image}?v=20260808_v3`}
             alt={`${product.name} ${catNo ? 'Cat No ' + catNo : ''} by ${manufacturerName}`}
             loading="lazy"
             width={300}
