@@ -108,6 +108,15 @@ export const ProductCardItem: React.FC<ProductCardItemProps> = ({
           {product.description}
         </p>
 
+        {/* Variants count badge */}
+        {product.variants && product.variants.length > 1 && (
+          <div className="pt-1">
+            <span className="px-2.5 py-1 rounded-md bg-[#DCEEFF] text-[#23324D] text-[10px] font-mono font-bold inline-block">
+              {product.variants.length} Available Sizes & Cat Nos
+            </span>
+          </div>
+        )}
+
         {/* Specifications Box for Instruments */}
         {isInstrument && (
           <div className="p-3 rounded-2xl bg-[#FAFBFD] border border-[#E6ECF5] space-y-1.5 text-xs font-sans">

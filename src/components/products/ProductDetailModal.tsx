@@ -213,6 +213,35 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                     {product.description}
                   </p>
 
+                  {/* Available Models & Capacity Sizes Table */}
+                  {product.variants && product.variants.length > 0 && (
+                    <div className="space-y-2 pt-2">
+                      <div className="flex items-center justify-between text-xs font-mono font-bold text-[#23324D] uppercase">
+                        <span>Available Volume Sizes & Cat Nos ({product.variants.length} Sizes):</span>
+                      </div>
+                      <div className="border border-[#E6ECF5] rounded-2xl overflow-hidden overflow-x-auto max-h-48 overflow-y-auto text-xs">
+                        <table className="w-full text-left border-collapse">
+                          <thead className="sticky top-0 bg-[#23324D] text-white font-mono uppercase text-[11px]">
+                            <tr>
+                              <th className="p-2.5">Cat No.</th>
+                              <th className="p-2.5">Volume / Size</th>
+                              <th className="p-2.5">Pack</th>
+                            </tr>
+                          </thead>
+                          <tbody className="divide-y divide-[#E6ECF5]">
+                            {product.variants.map((v, idx) => (
+                              <tr key={idx} className="hover:bg-[#F4F8FC]">
+                                <td className="p-2.5 font-mono font-bold text-[#6EA8FE]">{v.manufacturerCatNo}</td>
+                                <td className="p-2.5 text-[#23324D] font-medium">{v.volume || v.diameter || '-'}</td>
+                                <td className="p-2.5 text-[#5F708A]">{v.pack || '1 Pc'}</td>
+                              </tr>
+                            ))}
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  )}
+
                   <div className="pt-4 space-y-3">
                     <button
                       onClick={() => addItem(product)}

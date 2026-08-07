@@ -38,13 +38,6 @@ import safetyProductsJson from './products/plasticware/safety-products.json';
 import instrumentProducts from './products/instruments.json';
 
 export const LIQUID_HANDLING_PRODUCTS_DATA: Product[] = [
-  ...(micropipettes as unknown as Product[]),
-  ...(electronicPipettes as unknown as Product[]),
-  ...(bottleTopDispensers as unknown as Product[]),
-  ...(electronicBurettes as unknown as Product[]),
-  ...(aspirators as unknown as Product[]),
-  ...(peristalticPumps as unknown as Product[]),
-  ...(liquidAccessories as unknown as Product[]),
   ...(liquidHandlingProducts as unknown as Product[]),
 ];
 

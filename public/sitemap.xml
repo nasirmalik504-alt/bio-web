@@ -985,6 +985,18 @@
     <priority>0.75</priority>
   </url>
   <url>
+    <loc>https://biobusiness.in/product/microlit-rambo-8-channel-micropipette</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://biobusiness.in/product/microlit-rambo-12-channel-micropipette</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
     <loc>https://biobusiness.in/product/microlit-nero-variable-volume-micropipette</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
@@ -997,7 +1009,31 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://biobusiness.in/product/microlit-aqua-electronic-micropipette</loc>
+    <loc>https://biobusiness.in/product/microlit-aqua-single-channel-electronic-micropipette</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://biobusiness.in/product/microlit-aqua-multichannel-electronic-micropipette</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://biobusiness.in/product/microlit-aqua-adjustable-spacing-electronic-pipette</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://biobusiness.in/product/microlit-lilpet-pro-miniature-fixed-volume-micropipette</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://biobusiness.in/product/microlit-lilpet-miniature-fixed-volume-micropipette</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
@@ -1009,7 +1045,55 @@
     <priority>0.75</priority>
   </url>
   <url>
-    <loc>https://biobusiness.in/product/microlit-eburette-motorized-digital-titrator</loc>
+    <loc>https://biobusiness.in/product/microlit-beatus-bottle-top-dispenser</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://biobusiness.in/product/microlit-lentus-bottle-top-dispenser-for-hydrofluoric-acid</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://biobusiness.in/product/microlit-ultimus-bottle-top-dispenser</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://biobusiness.in/product/microlit-eburette-motorized-electronic-titrator</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://biobusiness.in/product/microlit-edispenser-electronic-bottle-top-dispenser</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://biobusiness.in/product/microlit-easyaid-electronic-pipette-filling-device</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://biobusiness.in/product/microlit-keno-pro-vacuum-aspirator-system</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://biobusiness.in/product/microlit-faveo-carousel-micropipette-stand</loc>
+    <lastmod>2026-08-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.75</priority>
+  </url>
+  <url>
+    <loc>https://biobusiness.in/product/microlit-precision-filter-and-standard-pipette-tips</loc>
     <lastmod>2026-08-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.75</priority>
