@@ -26,19 +26,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           {/* Left Column: Hero Content */}
           <div className="lg:col-span-7 space-y-8 text-left">
             
-            {/* Government Accreditation Pill */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-white border border-[#E6ECF5] shadow-2xs"
-            >
-              <span className="flex h-2 w-2 rounded-full bg-[#6EA8FE] animate-pulse" />
-              <ShieldCheck className="w-4 h-4 text-[#6EA8FE]" />
-              <span className="text-xs font-bold text-[#23324D] uppercase tracking-wider font-mono">
-                Official GeM & Rate Contract Partner
-              </span>
-            </motion.div>
+
 
             {/* Main Headline */}
             <motion.div
