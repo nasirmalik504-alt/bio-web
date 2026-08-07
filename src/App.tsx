@@ -17,6 +17,8 @@ import { BrandsPage } from './pages/BrandsPage';
 import { BrandDetailPage } from './pages/BrandDetailPage';
 import { BioBrandPage } from './pages/BioBrandPage';
 import { ContactPage } from './pages/ContactPage';
+import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
+import { TermsPage } from './pages/TermsPage';
 
 // Drawers & Modals
 import { QuoteDrawer } from './components/quote/QuoteDrawer';
@@ -88,6 +90,8 @@ export const AppContent: React.FC = () => {
           <Route path="/brands/:brandId" element={<BrandDetailPage />} />
           <Route path="/biobrand" element={<BioBrandPage />} />
           <Route path="/contact" element={<ContactPage />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms-and-conditions" element={<TermsPage />} />
         </Routes>
       </main>
 

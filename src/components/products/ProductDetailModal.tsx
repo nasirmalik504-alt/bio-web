@@ -144,7 +144,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                 {/* Image Gallery */}
                 <div className="space-y-4">
                   <div className="relative w-full h-72 rounded-2xl bg-[#FAFBFD] border border-[#E6ECF5] flex items-center justify-center p-4">
-                    {displayImage ? (
+                    {displayImage && !displayImage.includes('no-image') ? (
                       <img
                         src={displayImage}
                         alt={product.name}
@@ -192,12 +192,19 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
 
                   {/* Identification Numbers Box */}
                   <div className="p-4 rounded-2xl bg-[#FAFBFD] border border-[#E6ECF5] grid grid-cols-2 gap-4 font-mono text-xs">
+                    {catNo ? (
+                      <div>
+                        <span className="text-[#9AA7BC] text-[11px] block uppercase font-bold">Manufacturer Cat No.</span>
+                        <strong className="text-[#23324D] text-sm">{catNo}</strong>
+                      </div>
+                    ) : (
+                      <div>
+                        <span className="text-[#9AA7BC] text-[11px] block uppercase font-bold">Category</span>
+                        <strong className="text-[#23324D] text-sm">{product.category}</strong>
+                      </div>
+                    )}
                     <div>
-                      <span className="text-[#9AA7BC] text-[11px] block uppercase font-bold">Manufacturer Cat No.</span>
-                      <strong className="text-[#23324D] text-sm">{catNo}</strong>
-                    </div>
-                    <div>
-                      <span className="text-[#9AA7BC] text-[11px] block uppercase font-bold">Internal SKU</span>
+                      <span className="text-[#9AA7BC] text-[11px] block uppercase font-bold">Internal Reference</span>
                       <span className="text-[#5F708A] font-bold">{internalSKU}</span>
                     </div>
                   </div>

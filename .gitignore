@@ -31,3 +31,5 @@ scratch_*
 *_audit.json
 verify_plasticware_images.py
 bio web/
+bio-webb/
+web/

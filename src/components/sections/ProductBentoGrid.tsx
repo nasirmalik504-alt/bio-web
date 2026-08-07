@@ -13,7 +13,7 @@ export const ProductBentoGrid: React.FC<ProductBentoGridProps> = ({ onSelectCate
       title: 'Laboratory Plasticware',
       subtitle: 'Autoclavable micro-tubes, Petri dishes, Tips & Centrifuge tubes',
       badge: '500+ Items',
-      image: 'assets/micro-tubes.jpg',
+      image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&q=80&w=800',
       span: 'lg:col-span-2 lg:row-span-2',
       bgCategoryColor: 'bg-[#EAF7F2]',
       highlights: ['DNase/RNase Free', 'High Centrifugation RCF 20,000x g', 'Ultra-hydrophobic Tips']
@@ -23,7 +23,7 @@ export const ProductBentoGrid: React.FC<ProductBentoGridProps> = ({ onSelectCate
       title: 'Class A Lab Glassware',
       subtitle: 'Borosilicate 3.3 volumetric flasks, beakers & NABL cylinders',
       badge: 'NABL Certified',
-      image: 'assets/measuring-cylinder.jpg',
+      image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&q=80&w=800',
       span: 'lg:col-span-1 lg:row-span-1',
       bgCategoryColor: 'bg-[#DCEEFF]',
       highlights: ['Class A Volumetric', 'GL45 Reagent Bottles']
@@ -33,7 +33,7 @@ export const ProductBentoGrid: React.FC<ProductBentoGridProps> = ({ onSelectCate
       title: 'Liquid Handling Systems',
       subtitle: 'Autoclavable micropipettes, electronic fillers & dispensers',
       badge: 'ISO 8655',
-      image: 'assets/micropipette.jpg',
+      image: 'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=800',
       span: 'lg:col-span-1 lg:row-span-1',
       bgCategoryColor: 'bg-[#EDF8FF]',
       highlights: ['Single & Multichannel', '0.1µl to 100ml']
@@ -43,17 +43,17 @@ export const ProductBentoGrid: React.FC<ProductBentoGridProps> = ({ onSelectCate
       title: 'Safety & Cryo Protection',
       subtitle: 'Liquid nitrogen gloves (-196°C), Nitrile gloves & N95 masks',
       badge: 'Cryo Grade',
-      image: 'assets/cryo-gloves.jpg',
+      image: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&q=80&w=800',
       span: 'lg:col-span-1 lg:row-span-2',
       bgCategoryColor: 'bg-[#FFF8D9]',
       highlights: ['EN 511 Cryo Rated', 'AQL 1.5 Nitrile', 'Cleanroom Compliant']
     },
     {
       id: 'instruments',
-      title: 'Precision Instruments',
-      subtitle: '0.1mg balances, hot plates, magnetic stirrers & COD digesters',
+      title: 'Laboratory Instruments',
+      subtitle: 'Balances, pH meters, centrifuges, spectrophotometers & stirrers',
       badge: 'High Precision',
-      image: 'assets/weighing-balance.png',
+      image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=800',
       span: 'lg:col-span-2 lg:row-span-1',
       bgCategoryColor: 'bg-[#EEE8FF]',
       highlights: ['Internal Calibration', 'Digital Control', 'GLP/GMP Output']
@@ -63,7 +63,7 @@ export const ProductBentoGrid: React.FC<ProductBentoGridProps> = ({ onSelectCate
       title: 'Chemicals & Culture Media',
       subtitle: 'HPLC grade solvents, enzymes, reagents & microbiology media',
       badge: 'Purity > 99.9%',
-      image: 'assets/lab-chemicals.jpg',
+      image: 'https://images.unsplash.com/photo-1603126857599-f6e157fa2fe6?auto=format&fit=crop&q=80&w=800',
       span: 'lg:col-span-1 lg:row-span-1',
       bgCategoryColor: 'bg-[#FFF0E8]',
       highlights: ['AR/HPLC Grade', 'COA Provided']
@@ -88,7 +88,7 @@ export const ProductBentoGrid: React.FC<ProductBentoGridProps> = ({ onSelectCate
           </h2>
           
           <p className="text-[#5F708A] text-base font-light leading-relaxed">
-            Meticulously engineered plasticware, borosilicate glassware, liquid handling, safety protection, and analytical equipment meeting ISO & NABL specifications.
+            Meticulously engineered plasticware, borosilicate glassware, liquid handling, safety protection, and laboratory equipment meeting ISO & NABL specifications.
           </p>
         </div>
 
@@ -104,15 +104,18 @@ export const ProductBentoGrid: React.FC<ProductBentoGridProps> = ({ onSelectCate
               onClick={() => onSelectCategory(card.id)}
               className={`group relative rounded-3xl overflow-hidden border border-[#E6ECF5] hover:border-[#CDD8E7] p-6 flex flex-col justify-between cursor-pointer transition-all duration-300 shadow-sm hover:shadow-md ${card.span} ${card.bgCategoryColor}`}
             >
-              {/* Background Photography with Parallax Zoom */}
+              {/* Background Photography */}
               <div
-                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-25 group-hover:opacity-35 mix-blend-multiply"
+                className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-40 group-hover:opacity-60"
                 style={{ backgroundImage: `url('${card.image}')` }}
               />
 
+              {/* Gradient Overlay for Text Readability */}
+              <div className="absolute inset-0 bg-gradient-to-t from-white/95 via-white/70 to-transparent" />
+
               {/* Top Badge & Direct Inspect Icon */}
               <div className="relative z-10 flex items-center justify-between">
-                <span className="px-3 py-1 rounded-full bg-white/90 backdrop-blur-md border border-[#E6ECF5] text-[#23324D] text-xs font-mono font-bold shadow-2xs">
+                <span className="px-3 py-1 rounded-full bg-white/95 backdrop-blur-md border border-[#E6ECF5] text-[#23324D] text-xs font-mono font-bold shadow-2xs">
                   {card.badge}
                 </span>
 
@@ -133,7 +136,7 @@ export const ProductBentoGrid: React.FC<ProductBentoGridProps> = ({ onSelectCate
                 {/* Feature Highlights Pills */}
                 <div className="flex flex-wrap gap-1.5 pt-2">
                   {card.highlights.map((h, i) => (
-                    <span key={i} className="text-[10px] px-2.5 py-1 rounded-md bg-white/90 text-[#23324D] border border-[#E6ECF5] font-medium flex items-center gap-1 shadow-2xs">
+                    <span key={i} className="text-[10px] px-2.5 py-1 rounded-md bg-white/95 text-[#23324D] border border-[#E6ECF5] font-medium flex items-center gap-1 shadow-2xs">
                       <CheckCircle className="w-3 h-3 text-[#7CC9A5]" /> {h}
                     </span>
                   ))}

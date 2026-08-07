@@ -1,16 +1,16 @@
 [
   {
     "id": "microlit-aqua-single-channel-electronic-pipette",
-    "sku": "AQU-001",
-    "internalSKU": "BB-AQU-001",
-    "manufacturerCatNo": "AQU-001",
+    "sku": "AQS-10",
+    "internalSKU": "BB-AQS-10",
+    "manufacturerCatNo": "AQS-10",
     "manufacturerModel": "Microlit AQUA Single Channel Electronic Micropipette",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit AQUA Single Channel Electronic Micropipette",
+    "name": "AQUA Single Channel Electronic Micropipette",
     "model": "Microlit AQUA Single Channel Electronic Micropipette",
     "category": "Liquid Handling",
     "subcategory": "Electronic Pipettes",
@@ -34,33 +34,57 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "AQU-001",
-        "capacity": "AQS-10",
+        "catNo": "AQS-10",
+        "capacity": "0.2 - 10 µl",
+        "price": 36750,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "AQU-002",
-        "capacity": "AQS-20",
+        "catNo": "AQS-20",
+        "capacity": "0.5 - 20 µl",
+        "price": 36750,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "AQU-003",
-        "capacity": "AQS-100",
+        "catNo": "AQS-100",
+        "capacity": "2 - 100 µl",
+        "price": 36750,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "AQU-004",
-        "capacity": "AQS-200",
+        "catNo": "AQS-200",
+        "capacity": "5 - 200 µl",
+        "price": 36750,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "AQU-005",
-        "capacity": "AQS-1000",
+        "catNo": "AQS-300",
+        "capacity": "10 - 300 µl",
+        "price": 36750,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "AQU-006",
-        "capacity": "AQS-5000",
+        "catNo": "AQS-500",
+        "capacity": "10 - 500 µl",
+        "price": 36750,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "AQS-1000",
+        "capacity": "50 - 1000 µl",
+        "price": 36750,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "AQS-5000",
+        "capacity": "0.1 - 5 ml",
+        "price": 36750,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "AQS-10000",
+        "capacity": "1 - 10 ml",
+        "price": 36750,
         "pack": "1 Pc"
       }
     ],
@@ -72,20 +96,21 @@
     "relatedProducts": [],
     "slug": "product/microlit-aqua-single-channel-electronic-pipette",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "AQS-10"
   },
   {
     "id": "microlit-aqua-8-channel-electronic-pipette",
-    "sku": "AQU-007",
-    "internalSKU": "BB-AQU-007",
-    "manufacturerCatNo": "AQU-007",
+    "sku": "AQE-10",
+    "internalSKU": "BB-AQE-10",
+    "manufacturerCatNo": "AQE-10",
     "manufacturerModel": "Microlit AQUA 8-Channel Electronic Micropipette",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit AQUA 8-Channel Electronic Micropipette",
+    "name": "AQUA 8-Channel Electronic Micropipette",
     "model": "Microlit AQUA 8-Channel Electronic Micropipette",
     "category": "Liquid Handling",
     "subcategory": "Electronic Pipettes",
@@ -109,18 +134,21 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "AQU-007",
-        "capacity": "AQE-10",
+        "catNo": "AQE-10",
+        "capacity": "0.2 - 10 µl",
+        "price": 120000,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "AQU-008",
-        "capacity": "AQE-100",
+        "catNo": "AQE-100",
+        "capacity": "5 - 100 µl",
+        "price": 120000,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "AQU-009",
-        "capacity": "AQE-300",
+        "catNo": "AQE-300",
+        "capacity": "10 - 300 µl",
+        "price": 120000,
         "pack": "1 Pc"
       }
     ],
@@ -132,20 +160,21 @@
     "relatedProducts": [],
     "slug": "product/microlit-aqua-8-channel-electronic-pipette",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "AQE-10"
   },
   {
     "id": "microlit-aqua-12-channel-electronic-pipette",
-    "sku": "AQU-010",
-    "internalSKU": "BB-AQU-010",
-    "manufacturerCatNo": "AQU-010",
+    "sku": "AQT-10",
+    "internalSKU": "BB-AQT-10",
+    "manufacturerCatNo": "AQT-10",
     "manufacturerModel": "Microlit AQUA 12-Channel Electronic Micropipette",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit AQUA 12-Channel Electronic Micropipette",
+    "name": "AQUA 12-Channel Electronic Micropipette",
     "model": "Microlit AQUA 12-Channel Electronic Micropipette",
     "category": "Liquid Handling",
     "subcategory": "Electronic Pipettes",
@@ -169,18 +198,21 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "AQU-010",
-        "capacity": "AQT-10",
+        "catNo": "AQT-10",
+        "capacity": "0.2 - 10 µl",
+        "price": 130000,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "AQU-011",
-        "capacity": "AQT-100",
+        "catNo": "AQT-100",
+        "capacity": "5 - 100 µl",
+        "price": 130000,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "AQU-012",
-        "capacity": "AQT-300",
+        "catNo": "AQT-300",
+        "capacity": "10 - 300 µl",
+        "price": 130000,
         "pack": "1 Pc"
       }
     ],
@@ -192,20 +224,21 @@
     "relatedProducts": [],
     "slug": "product/microlit-aqua-12-channel-electronic-pipette",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "AQT-10"
   },
   {
     "id": "microlit-aqua-adjustable-spacing-electronic-pipette",
-    "sku": "AQU-013",
-    "internalSKU": "BB-AQU-013",
-    "manufacturerCatNo": "AQU-013",
+    "sku": "AQVF-12",
+    "internalSKU": "BB-AQVF-12",
+    "manufacturerCatNo": "AQVF-12",
     "manufacturerModel": "Microlit AQUA Adjustable Spacing Electronic Pipette",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit AQUA Adjustable Spacing Electronic Pipette",
+    "name": "AQUA Adjustable Spacing Electronic Pipette",
     "model": "Microlit AQUA Adjustable Spacing Electronic Pipette",
     "category": "Liquid Handling",
     "subcategory": "Electronic Pipettes",
@@ -229,23 +262,87 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "AQU-013",
-        "capacity": "AQVS-12",
+        "catNo": "AQVF-12",
+        "capacity": "0.5 - 12.5 µl (4-Channel)",
+        "price": 197500,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "AQU-014",
-        "capacity": "AQVS-50",
+        "catNo": "AQVF-50",
+        "capacity": "2 - 50 µl (4-Channel)",
+        "price": 197500,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "AQU-015",
-        "capacity": "AQVS-110",
+        "catNo": "AQVF-110",
+        "capacity": "5 - 110 µl (4-Channel)",
+        "price": 197500,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "AQU-016",
-        "capacity": "AQVS-300",
+        "catNo": "AQVF-300",
+        "capacity": "10 - 300 µl (4-Channel)",
+        "price": 197500,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "AQVF-1000",
+        "capacity": "50 - 1000 µl (4-Channel)",
+        "price": 197500,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "AQVS-12",
+        "capacity": "0.5 - 12.5 µl (6-Channel)",
+        "price": 212500,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "AQVS-50",
+        "capacity": "2 - 50 µl (6-Channel)",
+        "price": 212500,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "AQVS-110",
+        "capacity": "5 - 110 µl (6-Channel)",
+        "price": 212500,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "AQVS-300",
+        "capacity": "10 - 300 µl (6-Channel)",
+        "price": 212500,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "AQVS-1000",
+        "capacity": "50 - 1000 µl (6-Channel)",
+        "price": 212500,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "AQVT-12",
+        "capacity": "0.5 - 12.5 µl (12-Channel)",
+        "price": 287500,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "AQVT-50",
+        "capacity": "2 - 50 µl (12-Channel)",
+        "price": 287500,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "AQVT-110",
+        "capacity": "5 - 110 µl (12-Channel)",
+        "price": 287500,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "AQVT-300",
+        "capacity": "10 - 300 µl (12-Channel)",
+        "price": 287500,
         "pack": "1 Pc"
       }
     ],
@@ -257,13 +354,14 @@
     "relatedProducts": [],
     "slug": "product/microlit-aqua-adjustable-spacing-electronic-pipette",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "AQVF-12"
   },
   {
     "id": "bb-ep-fill-001",
-    "sku": "BB-EAS-01",
+    "sku": "EA-R",
     "model": "EAS-01",
-    "name": "EASYAID Motorized Serological Pipette Controller (0.1 - 100 mL)",
+    "name": "EASYAID Electronic Pipette Filling Device",
     "series": "EASYAID Series",
     "category": "Liquid Handling",
     "subcategory": "Electronic Pipettes",
@@ -332,15 +430,42 @@
     ],
     "relatedProducts": [],
     "slug": "easyaid-motorized-serological-pipette-controller-01---100-ml",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "countryOfOrigin": "India",
     "manufacturerWebsite": "https://www.microlit.com",
     "manufacturerLogo": "/images/brands/microlit.svg",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
-    "internalSKU": "BB-EAS-01",
-    "manufacturerCatNo": "EAS-01",
-    "manufacturerModel": "EAS-01"
+    "internalSKU": "BB-EA-R",
+    "manufacturerCatNo": "EA-R",
+    "manufacturerModel": "EAS-01",
+    "catNo": "EA-R",
+    "variants": [
+      {
+        "catNo": "EA-R",
+        "capacity": "Red Collet & Plunger",
+        "price": 14000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "EA-G",
+        "capacity": "Grey Collet & Plunger",
+        "price": 14000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "EA-V",
+        "capacity": "Violet Collet & Plunger",
+        "price": 14000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "EA-B",
+        "capacity": "Blue Collet & Plunger",
+        "price": 14000,
+        "pack": "1 Pc"
+      }
+    ]
   }
 ]

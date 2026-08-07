@@ -1,16 +1,16 @@
 [
   {
     "id": "microlit-scitus-bottle-top-dispenser",
-    "sku": "BTD-001",
-    "internalSKU": "BB-BTD-001",
-    "manufacturerCatNo": "BTD-001",
+    "sku": "SCI-2.5",
+    "internalSKU": "BB-SCI-2.5",
+    "manufacturerCatNo": "SCI-2.5",
     "manufacturerModel": "Microlit SCITUS Bottle Top Dispenser",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit SCITUS Bottle Top Dispenser",
+    "name": "SCITUS Bottle Top Dispenser with Springless Valve Technology",
     "model": "Microlit SCITUS Bottle Top Dispenser",
     "category": "Liquid Handling",
     "subcategory": "Bottle Top Dispensers",
@@ -34,33 +34,39 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BTD-001",
-        "capacity": "SCT-2.5",
+        "catNo": "SCI-2.5",
+        "capacity": "0.25 - 2.5 ml",
+        "price": 12200,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BTD-002",
-        "capacity": "SCT-5.0",
+        "catNo": "SCI-5",
+        "capacity": "0.5 - 5 ml",
+        "price": 16800,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BTD-003",
-        "capacity": "SCT-10.0",
+        "catNo": "SCI-10",
+        "capacity": "1.0 - 10 ml",
+        "price": 16800,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BTD-004",
-        "capacity": "SCT-30.0",
+        "catNo": "SCI-30",
+        "capacity": "2.5 - 30 ml",
+        "price": 21700,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BTD-005",
-        "capacity": "SCT-60.0",
+        "catNo": "SCI-60",
+        "capacity": "5.0 - 60 ml",
+        "price": 27000,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BTD-006",
-        "capacity": "SCT-100.0",
+        "catNo": "SCI-100",
+        "capacity": "10.0 - 100 ml",
+        "price": 42000,
         "pack": "1 Pc"
       }
     ],
@@ -72,20 +78,21 @@
     "relatedProducts": [],
     "slug": "product/microlit-scitus-bottle-top-dispenser",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "SCI-2.5"
   },
   {
     "id": "microlit-beatus-bottle-top-dispenser",
-    "sku": "BTD-007",
-    "internalSKU": "BB-BTD-007",
-    "manufacturerCatNo": "BTD-007",
+    "sku": "BEA-2.5",
+    "internalSKU": "BB-BEA-2.5",
+    "manufacturerCatNo": "BEA-2.5",
     "manufacturerModel": "Microlit BEATUS Bottle Top Dispenser with Recirculation Valve",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit BEATUS Bottle Top Dispenser with Recirculation Valve",
+    "name": "BEATUS Bottle Top Dispenser with Re-Circulation Valve & Springless Valve Technology",
     "model": "Microlit BEATUS Bottle Top Dispenser with Recirculation Valve",
     "category": "Liquid Handling",
     "subcategory": "Bottle Top Dispensers",
@@ -109,33 +116,39 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BTD-007",
-        "capacity": "BTS-2.5",
+        "catNo": "BEA-2.5",
+        "capacity": "0.25 - 2.5 ml",
+        "price": 15200,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BTD-008",
-        "capacity": "BTS-5.0",
+        "catNo": "BEA-5",
+        "capacity": "0.5 - 5 ml",
+        "price": 21000,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BTD-009",
-        "capacity": "BTS-10.0",
+        "catNo": "BEA-10",
+        "capacity": "1.0 - 10 ml",
+        "price": 21000,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BTD-010",
-        "capacity": "BTS-30.0",
+        "catNo": "BEA-30",
+        "capacity": "2.5 - 30 ml",
+        "price": 27000,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BTD-011",
-        "capacity": "BTS-60.0",
+        "catNo": "BEA-60",
+        "capacity": "5.0 - 60 ml",
+        "price": 33000,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BTD-012",
-        "capacity": "BTS-100.0",
+        "catNo": "BEA-100",
+        "capacity": "10.0 - 100 ml",
+        "price": 50000,
         "pack": "1 Pc"
       }
     ],
@@ -147,20 +160,21 @@
     "relatedProducts": [],
     "slug": "product/microlit-beatus-bottle-top-dispenser",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "BEA-2.5"
   },
   {
     "id": "microlit-lentus-bottle-top-dispenser",
-    "sku": "BTD-013",
-    "internalSKU": "BB-BTD-013",
-    "manufacturerCatNo": "BTD-013",
+    "sku": "LNT-HF-2.5",
+    "internalSKU": "BB-LNT-HF-2.5",
+    "manufacturerCatNo": "LNT-HF-2.5",
     "manufacturerModel": "Microlit LENTUS Bottle Top Dispenser for Hydrofluoric Acid",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit LENTUS Bottle Top Dispenser for Hydrofluoric Acid",
+    "name": "LENTUS Bottle Top Dispenser for Hydrofluoric Acid",
     "model": "Microlit LENTUS Bottle Top Dispenser for Hydrofluoric Acid",
     "category": "Liquid Handling",
     "subcategory": "Bottle Top Dispensers",
@@ -184,23 +198,21 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BTD-013",
-        "capacity": "LNT-HF-5",
+        "catNo": "LNT-HF-2.5",
+        "capacity": "0.25 - 2.5 ml",
+        "price": 55000,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BTD-014",
-        "capacity": "LNT-HF-10",
+        "catNo": "LNT-HF-5",
+        "capacity": "0.5 - 5 ml",
+        "price": 55000,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BTD-015",
-        "capacity": "LNT-HF-30",
-        "pack": "1 Pc"
-      },
-      {
-        "manufacturerCatNo": "BTD-016",
-        "capacity": "LNT-HF-60",
+        "catNo": "LNT-HF-10",
+        "capacity": "1.0 - 10 ml",
+        "price": 55000,
         "pack": "1 Pc"
       }
     ],
@@ -212,20 +224,21 @@
     "relatedProducts": [],
     "slug": "product/microlit-lentus-bottle-top-dispenser",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "LNT-HF-2.5"
   },
   {
     "id": "microlit-ultimus-bottle-top-dispenser",
-    "sku": "BTD-017",
-    "internalSKU": "BB-BTD-017",
-    "manufacturerCatNo": "BTD-017",
+    "sku": "ULT-2.5",
+    "internalSKU": "BB-ULT-2.5",
+    "manufacturerCatNo": "ULT-2.5",
     "manufacturerModel": "Microlit ULTIMUS Bottle Top Dispenser",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit ULTIMUS Bottle Top Dispenser",
+    "name": "ULTIMUS Bottle Top Dispenser",
     "model": "Microlit ULTIMUS Bottle Top Dispenser",
     "category": "Liquid Handling",
     "subcategory": "Bottle Top Dispensers",
@@ -249,23 +262,39 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BTD-017",
-        "capacity": "ULT-5",
+        "catNo": "ULT-2.5",
+        "capacity": "0.25 - 2.5 ml",
+        "price": 21470,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BTD-018",
-        "capacity": "ULT-10",
+        "catNo": "ULT-5",
+        "capacity": "0.5 - 5 ml",
+        "price": 21470,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BTD-019",
-        "capacity": "ULT-30",
+        "catNo": "ULT-10",
+        "capacity": "1.0 - 10 ml",
+        "price": 21470,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BTD-020",
-        "capacity": "ULT-60",
+        "catNo": "ULT-30",
+        "capacity": "2.5 - 30 ml",
+        "price": 27240,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "ULT-50",
+        "capacity": "5.0 - 50 ml",
+        "price": 34750,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "ULT-100",
+        "capacity": "10.0 - 100 ml",
+        "price": 51770,
         "pack": "1 Pc"
       }
     ],
@@ -277,6 +306,7 @@
     "relatedProducts": [],
     "slug": "product/microlit-ultimus-bottle-top-dispenser",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "ULT-2.5"
   }
 ]

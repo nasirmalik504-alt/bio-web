@@ -1,9 +1,9 @@
 [
   {
     "id": "n95-particulate-respirator-mask-bb-sf-012",
-    "sku": "BB/SF/050",
-    "internalSKU": "BB-SF-012",
-    "manufacturerCatNo": "BB/SF/050",
+    "sku": "BB/SF/001",
+    "internalSKU": "BB/SF/001",
+    "manufacturerCatNo": "BB/SF/001",
     "manufacturerModel": "N95 Particulate Respirator Mask",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -32,7 +32,7 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BB/SF/050",
+        "manufacturerCatNo": "BB/SF/001",
         "capacity": "N95 Certified",
         "pack": "20 Pcs/Box"
       }
@@ -43,9 +43,9 @@
   },
   {
     "id": "3-ply-surgical-face-mask-bb-sf-013",
-    "sku": "BB/SF/051",
-    "internalSKU": "BB-SF-013",
-    "manufacturerCatNo": "BB/SF/051",
+    "sku": "BB/SF/002",
+    "internalSKU": "BB/SF/002",
+    "manufacturerCatNo": "BB/SF/002",
     "manufacturerModel": "3-Ply Medical Surgical Face Mask",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -73,7 +73,7 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BB/SF/051",
+        "manufacturerCatNo": "BB/SF/002",
         "capacity": "Universal Size",
         "pack": "50 Pcs/Box"
       }
@@ -84,9 +84,9 @@
   },
   {
     "id": "surgical-mask-with-eye-shield-bb-sf-014",
-    "sku": "BB/SF/052",
-    "internalSKU": "BB-SF-014",
-    "manufacturerCatNo": "BB/SF/052",
+    "sku": "BB/SF/003",
+    "internalSKU": "BB/SF/003",
+    "manufacturerCatNo": "BB/SF/003",
     "manufacturerModel": "Surgical Mask with Eye Visor Shield",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -114,7 +114,7 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BB/SF/052",
+        "manufacturerCatNo": "BB/SF/003",
         "capacity": "Universal Fit",
         "pack": "25 Pcs/Box"
       }
@@ -125,9 +125,9 @@
   },
   {
     "id": "powder-free-nitrile-exam-gloves-bb-sf-003",
-    "sku": "BB/SF/201",
-    "internalSKU": "BB-SF-003",
-    "manufacturerCatNo": "BB/SF/201",
+    "sku": "BB/SF/004",
+    "internalSKU": "BB/SF/004",
+    "manufacturerCatNo": "BB/SF/004",
     "manufacturerModel": "Powder-Free Nitrile Examination Gloves",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -156,17 +156,17 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BB/SF/201-S",
+        "manufacturerCatNo": "BB/SF/004",
         "capacity": "Small",
         "pack": "100 Pcs/Box"
       },
       {
-        "manufacturerCatNo": "BB/SF/201-M",
+        "manufacturerCatNo": "BB/SF/004",
         "capacity": "Medium",
         "pack": "100 Pcs/Box"
       },
       {
-        "manufacturerCatNo": "BB/SF/201-L",
+        "manufacturerCatNo": "BB/SF/004",
         "capacity": "Large",
         "pack": "100 Pcs/Box"
       }
@@ -177,9 +177,9 @@
   },
   {
     "id": "powder-free-latex-medical-gloves-bb-sf-015",
-    "sku": "BB/SF/204",
-    "internalSKU": "BB-SF-015",
-    "manufacturerCatNo": "BB/SF/204",
+    "sku": "BB/SF/005",
+    "internalSKU": "BB/SF/005",
+    "manufacturerCatNo": "BB/SF/005",
     "manufacturerModel": "Powder-Free Latex Medical Gloves",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -207,12 +207,12 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BB/SF/204-M",
+        "manufacturerCatNo": "BB/SF/005",
         "capacity": "Medium",
         "pack": "100 Pcs/Box"
       },
       {
-        "manufacturerCatNo": "BB/SF/204-L",
+        "manufacturerCatNo": "BB/SF/005",
         "capacity": "Large",
         "pack": "100 Pcs/Box"
       }
@@ -223,9 +223,9 @@
   },
   {
     "id": "heavy-duty-neoprene-chemical-gloves-bb-sf-004",
-    "sku": "BB/SF/202",
-    "internalSKU": "BB-SF-004",
-    "manufacturerCatNo": "BB/SF/202",
+    "sku": "BB/SF/006",
+    "internalSKU": "BB/SF/006",
+    "manufacturerCatNo": "BB/SF/006",
     "manufacturerModel": "Heavy-Duty Neoprene Gloves",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -253,7 +253,7 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BB/SF/202",
+        "manufacturerCatNo": "BB/SF/006",
         "capacity": "Large (10 inch)",
         "pack": "1 Pair"
       }
@@ -264,9 +264,9 @@
   },
   {
     "id": "cryo-protective-low-temp-gloves-bb-sf-005",
-    "sku": "BB/SF/203",
-    "internalSKU": "BB-SF-005",
-    "manufacturerCatNo": "BB/SF/203",
+    "sku": "BB/SF/007",
+    "internalSKU": "BB/SF/007",
+    "manufacturerCatNo": "BB/SF/007",
     "manufacturerModel": "Cryo-Protective Low Temperature Gloves",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -295,7 +295,7 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BB/SF/203",
+        "manufacturerCatNo": "BB/SF/007",
         "capacity": "Medium/Large",
         "pack": "1 Pair"
       }
@@ -306,9 +306,9 @@
   },
   {
     "id": "autoclavable-lab-coat-cotton-bb-sf-001",
-    "sku": "BB/SF/101",
-    "internalSKU": "BB-SF-001",
-    "manufacturerCatNo": "BB/SF/101",
+    "sku": "BB/SF/008",
+    "internalSKU": "BB/SF/008",
+    "manufacturerCatNo": "BB/SF/008",
     "manufacturerModel": "Autoclavable Cotton Lab Coat",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -336,22 +336,22 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BB/SF/101-S",
+        "manufacturerCatNo": "BB/SF/008",
         "capacity": "Small (S)",
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BB/SF/101-M",
+        "manufacturerCatNo": "BB/SF/008",
         "capacity": "Medium (M)",
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BB/SF/101-L",
+        "manufacturerCatNo": "BB/SF/008",
         "capacity": "Large (L)",
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "BB/SF/101-XL",
+        "manufacturerCatNo": "BB/SF/008",
         "capacity": "Extra Large (XL)",
         "pack": "1 Pc"
       }
@@ -362,9 +362,9 @@
   },
   {
     "id": "disposable-pp-visitor-coat-bb-sf-002",
-    "sku": "BB/SF/102",
-    "internalSKU": "BB-SF-002",
-    "manufacturerCatNo": "BB/SF/102",
+    "sku": "BB/SF/009",
+    "internalSKU": "BB/SF/009",
+    "manufacturerCatNo": "BB/SF/009",
     "manufacturerModel": "Disposable PP Visitor Coat",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -392,7 +392,7 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BB/SF/102",
+        "manufacturerCatNo": "BB/SF/009",
         "capacity": "Universal Size",
         "pack": "10 Pcs/Pack"
       }
@@ -403,9 +403,9 @@
   },
   {
     "id": "polycarbonate-full-face-shield-bb-sf-006",
-    "sku": "BB/SF/301",
-    "internalSKU": "BB-SF-006",
-    "manufacturerCatNo": "BB/SF/301",
+    "sku": "BB/SF/010",
+    "internalSKU": "BB/SF/010",
+    "manufacturerCatNo": "BB/SF/010",
     "manufacturerModel": "Polycarbonate Full Face Shield",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -434,7 +434,7 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BB/SF/301",
+        "manufacturerCatNo": "BB/SF/010",
         "capacity": "Universal Fit",
         "pack": "1 Pc"
       }
@@ -445,9 +445,9 @@
   },
   {
     "id": "uv-safety-goggles-bb-pw-0175",
-    "sku": "SI/PW/656",
-    "internalSKU": "BB-PW-0175",
-    "manufacturerCatNo": "SI/PW/656",
+    "sku": "BB/SF/011",
+    "internalSKU": "BB/SF/011",
+    "manufacturerCatNo": "BB/SF/011",
     "manufacturerModel": "UV Safety Goggles",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -476,7 +476,7 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "SI/PW/656",
+        "manufacturerCatNo": "BB/SF/011",
         "capacity": "Standard Fit",
         "pack": "1 Pc"
       }
@@ -487,9 +487,9 @@
   },
   {
     "id": "chemical-splash-goggles-bb-sf-007",
-    "sku": "BB/SF/401",
-    "internalSKU": "BB-SF-007",
-    "manufacturerCatNo": "BB/SF/401",
+    "sku": "BB/SF/012",
+    "internalSKU": "BB/SF/012",
+    "manufacturerCatNo": "BB/SF/012",
     "manufacturerModel": "Chemical Splash Safety Goggles",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -517,7 +517,7 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BB/SF/401",
+        "manufacturerCatNo": "BB/SF/012",
         "capacity": "Universal",
         "pack": "1 Pc"
       }
@@ -528,9 +528,9 @@
   },
   {
     "id": "acid-base-chemical-spill-kit-bb-sf-008",
-    "sku": "BB/SF/501",
-    "internalSKU": "BB-SF-008",
-    "manufacturerCatNo": "BB/SF/501",
+    "sku": "BB/SF/013",
+    "internalSKU": "BB/SF/013",
+    "manufacturerCatNo": "BB/SF/013",
     "manufacturerModel": "Acid & Base Chemical Spill Kit",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -558,7 +558,7 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BB/SF/501",
+        "manufacturerCatNo": "BB/SF/013",
         "capacity": "15 Liters Spill Capacity",
         "pack": "1 Kit"
       }
@@ -569,9 +569,9 @@
   },
   {
     "id": "flammable-storage-safety-cabinet-bb-sf-009",
-    "sku": "BB/SF/601",
-    "internalSKU": "BB-SF-009",
-    "manufacturerCatNo": "BB/SF/601",
+    "sku": "BB/SF/014",
+    "internalSKU": "BB/SF/014",
+    "manufacturerCatNo": "BB/SF/014",
     "manufacturerModel": "Flammable Chemical Storage Cabinet 45Gal",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -599,7 +599,7 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BB/SF/601",
+        "manufacturerCatNo": "BB/SF/014",
         "capacity": "45 Gallons (170 Liters)",
         "pack": "1 Unit"
       }
@@ -610,9 +610,9 @@
   },
   {
     "id": "biohazard-sharps-disposal-container-bb-sf-010",
-    "sku": "BB/SF/701",
-    "internalSKU": "BB-SF-010",
-    "manufacturerCatNo": "BB/SF/701",
+    "sku": "BB/SF/015",
+    "internalSKU": "BB/SF/015",
+    "manufacturerCatNo": "BB/SF/015",
     "manufacturerModel": "Biohazard Sharps Container 5L",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -640,7 +640,7 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BB/SF/701",
+        "manufacturerCatNo": "BB/SF/015",
         "capacity": "5 Liters",
         "pack": "1 Pc"
       }
@@ -651,9 +651,9 @@
   },
   {
     "id": "surface-disinfectant-spray-bb-sf-011",
-    "sku": "BB/SF/801",
-    "internalSKU": "BB-SF-011",
-    "manufacturerCatNo": "BB/SF/801",
+    "sku": "BB/SF/016",
+    "internalSKU": "BB/SF/016",
+    "manufacturerCatNo": "BB/SF/016",
     "manufacturerModel": "Laboratory Surface Disinfectant Spray 1L",
     "manufacturer": "BioBrand",
     "brand": "BioBrand",
@@ -681,7 +681,7 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "BB/SF/801",
+        "manufacturerCatNo": "BB/SF/016",
         "capacity": "1 Liter Spray Bottle",
         "pack": "1 Bottle"
       }

@@ -1,11 +1,23 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { TIMELINE_EVENTS, TEAM_MEMBERS } from '../data/productsData';
-import { History, Award, ShieldCheck, Building2, Users, CheckCircle2, Sparkles } from 'lucide-react';
+import { SEO } from '../components/SEO';
+import { StructuredData } from '../components/StructuredData';
+import { generateBreadcrumbSchema } from '../lib/seo';
+import { History, Award, ShieldCheck, Building2, Users, CheckCircle2 } from 'lucide-react';
 
 export const AboutPage: React.FC = () => {
   return (
     <div className="pt-28 pb-20 bg-[#FAFBFD] relative overflow-hidden min-h-screen text-[#5F708A]">
+      <SEO
+        title="About Us | Biobusiness Development Agency"
+        description="Learn about Biobusiness Development Agency - 29+ years of scientific leadership, ICAR/CSIR annual rate contracts, and GeM tender fulfillment across India."
+        canonicalPath="/about"
+      />
+      <StructuredData
+        data={generateBreadcrumbSchema([{ name: 'Home', url: '/' }, { name: 'About Us', url: '/about' }])}
+        id="about-breadcrumb-schema"
+      />
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-20">
         

@@ -1,16 +1,16 @@
 [
   {
     "id": "microlit-rbo-fixed-volume-micropipette",
-    "sku": "RAM-F-001",
-    "internalSKU": "BB-RAM-F-001",
-    "manufacturerCatNo": "RAM-F-001",
+    "sku": "RAM-F-1",
+    "internalSKU": "BB-RAM-F-1",
+    "manufacturerCatNo": "RAM-F-1",
     "manufacturerModel": "Microlit RBO Single Channel Fixed Volume Micropipette",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit RBO Single Channel Fixed Volume Micropipette",
+    "name": "RAMBO Single Channel Fixed Volume Micropipette",
     "model": "Microlit RBO Single Channel Fixed Volume Micropipette",
     "category": "Liquid Handling",
     "subcategory": "Micropipettes",
@@ -34,78 +34,93 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "RAM-F-001",
-        "capacity": "RAM-F-1",
+        "catNo": "RAM-F-1",
+        "capacity": "1 µl",
+        "price": 3550,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-F-002",
-        "capacity": "RAM-F-2",
+        "catNo": "RAM-F-2",
+        "capacity": "2 µl",
+        "price": 3550,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-F-003",
-        "capacity": "RAM-F-5",
+        "catNo": "RAM-F-5",
+        "capacity": "5 µl",
+        "price": 3550,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-F-004",
-        "capacity": "RAM-F-10",
+        "catNo": "RAM-F-10",
+        "capacity": "10 µl",
+        "price": 3550,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-F-005",
-        "capacity": "RAM-F-20",
+        "catNo": "RAM-F-20",
+        "capacity": "20 µl",
+        "price": 3550,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-F-006",
-        "capacity": "RAM-F-25",
+        "catNo": "RAM-F-25",
+        "capacity": "25 µl",
+        "price": 3550,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-F-007",
-        "capacity": "RAM-F-50",
+        "catNo": "RAM-F-50",
+        "capacity": "50 µl",
+        "price": 3550,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-F-008",
-        "capacity": "RAM-F-100",
+        "catNo": "RAM-F-100",
+        "capacity": "100 µl",
+        "price": 3550,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-F-009",
-        "capacity": "RAM-F-200",
+        "catNo": "RAM-F-200",
+        "capacity": "200 µl",
+        "price": 3550,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-F-010",
-        "capacity": "RAM-F-250",
+        "catNo": "RAM-F-250",
+        "capacity": "250 µl",
+        "price": 3550,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-F-011",
-        "capacity": "RAM-F-500",
+        "catNo": "RAM-F-500",
+        "capacity": "500 µl",
+        "price": 3550,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-F-012",
-        "capacity": "RAM-F-1000",
+        "catNo": "RAM-F-1000",
+        "capacity": "1000 µl",
+        "price": 3550,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-F-013",
-        "capacity": "RAM-F-2000",
+        "catNo": "RAM-F-2000",
+        "capacity": "2000 µl",
+        "price": 3550,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-F-014",
-        "capacity": "RAM-F-5000",
+        "catNo": "RAM-F-5000",
+        "capacity": "5000 µl",
+        "price": 3550,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-F-015",
-        "capacity": "RAM-F-10000",
+        "catNo": "RAM-F-10000",
+        "capacity": "10000 µl",
+        "price": 3550,
         "pack": "1 Pc"
       }
     ],
@@ -117,20 +132,21 @@
     "relatedProducts": [],
     "slug": "product/microlit-rbo-fixed-volume-micropipette",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "RAM-F-1"
   },
   {
     "id": "microlit-rbo-variable-volume-micropipette",
-    "sku": "RAM-V-001",
-    "internalSKU": "BB-RAM-V-001",
-    "manufacturerCatNo": "RAM-V-001",
+    "sku": "RAM-2",
+    "internalSKU": "BB-RAM-2",
+    "manufacturerCatNo": "RAM-2",
     "manufacturerModel": "Microlit RBO Single Channel Variable Volume Micropipette",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit RBO Single Channel Variable Volume Micropipette",
+    "name": "RAMBO Single Channel Variable Volume Micropipette",
     "model": "Microlit RBO Single Channel Variable Volume Micropipette",
     "category": "Liquid Handling",
     "subcategory": "Micropipettes",
@@ -154,48 +170,57 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "RAM-V-001",
-        "capacity": "RAM-2",
+        "catNo": "RAM-2",
+        "capacity": "0.2 - 2 µl",
+        "price": 4100,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-V-002",
-        "capacity": "RAM-10",
+        "catNo": "RAM-10",
+        "capacity": "0.5 - 10 µl",
+        "price": 4100,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-V-003",
-        "capacity": "RAM-20",
+        "catNo": "RAM-20",
+        "capacity": "2 - 20 µl",
+        "price": 4100,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-V-004",
-        "capacity": "RAM-50",
+        "catNo": "RAM-50",
+        "capacity": "5 - 50 µl",
+        "price": 4100,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-V-005",
-        "capacity": "RAM-100",
+        "catNo": "RAM-100",
+        "capacity": "10 - 100 µl",
+        "price": 4100,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-V-006",
-        "capacity": "RAM-200",
+        "catNo": "RAM-200",
+        "capacity": "20 - 200 µl",
+        "price": 4100,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-V-007",
-        "capacity": "RAM-1000",
+        "catNo": "RAM-1000",
+        "capacity": "100 - 1000 µl",
+        "price": 4100,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-V-008",
-        "capacity": "RAM-5000",
+        "catNo": "RAM-5000",
+        "capacity": "0.5 - 5 ml",
+        "price": 4100,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-V-009",
-        "capacity": "RAM-10000",
+        "catNo": "RAM-10000",
+        "capacity": "1 - 10 ml",
+        "price": 4100,
         "pack": "1 Pc"
       }
     ],
@@ -207,20 +232,21 @@
     "relatedProducts": [],
     "slug": "product/microlit-rbo-variable-volume-micropipette",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "RAM-2"
   },
   {
     "id": "microlit-rbo-8-channel-micropipette",
-    "sku": "RAM-M-001",
-    "internalSKU": "BB-RAM-M-001",
-    "manufacturerCatNo": "RAM-M-001",
+    "sku": "RAM-E-10",
+    "internalSKU": "BB-RAM-E-10",
+    "manufacturerCatNo": "RAM-E-10",
     "manufacturerModel": "Microlit RBO 8-Channel Variable Volume Micropipette",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit RBO 8-Channel Variable Volume Micropipette",
+    "name": "RAMBO 8-Channel Variable Volume Micropipette",
     "model": "Microlit RBO 8-Channel Variable Volume Micropipette",
     "category": "Liquid Handling",
     "subcategory": "Micropipettes",
@@ -244,33 +270,39 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "RAM-M-001",
-        "capacity": "RAM-E-10",
+        "catNo": "RAM-E-10",
+        "capacity": "0.5 - 10 µl",
+        "price": 11380,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-M-002",
-        "capacity": "RAM-E-20",
+        "catNo": "RAM-E-20",
+        "capacity": "2 - 20 µl",
+        "price": 11380,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-M-003",
-        "capacity": "RAM-E-50",
+        "catNo": "RAM-E-50",
+        "capacity": "5 - 50 µl",
+        "price": 11380,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-M-004",
-        "capacity": "RAM-E-100",
+        "catNo": "RAM-E-100",
+        "capacity": "10 - 100 µl",
+        "price": 11380,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-M-005",
-        "capacity": "RAM-E-200",
+        "catNo": "RAM-E-200",
+        "capacity": "20 - 200 µl",
+        "price": 11380,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-M-006",
-        "capacity": "RAM-E-300",
+        "catNo": "RAM-E-300",
+        "capacity": "40 - 300 µl",
+        "price": 11380,
         "pack": "1 Pc"
       }
     ],
@@ -282,20 +314,21 @@
     "relatedProducts": [],
     "slug": "product/microlit-rbo-8-channel-micropipette",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "RAM-E-10"
   },
   {
     "id": "microlit-rbo-12-channel-micropipette",
-    "sku": "RAM-M-007",
-    "internalSKU": "BB-RAM-M-007",
-    "manufacturerCatNo": "RAM-M-007",
+    "sku": "RAM-T-10",
+    "internalSKU": "BB-RAM-T-10",
+    "manufacturerCatNo": "RAM-T-10",
     "manufacturerModel": "Microlit RBO 12-Channel Variable Volume Micropipette",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit RBO 12-Channel Variable Volume Micropipette",
+    "name": "RAMBO 12-Channel Variable Volume Micropipette",
     "model": "Microlit RBO 12-Channel Variable Volume Micropipette",
     "category": "Liquid Handling",
     "subcategory": "Micropipettes",
@@ -319,33 +352,39 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "RAM-M-007",
-        "capacity": "RAM-T-10",
+        "catNo": "RAM-T-10",
+        "capacity": "0.5 - 10 µl",
+        "price": 14975,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-M-008",
-        "capacity": "RAM-T-20",
+        "catNo": "RAM-T-20",
+        "capacity": "2 - 20 µl",
+        "price": 14975,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-M-009",
-        "capacity": "RAM-T-50",
+        "catNo": "RAM-T-50",
+        "capacity": "5 - 50 µl",
+        "price": 14975,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-M-010",
-        "capacity": "RAM-T-100",
+        "catNo": "RAM-T-100",
+        "capacity": "10 - 100 µl",
+        "price": 14975,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-M-011",
-        "capacity": "RAM-T-200",
+        "catNo": "RAM-T-200",
+        "capacity": "20 - 200 µl",
+        "price": 14975,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "RAM-M-012",
-        "capacity": "RAM-T-300",
+        "catNo": "RAM-T-300",
+        "capacity": "40 - 300 µl",
+        "price": 14975,
         "pack": "1 Pc"
       }
     ],
@@ -357,20 +396,21 @@
     "relatedProducts": [],
     "slug": "product/microlit-rbo-12-channel-micropipette",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "RAM-T-10"
   },
   {
     "id": "microlit-nero-single-channel-micropipette",
-    "sku": "NRO-001",
-    "internalSKU": "BB-NRO-001",
-    "manufacturerCatNo": "NRO-001",
+    "sku": "NRO-2",
+    "internalSKU": "BB-NRO-2",
+    "manufacturerCatNo": "NRO-2",
     "manufacturerModel": "Microlit NERO Single Channel Variable Volume Micropipette",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit NERO Single Channel Variable Volume Micropipette",
+    "name": "NERO Single Channel Variable Volume Micropipette",
     "model": "Microlit NERO Single Channel Variable Volume Micropipette",
     "category": "Liquid Handling",
     "subcategory": "Micropipettes",
@@ -394,18 +434,57 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "NRO-001",
-        "capacity": "NRO-10",
+        "catNo": "NRO-2",
+        "capacity": "0.2 - 2 µl",
+        "price": 8000,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "NRO-002",
-        "capacity": "NRO-100",
+        "catNo": "NRO-10",
+        "capacity": "0.5 - 10 µl",
+        "price": 8000,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "NRO-003",
-        "capacity": "NRO-1000",
+        "catNo": "NRO-20",
+        "capacity": "2 - 20 µl",
+        "price": 8000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "NRO-50",
+        "capacity": "5 - 50 µl",
+        "price": 8000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "NRO-100",
+        "capacity": "10 - 100 µl",
+        "price": 8000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "NRO-200",
+        "capacity": "20 - 200 µl",
+        "price": 8000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "NRO-1000",
+        "capacity": "100 - 1000 µl",
+        "price": 8000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "NRO-5000",
+        "capacity": "0.5 - 5 ml",
+        "price": 8000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "NRO-10000",
+        "capacity": "1 - 10 ml",
+        "price": 8000,
         "pack": "1 Pc"
       }
     ],
@@ -417,20 +496,21 @@
     "relatedProducts": [],
     "slug": "product/microlit-nero-single-channel-micropipette",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "NRO-2"
   },
   {
     "id": "microlit-nero-multi-channel-micropipette",
-    "sku": "NRO-004",
-    "internalSKU": "BB-NRO-004",
-    "manufacturerCatNo": "NRO-004",
+    "sku": "NRO-E-10",
+    "internalSKU": "BB-NRO-E-10",
+    "manufacturerCatNo": "NRO-E-10",
     "manufacturerModel": "Microlit NERO Multi-Channel Variable Volume Micropipette",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit NERO Multi-Channel Variable Volume Micropipette",
+    "name": "NERO Multi-Channel Variable Volume Micropipette",
     "model": "Microlit NERO Multi-Channel Variable Volume Micropipette",
     "category": "Liquid Handling",
     "subcategory": "Micropipettes",
@@ -454,18 +534,75 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "NRO-004",
-        "capacity": "NRO-E-10",
+        "catNo": "NRO-E-10",
+        "capacity": "0.5 - 10 µl (8-Channel)",
+        "price": 20000,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "NRO-005",
-        "capacity": "NRO-E-100",
+        "catNo": "NRO-E-20",
+        "capacity": "2 - 20 µl (8-Channel)",
+        "price": 20000,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "NRO-006",
-        "capacity": "NRO-T-300",
+        "catNo": "NRO-E-50",
+        "capacity": "5 - 50 µl (8-Channel)",
+        "price": 20000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "NRO-E-100",
+        "capacity": "10 - 100 µl (8-Channel)",
+        "price": 20000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "NRO-E-200",
+        "capacity": "20 - 200 µl (8-Channel)",
+        "price": 20000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "NRO-E-300",
+        "capacity": "40 - 300 µl (8-Channel)",
+        "price": 20000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "NRO-T-10",
+        "capacity": "0.5 - 10 µl (12-Channel)",
+        "price": 24000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "NRO-T-20",
+        "capacity": "2 - 20 µl (12-Channel)",
+        "price": 24000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "NRO-T-50",
+        "capacity": "5 - 50 µl (12-Channel)",
+        "price": 24000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "NRO-T-100",
+        "capacity": "10 - 100 µl (12-Channel)",
+        "price": 24000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "NRO-T-200",
+        "capacity": "20 - 200 µl (12-Channel)",
+        "price": 24000,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "NRO-T-300",
+        "capacity": "40 - 300 µl (12-Channel)",
+        "price": 24000,
         "pack": "1 Pc"
       }
     ],
@@ -477,20 +614,21 @@
     "relatedProducts": [],
     "slug": "product/microlit-nero-multi-channel-micropipette",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "NRO-E-10"
   },
   {
     "id": "microlit-lilpet-pro-miniature-micropipette",
-    "sku": "LPP-001",
-    "internalSKU": "BB-LPP-001",
-    "manufacturerCatNo": "LPP-001",
+    "sku": "LPP-5",
+    "internalSKU": "BB-LPP-5",
+    "manufacturerCatNo": "LPP-5",
     "manufacturerModel": "Microlit LILPET PRO Miniature Fixed Volume Micropipette",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit LILPET PRO Miniature Fixed Volume Micropipette",
+    "name": "LILPET PRO Miniature Fixed Volume Micropipette with Tip Ejector",
     "model": "Microlit LILPET PRO Miniature Fixed Volume Micropipette",
     "category": "Liquid Handling",
     "subcategory": "Micropipettes",
@@ -514,53 +652,63 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "LPP-001",
-        "capacity": "LPP-5",
+        "catNo": "LPP-5",
+        "capacity": "5 µl",
+        "price": 1400,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "LPP-002",
-        "capacity": "LPP-10",
+        "catNo": "LPP-10",
+        "capacity": "10 µl",
+        "price": 1400,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "LPP-003",
-        "capacity": "LPP-20",
+        "catNo": "LPP-20",
+        "capacity": "20 µl",
+        "price": 1400,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "LPP-004",
-        "capacity": "LPP-50",
+        "catNo": "LPP-25",
+        "capacity": "25 µl",
+        "price": 1400,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "LPP-005",
-        "capacity": "LPP-100",
+        "catNo": "LPP-50",
+        "capacity": "50 µl",
+        "price": 1400,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "LPP-006",
-        "capacity": "LPP-200",
+        "catNo": "LPP-100",
+        "capacity": "100 µl",
+        "price": 1400,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "LPP-007",
-        "capacity": "LPT-5",
+        "catNo": "LPP-200",
+        "capacity": "200 µl",
+        "price": 1400,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "LPP-008",
-        "capacity": "LPT-10",
+        "catNo": "LPP-250",
+        "capacity": "250 µl",
+        "price": 1400,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "LPP-009",
-        "capacity": "LPT-20",
+        "catNo": "LPP-500",
+        "capacity": "500 µl",
+        "price": 1400,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "LPP-010",
-        "capacity": "LPT-100",
+        "catNo": "LPP-1000",
+        "capacity": "1000 µl",
+        "price": 1400,
         "pack": "1 Pc"
       }
     ],
@@ -572,20 +720,21 @@
     "relatedProducts": [],
     "slug": "product/microlit-lilpet-pro-miniature-micropipette",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "LPP-5"
   },
   {
     "id": "microlit-lilpet-miniature-micropipette",
-    "sku": "LPP-007",
-    "internalSKU": "BB-LPP-007",
-    "manufacturerCatNo": "LPP-007",
+    "sku": "LPT-5",
+    "internalSKU": "BB-LPT-5",
+    "manufacturerCatNo": "LPT-5",
     "manufacturerModel": "Microlit LILPET Miniature Fixed Volume Micropipette",
-    "manufacturer": "BioBrand",
-    "brand": "BioBrand",
+    "manufacturer": "Microlit",
+    "brand": "Microlit",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
     "countryOfOrigin": "India",
-    "name": "Microlit LILPET Miniature Fixed Volume Micropipette",
+    "name": "LILPET Miniature Fixed Volume Micropipette",
     "model": "Microlit LILPET Miniature Fixed Volume Micropipette",
     "category": "Liquid Handling",
     "subcategory": "Micropipettes",
@@ -609,23 +758,45 @@
     ],
     "variants": [
       {
-        "manufacturerCatNo": "LPP-007",
-        "capacity": "LPT-5",
+        "catNo": "LPT-5",
+        "capacity": "5 µl",
+        "price": 900,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "LPP-008",
-        "capacity": "LPT-10",
+        "catNo": "LPT-10",
+        "capacity": "10 µl",
+        "price": 900,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "LPP-009",
-        "capacity": "LPT-20",
+        "catNo": "LPT-20",
+        "capacity": "20 µl",
+        "price": 900,
         "pack": "1 Pc"
       },
       {
-        "manufacturerCatNo": "LPP-010",
-        "capacity": "LPT-100",
+        "catNo": "LPT-25",
+        "capacity": "25 µl",
+        "price": 900,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "LPT-50",
+        "capacity": "50 µl",
+        "price": 900,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "LPT-100",
+        "capacity": "100 µl",
+        "price": 900,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "LPT-200",
+        "capacity": "200 µl",
+        "price": 900,
         "pack": "1 Pc"
       }
     ],
@@ -637,6 +808,7 @@
     "relatedProducts": [],
     "slug": "product/microlit-lilpet-miniature-micropipette",
     "badge": "Biobrand Verified",
-    "gemApproved": true
+    "gemApproved": true,
+    "catNo": "LPT-5"
   }
 ]

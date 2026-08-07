@@ -1,9 +1,9 @@
 [
   {
     "id": "bb-acc-001",
-    "sku": "BB-ACC-CR6",
+    "sku": "FVO-PIP",
     "model": "ST-CR6",
-    "name": "FAVEO 6-Place Carousel Pipette Stand",
+    "name": "FAVEO Carousel Stand for 6 Micropipettes",
     "series": "Scientific Accessories",
     "category": "Liquid Handling",
     "subcategory": "Accessories",
@@ -74,9 +74,10 @@
     "manufacturerLogo": "/images/brands/microlit.svg",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
-    "internalSKU": "BB-ACC-CR6",
-    "manufacturerCatNo": "ACC-CR6",
-    "manufacturerModel": "ST-CR6"
+    "internalSKU": "BB-FVO-PIP",
+    "manufacturerCatNo": "FVO-PIP",
+    "manufacturerModel": "ST-CR6",
+    "catNo": "FVO-PIP"
   },
   {
     "id": "bb-acc-002",
@@ -159,9 +160,9 @@
   },
   {
     "id": "bb-acc-003",
-    "sku": "BB-ACC-[#]-RES75",
+    "sku": "RT-MC/75",
     "model": "RT-MC/75",
-    "name": "Reagent Reservoir Tray 75 mL (Sterile)",
+    "name": "Reagent Reservoir Tray 75 mL",
     "series": "Scientific Accessories",
     "category": "Liquid Handling",
     "subcategory": "Accessories",
@@ -232,9 +233,24 @@
     "manufacturerLogo": "/images/brands/microlit.svg",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
-    "internalSKU": "BB-ACC-[#]-RES75",
-    "manufacturerCatNo": "ACC-[#]-RES75",
-    "manufacturerModel": "RT-MC/75"
+    "internalSKU": "BB-RT-MC/75",
+    "manufacturerCatNo": "RT-MC/75",
+    "manufacturerModel": "RT-MC/75",
+    "catNo": "RT-MC/75",
+    "variants": [
+      {
+        "catNo": "RT-MC/75",
+        "capacity": "75 ml (Single)",
+        "price": 88,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "RT-MC/75/12",
+        "capacity": "75 ml (Pack of 12)",
+        "price": 1050,
+        "pack": "12 Pcs"
+      }
+    ]
   },
   {
     "id": "bb-acc-004",
@@ -396,9 +412,9 @@
   },
   {
     "id": "bb-acc-006",
-    "sku": "BB-ACC-S40",
+    "sku": "ADPT-SET-PK/5",
     "model": "AD-S40",
-    "name": "Bottle Top Dispenser Thread Adapter S40",
+    "name": "Bottle Top Dispenser Thread Adapter Set (Pack of 5)",
     "series": "Scientific Accessories",
     "category": "Liquid Handling",
     "subcategory": "Accessories",
@@ -469,9 +485,10 @@
     "manufacturerLogo": "/images/brands/microlit.svg",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
-    "internalSKU": "BB-ACC-S40",
-    "manufacturerCatNo": "ACC-S40",
-    "manufacturerModel": "AD-S40"
+    "internalSKU": "BB-ADPT-SET-PK/5",
+    "manufacturerCatNo": "ADPT-SET-PK/5",
+    "manufacturerModel": "AD-S40",
+    "catNo": "ADPT-SET-PK/5"
   },
   {
     "id": "bb-acc-007",

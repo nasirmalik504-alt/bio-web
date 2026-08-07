@@ -1,7 +1,7 @@
 [
   {
     "id": "bb-eb-001",
-    "sku": "BB-EBUR-50",
+    "sku": "EBUR-50",
     "model": "E-BUR-50",
     "name": "E-BURETTE Motorized Electronic Titrator (50 mL)",
     "series": "E-BURETTE Series",
@@ -81,11 +81,12 @@
     "authorizedDistributor": true,
     "internalSKU": "BB-EBUR-50",
     "manufacturerCatNo": "EBUR-50",
-    "manufacturerModel": "E-BUR-50"
+    "manufacturerModel": "E-BUR-50",
+    "catNo": "EBUR-50"
   },
   {
     "id": "bb-eb-sw-001",
-    "sku": "BB-EB-SW-01",
+    "sku": "EB-SW-01",
     "model": "EB-SW-01",
     "name": "E-BURETTE 21 CFR Part 11 Software License",
     "series": "E-BURETTE Series",
@@ -161,6 +162,7 @@
     "authorizedDistributor": true,
     "internalSKU": "BB-EB-SW-01",
     "manufacturerCatNo": "EB-SW-01",
-    "manufacturerModel": "EB-SW-01"
+    "manufacturerModel": "EB-SW-01",
+    "catNo": "EB-SW-01"
   }
 ]

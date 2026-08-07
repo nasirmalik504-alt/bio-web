@@ -1,0 +1,102 @@
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Sparkles, CheckCircle2, Send } from 'lucide-react';
+import { useQuoteStore } from '../../store/useQuoteStore';
+import { Product } from '../../types';
+
+export const PlasticwareCustomQuoteBanner: React.FC = () => {
+  const { addItemAndOpenDrawer } = useQuoteStore();
+
+  const [customInquiryText, setCustomInquiryText] = useState('');
+  const [inquirySubmitted, setInquirySubmitted] = useState(false);
+
+  const handleCustomInquirySubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!customInquiryText.trim()) return;
+
+    const queryText = customInquiryText.trim();
+    const customProd: Product = {
+      id: `plasticware-custom-query-${Date.now()}`,
+      name: `Plasticware Special Request: ${queryText}`,
+      model: 'Custom Plasticware Inquiry',
+      category: 'Laboratory Plasticware',
+      subcategory: 'Custom Plasticware Query',
+      sku: 'PLASTICWARE-CUSTOM-QUERY',
+      internalSKU: 'PLASTICWARE-CUSTOM-QUERY',
+      manufacturerCatNo: 'PW-SPECIAL-QUERY',
+      brand: 'BioBrand',
+      manufacturer: 'BioBrand',
+      supplier: 'Biobusiness Scientific',
+      description: `Specific laboratory plasticware query request: ${queryText}`,
+      features: [
+        'BioBrand Laboratory Plasticware Specific Item Request',
+        'USP Class VI Medical Grade Polypropylene / Polycarbonate',
+        'Institutional BOQ & Bulk Rate Inquiry',
+      ],
+      applications: ['Laboratory Research Plasticware'],
+      material: 'Polypropylene / Polycarbonate',
+      autoclavable: true,
+      image: '/images/products/plasticware/pw-item-01.jpg',
+      gallery: ['/images/products/plasticware/pw-item-01.jpg'],
+      slug: `product/plasticware-custom-query-${Date.now()}`,
+      variants: [{ manufacturerCatNo: 'PW-SPECIAL-QUERY', capacity: 'As Requested', pack: 'As Specified' }],
+    };
+
+    addItemAndOpenDrawer(customProd, 1);
+
+    setInquirySubmitted(true);
+    setCustomInquiryText('');
+    setTimeout(() => setInquirySubmitted(false), 4000);
+  };
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      className="p-6 sm:p-8 rounded-3xl bg-gradient-to-r from-emerald-50 via-teal-50 to-emerald-50/50 border border-emerald-200 shadow-2xs space-y-4 my-8"
+    >
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+        <div>
+          <h3 className="text-lg sm:text-xl font-extrabold text-[#23324D] font-display flex items-center gap-2">
+            <Sparkles className="w-5 h-5 text-emerald-600 shrink-0" />
+            <span>Looking for a Specific BioBrand Plasticware or Bulk Polymer Item?</span>
+          </h3>
+          <p className="text-xs text-[#5F708A] mt-1 font-light max-w-3xl leading-relaxed">
+            We supply the <strong>ENTIRE BioBrand Plasticware portfolio</strong>. If you need a specific catalog number, custom tip size, specialized cryo container, or custom mold volume, submit your exact code below and our quote engine will process it immediately!
+          </p>
+        </div>
+      </div>
+
+      <form onSubmit={handleCustomInquirySubmit} className="space-y-3">
+        <div className="flex flex-col sm:flex-row gap-3">
+          <input
+            type="text"
+            value={customInquiryText}
+            onChange={(e) => setCustomInquiryText(e.target.value)}
+            placeholder="e.g. BioBrand Code PW-1080, Cryo Storage Box 100-well, Autoclavable..."
+            className="flex-1 px-4 py-3.5 rounded-2xl bg-white border border-emerald-300 text-[#23324D] placeholder-[#9AA7BC] text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500/20"
+          />
+          <button
+            type="submit"
+            className="px-6 py-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs uppercase tracking-wider transition-colors shadow-2xs flex items-center justify-center gap-2 cursor-pointer shrink-0"
+          >
+            <Send className="w-4 h-4" />
+            <span>Add Special Inquiry to Basket</span>
+          </button>
+        </div>
+
+        {inquirySubmitted && (
+          <motion.div
+            initial={{ opacity: 0, y: -5 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="p-3 rounded-xl bg-emerald-600 text-white text-xs font-bold flex items-center gap-2"
+          >
+            <CheckCircle2 className="w-4 h-4" />
+            <span>Plasticware inquiry added to your quote basket!</span>
+          </motion.div>
+        )}
+      </form>
+    </motion.div>
+  );
+};

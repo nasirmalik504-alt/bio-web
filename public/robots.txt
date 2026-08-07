@@ -1,0 +1,9 @@
+# Robots.txt for Biobusiness Development Agency
+User-agent: *
+Allow: /
+Disallow: /scratch/
+Disallow: /admin/
+
+# Host & Sitemap Location
+Host: https://biobusiness.in
+Sitemap: https://biobusiness.in/sitemap.xml

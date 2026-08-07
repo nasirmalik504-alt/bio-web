@@ -1,9 +1,9 @@
 [
   {
     "id": "bb-vac-001",
-    "sku": "BB-KEN-P4",
+    "sku": "K-P4",
     "model": "K-P4",
-    "name": "KENO PRO Vacuum Aspirator System (4L Glass Bottle)",
+    "name": "KENO PRO Vacuum Aspirator System (4L Premium)",
     "series": "KENO PRO Series",
     "category": "Liquid Handling",
     "subcategory": "Vacuum Aspirators",
@@ -80,15 +80,16 @@
     "manufacturerLogo": "/images/brands/microlit.svg",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
-    "internalSKU": "BB-KEN-P4",
-    "manufacturerCatNo": "KEN-P4",
-    "manufacturerModel": "K-P4"
+    "internalSKU": "BB-K-P4",
+    "manufacturerCatNo": "K-P4",
+    "manufacturerModel": "K-P4",
+    "catNo": "K-P4"
   },
   {
     "id": "bb-vac-002",
-    "sku": "BB-KEN-E4",
+    "sku": "K-E4",
     "model": "K-E4",
-    "name": "KENO PRO Vacuum Aspirator System (4L Polycarbonate Bottle)",
+    "name": "KENO PRO Vacuum Aspirator System (4L Economy)",
     "series": "KENO PRO Series",
     "category": "Liquid Handling",
     "subcategory": "Vacuum Aspirators",
@@ -163,8 +164,9 @@
     "manufacturerLogo": "/images/brands/microlit.svg",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
-    "internalSKU": "BB-KEN-E4",
-    "manufacturerCatNo": "KEN-E4",
-    "manufacturerModel": "K-E4"
+    "internalSKU": "BB-K-E4",
+    "manufacturerCatNo": "K-E4",
+    "manufacturerModel": "K-E4",
+    "catNo": "K-E4"
   }
 ]

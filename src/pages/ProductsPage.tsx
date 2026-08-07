@@ -1,6 +1,5 @@
 import React, { useState, useMemo, useEffect } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { motion, AnimatePresence } from 'framer-motion';
 import Fuse from 'fuse.js';
 import { PRODUCTS_DATA } from '../data/productsData';
 import { CATEGORY_TAXONOMY } from '../data/categoryTaxonomy';
@@ -8,29 +7,25 @@ import { Product } from '../types';
 import { ProductCardItem } from '../components/products/ProductCardItem';
 import { ProductDetailModal } from '../components/products/ProductDetailModal';
 import { QualikemsChemicalsSection } from '../components/sections/QualikemsChemicalsSection';
-import { Search, Sparkles, SlidersHorizontal, Layers, ChevronRight } from 'lucide-react';
+import { AnalyticalInstrumentsSection } from '../components/sections/AnalyticalInstrumentsSection';
+import { CategoryQueryBoxBanner } from '../components/sections/CategoryQueryBoxBanner';
+import { SEO } from '../components/SEO';
+import { StructuredData } from '../components/StructuredData';
+import { generateBreadcrumbSchema, generateProductSchema } from '../lib/seo';
+import { Search, SlidersHorizontal, Layers } from 'lucide-react';
 
 export const ProductsPage: React.FC = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const initialCategory = searchParams.get('category') || 'all';
-  const initialSubcategory = searchParams.get('subcategory') || 'all';
 
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);
-  const [selectedSubcategory, setSelectedSubcategory] = useState(initialSubcategory);
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
 
   useEffect(() => {
     const cat = searchParams.get('category');
-    const sub = searchParams.get('subcategory');
     if (cat) setSelectedCategory(cat);
-    if (sub) setSelectedSubcategory(sub);
   }, [searchParams]);
-
-  // Find active Level 1 taxonomy object
-  const activeTaxonomyCategory = useMemo(() => {
-    return CATEGORY_TAXONOMY.find((c) => c.id === selectedCategory);
-  }, [selectedCategory]);
 
   // Configure Fuse.js Fuzzy Search Engine across fields
   const fuse = useMemo(() => {
@@ -67,15 +62,6 @@ export const ProductsPage: React.FC = () => {
       });
     }
 
-    // Apply Level 2 Subcategory Filter
-    if (selectedSubcategory !== 'all' && !selectedSubcategory.startsWith('all-')) {
-      const matchSub = selectedSubcategory.toLowerCase().replace(/-/g, ' ');
-      result = result.filter((p) => {
-        const sub = (p.subcategory || '').toLowerCase().replace(/-/g, ' ');
-        return sub.includes(matchSub) || matchSub.includes(sub);
-      });
-    }
-
     // Apply Fuse.js Search
     if (searchQuery.trim()) {
       const searchResults = fuse.search(searchQuery.trim());
@@ -84,11 +70,55 @@ export const ProductsPage: React.FC = () => {
     }
 
     return result;
-  }, [searchQuery, selectedCategory, selectedSubcategory, fuse]);
+  }, [searchQuery, selectedCategory, fuse]);
+
+  const categoryMeta = useMemo(() => {
+    switch (selectedCategory) {
+      case 'liquid-handling':
+        return {
+          title: 'Microlit Liquid Handling Systems & Micropipettes',
+          description: 'Explore Microlit micropipettes, electronic pipettes, bottle-top dispensers, and digital titrators supplied by Biobusiness.',
+        };
+      case 'glassware':
+        return {
+          title: 'Class A Borosilicate 3.3 Laboratory Glassware',
+          description: 'Explore ISO certified NABL Class A borosilicate glassware, beakers, volumetric flasks, measuring cylinders, and burettes.',
+        };
+      case 'plasticware':
+        return {
+          title: 'Autoclavable Laboratory Plasticware & Consumables',
+          description: 'Explore USP Class VI medical grade plasticware, microcentrifuge tubes, cryo vials, petri dishes, and PCR consumables.',
+        };
+      case 'filtration':
+        return {
+          title: 'RAMBO Syringe Filters & Membrane Discs',
+          description: 'Explore syringe filters, membrane discs, filter paper, and vacuum filtration assemblies for analytical testing.',
+        };
+      case 'chemicals':
+        return {
+          title: 'Qualikems Fine Chemicals & HPLC Solvents',
+          description: 'Explore AR/LR grade chemicals, HPLC solvents, biological stains, buffers, and culture media supplied by Biobusiness.',
+        };
+      case 'instruments':
+        return {
+          title: 'Laboratory Instruments & Measuring Equipment',
+          description: 'Explore precision laboratory balances, pH meters, centrifuges, spectrophotometers, and hotplate stirrers.',
+        };
+      case 'safety':
+        return {
+          title: 'Safety Products, Cryo PPE & Lab Coats',
+          description: 'Explore CE/EN certified nitrile gloves, cryo protection gloves, N95 masks, lab coats, and acid spill response kits.',
+        };
+      default:
+        return {
+          title: 'Scientific Product Catalogue | Liquid Handling, Glassware, Plasticware & Reagents',
+          description: 'Explore certified scientific products across Liquid Handling, Glassware, Plasticware, Chemicals, Instruments, and Safety.',
+        };
+    }
+  }, [selectedCategory]);
 
   const handleCategoryChange = (catId: string) => {
     setSelectedCategory(catId);
-    setSelectedSubcategory('all');
     if (catId === 'all') {
       setSearchParams({});
     } else {
@@ -96,39 +126,41 @@ export const ProductsPage: React.FC = () => {
     }
   };
 
-  const handleSubcategoryChange = (subId: string) => {
-    setSelectedSubcategory(subId);
-    if (subId.startsWith('all-')) {
-      setSearchParams({ category: selectedCategory });
-    } else {
-      setSearchParams({ category: selectedCategory, subcategory: subId });
+  const breadcrumbSchema = useMemo(() => {
+    const items = [{ name: 'Home', url: '/' }, { name: 'Products', url: '/products' }];
+    if (selectedCategory !== 'all') {
+      items.push({ name: categoryMeta.title, url: `/products?category=${selectedCategory}` });
     }
-  };
+    return generateBreadcrumbSchema(items);
+  }, [selectedCategory, categoryMeta]);
 
   return (
     <div className="pt-28 pb-20 bg-[#FAFBFD] min-h-screen relative overflow-hidden text-[#5F708A]">
+      <SEO
+        title={categoryMeta.title}
+        description={categoryMeta.description}
+        canonicalPath={selectedCategory === 'all' ? '/products' : `/products?category=${selectedCategory}`}
+      />
+      <StructuredData data={breadcrumbSchema} id="products-breadcrumb-schema" />
+      {selectedProduct && (
+        <StructuredData data={generateProductSchema(selectedProduct)} id="selected-product-schema" />
+      )}
+
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 space-y-8">
         
         {/* Header Title */}
         <div className="text-center max-w-3xl mx-auto space-y-4 pt-2">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#E6ECF5] shadow-2xs">
-            <Sparkles className="w-3.5 h-3.5 text-[#6EA8FE]" />
-            <span className="text-xs font-mono font-bold text-[#6EA8FE] uppercase tracking-widest">
-              Scientific Product Catalogue Engine ({PRODUCTS_DATA.length} Items)
-            </span>
-          </div>
-
           <h1 className="text-4xl sm:text-5xl font-extrabold text-[#23324D] tracking-tight font-display">
             EXPLORE OUR <span className="text-[#6EA8FE]">CERTIFIED CATALOGUE</span>
           </h1>
 
           <p className="text-[#5F708A] text-base font-light leading-relaxed">
-            Multi-level scientific navigation across Liquid Handling, Filtration, Glassware, Plasticware, Chemicals, Analytical Instruments, and Safety Essentials.
+            Multi-level scientific navigation across Liquid Handling, Filtration, Glassware, Plasticware, Chemicals, Laboratory Instruments, and Safety Essentials.
           </p>
         </div>
 
-        {/* 2-Level Category Control Container */}
-        <div className="p-6 rounded-3xl bg-white border border-[#E6ECF5] space-y-5 shadow-2xs">
+        {/* Category Search & Filter Container */}
+        <div className="p-6 rounded-3xl bg-white border border-[#E6ECF5] space-y-6 shadow-2xs">
           
           {/* Search Input Bar */}
           <div className="relative">
@@ -139,6 +171,7 @@ export const ProductsPage: React.FC = () => {
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Search by SKU, Cat No, product name (RAMBO, SF-NY, 0.22um, 25mm), material, or application..."
               className="w-full pl-12 pr-12 py-4 rounded-2xl bg-[#FAFBFD] border border-[#E6ECF5] text-[#23324D] placeholder-[#9AA7BC] focus:outline-none focus:border-[#6EA8FE] focus:ring-2 focus:ring-[#6EA8FE]/10 text-sm font-sans"
+              aria-label="Search scientific products"
             />
             {searchQuery && (
               <button
@@ -184,40 +217,10 @@ export const ProductsPage: React.FC = () => {
             </div>
           </div>
 
-          {/* Animated Subcategory Bar */}
-          <AnimatePresence mode="wait">
-            {activeTaxonomyCategory && (
-              <motion.div
-                key={activeTaxonomyCategory.id}
-                initial={{ opacity: 0, height: 0, y: -5 }}
-                animate={{ opacity: 1, height: 'auto', y: 0 }}
-                exit={{ opacity: 0, height: 0, y: -5 }}
-                transition={{ duration: 0.25 }}
-                className="pt-3 border-t border-[#E6ECF5] space-y-2 overflow-hidden"
-              >
-                <div className="text-[11px] font-mono font-bold uppercase tracking-wider text-[#6EA8FE] flex items-center gap-1.5">
-                  <ChevronRight className="w-3.5 h-3.5" />
-                  <span>{activeTaxonomyCategory.label} Subcategories</span>
-                </div>
-
-                <div className="flex gap-2 overflow-x-auto no-scrollbar py-1">
-                  {activeTaxonomyCategory.subcategories.map((sub) => (
-                    <button
-                      key={sub.id}
-                      onClick={() => handleSubcategoryChange(sub.id)}
-                      className={`px-3.5 py-2 rounded-lg text-xs font-bold whitespace-nowrap transition-all cursor-pointer ${
-                        selectedSubcategory === sub.id
-                          ? 'bg-[#6EA8FE] text-white shadow-2xs'
-                          : 'bg-[#F4F8FC] text-[#5F708A] hover:text-[#23324D] hover:bg-[#E6ECF5] border border-[#E6ECF5]'
-                      }`}
-                    >
-                      {sub.label}
-                    </button>
-                  ))}
-                </div>
-              </motion.div>
-            )}
-          </AnimatePresence>
+          {/* Category-Specific Product Query Box Banner placed right in place of subcategories */}
+          <div className="pt-2">
+            <CategoryQueryBoxBanner selectedCategory={selectedCategory} />
+          </div>
 
         </div>
 
@@ -233,21 +236,22 @@ export const ProductsPage: React.FC = () => {
           )}
         </div>
 
-        {/* Product Cards Grid OR Qualikems Chemicals Dedicated Section */}
+        {/* Product Cards Grid OR Qualikems Chemicals OR Laboratory Instruments Dedicated Section */}
         {selectedCategory === 'chemicals' ? (
           <QualikemsChemicalsSection />
+        ) : selectedCategory === 'instruments' ? (
+          <AnalyticalInstrumentsSection />
         ) : filteredProducts.length === 0 ? (
           <div className="py-20 text-center space-y-4 bg-white border border-[#E6ECF5] rounded-3xl p-8 shadow-2xs">
             <SlidersHorizontal className="w-12 h-12 text-[#9AA7BC] mx-auto" />
             <h3 className="text-xl font-bold text-[#23324D]">No products found in this category</h3>
             <p className="text-xs text-[#5F708A] max-w-md mx-auto font-light">
-              Try resetting subcategory filters or searching by SKU, model, or material keyword.
+              Try searching by SKU, model, or material keyword.
             </p>
             <button
               onClick={() => {
                 setSearchQuery('');
                 setSelectedCategory('all');
-                setSelectedSubcategory('all');
                 setSearchParams({});
               }}
               className="px-6 py-2.5 rounded-xl bg-[#6EA8FE] text-white text-xs font-bold cursor-pointer hover:bg-[#5B95F5] transition-colors"

@@ -1,9 +1,9 @@
 [
   {
     "id": "bb-pp-001",
-    "sku": "BB-DISP-100",
+    "sku": "ED-10",
     "model": "E-DISP-100",
-    "name": "E-DISPENSER Automated Peristaltic Dispensing System (0.1 - 9999 mL)",
+    "name": "E-DISPENSER Electronic Dispenser with Automatic Dispensing",
     "series": "Peristaltic Dispenser Series",
     "category": "Liquid Handling",
     "subcategory": "Peristaltic Pumps",
@@ -79,8 +79,29 @@
     "manufacturerLogo": "/images/brands/microlit.svg",
     "supplier": "Biobusiness Development Agency",
     "authorizedDistributor": true,
-    "internalSKU": "BB-DISP-100",
-    "manufacturerCatNo": "DISP-100",
-    "manufacturerModel": "E-DISP-100"
+    "internalSKU": "BB-ED-10",
+    "manufacturerCatNo": "ED-10",
+    "manufacturerModel": "E-DISP-100",
+    "catNo": "ED-10",
+    "variants": [
+      {
+        "catNo": "ED-10",
+        "capacity": "10 ml",
+        "price": 105600,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "ED-25",
+        "capacity": "25 ml",
+        "price": 105600,
+        "pack": "1 Pc"
+      },
+      {
+        "catNo": "ED-50",
+        "capacity": "50 ml",
+        "price": 105600,
+        "pack": "1 Pc"
+      }
+    ]
   }
 ]

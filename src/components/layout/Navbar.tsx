@@ -45,7 +45,7 @@ export const Navbar: React.FC<NavbarProps> = ({
     { name: 'Laboratory Glassware', desc: 'Beakers, flasks, cylinders, burettes & volumetric glass', icon: '🥛', category: 'glassware', bg: 'bg-[#EDF8FF]' },
     { name: 'Laboratory Plasticware', desc: 'Tips, centrifuge tubes, cryo vials, petri dishes & PCR', icon: '🧫', category: 'plasticware', bg: 'bg-[#FFF8D9]' },
     { name: 'Chemicals & Reagents', desc: 'Analytical reagents, solvents, culture media & buffers', icon: '⚗️', category: 'chemicals', bg: 'bg-[#EEE8FF]' },
-    { name: 'Analytical Instruments', desc: 'Balances, pH meters, centrifuges & spectrophotometers', icon: '📊', category: 'instruments', bg: 'bg-[#FFF0E8]' },
+    { name: 'Laboratory Instruments', desc: 'Balances, pH meters, centrifuges & spectrophotometers', icon: '📊', category: 'instruments', bg: 'bg-[#FFF0E8]' },
     { name: 'Safety & Essentials', desc: 'PPE, lab coats, gloves, face shields & spill kits', icon: '🥽', category: 'safety', bg: 'bg-[#FCECEF]' },
   ];
 
@@ -65,17 +65,11 @@ export const Navbar: React.FC<NavbarProps> = ({
             to="/"
             className="flex items-center gap-3 group text-left cursor-pointer"
           >
-            <div className="relative w-10 h-10 rounded-xl bg-gradient-to-br from-[#F28B82] to-[#6EA8FE] p-0.5 shadow-2xs group-hover:shadow-xs transition-all duration-300">
-              <div className="w-full h-full bg-white rounded-[10px] flex items-center justify-center font-extrabold text-[#F28B82] text-xl font-display">
-                B
-              </div>
-            </div>
-            <div>
-              <div className="text-xl font-bold font-display tracking-tight leading-none flex items-center">
-                <span className="text-[#F28B82]">BIO</span>
-                <span className="text-[#6EA8FE]">BUSINESS</span>
-              </div>
-            </div>
+            <img
+              src="/images/logo.png"
+              alt="Biobusiness Development Agency"
+              className="h-10 sm:h-12 w-auto object-contain transition-transform group-hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Navigation Links */}

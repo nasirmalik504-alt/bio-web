@@ -55,15 +55,11 @@ export const Footer: React.FC = () => {
           
           <div className="lg:col-span-2 space-y-4">
             <div className="flex items-center gap-3">
-              <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-[#F28B82] to-[#6EA8FE] p-0.5 shadow-2xs">
-                <div className="w-full h-full bg-white rounded-[7px] flex items-center justify-center font-extrabold text-[#F28B82] text-lg">
-                  B
-                </div>
-              </div>
-              <span className="text-xl font-bold font-display leading-none">
-                <span className="text-[#F28B82]">BIO</span>
-                <span className="text-[#6EA8FE]">BUSINESS</span>
-              </span>
+              <img
+                src="/images/logo.png"
+                alt="Biobusiness Development Agency"
+                className="h-10 sm:h-12 w-auto object-contain"
+              />
             </div>
 
             <p className="text-sm text-[#5F708A] leading-relaxed pr-4 font-light">
@@ -175,10 +171,11 @@ export const Footer: React.FC = () => {
           <div>
             © {new Date().getFullYear()} Biobusiness Development Agency. All rights reserved.
           </div>
-          <div className="flex gap-6 font-mono text-[11px]">
+          <div className="flex flex-wrap gap-6 font-mono text-[11px]">
+            <Link to="/privacy-policy" className="hover:text-[#6EA8FE]">Privacy Policy</Link>
+            <Link to="/terms-and-conditions" className="hover:text-[#6EA8FE]">Terms & Conditions</Link>
             <Link to="/brands" className="hover:text-[#6EA8FE]">Authorized Brands</Link>
             <Link to="/biobrand" className="hover:text-[#6EA8FE]">BioBrand</Link>
-            <Link to="/contact" className="hover:text-[#6EA8FE]">Privacy Policy</Link>
           </div>
         </div>
 

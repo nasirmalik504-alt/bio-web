@@ -3,7 +3,7 @@
     "id": "ml-rambo-fixed",
     "sku": "BB-LH-0001",
     "internalSKU": "BB-LH-0001",
-    "manufacturerCatNo": "RAM-F-1000",
+    "manufacturerCatNo": "RAM-F-1",
     "manufacturerModel": "RAMBO Series Fixed Volume Micropipette",
     "manufacturer": "Microlit",
     "brand": "Microlit",
@@ -12,7 +12,7 @@
     "countryOfOrigin": "India",
     "manufacturerWebsite": "https://www.microlit.com",
     "manufacturerLogo": "/images/brands/microlit.svg",
-    "name": "RAMBO Series Fixed Volume Micropipette",
+    "name": "RAMBO Single Channel Fixed Volume Micropipette",
     "series": "RAMBO Series",
     "model": "RAM-F",
     "category": "Liquid Handling",
@@ -137,13 +137,14 @@
       "ml-rambo-variable",
       "ml-nero-variable"
     ],
-    "slug": "microlit-rambo-fixed-volume-micropipette"
+    "slug": "microlit-rambo-fixed-volume-micropipette",
+    "catNo": "RAM-F-1"
   },
   {
     "id": "ml-rambo-variable",
     "sku": "BB-LH-0002",
     "internalSKU": "BB-LH-0002",
-    "manufacturerCatNo": "RAM-1000",
+    "manufacturerCatNo": "RAM-2",
     "manufacturerModel": "RAMBO Series Variable Volume Micropipette",
     "manufacturer": "Microlit",
     "brand": "Microlit",
@@ -152,7 +153,7 @@
     "countryOfOrigin": "India",
     "manufacturerWebsite": "https://www.microlit.com",
     "manufacturerLogo": "/images/brands/microlit.svg",
-    "name": "RAMBO Series Variable Volume Micropipette",
+    "name": "RAMBO Single Channel Variable Volume Micropipette",
     "series": "RAMBO Series",
     "model": "RAM-VAR",
     "category": "Liquid Handling",
@@ -245,13 +246,14 @@
     "relatedProducts": [
       "ml-rambo-fixed"
     ],
-    "slug": "microlit-rambo-variable-volume-micropipette"
+    "slug": "microlit-rambo-variable-volume-micropipette",
+    "catNo": "RAM-2"
   },
   {
     "id": "ml-nero-variable",
     "sku": "BB-LH-0003",
     "internalSKU": "BB-LH-0003",
-    "manufacturerCatNo": "NRO-1000",
+    "manufacturerCatNo": "NRO-2",
     "manufacturerModel": "NERO Series Single Channel Variable Micropipette",
     "manufacturer": "Microlit",
     "brand": "Microlit",
@@ -260,7 +262,7 @@
     "countryOfOrigin": "India",
     "manufacturerWebsite": "https://www.microlit.com",
     "manufacturerLogo": "/images/brands/microlit.svg",
-    "name": "NERO Series Single Channel Variable Micropipette",
+    "name": "NERO Single Channel Variable Volume Micropipette",
     "series": "NERO Series",
     "model": "NRO-VAR",
     "category": "Liquid Handling",
@@ -373,13 +375,14 @@
       "ml-nero-multichannel",
       "ml-rambo-variable"
     ],
-    "slug": "microlit-nero-variable-volume-micropipette"
+    "slug": "microlit-nero-variable-volume-micropipette",
+    "catNo": "NRO-2"
   },
   {
     "id": "ml-nero-multichannel",
     "sku": "BB-LH-0004",
     "internalSKU": "BB-LH-0004",
-    "manufacturerCatNo": "NRO-8-300",
+    "manufacturerCatNo": "NRO-E-10",
     "manufacturerModel": "NERO Series Multi-Channel Micropipette",
     "manufacturer": "Microlit",
     "brand": "Microlit",
@@ -388,7 +391,7 @@
     "countryOfOrigin": "India",
     "manufacturerWebsite": "https://www.microlit.com",
     "manufacturerLogo": "/images/brands/microlit.svg",
-    "name": "NERO Series Multi-Channel Micropipette",
+    "name": "NERO Multi-Channel Variable Volume Micropipette",
     "series": "NERO Series",
     "model": "NRO-MC",
     "category": "Liquid Handling",
@@ -499,13 +502,14 @@
     "relatedProducts": [
       "ml-nero-variable"
     ],
-    "slug": "microlit-nero-multichannel-micropipette"
+    "slug": "microlit-nero-multichannel-micropipette",
+    "catNo": "NRO-E-10"
   },
   {
     "id": "ml-aqua-electronic",
     "sku": "BB-LH-0005",
     "internalSKU": "BB-LH-0005",
-    "manufacturerCatNo": "AQS-1000",
+    "manufacturerCatNo": "AQS-10",
     "manufacturerModel": "AQUA Electronic Micropipette",
     "manufacturer": "Microlit",
     "brand": "Microlit",
@@ -514,7 +518,7 @@
     "countryOfOrigin": "India",
     "manufacturerWebsite": "https://www.microlit.com",
     "manufacturerLogo": "/images/brands/microlit.svg",
-    "name": "AQUA Electronic Micropipette",
+    "name": "AQUA Single Channel Electronic Micropipette",
     "series": "AQUA Series",
     "model": "AQS",
     "category": "Liquid Handling",
@@ -589,13 +593,14 @@
     "relatedProducts": [
       "ml-scitus-btd"
     ],
-    "slug": "microlit-aqua-electronic-micropipette"
+    "slug": "microlit-aqua-electronic-micropipette",
+    "catNo": "AQS-10"
   },
   {
     "id": "ml-scitus-btd",
     "sku": "BB-LH-0006",
     "internalSKU": "BB-LH-0006",
-    "manufacturerCatNo": "SCT-10",
+    "manufacturerCatNo": "SCI-2.5",
     "manufacturerModel": "SCITUS Bottle Top Dispenser",
     "manufacturer": "Microlit",
     "brand": "Microlit",
@@ -697,13 +702,14 @@
     "relatedProducts": [
       "ml-eburette"
     ],
-    "slug": "microlit-scitus-bottle-top-dispenser"
+    "slug": "microlit-scitus-bottle-top-dispenser",
+    "catNo": "SCI-2.5"
   },
   {
     "id": "ml-eburette",
     "sku": "BB-LH-0007",
     "internalSKU": "BB-LH-0007",
-    "manufacturerCatNo": "E-BUR-50",
+    "manufacturerCatNo": "EBUR-50",
     "manufacturerModel": "E-BURETTE Motorized Digital Titrator",
     "manufacturer": "Microlit",
     "brand": "Microlit",
@@ -712,7 +718,7 @@
     "countryOfOrigin": "India",
     "manufacturerWebsite": "https://www.microlit.com",
     "manufacturerLogo": "/images/brands/microlit.svg",
-    "name": "E-BURETTE Motorized Digital Titrator",
+    "name": "E-BURETTE Motorized Electronic Titrator (50 mL)",
     "series": "E-BURETTE Series",
     "model": "E-BUR",
     "category": "Liquid Handling",
@@ -760,6 +766,7 @@
     "relatedProducts": [
       "ml-scitus-btd"
     ],
-    "slug": "microlit-eburette-motorized-digital-titrator"
+    "slug": "microlit-eburette-motorized-digital-titrator",
+    "catNo": "EBUR-50"
   }
 ]

@@ -25,18 +25,17 @@ import bottleTopFilters from './products/filtration/bottle-top-filters.json';
 import membraneDiscs from './products/filtration/membrane-discs.json';
 import filtrationAccessories from './products/filtration/accessories.json';
 
-// White-Label BioBrand Plasticware Datasets (8 Analytical PDF Categories)
-import generalLabware from './products/plasticware/general-labware.json';
-import bottlesContainers from './products/plasticware/bottles-containers.json';
-import flasksBeakers from './products/plasticware/flasks-beakers.json';
-import centrifugePcr from './products/plasticware/centrifuge-pcr.json';
-import cellCulture from './products/plasticware/cell-culture.json';
-import laboratoryAccessories from './products/plasticware/laboratory-accessories.json';
-import cryogenicStorage from './products/plasticware/cryogenic-storage.json';
-import safetyProducts from './products/plasticware/safety-products.json';
+// White-Label BioBrand Plasticware Dataset (32 Core Products)
+import plasticwareProducts from './products/plasticware.json';
 
-// Laboratory Glassware Dataset (Official 205 PDF Catalogue Items)
+// Laboratory Glassware Dataset (18 Main BioBrand Catalogue Items)
 import glasswareProducts from './products/glassware.json';
+
+// Safety & PPE Dataset (16 Exact BioBrand Safety Products)
+import safetyProductsJson from './products/plasticware/safety-products.json';
+
+// Analytical Instruments Dataset (112 Reputed Manufacturer Instrument Products)
+import instrumentProducts from './products/instruments.json';
 
 export const LIQUID_HANDLING_PRODUCTS_DATA: Product[] = [
   ...(micropipettes as unknown as Product[]),
@@ -66,18 +65,19 @@ export const FILTRATION_PRODUCTS_DATA: Product[] = [
 ];
 
 export const PLASTICWARE_PRODUCTS_DATA: Product[] = [
-  ...(generalLabware as unknown as Product[]),
-  ...(bottlesContainers as unknown as Product[]),
-  ...(flasksBeakers as unknown as Product[]),
-  ...(centrifugePcr as unknown as Product[]),
-  ...(cellCulture as unknown as Product[]),
-  ...(laboratoryAccessories as unknown as Product[]),
-  ...(cryogenicStorage as unknown as Product[]),
-  ...(safetyProducts as unknown as Product[]),
+  ...(plasticwareProducts as unknown as Product[]),
 ];
 
 export const GLASSWARE_PRODUCTS_DATA: Product[] = [
   ...(glasswareProducts as unknown as Product[]),
+];
+
+export const SAFETY_PRODUCTS_DATA: Product[] = [
+  ...(safetyProductsJson as unknown as Product[]),
+];
+
+export const INSTRUMENTS_PRODUCTS_DATA: Product[] = [
+  ...(instrumentProducts as unknown as Product[]),
 ];
 
 export const PRODUCTS_DATA: Product[] = [
@@ -85,6 +85,8 @@ export const PRODUCTS_DATA: Product[] = [
   ...FILTRATION_PRODUCTS_DATA,
   ...PLASTICWARE_PRODUCTS_DATA,
   ...GLASSWARE_PRODUCTS_DATA,
+  ...SAFETY_PRODUCTS_DATA,
+  ...INSTRUMENTS_PRODUCTS_DATA,
 ];
 
 export const TIMELINE_EVENTS: TimelineEvent[] = [

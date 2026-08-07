@@ -103,11 +103,11 @@ export const CATEGORY_TAXONOMY: CategoryItem[] = [
   },
   {
     id: 'instruments',
-    label: 'Analytical Instruments',
+    label: 'Laboratory Instruments',
     icon: '📊',
-    description: 'Precision analytical balances, pH meters, centrifuges, spectrophotometers, and stirrers.',
+    description: 'Precision laboratory balances, pH meters, centrifuges, spectrophotometers, and stirrers.',
     subcategories: [
-      { id: 'all-instruments', label: 'All Analytical Instruments' },
+      { id: 'all-instruments', label: 'All Laboratory Instruments' },
       { id: 'balances', label: 'Analytical & Precision Balances' },
       { id: 'ph-meters', label: 'Benchtop & Portable pH Meters' },
       { id: 'conductivity-meters', label: 'Conductivity Meters' },
