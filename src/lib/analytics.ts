@@ -4,8 +4,8 @@
 const metaEnv = (import.meta as any).env || {};
 
 export const ANALYTICS_CONFIG = {
-  gaId: metaEnv.VITE_GA_MEASUREMENT_ID || '',
-  gtmId: metaEnv.VITE_GTM_ID || '',
+  gaId: metaEnv.VITE_GA_MEASUREMENT_ID || 'G-2LLF0XMG5E',
+  gtmId: metaEnv.VITE_GTM_ID || 'GTM-MHMM2BQ5',
   gscVerification: metaEnv.VITE_GSC_VERIFICATION || '',
   clarityId: metaEnv.VITE_CLARITY_ID || '',
 };
