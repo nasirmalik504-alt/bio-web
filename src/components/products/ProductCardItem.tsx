@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Product } from '../../types';
 import { useQuoteStore } from '../../store/useQuoteStore';
-import { Plus, Check, Eye, ShieldCheck, CheckCircle2, Award } from 'lucide-react';
+import { Plus, Check, Eye, CheckCircle2, Award } from 'lucide-react';
 
 interface ProductCardItemProps {
   product: Product;
@@ -63,13 +63,6 @@ export const ProductCardItem: React.FC<ProductCardItemProps> = ({
               imageLoaded ? 'opacity-100' : 'opacity-0'
             }`}
           />
-
-          <div className="absolute top-3 left-3 flex flex-col gap-1 z-10">
-            <span className="px-2.5 py-1 rounded-md bg-white/95 backdrop-blur-md text-[#23324D] border border-[#E6ECF5] text-[10px] font-mono font-bold shadow-2xs flex items-center gap-1">
-              <ShieldCheck className="w-3 h-3 text-[#7CC9A5]" />
-              {manufacturerName}
-            </span>
-          </div>
 
           {/* Hover Quick View Overlay */}
           <div className="absolute inset-0 bg-[#23324D]/10 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">

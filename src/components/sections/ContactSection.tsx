@@ -99,20 +99,14 @@ export const ContactSection: React.FC = () => {
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
                   <h3 className="text-2xl font-extrabold text-[#23324D] font-display">
-                    MESSAGE SENT SUCCESSFULLY!
+                    THANK YOU FOR YOUR ENQUIRY!
                   </h3>
-                  <div className="p-4 rounded-2xl bg-[#FAFBFD] border border-[#E6ECF5] max-w-xs mx-auto space-y-1">
-                    <div className="text-xs text-[#5F708A] font-mono">Reference ID</div>
-                    <div className="text-xl font-bold font-mono text-[#6EA8FE]">
-                      {result.referenceId}
-                    </div>
-                  </div>
                   <p className="text-xs text-[#5F708A] max-w-sm mx-auto font-light leading-relaxed">
-                    Thank you for reaching out. An automated confirmation email has been dispatched to your inbox.
+                    Thank you for contacting Biobusiness Development Agency. Our contact team will connect with you within 24 hours.
                   </p>
                   <button
                     onClick={() => setResult(null)}
-                    className="px-6 py-2.5 rounded-xl bg-[#6EA8FE] text-white font-bold text-xs cursor-pointer"
+                    className="px-6 py-2.5 rounded-xl bg-[#6EA8FE] hover:bg-[#5B95F5] text-white font-bold text-xs cursor-pointer transition-colors"
                   >
                     Send Another Message
                   </button>

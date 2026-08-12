@@ -8,7 +8,7 @@
  */
 
 const ADMIN_EMAIL = "sales@biobusiness.in";
-const COMPANY_NAME = "Biobusiness Scientific";
+const COMPANY_NAME = "Biobusiness Development Agency";
 const WEBSITE_URL = "https://www.biobusiness.in";
 
 /**
@@ -217,7 +217,7 @@ function sendAdminQuoteNotification(refId, timestamp, institution, email, phone,
   const htmlBody = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #FAFBFD; padding: 24px; border-radius: 16px; border: 1px solid #E6ECF5;">
       <div style="background: #23324D; color: #FFFFFF; padding: 20px; border-radius: 12px; text-align: center;">
-        <h2 style="margin: 0; font-size: 20px; letter-spacing: 1px;">BIOBUSINESS SCIENTIFIC</h2>
+        <h2 style="margin: 0; font-size: 20px; letter-spacing: 1px;">BIOBUSINESS DEVELOPMENT AGENCY</h2>
         <p style="margin: 5px 0 0 0; font-size: 13px; color: #6EA8FE;">New Institutional Quote Request • ${refId}</p>
       </div>
 
@@ -243,7 +243,7 @@ function sendAdminQuoteNotification(refId, timestamp, institution, email, phone,
       </div>
 
       <div style="text-align: center; margin-top: 20px; font-size: 11px; color: #9AA7BC;">
-        Automated Notification System • Biobusiness Scientific Government Supplier
+        Automated Notification System • Biobusiness Development Agency Government Supplier
       </div>
     </div>
   `;
@@ -262,7 +262,7 @@ function sendAdminContactNotification(refId, timestamp, name, email, phone, subj
   const htmlBody = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #FAFBFD; padding: 24px; border-radius: 16px; border: 1px solid #E6ECF5;">
       <div style="background: #23324D; color: #FFFFFF; padding: 20px; border-radius: 12px; text-align: center;">
-        <h2 style="margin: 0; font-size: 20px; letter-spacing: 1px;">BIOBUSINESS SCIENTIFIC</h2>
+        <h2 style="margin: 0; font-size: 20px; letter-spacing: 1px;">BIOBUSINESS DEVELOPMENT AGENCY</h2>
         <p style="margin: 5px 0 0 0; font-size: 13px; color: #6EA8FE;">New Contact Message • ${refId}</p>
       </div>
 
@@ -297,20 +297,15 @@ function sendCustomerConfirmation(recipientEmail, recipientName, refId) {
   const htmlBody = `
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: #FAFBFD; padding: 24px; border-radius: 16px; border: 1px solid #E6ECF5;">
       <div style="background: #23324D; color: #FFFFFF; padding: 20px; border-radius: 12px; text-align: center;">
-        <h2 style="margin: 0; font-size: 20px; letter-spacing: 1px;">BIOBUSINESS SCIENTIFIC</h2>
+        <h2 style="margin: 0; font-size: 20px; letter-spacing: 1px;">BIOBUSINESS DEVELOPMENT AGENCY</h2>
         <p style="margin: 5px 0 0 0; font-size: 13px; color: #7CC9A5;">Enquiry Received</p>
       </div>
 
       <div style="margin-top: 20px; background: #FFFFFF; padding: 24px; border-radius: 12px; border: 1px solid #E6ECF5;">
         <p style="font-size: 15px; color: #23324D;">Hello <strong>${recipientName}</strong>,</p>
         <p style="color: #5F708A; line-height: 1.6;">
-          Thank you for contacting Biobusiness Scientific. Your enquiry has been successfully received and assigned to a technical procurement specialist.
+          Thank you for contacting Biobusiness Development Agency. Our contact team will connect with you within 24 hours.
         </p>
-
-        <div style="background: #F4F8FC; padding: 15px; border-radius: 8px; border-left: 4px solid #6EA8FE; margin: 20px 0;">
-          <p style="margin: 0; font-size: 13px; color: #5F708A;">Your Reference Number:</p>
-          <p style="margin: 5px 0 0 0; font-family: monospace; font-size: 18px; font-weight: bold; color: #23324D;">${refId}</p>
-        </div>
 
         <p style="color: #5F708A; line-height: 1.6;">
           Our team will review your requirements and respond with an official quotation or response shortly.
@@ -318,7 +313,7 @@ function sendCustomerConfirmation(recipientEmail, recipientName, refId) {
       </div>
 
       <div style="margin-top: 20px; text-align: center; color: #5F708A; font-size: 12px; line-height: 1.5;">
-        <p style="margin: 0; font-weight: bold; color: #23324D;">Biobusiness Scientific</p>
+        <p style="margin: 0; font-weight: bold; color: #23324D;">Biobusiness Development Agency</p>
         <p style="margin: 2px 0;">Government Laboratory Supplier • ISO 9001:2015 Certified</p>
         <p style="margin: 2px 0;"><a href="${WEBSITE_URL}" style="color: #6EA8FE;">www.biobusiness.in</a> • <a href="mailto:${ADMIN_EMAIL}" style="color: #6EA8FE;">${ADMIN_EMAIL}</a></p>
       </div>
@@ -328,7 +323,7 @@ function sendCustomerConfirmation(recipientEmail, recipientName, refId) {
   try {
     MailApp.sendEmail({
       to: recipientEmail,
-      subject: `We have received your enquiry • Ref: ${refId}`,
+      subject: `We have received your enquiry - Biobusiness Development Agency`,
       htmlBody: htmlBody
     });
   } catch (err) {

@@ -124,16 +124,10 @@ export const QuoteDrawer: React.FC<QuoteDrawerProps> = ({ isOpen, onClose }) => 
                     <CheckCircle2 className="w-8 h-8" />
                   </div>
                   <h3 className="text-2xl font-extrabold text-[#23324D] font-display">
-                    REQUEST SUBMITTED!
+                    THANK YOU FOR YOUR ENQUIRY!
                   </h3>
-                  <div className="p-4 rounded-2xl bg-[#FAFBFD] border border-[#E6ECF5] max-w-xs mx-auto space-y-1">
-                    <div className="text-xs text-[#5F708A] font-mono">Reference ID</div>
-                    <div className="text-xl font-bold font-mono text-[#6EA8FE]">
-                      {submissionResult.referenceId}
-                    </div>
-                  </div>
                   <p className="text-xs text-[#5F708A] max-w-xs mx-auto font-light leading-relaxed">
-                    Our technical procurement team has received your request and will email an official proforma invoice shortly.
+                    Thank you for contacting Biobusiness Development Agency. Our contact team will connect with you within 24 hours.
                   </p>
                 </div>
               ) : items.length === 0 ? (
@@ -335,10 +329,6 @@ export const QuoteDrawer: React.FC<QuoteDrawerProps> = ({ isOpen, onClose }) => 
               )}
             </div>
 
-            {/* Footer */}
-            <div className="p-4 border-t border-[#E6ECF5] bg-[#FAFBFD] text-center text-[10px] text-[#9AA7BC] font-mono">
-              🛡️ Official GSTIN Invoice & Rate Contract Compliant
-            </div>
           </motion.div>
         </div>
       </div>

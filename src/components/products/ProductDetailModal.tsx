@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Product } from '../../types';
 import { useQuoteStore } from '../../store/useQuoteStore';
-import { X, ShieldCheck, Download, Plus, Check, Sparkles, CheckCircle2, ExternalLink, ArrowRight, Layers, FileText, Award, FlaskConical } from 'lucide-react';
+import { X, ShieldCheck, Download, Plus, Check, Sparkles, CheckCircle2, ArrowRight, Layers, FileText, Award, FlaskConical } from 'lucide-react';
 
 interface ProductDetailModalProps {
   product: Product | null;
@@ -345,16 +345,6 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({
                           : 'Authorized Distributor • Supplied by Biobusiness Development Agency'}
                       </p>
                     </div>
-                    {manufacturerWebsite !== '#' && (
-                      <a
-                        href={manufacturerWebsite}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="px-4 py-2.5 rounded-xl bg-white border border-[#E6ECF5] text-xs font-bold text-[#23324D] hover:text-[#6EA8FE] flex items-center gap-1.5 shadow-2xs"
-                      >
-                        Visit Manufacturer Website <ExternalLink className="w-3.5 h-3.5" />
-                      </a>
-                    )}
                   </div>
 
                   <p className="text-xs text-[#5F708A] leading-relaxed font-light">

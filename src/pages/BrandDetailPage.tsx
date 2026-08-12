@@ -5,7 +5,7 @@ import { PRODUCTS_DATA } from '../data/productsData';
 import { ProductCardItem } from '../components/products/ProductCardItem';
 import { ProductDetailModal } from '../components/products/ProductDetailModal';
 import { Product } from '../types';
-import { ShieldCheck, CheckCircle2, ExternalLink, ArrowLeft, Award, Sparkles } from 'lucide-react';
+import { ShieldCheck, CheckCircle2, ArrowLeft, Award, Sparkles } from 'lucide-react';
 
 export const BrandDetailPage: React.FC = () => {
   const { brandId } = useParams<{ brandId: string }>();
@@ -67,17 +67,6 @@ export const BrandDetailPage: React.FC = () => {
                 </h1>
               </div>
             </div>
-
-            {brandInfo.website !== '#' && (
-              <a
-                href={brandInfo.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="px-5 py-3 rounded-2xl bg-[#FAFBFD] border border-[#E6ECF5] hover:border-[#6EA8FE] text-xs font-bold text-[#23324D] flex items-center gap-2 shadow-2xs transition-all"
-              >
-                Official Manufacturer Site <ExternalLink className="w-4 h-4 text-[#6EA8FE]" />
-              </a>
-            )}
           </div>
 
           <p className="text-base text-[#5F708A] font-light leading-relaxed max-w-3xl">
