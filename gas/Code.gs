@@ -12,6 +12,21 @@ const COMPANY_NAME = "Biobusiness Development Agency";
 const WEBSITE_URL = "https://www.biobusiness.in";
 
 /**
+ * Handle HTTP GET requests from the React Website Frontend.
+ */
+function doGet(e) {
+  try {
+    const action = e && e.parameter ? e.parameter.action : "";
+    if (action === "get_next_invoice_number") {
+      return getNextInvoiceNumber();
+    }
+    return jsonResponse({ success: true, message: "BioBusiness Apps Script API Operational" });
+  } catch (err) {
+    return jsonResponse({ success: false, error: err.toString() });
+  }
+}
+
+/**
  * Handle HTTP POST requests from the React Website Frontend.
  */
 function doPost(e) {
@@ -23,7 +38,14 @@ function doPost(e) {
     const data = JSON.parse(e.postData.contents);
     const action = sanitizeInput(data.action || "");
 
-    // 30-Second Rate Limiting Check to prevent duplicate spam
+    // Handle invoice actions first
+    if (action === "save_invoice" || data.formType === "invoice") {
+      return saveInvoice(data);
+    } else if (action === "get_next_invoice_number") {
+      return getNextInvoiceNumber();
+    }
+
+    // 30-Second Rate Limiting Check to prevent duplicate spam for contact/quote forms
     const userEmail = sanitizeInput(data.email || "");
     if (userEmail && isRateLimited(userEmail)) {
       return jsonResponse({
@@ -366,4 +388,215 @@ function jsonResponse(obj) {
   return ContentService
     .createTextOutput(JSON.stringify(obj))
     .setMimeType(ContentService.MimeType.JSON);
+}
+
+/**
+ * Auto-Increment Invoice Number Generator (BDA/172, BDA/173, etc.)
+ */
+function getNextInvoiceNumber() {
+  const lock = LockService.getScriptLock();
+  try {
+    lock.waitLock(10000);
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    let sheet = ss.getSheetByName("Invoices");
+    if (!sheet) {
+      return jsonResponse({ success: true, nextInvoiceNumber: "BDA/001" });
+    }
+
+    const lastRow = sheet.getLastRow();
+    let maxSeq = 0;
+
+    if (lastRow > 1) {
+      const values = sheet.getRange(2, 2, lastRow - 1, 1).getValues();
+      for (let i = 0; i < values.length; i++) {
+        const val = values[i][0] ? values[i][0].toString() : "";
+        const match = val.match(/(\d+)\s*$/);
+        if (match) {
+          const num = parseInt(match[1], 10);
+          if (!isNaN(num) && num > maxSeq) {
+            maxSeq = num;
+          }
+        }
+      }
+    }
+
+    const nextNum = maxSeq + 1;
+    const padSeq = nextNum < 1000 ? ("000" + nextNum).slice(-3) : nextNum;
+    const nextInvoiceNumber = "BDA/" + padSeq;
+    return jsonResponse({ success: true, nextInvoiceNumber: nextInvoiceNumber });
+  } catch (err) {
+    return jsonResponse({ success: false, error: err.toString() });
+  } finally {
+    try { lock.releaseLock(); } catch (e) {}
+  }
+}
+
+/**
+ * Handle Save Invoice Request (Invoices & Invoice Items sheets)
+ */
+function saveInvoice(data) {
+  const lock = LockService.getScriptLock();
+  try {
+    lock.waitLock(10000);
+
+    const customer = data.customer || {};
+    const items = data.items || [];
+
+    if (!customer.institution && !customer.title) {
+      return jsonResponse({ success: false, error: "Customer / Institution name is required." });
+    }
+    if (!items || items.length === 0) {
+      return jsonResponse({ success: false, error: "At least one product item is required." });
+    }
+
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+
+    // 1. Prepare "Invoices" Sheet (Exact GST Tax Register Format)
+    let invoicesSheet = ss.getSheetByName("Invoices");
+    if (!invoicesSheet) {
+      invoicesSheet = ss.insertSheet("Invoices");
+      invoicesSheet.appendRow([
+        "Invoice Date",
+        "Invoice Number",
+        "Customer Name",
+        "GST Number",
+        "HSN Code",
+        "POS",
+        "Taxable Value",
+        "Rate",
+        "IGST",
+        "CGST",
+        "SGST",
+        "Invoice Value"
+      ]);
+      invoicesSheet.getRange(1, 1, 1, 12).setFontWeight("bold").setBackground("#23324D").setFontColor("#FFFFFF");
+    }
+
+    // 2. Prepare "Invoice Items" Sheet
+    let itemsSheet = ss.getSheetByName("Invoice Items");
+    if (!itemsSheet) {
+      itemsSheet = ss.insertSheet("Invoice Items");
+      itemsSheet.appendRow([
+        "Timestamp", "Invoice Number", "Item Code", "Description", "HSN Code",
+        "Unit Price", "Quantity", "Total Price"
+      ]);
+      itemsSheet.getRange(1, 1, 1, 8).setFontWeight("bold").setBackground("#23324D").setFontColor("#FFFFFF");
+    }
+
+    // Generate Invoice Number if auto-requested or empty
+    let invoiceNumber = sanitizeInput(data.invoiceNumber || "");
+    if (!invoiceNumber || invoiceNumber === "AUTO" || invoiceNumber.trim() === "") {
+      const lastRow = invoicesSheet.getLastRow();
+      let maxSeq = 0;
+      if (lastRow > 1) {
+        const values = invoicesSheet.getRange(2, 2, lastRow - 1, 1).getValues();
+        for (let i = 0; i < values.length; i++) {
+          const val = values[i][0] ? values[i][0].toString() : "";
+          const match = val.match(/(\d+)\s*$/);
+          if (match) {
+            const num = parseInt(match[1], 10);
+            if (!isNaN(num) && num > maxSeq) {
+              maxSeq = num;
+            }
+          }
+        }
+      }
+      const nextNum = maxSeq + 1;
+      const padSeq = nextNum < 1000 ? ("000" + nextNum).slice(-3) : nextNum;
+      invoiceNumber = "BDA/" + padSeq;
+    }
+
+    const timestamp = new Date();
+    const orderNumber = sanitizeInput(data.orderNumber || "N/A");
+    const invoiceDate = sanitizeInput(data.invoiceDate || "");
+    const orderDate = sanitizeInput(data.orderDate || "");
+
+    const custTitle = sanitizeInput(customer.title || "");
+    const custInstitution = sanitizeInput(customer.institution || "");
+    const custAddr1 = sanitizeInput(customer.addressLine1 || "");
+    const custAddr2 = sanitizeInput(customer.addressLine2 || "");
+    const custCityPin = sanitizeInput(customer.cityStatePin || "");
+    const custState = sanitizeInput(customer.state || "");
+    const custGstin = sanitizeInput(customer.gstin || "N/A");
+
+    // Financial Calculations
+    let subtotal = 0;
+    items.forEach(function(item) {
+      const price = parseFloat(item.unitPrice) || 0;
+      const qty = parseFloat(item.quantity) || 0;
+      subtotal += (price * qty);
+    });
+
+    const taxType = sanitizeInput(data.taxType || "IGST");
+    const taxRate = parseFloat(data.taxRate) || 0;
+    const taxAmount = (subtotal * taxRate) / 100;
+    const exactTotal = subtotal + taxAmount;
+    const finalAmount = Math.round(exactTotal);
+    const roundOff = Math.round((finalAmount - exactTotal) * 100) / 100;
+
+    let igst = 0;
+    let cgst = 0;
+    let sgst = 0;
+
+    if (taxType === "IGST") {
+      igst = taxAmount;
+    } else if (taxType === "CGST_SGST") {
+      cgst = taxAmount / 2;
+      sgst = taxAmount / 2;
+    }
+
+    const hsnList = items.map(function(i) { return i.hsnCode || ""; }).filter(Boolean);
+    const primaryHsn = hsnList.length > 0 ? hsnList.join(", ") : "";
+    const custFullName = (custInstitution + (custTitle ? " (" + custTitle + ")" : "")).trim();
+    const pos = custState || "Delhi";
+
+    // Write Invoice Summary Row with EXACT 12 Columns Requested:
+    // Invoice Date | Invoice Number | Customer Name | GST Number | HSN Code | POS | Taxable Value | Rate | IGST | CGST | SGST | Invoice Value
+    invoicesSheet.appendRow([
+      invoiceDate,
+      invoiceNumber,
+      custFullName,
+      custGstin,
+      primaryHsn,
+      pos,
+      subtotal.toFixed(2),
+      taxRate + "%",
+      igst.toFixed(2),
+      cgst.toFixed(2),
+      sgst.toFixed(2),
+      finalAmount.toFixed(2)
+    ]);
+
+    // Write Individual Invoice Items Rows
+    items.forEach(function(item) {
+      const code = sanitizeInput(item.code || "");
+      const desc = sanitizeInput(item.description || "");
+      const hsn = sanitizeInput(item.hsnCode || "");
+      const unitPrice = parseFloat(item.unitPrice) || 0;
+      const quantity = parseFloat(item.quantity) || 0;
+      const totalPrice = unitPrice * quantity;
+
+      itemsSheet.appendRow([
+        timestamp,
+        invoiceNumber,
+        code,
+        desc,
+        hsn,
+        unitPrice.toFixed(2),
+        quantity,
+        totalPrice.toFixed(2)
+      ]);
+    });
+
+    return jsonResponse({
+      success: true,
+      invoiceNumber: invoiceNumber,
+      message: "Invoice " + invoiceNumber + " saved successfully to Google Sheets."
+    });
+
+  } catch (err) {
+    return jsonResponse({ success: false, error: err.toString() });
+  } finally {
+    try { lock.releaseLock(); } catch (e) {}
+  }
 }

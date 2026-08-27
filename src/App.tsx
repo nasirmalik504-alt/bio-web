@@ -19,6 +19,8 @@ import { BioBrandPage } from './pages/BioBrandPage';
 import { ContactPage } from './pages/ContactPage';
 import { PrivacyPolicyPage } from './pages/PrivacyPolicyPage';
 import { TermsPage } from './pages/TermsPage';
+import { InvoiceMakerPage } from './pages/InvoiceMakerPage';
+import { DashboardPage } from './pages/DashboardPage';
 
 // Drawers & Modals
 import { QuoteDrawer } from './components/quote/QuoteDrawer';
@@ -36,12 +38,17 @@ const ScrollToTop: React.FC = () => {
 };
 
 export const AppContent: React.FC = () => {
+  const location = useLocation();
+  const isDashboardRoute = location.pathname.startsWith('/dashboard') || location.pathname.startsWith('/invoice-maker');
+
   const { isDrawerOpen, openDrawer, closeDrawer } = useQuoteStore();
   const [catalogueModalOpen, setCatalogueModalOpen] = useState(false);
   const [catalogueCategory, setCatalogueCategory] = useState('all');
 
   // Responsive, ultra-fast Lenis smooth scroll
   useEffect(() => {
+    if (isDashboardRoute) return; // Disable smooth scroll overrides for internal dashboard
+
     const lenis = new Lenis({
       duration: 0.7,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -60,12 +67,28 @@ export const AppContent: React.FC = () => {
       cancelAnimationFrame(rafId);
       lenis.destroy();
     };
-  }, []);
+  }, [isDashboardRoute]);
 
   const handleOpenCatalogue = (category: string = 'all') => {
     setCatalogueCategory(category);
     setCatalogueModalOpen(true);
   };
+
+  // Completely isolated standalone view for internal Dashboard (No public website Navbar, Footer, or Basket)
+  if (isDashboardRoute) {
+    return (
+      <div className="min-h-screen bg-[#F4F8FC] selection:bg-[#6EA8FE]/20 selection:text-[#23324D] font-sans">
+        <ScrollToTop />
+        <main className="min-h-screen">
+          <Routes>
+            <Route path="/dashboard" element={<DashboardPage />} />
+            <Route path="/dashboard/*" element={<DashboardPage />} />
+            <Route path="/invoice-maker" element={<DashboardPage />} />
+          </Routes>
+        </main>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-[#FAFBFD] text-[#5F708A] selection:bg-[#6EA8FE]/20 selection:text-[#23324D] relative font-sans">

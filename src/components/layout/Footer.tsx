@@ -176,6 +176,7 @@ export const Footer: React.FC = () => {
             <Link to="/terms-and-conditions" className="hover:text-[#6EA8FE]">Terms & Conditions</Link>
             <Link to="/brands" className="hover:text-[#6EA8FE]">Authorized Brands</Link>
             <Link to="/biobrand" className="hover:text-[#6EA8FE]">BioBrand</Link>
+            <Link to="/dashboard" className="hover:text-[#6EA8FE] font-bold text-[#23324D]">Admin Portal</Link>
           </div>
         </div>
 
