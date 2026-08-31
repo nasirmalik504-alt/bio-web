@@ -366,7 +366,7 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
               </span>
               <span className="text-[11px] font-normal text-gray-300">Exact Visual Layout</span>
             </div>
-            <div className="bg-[#E6ECF5] p-4 lg:p-8 rounded-b-2xl overflow-x-auto shadow-inner border-x border-b border-[#D0D9E6]">
+            <div className="bg-white rounded-b-2xl overflow-x-auto border-x border-b border-[#E6ECF5]">
               <ExactInvoicePreview ref={previewRef} data={invoiceData} />
             </div>
           </div>
