@@ -1,20 +1,27 @@
 /**
  * Invoice Service — Google Sheets is the ONLY database.
- * All invoice reads and writes go through this file → Google Apps Script → Google Sheets.
- * No localStorage. No sessionStorage. No browser cache as data store.
+ *
+ * IMPORTANT: Google Apps Script Web Apps return a 302 redirect when called
+ * with GET. Browsers follow the redirect fine, but CORS can block reading
+ * the final body in some environments. We therefore:
+ *   1. Always try GET first (works in most browsers).
+ *   2. Immediately fall back to POST if GET fails or returns no data.
+ *   3. Never throw — always return a safe empty result on network failure.
+ *
+ * No localStorage. No sessionStorage. No browser cache as data.
  */
 
 import { InvoiceData, SaveInvoiceResponse } from '../types/invoiceTypes';
 
 // ─────────────────────────────────────────────────────────────
-// Google Apps Script endpoint (single source of truth backend)
+// Google Apps Script endpoint
 // ─────────────────────────────────────────────────────────────
-const SCRIPT_URL =
+const SCRIPT_URL: string =
   ((import.meta as any).env?.VITE_APPS_SCRIPT_URL as string) ||
   'https://script.google.com/macros/s/AKfycbwyfJ1k63-lVjkJiPVjJW_HVgh-DJ6PDyZujQv4TeMjfwloLHM8-4u3G9bV3_5oCImS/exec';
 
 // ─────────────────────────────────────────────────────────────
-// Shared types
+// Types
 // ─────────────────────────────────────────────────────────────
 export interface InvoiceRecord {
   id: string;
@@ -29,55 +36,89 @@ export interface InvoiceRecord {
 }
 
 // ─────────────────────────────────────────────────────────────
-// Internal helper — safely parse a fetch Response as JSON
+// Internal: safely read response text → JSON
+// Returns null on any error (never throws)
 // ─────────────────────────────────────────────────────────────
-async function parseJson(res: Response): Promise<any> {
+async function readJson(res: Response): Promise<any> {
   try {
     const text = await res.text();
     if (!text?.trim()) return null;
-    return JSON.parse(text);
+    // Apps Script sometimes prepends ")]}'\n" — strip if present
+    const clean = text.replace(/^\)\]\}'\n/, '').trim();
+    if (!clean.startsWith('{') && !clean.startsWith('[')) return null;
+    return JSON.parse(clean);
   } catch {
     return null;
   }
 }
 
 // ─────────────────────────────────────────────────────────────
-// GET_INVOICES — fetch all invoices from Google Sheets
-// Called by: Saved Bills page on mount, after save, on refresh
+// Internal: call Apps Script via POST (most reliable method)
+// POST avoids the redirect issue entirely.
 // ─────────────────────────────────────────────────────────────
-export async function getInvoices(): Promise<InvoiceRecord[]> {
-  const url = `${SCRIPT_URL}?action=get_invoices&_t=${Date.now()}`;
+async function post(body: object): Promise<any> {
+  const res = await fetch(SCRIPT_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(body),
+  });
+  return readJson(res);
+}
 
-  const res = await fetch(url, {
+// ─────────────────────────────────────────────────────────────
+// Internal: call Apps Script via GET with cache-busting
+// ─────────────────────────────────────────────────────────────
+async function get(action: string, params: Record<string, string> = {}): Promise<any> {
+  const qs = new URLSearchParams({ action, _t: String(Date.now()), ...params });
+  const res = await fetch(`${SCRIPT_URL}?${qs}`, {
     method: 'GET',
     cache: 'no-store',
-    headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate' }
+    headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate' },
   });
+  return readJson(res);
+}
 
-  const json = await parseJson(res);
+// ─────────────────────────────────────────────────────────────
+// Internal: try GET first, fallback to POST if GET returns nothing
+// ─────────────────────────────────────────────────────────────
+async function call(action: string, postBody: object = {}): Promise<any> {
+  try {
+    const getResult = await get(action);
+    if (getResult?.success !== undefined) return getResult;
+  } catch { /* ignore, fall through to POST */ }
+
+  try {
+    return await post({ action, ...postBody });
+  } catch {
+    return null;
+  }
+}
+
+// ─────────────────────────────────────────────────────────────
+// GET_INVOICES
+// Returns all invoice records from Google Sheets.
+// Throws only if both GET and POST fail completely.
+// ─────────────────────────────────────────────────────────────
+export async function getInvoices(): Promise<InvoiceRecord[]> {
+  const json = await call('get_invoices');
 
   if (json?.success && Array.isArray(json.invoices)) {
     return json.invoices as InvoiceRecord[];
   }
 
-  throw new Error(json?.error || 'Could not load invoices from Google Sheets.');
+  if (json?.success === false && json?.error) {
+    throw new Error(json.error);
+  }
+
+  throw new Error('Could not load invoices from Google Sheets. Check your Apps Script deployment.');
 }
 
 // ─────────────────────────────────────────────────────────────
-// GET_NEXT_INVOICE_NUMBER — fetch next BDA/NNN from server
-// Called by: Invoice form on mount (when creating new invoice)
-// Server uses LockService so concurrent calls are safe
+// GET_NEXT_INVOICE_NUMBER
+// Returns next BDA/NNN from server (LockService protected).
 // ─────────────────────────────────────────────────────────────
 export async function getNextInvoiceNumber(): Promise<string> {
-  const url = `${SCRIPT_URL}?action=get_next_invoice_number&_t=${Date.now()}`;
-
-  const res = await fetch(url, {
-    method: 'GET',
-    cache: 'no-store',
-    headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate' }
-  });
-
-  const json = await parseJson(res);
+  const json = await call('get_next_invoice_number');
 
   if (json?.success && json.nextInvoiceNumber) {
     return json.nextInvoiceNumber as string;
@@ -87,12 +128,12 @@ export async function getNextInvoiceNumber(): Promise<string> {
 }
 
 // ─────────────────────────────────────────────────────────────
-// SAVE_INVOICE — write invoice to Google Sheets
-// Returns confirmed invoice number assigned by server
+// SAVE_INVOICE
+// Writes invoice to Google Sheets. Returns confirmed number.
 // ─────────────────────────────────────────────────────────────
 export async function saveInvoice(
   data: InvoiceData,
-  amountInWords: string
+  amountInWords: string,
 ): Promise<SaveInvoiceResponse> {
   const payload = {
     action: 'save_invoice',
@@ -101,43 +142,42 @@ export async function saveInvoice(
     email: data.customer.email || 'sales@biobusiness.in',
     phone: data.customer.phone || '9899571171',
     ...data,
-    amountInWords
+    amountInWords,
   };
 
-  const res = await fetch(SCRIPT_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-    body: JSON.stringify(payload)
-  });
+  let json: any = null;
 
-  const json = await parseJson(res);
+  try {
+    json = await post(payload);
+  } catch (err: any) {
+    return { success: false, error: err?.message || 'Network error — could not reach Google Apps Script.' };
+  }
 
   if (json?.success) {
     return {
       success: true,
       invoiceNumber: json.invoiceNumber || data.invoiceNumber,
-      message: json.message || `Invoice saved to Google Sheets.`
+      message: json.message || `Invoice ${json.invoiceNumber || data.invoiceNumber} saved to Google Sheets.`,
     };
   }
 
   return {
     success: false,
-    error: json?.error || `Unable to save to Google Sheets (HTTP ${res.status}).`
+    error: json?.error || 'Google Apps Script returned an error. Invoice may not have saved.',
   };
 }
 
 // ─────────────────────────────────────────────────────────────
-// DELETE_INVOICE — remove invoice row(s) from Google Sheets
+// DELETE_INVOICE
+// Removes invoice rows from Google Sheets.
 // ─────────────────────────────────────────────────────────────
 export async function deleteInvoice(
-  invoiceNumber: string
+  invoiceNumber: string,
 ): Promise<{ success: boolean; error?: string }> {
-  const res = await fetch(SCRIPT_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-    body: JSON.stringify({ action: 'delete_invoice', invoiceNumber })
-  });
-
-  const json = await parseJson(res);
-  return json ?? { success: false, error: 'No response from server.' };
+  try {
+    const json = await post({ action: 'delete_invoice', invoiceNumber });
+    return json ?? { success: false, error: 'No response from server.' };
+  } catch (err: any) {
+    return { success: false, error: err?.message || 'Network error.' };
+  }
 }
