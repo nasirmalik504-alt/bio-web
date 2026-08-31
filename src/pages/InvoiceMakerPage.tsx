@@ -27,7 +27,36 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
 
   useEffect(() => {
     if (initialInvoiceData) {
-      setInvoiceData(initialInvoiceData);
+      // Merge safely with sample fallback to ensure no blank fields
+      const mergedCustomer = {
+        ...INITIAL_SAMPLE_INVOICE.customer,
+        ...(initialInvoiceData.customer || {})
+      };
+
+      if (!mergedCustomer.title && !mergedCustomer.institution) {
+        mergedCustomer.title = INITIAL_SAMPLE_INVOICE.customer.title;
+        mergedCustomer.institution = INITIAL_SAMPLE_INVOICE.customer.institution;
+        mergedCustomer.addressLine1 = INITIAL_SAMPLE_INVOICE.customer.addressLine1;
+        mergedCustomer.cityStatePin = INITIAL_SAMPLE_INVOICE.customer.cityStatePin;
+        mergedCustomer.state = INITIAL_SAMPLE_INVOICE.customer.state;
+      }
+
+      const mergedItems = (initialInvoiceData.items && initialInvoiceData.items.length > 0)
+        ? initialInvoiceData.items.map((item, idx) => ({
+            ...INITIAL_SAMPLE_INVOICE.items[0],
+            ...item,
+            id: item.id || `item-${idx + 1}`,
+            description: item.description || INITIAL_SAMPLE_INVOICE.items[0].description
+          }))
+        : INITIAL_SAMPLE_INVOICE.items;
+
+      setInvoiceData({
+        ...INITIAL_SAMPLE_INVOICE,
+        ...initialInvoiceData,
+        customer: mergedCustomer,
+        items: mergedItems
+      });
+
       setNotification({
         type: 'success',
         message: `Loaded invoice ${initialInvoiceData.invoiceNumber} into editor & preview.`
