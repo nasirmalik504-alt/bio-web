@@ -47,7 +47,7 @@ export async function saveInvoiceToGoogleSheets(data: InvoiceData, amountInWords
     const response = await fetch(APPS_SCRIPT_URL, {
       method: 'POST',
       headers: {
-        'Content-Type': 'text/plain;charset=utf-8', // Apps Script CORS compatible format
+        'Content-Type': 'text/plain;charset=utf-8',
       },
       body: JSON.stringify(payload)
     });
@@ -55,61 +55,39 @@ export async function saveInvoiceToGoogleSheets(data: InvoiceData, amountInWords
     const result = await safeJsonParseResponse(response);
 
     if (result && result.success) {
-      return result;
-    }
-
-    // If remote Apps Script is on previous Code.gs version and returns "Invalid form submission type",
-    // fallback to quote submission endpoint so invoice data reaches Google Sheets "Quote Requests" tab!
-    if (result && !result.success && result.error === 'Invalid form submission type') {
-      const fallbackPayload = {
-        action: 'quote',
-        formType: 'quote',
-        institution: `[INVOICE ${data.invoiceNumber || 'BDA'}] ${data.customer.institution || data.customer.title}`,
-        email: data.customer.email || 'sales@biobusiness.in',
-        phone: data.customer.phone || '9899571171',
-        gstin: data.customer.gstin || 'N/A',
-        notes: `TAX INVOICE RECORD ${data.invoiceNumber}\nAmount: ₹${amountInWords}\nOrder: ${data.orderNumber || 'N/A'}`,
-        items: data.items.map((i) => ({
-          product: { name: `${i.code ? `[${i.code}] ` : ''}${i.description}`, sku: i.code || 'N/A' },
-          quantity: i.quantity,
-          unitPrice: i.unitPrice
-        }))
+      return {
+        success: true,
+        invoiceId: result.invoiceId || result.invoice?.id,
+        invoiceNumber: result.invoiceNumber || data.invoiceNumber,
+        message: result.message || `Invoice ${data.invoiceNumber} saved successfully to Google Sheets.`,
+        invoice: result.invoice
       };
-
-      const fallbackRes = await fetch(APPS_SCRIPT_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-        body: JSON.stringify(fallbackPayload)
-      });
-      const fallbackResult = await safeJsonParseResponse(fallbackRes);
-      if (fallbackResult && fallbackResult.success) {
-        return {
-          success: true,
-          invoiceNumber: data.invoiceNumber,
-          message: `Invoice ${data.invoiceNumber} saved to Google Sheets!`
-        };
-      }
     }
 
-    if (response.ok || response.status === 302 || response.status === 200 || response.type === 'opaque') {
+    if (result && !result.success && result.error) {
+      return {
+        success: false,
+        error: result.error
+      };
+    }
+
+    if (response.ok || response.status === 302 || response.status === 200) {
       return {
         success: true,
         invoiceNumber: data.invoiceNumber,
-        message: `Invoice ${data.invoiceNumber || 'record'} saved successfully to Google Sheets & Saved Bills History!`
+        message: `Invoice ${data.invoiceNumber} saved successfully to Google Sheets!`
       };
     }
 
     return {
-      success: true,
-      invoiceNumber: data.invoiceNumber,
-      message: `Invoice ${data.invoiceNumber} saved successfully to Saved Bills History!`
+      success: false,
+      error: `Unable to save to Google Sheets (HTTP ${response.status}).`
     };
   } catch (err: any) {
-    console.warn('Google Sheets background sync notice:', err);
+    console.error('Google Sheets backend save error:', err);
     return {
-      success: true,
-      invoiceNumber: data.invoiceNumber,
-      message: `Invoice ${data.invoiceNumber} saved successfully to Saved Bills History!`
+      success: false,
+      error: err?.message || 'Unable to connect to Google Sheets backend.'
     };
   }
 }
@@ -151,6 +129,38 @@ export async function fetchInvoicesFromGoogleSheets(): Promise<SavedInvoiceRecor
   }
 
   return getSavedInvoices();
+}
+
+/**
+ * Fetch a single invoice record directly from Google Sheets backend by ID or number
+ */
+export async function fetchSingleInvoiceFromGoogleSheets(invoiceIdOrNumber: string): Promise<SavedInvoiceRecord | null> {
+  if (!APPS_SCRIPT_URL || !invoiceIdOrNumber) return null;
+
+  try {
+    const response = await fetch(`${APPS_SCRIPT_URL}?action=get_invoice&invoiceId=${encodeURIComponent(invoiceIdOrNumber)}&_t=${Date.now()}`, {
+      method: 'GET',
+      cache: 'no-store',
+      headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate' }
+    });
+    const result = await safeJsonParseResponse(response);
+    if (result && result.success && (result.record || result.invoice)) {
+      return result.record || {
+        id: `inv-${invoiceIdOrNumber.replace(/[^a-zA-Z0-9]/g, '-')}`,
+        invoiceNumber: invoiceIdOrNumber,
+        customerName: result.invoice?.customer?.title || 'Customer',
+        institution: result.invoice?.customer?.institution || 'Customer',
+        date: result.invoice?.invoiceDate || '',
+        totalAmount: 0,
+        savedAt: new Date().toISOString(),
+        data: result.invoice,
+        syncedToGoogleSheets: true
+      };
+    }
+  } catch (err) {
+    console.warn('Could not fetch single invoice from Apps Script:', err);
+  }
+  return null;
 }
 
 /**

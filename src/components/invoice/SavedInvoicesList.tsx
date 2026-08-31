@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { getSavedInvoices, SavedInvoiceRecord } from '../../utils/invoiceStorage';
-import { fetchInvoicesFromGoogleSheets, deleteInvoiceFromGoogleSheets } from '../../services/invoiceService';
+import { fetchInvoicesFromGoogleSheets, deleteInvoiceFromGoogleSheets, fetchSingleInvoiceFromGoogleSheets } from '../../services/invoiceService';
 import { exportInvoicesToCSV } from '../../utils/excelExport';
 import { InvoiceData } from '../../types/invoiceTypes';
 import { formatDateToDDMMYYYY } from '../../utils/dateFormatter';
@@ -183,8 +183,9 @@ export const SavedInvoicesList: React.FC<SavedInvoicesListProps> = ({
                   </td>
                   <td className="p-3 text-right space-x-1">
                     <button
-                      onClick={() => {
-                        onLoadInvoice(rec.data);
+                      onClick={async () => {
+                        const liveRecord = await fetchSingleInvoiceFromGoogleSheets(rec.invoiceNumber);
+                        onLoadInvoice(liveRecord ? liveRecord.data : rec.data);
                         onOpenInvoiceMaker();
                       }}
                       className="px-2.5 py-1 bg-[#6EA8FE] hover:bg-[#5896EE] text-white text-[11px] font-bold rounded-lg transition-all inline-flex items-center gap-1 cursor-pointer"

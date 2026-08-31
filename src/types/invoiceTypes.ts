@@ -46,6 +46,7 @@ export interface BankDetails {
 export type TaxType = 'IGST' | 'CGST_SGST' | 'NONE';
 
 export interface InvoiceData {
+  invoiceId?: string;       // Unique immutable ID e.g. "INV-2026-000172"
   invoiceNumber: string;    // e.g. "BDA/172"
   invoiceDate: string;      // YYYY-MM-DD or DD/MM/YYYY
   orderNumber: string;      // e.g. "CPRI/2026/04"
@@ -71,7 +72,9 @@ export interface InvoiceData {
 
 export interface SaveInvoiceResponse {
   success: boolean;
+  invoiceId?: string;
   invoiceNumber?: string;
   message?: string;
   error?: string;
+  invoice?: any;
 }

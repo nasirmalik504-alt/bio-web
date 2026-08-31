@@ -48,11 +48,14 @@ function getSpreadsheet() {
  */
 function doGet(e) {
   try {
-    const action = e && e.parameter ? e.parameter.action : "";
+    const action = e && e.parameter ? e.parameter.action.toString().toLowerCase() : "";
     if (action === "get_next_invoice_number") {
       return getNextInvoiceNumber();
     } else if (action === "get_invoices") {
       return getInvoices();
+    } else if (action === "get_invoice") {
+      const target = e && e.parameter ? (e.parameter.invoiceId || e.parameter.invoiceNumber) : "";
+      return getInvoiceById(target);
     }
     return jsonResponse({ success: true, message: "BioBusiness Apps Script API Operational" });
   } catch (err) {
@@ -70,15 +73,17 @@ function doPost(e) {
     }
 
     const data = JSON.parse(e.postData.contents);
-    const action = sanitizeInput(data.action || "");
+    const action = sanitizeInput(data.action || "").toLowerCase();
 
     // Handle invoice actions first
-    if (action === "save_invoice" || data.formType === "invoice") {
+    if (action === "save_invoice" || action === "create_invoice" || action === "update_invoice" || data.formType === "invoice") {
       return saveInvoice(data);
     } else if (action === "get_next_invoice_number") {
       return getNextInvoiceNumber();
     } else if (action === "get_invoices") {
       return getInvoices();
+    } else if (action === "get_invoice") {
+      return getInvoiceById(data.invoiceId || data.invoiceNumber);
     } else if (action === "delete_invoice") {
       return deleteInvoice(data);
     }
@@ -881,5 +886,33 @@ function deleteInvoice(data) {
     return jsonResponse({ success: false, error: err.toString() });
   } finally {
     try { lock.releaseLock(); } catch (e) {}
+  }
+}
+
+/**
+ * Fetch a single invoice record by invoiceId or invoiceNumber directly from Google Sheets
+ */
+function getInvoiceById(targetIdOrNum) {
+  try {
+    const searchVal = cleanText(targetIdOrNum);
+    if (!searchVal) {
+      return jsonResponse({ success: false, error: "invoiceId or invoiceNumber parameter is required." });
+    }
+
+    const allRes = getInvoices();
+    const resObj = JSON.parse(allRes.getContent());
+    if (resObj && resObj.success && Array.isArray(resObj.invoices)) {
+      const found = resObj.invoices.find(function(rec) {
+        return (rec.id && rec.id.toLowerCase() === searchVal.toLowerCase()) ||
+               (rec.invoiceNumber && rec.invoiceNumber.toLowerCase() === searchVal.toLowerCase());
+      });
+      if (found) {
+        return jsonResponse({ success: true, invoice: found.data, record: found });
+      }
+    }
+
+    return jsonResponse({ success: false, error: "Invoice " + searchVal + " not found." });
+  } catch (err) {
+    return jsonResponse({ success: false, error: err.toString() });
   }
 }
