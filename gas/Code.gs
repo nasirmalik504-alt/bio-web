@@ -441,12 +441,15 @@ function jsonResponse(obj) {
 // ═══════════════════════════════════════════════════════════
 // INVOICE FUNCTIONS
 // All invoice operations use LockService for thread safety.
-// Column layout of the "Invoices" sheet:
-//  A(1) Invoice Date  B(2) Invoice Number  C(3) Customer Name
-//  D(4) GST Number    E(5) HSN Code        F(6) POS/State
-//  G(7) Taxable Value H(8) Rate            I(9)  IGST
-//  J(10) CGST         K(11) SGST           L(12) Invoice Value
-//  M(13) RawData JSON (complete InvoiceData object)
+//
+// Column layout of the "Invoices" sheet (15 columns):
+//  A(1)  Invoice Date      B(2)  Invoice Number   C(3)  Customer Name
+//  D(4)  GST Number        E(5)  HSN Code          F(6)  POS/State
+//  G(7)  Taxable Value
+//  H(8)  IGST Rate (%)     I(9)  IGST Amount
+//  J(10) CGST Rate (%)     K(11) CGST Amount
+//  L(12) SGST Rate (%)     M(13) SGST Amount
+//  N(14) Invoice Value     O(15) RawData JSON
 // ═══════════════════════════════════════════════════════════
 
 /**
@@ -499,17 +502,34 @@ function saveInvoice(data) {
 
     var ss = getSpreadsheet();
 
-    // ── Ensure Invoices sheet exists ───────────────────────
+    // ── Ensure Invoices sheet exists with 15-column layout ─
     var invSheet = ss.getSheetByName("Invoices");
     if (!invSheet) {
       invSheet = ss.insertSheet("Invoices");
-      invSheet.appendRow(["Invoice Date","Invoice Number","Customer Name","GST Number",
-        "HSN Code","POS/State","Taxable Value","Rate","IGST","CGST","SGST","Invoice Value","RawData"]);
-      invSheet.getRange(1, 1, 1, 13).setFontWeight("bold").setBackground("#1a2e4a").setFontColor("#ffffff");
+      invSheet.appendRow([
+        "Invoice Date", "Invoice Number", "Customer Name", "GST Number",
+        "HSN Code", "POS/State",
+        "Taxable Value",
+        "IGST Rate (%)", "IGST Amount",
+        "CGST Rate (%)", "CGST Amount",
+        "SGST Rate (%)", "SGST Amount",
+        "Invoice Value", "RawData"
+      ]);
+      invSheet.getRange(1, 1, 1, 15).setFontWeight("bold").setBackground("#1a2e4a").setFontColor("#ffffff");
     } else {
-      // Make sure column M (RawData) header exists
-      if (invSheet.getLastColumn() < 13) {
-        invSheet.getRange(1, 13).setValue("RawData");
+      // Patch header if sheet already exists with old 13-col layout
+      var hdr = invSheet.getRange(1, 1, 1, invSheet.getLastColumn()).getValues()[0];
+      // If column H is "Rate" (old layout) rewrite the full header row
+      if (hdr[7] === "Rate" || hdr[7] === "") {
+        invSheet.getRange(1, 1, 1, 15).setValues([[
+          "Invoice Date", "Invoice Number", "Customer Name", "GST Number",
+          "HSN Code", "POS/State",
+          "Taxable Value",
+          "IGST Rate (%)", "IGST Amount",
+          "CGST Rate (%)", "CGST Amount",
+          "SGST Rate (%)", "SGST Amount",
+          "Invoice Value", "RawData"
+        ]]).setFontWeight("bold").setBackground("#1a2e4a").setFontColor("#ffffff");
       }
     }
 
@@ -576,27 +596,40 @@ function saveInvoice(data) {
     });
 
     var taxType = (data.taxType || "IGST").toString();
-    var igst = 0, cgst = 0, sgst = 0;
-    if (taxType === "IGST")       igst = taxTotal;
-    else if (taxType === "CGST_SGST") { cgst = taxTotal / 2; sgst = taxTotal / 2; }
+    var gstRate = ratesUsed.length === 1 ? ratesUsed[0] : (parseFloat(data.taxRate) || 18);
+    var igst = 0, igstRate = 0;
+    var cgst = 0, cgstRate = 0;
+    var sgst = 0, sgstRate = 0;
+
+    if (taxType === "IGST") {
+      igst     = taxTotal;
+      igstRate = gstRate;
+    } else if (taxType === "CGST_SGST") {
+      cgst     = taxTotal / 2;
+      cgstRate = gstRate / 2;
+      sgst     = taxTotal / 2;
+      sgstRate = gstRate / 2;
+    }
 
     var finalTotal = Math.round(subtotal + taxTotal);
-    var rateStr  = ratesUsed.map(function(r){ return r + "%"; }).join(", ") || ((data.taxRate || 18) + "%");
     var hsnList  = items.map(function(i){ return (i.hsnCode || "").toString().trim(); }).filter(Boolean);
     var primaryHsn = hsnList.join(", ");
-    var custState = (customer.state || data.state || "Delhi").toString().trim();
+    var custState = (customer.state || data.state || "").toString().trim();
     var custGstin = (customer.gstin || "N/A").toString().trim();
     var displayName = (custInst && custTitle && custInst !== custTitle) ? (custInst + " (" + custTitle + ")") : custName;
 
-    // Store the complete invoice payload as JSON in column M for lossless restoration
-    data.invoiceNumber = invoiceNumber; // ensure number is stamped on the raw object
+    // Store the complete invoice payload as JSON in column O for lossless restoration
+    data.invoiceNumber = invoiceNumber;
     var rawDataStr = JSON.stringify(data);
 
+    // 15-column row: A–G, H-I (IGST rate+amt), J-K (CGST rate+amt), L-M (SGST rate+amt), N (total), O (RawData)
     var rowData = [
       fmtDate, invoiceNumber, displayName, custGstin,
       primaryHsn, custState,
-      subtotal.toFixed(2), rateStr,
-      igst.toFixed(2), cgst.toFixed(2), sgst.toFixed(2),
+      subtotal.toFixed(2),
+      igstRate > 0 ? igstRate + "%" : "", igst > 0 ? igst.toFixed(2) : "",
+      cgstRate > 0 ? cgstRate + "%" : "", cgst > 0 ? cgst.toFixed(2) : "",
+      sgstRate > 0 ? sgstRate + "%" : "", sgst > 0 ? sgst.toFixed(2) : "",
       finalTotal.toFixed(2),
       rawDataStr
     ];
@@ -614,7 +647,7 @@ function saveInvoice(data) {
     }
 
     if (existingRow > 1) {
-      invSheet.getRange(existingRow, 1, 1, 13).setValues([rowData]);
+      invSheet.getRange(existingRow, 1, 1, 15).setValues([rowData]);
       // Delete old item rows for this invoice
       if (itemsSheet.getLastRow() > 1) {
         var oldItems = itemsSheet.getRange(2, 2, itemsSheet.getLastRow() - 1, 1).getValues();
@@ -702,28 +735,42 @@ function getInvoices() {
       var hsn       = row[4] ? row[4].toString().trim() : "";
       var pos       = row[5] ? row[5].toString().trim() : "";
       var taxable   = parseFloat(row[6])  || 0;
-      var rateStr2  = row[7] ? row[7].toString().trim() : "18%";
-      var igst2     = parseFloat(row[8])  || 0;
-      var cgst2     = parseFloat(row[9])  || 0;
-      var sgst2     = parseFloat(row[10]) || 0;
-      var invVal    = parseFloat(row[11]) || 0;
+      // New 15-col layout: H(7)=IGST Rate, I(8)=IGST Amt, J(9)=CGST Rate, K(10)=CGST Amt, L(11)=SGST Rate, M(12)=SGST Amt, N(13)=Invoice Value, O(14)=RawData
+      // Old 13-col layout: H(7)=Rate, I(8)=IGST Amt, J(9)=CGST Amt, K(10)=SGST Amt, L(11)=Invoice Value, M(12)=RawData
+      var isNewLayout = lastCol >= 15;
+      var igst2, cgst2, sgst2, invVal, rawColIdx;
+      if (isNewLayout) {
+        igst2      = parseFloat(row[8])  || 0;
+        cgst2      = parseFloat(row[10]) || 0;
+        sgst2      = parseFloat(row[12]) || 0;
+        invVal     = parseFloat(row[13]) || 0;
+        rawColIdx  = 14;
+      } else {
+        // Legacy 13-col layout
+        igst2     = parseFloat(row[8])  || 0;
+        cgst2     = parseFloat(row[9])  || 0;
+        sgst2     = parseFloat(row[10]) || 0;
+        invVal    = parseFloat(row[11]) || 0;
+        rawColIdx = 12;
+      }
 
       if (!invNumber) continue; // skip blank rows
 
-      // Try to restore the full invoice from column M (RawData)
+      // Try to restore the full invoice from RawData column
       var invoiceDataObj = null;
-      if (lastCol >= 13 && row[12]) {
+      if (lastCol >= rawColIdx + 1 && row[rawColIdx]) {
         try {
-          var raw = row[12].toString().trim();
+          var raw = row[rawColIdx].toString().trim();
           if (raw.startsWith("{")) invoiceDataObj = JSON.parse(raw);
         } catch(pe) {
           Logger.log("RawData parse error for " + invNumber + ": " + pe);
         }
       }
 
-      // Fallback: reconstruct InvoiceData from sheet columns + items map
+      // Fallback: reconstruct minimal InvoiceData from sheet columns + items map
+      // (only applies to old invoices that predate the RawData column)
       if (!invoiceDataObj) {
-        var taxRate2 = parseFloat(rateStr2.replace("%","")) || 18;
+        var taxRate2 = 18;
         var taxType2 = igst2 > 0 ? "IGST" : "CGST_SGST";
         invoiceDataObj = {
           invoiceNumber: invNumber,
@@ -731,25 +778,25 @@ function getInvoices() {
           orderNumber:   "",
           orderDate:     "",
           customer: {
-            title:       custName,
-            institution: custName,
+            title:        custName,
+            institution:  custName,
             addressLine1: pos,
             addressLine2: "",
-            cityStatePin: pos,
+            cityStatePin: "",
             state:        pos,
             gstin:        gstin,
             phone:        "",
             email:        ""
           },
-          items:        itemsMap[invNumber] || [],
-          taxType:      taxType2,
-          taxRate:      taxRate2,
-          paymentTerms: "Payment, within 20 days from the date of submission of the invoice, through bankers cheque or demand draft or RTGS is acceptable to us",
-          bankDetails:  {},
-          jurisdiction: "All disputes are subject to jurisdiction Delhi only",
-          paymentNote:  "If the Invoice not paid within the due date, an interest @18% PA will be charged from the date of invoice",
-          companyName:  "For BIOBUSINESS DEVELOPMENT AGENCY",
-          contactNumber: "9899571171"
+          items:   itemsMap[invNumber] || [],
+          taxType: taxType2,
+          taxRate: taxRate2,
+          paymentTerms:  "",
+          bankDetails:   {},
+          jurisdiction:  "",
+          paymentNote:   "",
+          companyName:   "",
+          contactNumber: ""
         };
       }
 

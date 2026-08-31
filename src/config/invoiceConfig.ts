@@ -49,45 +49,50 @@ export const DEFAULT_COMPANY_CONFIG: CompanyInvoiceConfig = {
   invoicePrefix: 'BDA/'
 };
 
+/**
+ * INITIAL_SAMPLE_INVOICE — blank starting template for a new invoice.
+ * All customer fields are empty so the user fills them in fresh.
+ * Invoice number is always fetched from Google Sheets on mount.
+ */
 export const INITIAL_SAMPLE_INVOICE: InvoiceData = {
-  invoiceNumber: 'BDA/001',
+  invoiceNumber: '',
   invoiceDate: getTodayDDMMYYYY(),
-  orderNumber: 'CPRI/2026/01',
-  orderDate: getTodayDDMMYYYY(),
+  orderNumber: '',
+  orderDate: '',
 
   customer: {
-    title: 'Assistant Administrative Officer (Store)',
-    institution: 'ICAR-Central Potato Research Institute',
-    addressLine1: 'Bemloe, Shimla',
-    addressLine2: 'Near Bus Stand',
-    cityStatePin: 'SHIMLA-171001',
-    state: 'Himachal Pradesh',
-    gstin: '02AAACC1234F1Z5',
-    contactPerson: 'AAO Store',
-    email: 'store.cpri@icar.gov.in',
-    phone: '0177-2625070'
+    title: '',
+    institution: '',
+    addressLine1: '',
+    addressLine2: '',
+    cityStatePin: '',
+    state: '',
+    gstin: '',
+    contactPerson: '',
+    email: '',
+    phone: ''
   },
 
   isShipToSameAsBillTo: true,
   shippingAddress: {
-    title: 'Assistant Administrative Officer (Store)',
-    addressLine1: 'Bemloe, Shimla',
-    addressLine2: 'Near Bus Stand',
-    cityStatePin: 'SHIMLA-171001',
-    state: 'Himachal Pradesh',
-    gstin: '02AAACC1234F1Z5',
-    phone: '0177-2625070'
+    title: '',
+    addressLine1: '',
+    addressLine2: '',
+    cityStatePin: '',
+    state: '',
+    gstin: '',
+    phone: ''
   },
 
   items: [
     {
       id: 'item-1',
-      code: 'AX-SF-PES-02',
-      description: 'Axiva Syringe Filter PES\nPore Size 0.2 Micrometer\nMembrane Diameter 25 mm\nPack Size: 100/Pack',
-      hsnCode: '84212900',
-      unitPrice: 7012.7119,
+      code: '',
+      description: '',
+      hsnCode: '',
+      unitPrice: 0,
       quantity: 1,
-      totalPrice: 7012.7119,
+      totalPrice: 0,
       gstRate: 18
     }
   ],
