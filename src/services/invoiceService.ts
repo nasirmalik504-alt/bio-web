@@ -1,34 +1,99 @@
-import { InvoiceData, SaveInvoiceResponse } from '../types/invoiceTypes';
-import {
-  extractInvoiceSequence,
-  formatInvoiceNumber,
-  SavedInvoiceRecord
-} from '../utils/invoiceStorage';
+/**
+ * Invoice Service — Google Sheets is the ONLY database.
+ * All invoice reads and writes go through this file → Google Apps Script → Google Sheets.
+ * No localStorage. No sessionStorage. No browser cache as data store.
+ */
 
-const DEFAULT_APPS_SCRIPT_URL =
+import { InvoiceData, SaveInvoiceResponse } from '../types/invoiceTypes';
+
+// ─────────────────────────────────────────────────────────────
+// Google Apps Script endpoint (single source of truth backend)
+// ─────────────────────────────────────────────────────────────
+const SCRIPT_URL =
+  ((import.meta as any).env?.VITE_APPS_SCRIPT_URL as string) ||
   'https://script.google.com/macros/s/AKfycbwyfJ1k63-lVjkJiPVjJW_HVgh-DJ6PDyZujQv4TeMjfwloLHM8-4u3G9bV3_5oCImS/exec';
 
-const APPS_SCRIPT_URL =
-  ((import.meta as any).env && (import.meta as any).env.VITE_APPS_SCRIPT_URL) ||
-  DEFAULT_APPS_SCRIPT_URL;
+// ─────────────────────────────────────────────────────────────
+// Shared types
+// ─────────────────────────────────────────────────────────────
+export interface InvoiceRecord {
+  id: string;
+  invoiceNumber: string;
+  customerName: string;
+  institution: string;
+  date: string;
+  totalAmount: number;
+  savedAt: string;
+  data: InvoiceData;
+  syncedToGoogleSheets: true;
+}
 
-/**
- * Safely parse HTTP response text to JSON without throwing "Unexpected end of JSON input"
- */
-async function safeJsonParseResponse(response: Response): Promise<any> {
+// ─────────────────────────────────────────────────────────────
+// Internal helper — safely parse a fetch Response as JSON
+// ─────────────────────────────────────────────────────────────
+async function parseJson(res: Response): Promise<any> {
   try {
-    const text = await response.text();
-    if (!text || !text.trim()) return null;
+    const text = await res.text();
+    if (!text?.trim()) return null;
     return JSON.parse(text);
-  } catch (err) {
+  } catch {
     return null;
   }
 }
 
-/**
- * Save Invoice Data directly to Google Sheets via Google Apps Script Web App
- */
-export async function saveInvoiceToGoogleSheets(data: InvoiceData, amountInWords: string): Promise<SaveInvoiceResponse> {
+// ─────────────────────────────────────────────────────────────
+// GET_INVOICES — fetch all invoices from Google Sheets
+// Called by: Saved Bills page on mount, after save, on refresh
+// ─────────────────────────────────────────────────────────────
+export async function getInvoices(): Promise<InvoiceRecord[]> {
+  const url = `${SCRIPT_URL}?action=get_invoices&_t=${Date.now()}`;
+
+  const res = await fetch(url, {
+    method: 'GET',
+    cache: 'no-store',
+    headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate' }
+  });
+
+  const json = await parseJson(res);
+
+  if (json?.success && Array.isArray(json.invoices)) {
+    return json.invoices as InvoiceRecord[];
+  }
+
+  throw new Error(json?.error || 'Could not load invoices from Google Sheets.');
+}
+
+// ─────────────────────────────────────────────────────────────
+// GET_NEXT_INVOICE_NUMBER — fetch next BDA/NNN from server
+// Called by: Invoice form on mount (when creating new invoice)
+// Server uses LockService so concurrent calls are safe
+// ─────────────────────────────────────────────────────────────
+export async function getNextInvoiceNumber(): Promise<string> {
+  const url = `${SCRIPT_URL}?action=get_next_invoice_number&_t=${Date.now()}`;
+
+  const res = await fetch(url, {
+    method: 'GET',
+    cache: 'no-store',
+    headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate' }
+  });
+
+  const json = await parseJson(res);
+
+  if (json?.success && json.nextInvoiceNumber) {
+    return json.nextInvoiceNumber as string;
+  }
+
+  throw new Error(json?.error || 'Could not fetch next invoice number from Google Sheets.');
+}
+
+// ─────────────────────────────────────────────────────────────
+// SAVE_INVOICE — write invoice to Google Sheets
+// Returns confirmed invoice number assigned by server
+// ─────────────────────────────────────────────────────────────
+export async function saveInvoice(
+  data: InvoiceData,
+  amountInWords: string
+): Promise<SaveInvoiceResponse> {
   const payload = {
     action: 'save_invoice',
     formType: 'invoice',
@@ -39,157 +104,40 @@ export async function saveInvoiceToGoogleSheets(data: InvoiceData, amountInWords
     amountInWords
   };
 
-  try {
-    const response = await fetch(APPS_SCRIPT_URL, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'text/plain;charset=utf-8',
-      },
-      body: JSON.stringify(payload)
-    });
+  const res = await fetch(SCRIPT_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify(payload)
+  });
 
-    const result = await safeJsonParseResponse(response);
+  const json = await parseJson(res);
 
-    if (result && result.success) {
-      return {
-        success: true,
-        invoiceId: result.invoiceId || result.invoice?.id,
-        invoiceNumber: result.invoiceNumber || data.invoiceNumber,
-        message: result.message || `Invoice ${data.invoiceNumber} saved successfully to Google Sheets.`,
-        invoice: result.invoice
-      };
-    }
-
-    if (result && !result.success && result.error) {
-      return {
-        success: false,
-        error: result.error
-      };
-    }
-
-    if (response.ok || response.status === 302 || response.status === 200) {
-      return {
-        success: true,
-        invoiceNumber: data.invoiceNumber,
-        message: `Invoice ${data.invoiceNumber} saved successfully to Google Sheets!`
-      };
-    }
-
+  if (json?.success) {
     return {
-      success: false,
-      error: `Unable to save to Google Sheets (HTTP ${response.status}).`
-    };
-  } catch (err: any) {
-    console.error('Google Sheets backend save error:', err);
-    return {
-      success: false,
-      error: err?.message || 'Unable to connect to Google Sheets backend.'
+      success: true,
+      invoiceNumber: json.invoiceNumber || data.invoiceNumber,
+      message: json.message || `Invoice saved to Google Sheets.`
     };
   }
+
+  return {
+    success: false,
+    error: json?.error || `Unable to save to Google Sheets (HTTP ${res.status}).`
+  };
 }
 
-/**
- * Fetch all saved invoices directly from Google Sheets backend API
- */
-export async function fetchInvoicesFromGoogleSheets(): Promise<SavedInvoiceRecord[]> {
-  try {
-    // 1. Attempt GET request with cache-busting timestamp
-    let response = await fetch(`${APPS_SCRIPT_URL}?action=get_invoices&_t=${Date.now()}`, {
-      method: 'GET',
-      cache: 'no-store',
-      headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate' }
-    });
-    let result = await safeJsonParseResponse(response);
+// ─────────────────────────────────────────────────────────────
+// DELETE_INVOICE — remove invoice row(s) from Google Sheets
+// ─────────────────────────────────────────────────────────────
+export async function deleteInvoice(
+  invoiceNumber: string
+): Promise<{ success: boolean; error?: string }> {
+  const res = await fetch(SCRIPT_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+    body: JSON.stringify({ action: 'delete_invoice', invoiceNumber })
+  });
 
-    // 2. If GET doesn't return invoices, attempt POST fallback
-    if (!result || !result.success || !Array.isArray(result.invoices)) {
-      response = await fetch(APPS_SCRIPT_URL, {
-        method: 'POST',
-        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-        body: JSON.stringify({ action: 'get_invoices' })
-      });
-      result = await safeJsonParseResponse(response);
-    }
-
-    if (result && result.success && Array.isArray(result.invoices)) {
-      return result.invoices;
-    }
-  } catch (err) {
-    console.error('Error fetching invoices from Google Sheets backend:', err);
-  }
-
-  return [];
-}
-
-/**
- * Fetch a single invoice record directly from Google Sheets backend by ID or number
- */
-export async function fetchSingleInvoiceFromGoogleSheets(invoiceIdOrNumber: string): Promise<SavedInvoiceRecord | null> {
-  if (!invoiceIdOrNumber) return null;
-
-  try {
-    const response = await fetch(`${APPS_SCRIPT_URL}?action=get_invoice&invoiceId=${encodeURIComponent(invoiceIdOrNumber)}&_t=${Date.now()}`, {
-      method: 'GET',
-      cache: 'no-store',
-      headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate' }
-    });
-    const result = await safeJsonParseResponse(response);
-    if (result && result.success && (result.record || result.invoice)) {
-      return result.record || {
-        id: `inv-${invoiceIdOrNumber.replace(/[^a-zA-Z0-9]/g, '-')}`,
-        invoiceNumber: invoiceIdOrNumber,
-        customerName: result.invoice?.customer?.title || 'Customer',
-        institution: result.invoice?.customer?.institution || 'Customer',
-        date: result.invoice?.invoiceDate || '',
-        totalAmount: 0,
-        savedAt: new Date().toISOString(),
-        data: result.invoice,
-        syncedToGoogleSheets: true
-      };
-    }
-  } catch (err) {
-    console.warn('Could not fetch single invoice from Apps Script:', err);
-  }
-  return null;
-}
-
-/**
- * Delete invoice record directly from Google Sheets backend database
- */
-export async function deleteInvoiceFromGoogleSheets(invoiceNumber: string): Promise<{ success: boolean; message?: string; error?: string }> {
-  try {
-    const response = await fetch(APPS_SCRIPT_URL, {
-      method: 'POST',
-      headers: { 'Content-Type': 'text/plain;charset=utf-8' },
-      body: JSON.stringify({
-        action: 'delete_invoice',
-        invoiceNumber
-      })
-    });
-    const result = await safeJsonParseResponse(response);
-    return result || { success: true, message: `Invoice ${invoiceNumber} deleted from Google Sheets!` };
-  } catch (err: any) {
-    console.error('Error deleting invoice from Google Sheets backend:', err);
-    return { success: false, error: err?.message || 'Failed to delete from Google Sheets.' };
-  }
-}
-
-/**
- * Fetch next sequential invoice number directly from Google Apps Script backend
- */
-export async function fetchNextInvoiceNumber(): Promise<string> {
-  try {
-    const response = await fetch(`${APPS_SCRIPT_URL}?action=get_next_invoice_number&_t=${Date.now()}`, {
-      method: 'GET',
-      cache: 'no-store',
-      headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate' }
-    });
-    const result = await safeJsonParseResponse(response);
-    if (result && result.success && result.nextInvoiceNumber) {
-      return result.nextInvoiceNumber;
-    }
-  } catch (err) {
-    console.warn('Could not fetch next invoice number from Apps Script backend:', err);
-  }
-  return 'BDA/001';
+  const json = await parseJson(res);
+  return json ?? { success: false, error: 'No response from server.' };
 }

@@ -1,11 +1,11 @@
-import { SavedInvoiceRecord } from './invoiceStorage';
+import { InvoiceRecord } from '../services/invoiceService';
 import { formatDateToDDMMYYYY } from './dateFormatter';
 
 /**
  * Export saved invoices as CSV with exact GST Tax Register Header:
  * Invoice Date | Invoice Number | Customer Name | GST Number | HSN Code | POS | Taxable Value | Rate | IGST | CGST | SGST | Invoice Value
  */
-export function exportInvoicesToCSV(invoices: SavedInvoiceRecord[]) {
+export function exportInvoicesToCSV(invoices: InvoiceRecord[]) {
   const headers = [
     'Invoice Date',
     'Invoice Number',
@@ -30,7 +30,7 @@ export function exportInvoicesToCSV(invoices: SavedInvoiceRecord[]) {
     let totalTax = 0;
     const ratesSet = new Set<number>();
 
-    items.forEach((item) => {
+    items.forEach((item: { unitPrice?: number; quantity?: number; gstRate?: number; hsnCode?: string }) => {
       const price = Number(item.unitPrice || 0);
       const qty = Number(item.quantity || 0);
       const itemTaxable = price * qty;
@@ -55,7 +55,7 @@ export function exportInvoicesToCSV(invoices: SavedInvoiceRecord[]) {
     const invoiceValue = Math.round(exactTotal);
 
     // HSN Codes & Rates
-    const hsnCodes = Array.from(new Set(items.map((i) => i.hsnCode).filter(Boolean))).join(', ');
+    const hsnCodes = Array.from(new Set(items.map((i: { hsnCode?: string }) => i.hsnCode).filter(Boolean))).join(', ');
     const rateStr = Array.from(ratesSet).map((r) => `${r}%`).join(', ') || `${data.taxRate || 18}%`;
 
     const customerName = (data.customer.title || data.customer.institution || 'Customer').trim();

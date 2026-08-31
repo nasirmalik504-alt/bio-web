@@ -3,7 +3,7 @@ import { InvoiceData } from '../types/invoiceTypes';
 import { INITIAL_SAMPLE_INVOICE } from '../config/invoiceConfig';
 import { InvoiceForm } from '../components/invoice/InvoiceForm';
 import { ExactInvoicePreview } from '../components/invoice/ExactInvoicePreview';
-import { saveInvoiceToGoogleSheets, fetchNextInvoiceNumber, fetchInvoicesFromGoogleSheets } from '../services/invoiceService';
+import { saveInvoice, getNextInvoiceNumber } from '../services/invoiceService';
 import { numberToIndianWords } from '../utils/numberToWords';
 import { getStoredCompanyConfig } from '../utils/companyConfigStorage';
 import { SavedInvoicesList } from '../components/invoice/SavedInvoicesList';
@@ -84,16 +84,10 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
   const handleFetchNextInvoiceNumber = async () => {
     setIsFetchingNextNum(true);
     try {
-      const nextNum = await fetchNextInvoiceNumber();
-      if (nextNum) {
-        setInvoiceData((prev) => ({ ...prev, invoiceNumber: nextNum }));
-        setNotification({
-          type: 'success',
-          message: `Fetched next sequential invoice number: ${nextNum}`
-        });
-      }
+      const nextNum = await getNextInvoiceNumber();
+      setInvoiceData(prev => ({ ...prev, invoiceNumber: nextNum }));
     } catch (err) {
-      console.warn('Could not fetch next invoice number:', err);
+      console.warn('Could not fetch next invoice number from Google Sheets:', err);
     } finally {
       setIsFetchingNextNum(false);
     }
@@ -139,14 +133,11 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
     return Object.keys(newErrors).length === 0;
   };
 
-  // Save Invoice to Google Sheets & Local History
+  // Save Invoice → Google Sheets (via Apps Script) → then advance to next number
   const handleSaveToGoogleSheets = async () => {
     setNotification(null);
     if (!validateForm()) {
-      setNotification({
-        type: 'error',
-        message: 'Please resolve the highlighted validation errors before saving.'
-      });
+      setNotification({ type: 'error', message: 'Please fix the highlighted errors before saving.' });
       return;
     }
 
@@ -154,7 +145,7 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
 
     let subtotal = 0;
     let taxAmount = 0;
-    invoiceData.items.forEach((item) => {
+    invoiceData.items.forEach(item => {
       const price = Number(item.unitPrice || 0);
       const qty = Number(item.quantity || 0);
       const itemTaxable = price * qty;
@@ -165,23 +156,21 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
     const finalAmount = Math.round(subtotal + taxAmount);
     const amountInWords = numberToIndianWords(finalAmount);
 
-    const result = await saveInvoiceToGoogleSheets(invoiceData, amountInWords);
+    const result = await saveInvoice(invoiceData, amountInWords);
 
     setIsSaving(false);
 
     if (result.success) {
-      const savedNum = result.invoiceNumber || invoiceData.invoiceNumber;
       setNotification({
         type: 'success',
-        message: result.message || `Invoice ${savedNum} saved successfully to Google Sheets!`
+        message: result.message || `Invoice ${result.invoiceNumber || invoiceData.invoiceNumber} saved to Google Sheets!`
       });
-
-      // Automatically advance form to next sequential invoice number from Google Apps Script backend
+      // Advance to next invoice number from server
       handleFetchNextInvoiceNumber();
     } else {
       setNotification({
         type: 'error',
-        message: result.error || 'Unable to save invoice to Google Sheets.'
+        message: result.error || 'Unable to save invoice to Google Sheets. Please try again.'
       });
     }
   };
