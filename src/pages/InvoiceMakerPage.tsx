@@ -3,7 +3,7 @@ import { InvoiceData } from '../types/invoiceTypes';
 import { INITIAL_SAMPLE_INVOICE } from '../config/invoiceConfig';
 import { InvoiceForm } from '../components/invoice/InvoiceForm';
 import { ExactInvoicePreview } from '../components/invoice/ExactInvoicePreview';
-import { saveInvoiceToGoogleSheets, fetchNextInvoiceNumber } from '../services/invoiceService';
+import { saveInvoiceToGoogleSheets, fetchNextInvoiceNumber, fetchInvoicesFromGoogleSheets } from '../services/invoiceService';
 import { numberToIndianWords } from '../utils/numberToWords';
 import { saveInvoiceToStorage } from '../utils/invoiceStorage';
 import { getStoredCompanyConfig } from '../utils/companyConfigStorage';
@@ -178,14 +178,17 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
     setIsSaving(false);
 
     if (result.success) {
+      const savedNum = result.invoiceNumber || invoiceData.invoiceNumber;
       setNotification({
         type: 'success',
-        message: result.message || `Invoice ${result.invoiceNumber || invoiceData.invoiceNumber} saved successfully to Google Sheets & Saved Bills History!`
+        message: result.message || `Invoice ${savedNum} saved successfully to Google Sheets & Saved Bills History!`
       });
-      if (result.invoiceNumber) {
-        const newInvNo = result.invoiceNumber;
-        setInvoiceData((prev) => ({ ...prev, invoiceNumber: newInvNo }));
-      }
+
+      // Immediately fetch live invoices to sync local storage across devices
+      fetchInvoicesFromGoogleSheets();
+
+      // Automatically advance form to next sequential invoice number (e.g. BDA/201 -> BDA/202)
+      handleFetchNextInvoiceNumber();
     } else {
       setNotification({
         type: 'error',
