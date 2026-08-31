@@ -185,7 +185,6 @@ export async function deleteInvoiceFromGoogleSheets(invoiceNumber: string): Prom
  */
 export async function fetchNextInvoiceNumber(): Promise<string> {
   const localNext = getNextLocalInvoiceNumber('BDA/');
-  const localSeq = extractInvoiceSequence(localNext);
 
   if (!APPS_SCRIPT_URL) return localNext;
 
@@ -197,14 +196,7 @@ export async function fetchNextInvoiceNumber(): Promise<string> {
     });
     const result = await safeJsonParseResponse(response);
     if (result && result.success && result.nextInvoiceNumber) {
-      let remoteSeq = extractInvoiceSequence(result.nextInvoiceNumber);
-      
-      if (remoteSeq === 172 && localSeq < 172) {
-        remoteSeq = 0;
-      }
-
-      const finalSeq = Math.max(remoteSeq, localSeq);
-      return formatInvoiceNumber(finalSeq, 'BDA/');
+      return result.nextInvoiceNumber;
     }
   } catch (err) {
     console.warn('Could not fetch next invoice number from Apps Script, falling back to local:', err);
