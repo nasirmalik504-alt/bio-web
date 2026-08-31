@@ -5,11 +5,43 @@
  * Target Spreadsheet:
  * Sheet 1: "Quote Requests"
  * Sheet 2: "Contact Messages"
+ * Sheet 3: "Invoices"
+ * Sheet 4: "Invoice Items"
  */
+
+// If your Apps Script was created as a standalone project (script.google.com),
+// paste your target Google Sheet ID here (from https://docs.google.com/spreadsheets/d/YOUR_SHEET_ID/edit)
+// Example: const SPREADSHEET_ID = "1ABC123xyz...";
+const SPREADSHEET_ID = ""; // Leave blank if script is bound directly inside Google Sheet via Extensions > Apps Script
 
 const ADMIN_EMAIL = "sales@biobusiness.in";
 const COMPANY_NAME = "Biobusiness Development Agency";
 const WEBSITE_URL = "https://www.biobusiness.in";
+
+/**
+ * Get active Google Spreadsheet or open target sheet by SPREADSHEET_ID
+ */
+function getSpreadsheet() {
+  if (typeof SPREADSHEET_ID === "string" && SPREADSHEET_ID.trim() !== "") {
+    try {
+      return SpreadsheetApp.openById(SPREADSHEET_ID.trim());
+    } catch (e) {
+      Logger.log("Error opening spreadsheet by ID: " + e.toString());
+    }
+  }
+
+  try {
+    const active = SpreadsheetApp.getActiveSpreadsheet();
+    if (active) return active;
+  } catch (e) {}
+
+  try {
+    const activeObj = SpreadsheetApp.getActive();
+    if (activeObj) return activeObj;
+  } catch (e) {}
+
+  throw new Error("No target Google Sheet bound. If using standalone Apps Script, please paste your Google Sheet ID into SPREADSHEET_ID at top of Code.gs.");
+}
 
 /**
  * Handle HTTP GET requests from the React Website Frontend.
@@ -95,7 +127,7 @@ function submitQuote(data) {
     return jsonResponse({ success: false, error: "Your quote basket is empty. Please add products to submit a request." });
   }
 
-  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const ss = getSpreadsheet();
   let sheet = ss.getSheetByName("Quote Requests");
   if (!sheet) {
     sheet = ss.insertSheet("Quote Requests");
@@ -160,7 +192,7 @@ function submitContact(data) {
     return jsonResponse({ success: false, error: "Please provide a valid email address." });
   }
 
-  const ss = SpreadsheetApp.getActiveSpreadsheet();
+  const ss = getSpreadsheet();
   let sheet = ss.getSheetByName("Contact Messages");
   if (!sheet) {
     sheet = ss.insertSheet("Contact Messages");
@@ -408,7 +440,7 @@ function getNextInvoiceNumber() {
   const lock = LockService.getScriptLock();
   try {
     lock.waitLock(10000);
-    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const ss = getSpreadsheet();
     let sheet = ss.getSheetByName("Invoices");
     if (!sheet) {
       return jsonResponse({ success: true, nextInvoiceNumber: "BDA/001" });
@@ -472,7 +504,7 @@ function saveInvoice(data) {
       return jsonResponse({ success: false, error: "At least one product item is required." });
     }
 
-    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const ss = getSpreadsheet();
 
     // 1. Prepare "Invoices" Sheet (Exact GST Tax Register Format + RawData column 13)
     let invoicesSheet = ss.getSheetByName("Invoices");
@@ -676,7 +708,7 @@ function saveInvoice(data) {
  */
 function getInvoices() {
   try {
-    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const ss = getSpreadsheet();
     const invoicesSheet = ss.getSheetByName("Invoices");
     if (!invoicesSheet) {
       return jsonResponse({ success: true, invoices: [] });
@@ -688,7 +720,11 @@ function getInvoices() {
     }
 
     // Get all invoices summary data
-    const values = invoicesSheet.getRange(2, 1, lastRow - 1, Math.max(13, invoicesSheet.getLastColumn())).getValues();
+    const maxCols = invoicesSheet.getLastColumn();
+    if (maxCols < 1) {
+      return jsonResponse({ success: true, invoices: [] });
+    }
+    const values = invoicesSheet.getRange(2, 1, lastRow - 1, maxCols).getValues();
 
     // Get items sheet data if available
     const itemsSheet = ss.getSheetByName("Invoice Items");
@@ -813,7 +849,7 @@ function deleteInvoice(data) {
       return jsonResponse({ success: false, error: "Invoice number is required for deletion." });
     }
 
-    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const ss = getSpreadsheet();
 
     // 1. Delete from Invoices Sheet
     const invoicesSheet = ss.getSheetByName("Invoices");
