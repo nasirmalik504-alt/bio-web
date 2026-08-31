@@ -95,14 +95,20 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
   const handleItemChange = (index: number, field: keyof InvoiceItem | 'unitPriceInclGst', value: any) => {
     const newItems = [...data.items];
     const targetItem = { ...newItems[index] };
+    const itemGstRate = targetItem.gstRate !== undefined ? Number(targetItem.gstRate) : Number(data.taxRate || 18);
 
     if (field === 'description') {
       // Strip HSN Code text block from description text
       targetItem.description = String(value).replace(/\n?HSN Code\s*\d+/gi, '').trimStart();
+    } else if (field === 'gstRate') {
+      const rate = parseFloat(value);
+      targetItem.gstRate = !isNaN(rate) ? rate : 18;
+      const price = Number(targetItem.unitPrice || 0);
+      const qty = Number(targetItem.quantity || 0);
+      targetItem.totalPrice = price * qty;
     } else if (field === 'unitPriceInclGst') {
       const inclPrice = parseFloat(value);
-      const taxRate = Number(data.taxRate || 0);
-      const exclPrice = !isNaN(inclPrice) && inclPrice >= 0 ? inclPrice / (1 + taxRate / 100) : 0;
+      const exclPrice = !isNaN(inclPrice) && inclPrice >= 0 ? inclPrice / (1 + itemGstRate / 100) : 0;
       targetItem.unitPrice = exclPrice;
       const qty = Number(targetItem.quantity || 0);
       targetItem.totalPrice = exclPrice * (isNaN(qty) ? 0 : qty);
@@ -132,6 +138,7 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
       hsnCode: '',
       unitPrice: 0,
       quantity: 1,
+      gstRate: data.taxRate || 18,
       totalPrice: 0
     };
     onChange({ ...data, items: [...data.items, newItem] });
@@ -556,8 +563,8 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
               </div>
 
               <div className="space-y-3">
-                {/* Row 1: Code, HSN, Quantity */}
-                <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                {/* Row 1: Code, HSN, Quantity, GST Rate */}
+                <div className="grid grid-cols-1 sm:grid-cols-4 gap-3">
                   {/* Code / SKU */}
                   <div>
                     <label className="block text-[11px] font-semibold text-[#5F708A] mb-1">
@@ -600,6 +607,24 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
                       className="w-full px-3 py-2 text-xs border border-[#E6ECF5] rounded-xl font-mono focus:ring-2 focus:ring-[#6EA8FE] focus:outline-none"
                     />
                   </div>
+
+                  {/* GST Rate (%) per Product */}
+                  <div>
+                    <label className="block text-[11px] font-semibold text-[#5F708A] mb-1">
+                      GST Rate (%) <span className="text-red-500">*</span>
+                    </label>
+                    <select
+                      value={item.gstRate !== undefined ? item.gstRate : (data.taxRate || 18)}
+                      onChange={(e) => handleItemChange(idx, 'gstRate', Number(e.target.value))}
+                      className="w-full px-3 py-2 text-xs border border-[#6EA8FE]/40 bg-[#F4F8FC] rounded-xl font-mono font-bold focus:ring-2 focus:ring-[#6EA8FE] focus:outline-none text-[#23324D]"
+                    >
+                      <option value={18}>18% GST (Standard)</option>
+                      <option value={12}>12% GST</option>
+                      <option value={5}>5% GST (Concessional)</option>
+                      <option value={28}>28% GST</option>
+                      <option value={0}>0% GST (Exempt / Nil)</option>
+                    </select>
+                  </div>
                 </div>
 
                 {/* Row 2: Dual Unit Prices (Excl. GST & Incl. GST) */}
@@ -623,7 +648,7 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
                   {/* Unit Price (Incl. GST) */}
                   <div>
                     <label className="block text-[11px] font-semibold text-[#1B6D4A] mb-1">
-                      Unit Price (Incl. {data.taxRate || 0}% GST ₹)
+                      Unit Price (Incl. {item.gstRate !== undefined ? item.gstRate : (data.taxRate || 18)}% GST ₹)
                     </label>
                     <input
                       type="number"
@@ -631,7 +656,7 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
                       min="0"
                       value={
                         item.unitPrice
-                          ? Number((Number(item.unitPrice) * (1 + Number(data.taxRate || 0) / 100)).toFixed(2))
+                          ? Number((Number(item.unitPrice) * (1 + Number(item.gstRate !== undefined ? item.gstRate : (data.taxRate || 18)) / 100)).toFixed(2))
                           : ''
                       }
                       onChange={(e) => handleItemChange(idx, 'unitPriceInclGst', e.target.value)}
@@ -657,13 +682,17 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
 
                 {/* Row 4: Line Amount Summary & Delete Button */}
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between bg-[#F8FAFC] p-2.5 rounded-xl border border-[#E6ECF5] text-xs gap-2">
-                  <div className="flex flex-wrap items-center gap-4 text-[#5F708A] font-mono text-[11px]">
+                  <div className="flex flex-wrap items-center gap-3 text-[#5F708A] font-mono text-[11px]">
                     <span>
                       Taxable Subtotal: <strong className="text-[#23324D] font-bold">₹{(Number(item.unitPrice || 0) * Number(item.quantity || 0)).toLocaleString('en-IN', { minimumFractionDigits: 2 })}</strong>
                     </span>
                     <span>•</span>
                     <span>
-                      Line Total (Incl. GST): <strong className="text-[#1B6D4A] font-bold">₹{(Number(item.unitPrice || 0) * Number(item.quantity || 0) * (1 + Number(data.taxRate || 0)/100)).toLocaleString('en-IN', { minimumFractionDigits: 2 })}</strong>
+                      GST ({item.gstRate !== undefined ? item.gstRate : (data.taxRate || 18)}%): <strong className="text-[#6EA8FE] font-bold">₹{((Number(item.unitPrice || 0) * Number(item.quantity || 0) * Number(item.gstRate !== undefined ? item.gstRate : (data.taxRate || 18))) / 100).toLocaleString('en-IN', { minimumFractionDigits: 2 })}</strong>
+                    </span>
+                    <span>•</span>
+                    <span>
+                      Line Total (Incl. GST): <strong className="text-[#1B6D4A] font-bold">₹{(Number(item.unitPrice || 0) * Number(item.quantity || 0) * (1 + Number(item.gstRate !== undefined ? item.gstRate : (data.taxRate || 18))/100)).toLocaleString('en-IN', { minimumFractionDigits: 2 })}</strong>
                     </span>
                   </div>
 
@@ -708,7 +737,7 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
 
           <div>
             <label className="block text-xs font-semibold text-[#5F708A] mb-1">
-              Total GST Rate (%)
+              Default GST Rate for New Items (%)
             </label>
             <input
               type="number"

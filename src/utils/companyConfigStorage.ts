@@ -9,7 +9,15 @@ export function getStoredCompanyConfig(): CompanyInvoiceConfig {
   try {
     const raw = localStorage.getItem(COMPANY_CONFIG_KEY);
     if (!raw) return DEFAULT_COMPANY_CONFIG;
-    return JSON.parse(raw);
+    const parsed = JSON.parse(raw);
+    return {
+      ...DEFAULT_COMPANY_CONFIG,
+      ...parsed,
+      bankDetails: {
+        ...DEFAULT_COMPANY_CONFIG.bankDetails,
+        ...(parsed.bankDetails || {})
+      }
+    };
   } catch (err) {
     console.error('Error loading stored company config:', err);
     return DEFAULT_COMPANY_CONFIG;

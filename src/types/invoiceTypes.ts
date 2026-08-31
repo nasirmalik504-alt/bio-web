@@ -29,6 +29,7 @@ export interface InvoiceItem {
   unitPrice: number;       // Price per unit (₹)
   quantity: number;        // Quantity
   totalPrice: number;      // Calculated unitPrice * quantity
+  gstRate?: number;        // Item GST rate % (e.g. 18, 12, 5, 28, 0). Defaults to invoice taxRate if missing
   unitPriceInclGst?: string | number; // Optional draft string for typing inclusive price
 }
 

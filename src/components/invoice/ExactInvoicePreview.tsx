@@ -1,12 +1,19 @@
 import React, { forwardRef } from 'react';
 import { InvoiceData } from '../../types/invoiceTypes';
 import { numberToIndianWords } from '../../utils/numberToWords';
+import { getStoredCompanyConfig } from '../../utils/companyConfigStorage';
+import { formatDateToDDMMYYYY } from '../../utils/dateFormatter';
 
 interface ExactInvoicePreviewProps {
   data: InvoiceData;
 }
 
 export const ExactInvoicePreview = forwardRef<HTMLDivElement, ExactInvoicePreviewProps>(({ data }, ref) => {
+  const companyConfig = getStoredCompanyConfig();
+  const addressLine1 = companyConfig.companyAddressLine1 || 'A-126 Ground Floor, Fateh Nagar, Jail Road';
+  const addressLine2 = companyConfig.companyAddressLine2 || 'New Delhi - 110018, India';
+  const companyGstin = companyConfig.companyGstin || '07ARMPN8877F1Z2';
+
   const {
     invoiceNumber,
     invoiceDate,
@@ -36,22 +43,25 @@ export const ExactInvoicePreview = forwardRef<HTMLDivElement, ExactInvoicePrevie
     phone: customer.phone
   };
 
-  // Calculate financial totals safely with 2 decimal precision
-  const subtotal = items.reduce((sum, item) => sum + (Number(item.unitPrice || 0) * Number(item.quantity || 0)), 0);
-  
-  let taxAmount = 0;
-  let cgstAmount = 0;
-  let sgstAmount = 0;
+  // Calculate financial totals safely with per-item GST rates
+  let subtotal = 0;
+  let totalTaxAmount = 0;
+  const gstBreakdownMap: Record<number, number> = {};
 
-  if (taxType === 'IGST') {
-    taxAmount = (subtotal * taxRate) / 100;
-  } else if (taxType === 'CGST_SGST') {
-    cgstAmount = (subtotal * (taxRate / 2)) / 100;
-    sgstAmount = (subtotal * (taxRate / 2)) / 100;
-    taxAmount = cgstAmount + sgstAmount;
-  }
+  items.forEach((item) => {
+    const qty = Number(item.quantity || 0);
+    const price = Number(item.unitPrice || 0);
+    const itemTaxable = price * qty;
+    subtotal += itemTaxable;
 
-  const rawTotal = subtotal + taxAmount;
+    const itemGstRate = item.gstRate !== undefined ? Number(item.gstRate) : Number(taxRate || 0);
+    const itemTax = (itemTaxable * itemGstRate) / 100;
+    totalTaxAmount += itemTax;
+
+    gstBreakdownMap[itemGstRate] = (gstBreakdownMap[itemGstRate] || 0) + itemTax;
+  });
+
+  const rawTotal = subtotal + totalTaxAmount;
   const finalAmount = Math.round(rawTotal);
   const roundOff = Math.round((finalAmount - rawTotal) * 100) / 100;
 
@@ -84,11 +94,11 @@ export const ExactInvoicePreview = forwardRef<HTMLDivElement, ExactInvoicePrevie
 
         <div className="text-right text-[10px] print:text-[9.5px] leading-tight space-y-0.5 w-2/3">
           <div className="font-black text-xs print:text-[11px] uppercase tracking-tight">BIOBUSINESS DEVELOPMENT AGENCY</div>
-          <div>G-16, Jail Road, Hari Nagar</div>
-          <div>New Delhi - 110064, India</div>
-          <div><strong>GSTIN/UIN:</strong> 07AAKFB8362H1ZB</div>
+          <div>{addressLine1}</div>
+          <div>{addressLine2}</div>
+          <div><strong>GSTIN/UIN:</strong> {companyGstin}</div>
           <div><strong>State Name:</strong> Delhi, <strong>Code:</strong> 07</div>
-          <div><strong>Contact No.:</strong> 9899571171</div>
+          <div><strong>Contact No.:</strong> {contactNumber || companyConfig.contactNumber || '9899571171'}</div>
           <div><strong>Email:</strong> sales@biobusiness.in | <strong>Website:</strong> www.biobusiness.in</div>
         </div>
       </div>
@@ -145,76 +155,83 @@ export const ExactInvoicePreview = forwardRef<HTMLDivElement, ExactInvoicePrevie
 
       {/* 3. Invoice Information Table (2-Row Table) */}
       <div className="invoice-section">
-        <table className="w-full border-collapse border border-black text-left">
+        <table className="w-full table-fixed border-collapse border border-black text-left">
           <tbody>
             <tr className="border-b border-black">
               <td className="border-r border-black p-1 font-bold w-1/4 bg-gray-50 print:bg-transparent">
                 Invoice No.
               </td>
-              <td className="border-r border-black p-1 w-1/4 font-mono font-bold">
+              <td className="border-r border-black p-1 w-1/4 font-mono font-bold break-words [overflow-wrap:anywhere]">
                 {invoiceNumber || ''}
               </td>
               <td className="border-r border-black p-1 font-bold w-1/4 bg-gray-50 print:bg-transparent">
                 Date
               </td>
-              <td className="p-1 w-1/4 font-mono">
-                {invoiceDate || ''}
+              <td className="p-1 w-1/4 font-mono break-words [overflow-wrap:anywhere]">
+                {formatDateToDDMMYYYY(invoiceDate)}
               </td>
             </tr>
             <tr>
               <td className="border-r border-black p-1 font-bold w-1/4 bg-gray-50 print:bg-transparent">
                 Order No.
               </td>
-              <td className="border-r border-black p-1 w-1/4 font-mono">
+              <td className="border-r border-black p-1 w-1/4 font-mono break-words [overflow-wrap:anywhere]">
                 {orderNumber || ''}
               </td>
               <td className="border-r border-black p-1 font-bold w-1/4 bg-gray-50 print:bg-transparent">
                 Date
               </td>
-              <td className="p-1 w-1/4 font-mono">
-                {orderDate || ''}
+              <td className="p-1 w-1/4 font-mono break-words [overflow-wrap:anywhere]">
+                {formatDateToDDMMYYYY(orderDate)}
               </td>
             </tr>
           </tbody>
         </table>
       </div>
 
-      {/* 4. Product Table (Exact 6 Columns) */}
+      {/* 4. Product Table (7 Columns - Fixed Layout with Auto Text Wrapping) */}
       <div className="invoice-section">
-        <table className="w-full border-collapse border border-black text-left">
+        <table className="w-full table-fixed border-collapse border border-black text-left">
           <thead>
             <tr className="border-b border-black bg-gray-100 print:bg-transparent font-bold text-[10px] print:text-[9px]">
-              <th className="border-r border-black p-1 text-center w-[12%]">Code</th>
-              <th className="border-r border-black p-1 text-left w-[42%]">Description Of Articles</th>
-              <th className="border-r border-black p-1 text-center w-[14%]">HSN Code</th>
+              <th className="border-r border-black p-1 text-center w-[11%]">Code</th>
+              <th className="border-r border-black p-1 text-left w-[38%]">Description Of Articles</th>
+              <th className="border-r border-black p-1 text-center w-[12%]">HSN Code</th>
+              <th className="border-r border-black p-1 text-center w-[8%]">GST %</th>
               <th className="border-r border-black p-1 text-right w-[12%]">Unit Price (₹)</th>
-              <th className="border-r border-black p-1 text-center w-[8%]">Quantity</th>
+              <th className="border-r border-black p-1 text-center w-[7%]">Qty</th>
               <th className="p-1 text-right w-[12%]">Total Price (₹)</th>
             </tr>
           </thead>
           <tbody>
-            {items.map((item, idx) => (
-              <tr key={item.id || idx} className="border-b border-black align-top">
-                <td className="border-r border-black p-1 text-center font-mono font-semibold">
-                  {item.code || '-'}
-                </td>
-                <td className="border-r border-black p-1 whitespace-pre-line leading-tight">
-                  <div className="font-semibold">{item.description}</div>
-                </td>
-                <td className="border-r border-black p-1 text-center font-mono font-semibold text-[10px] print:text-[9px]">
-                  {item.hsnCode || '-'}
-                </td>
-                <td className="border-r border-black p-1 text-right font-mono">
-                  {formatCurrency(Number(item.unitPrice || 0))}
-                </td>
-                <td className="border-r border-black p-1 text-center font-mono font-semibold">
-                  {item.quantity}
-                </td>
-                <td className="p-1 text-right font-mono font-bold">
-                  {formatCurrency(Number(item.unitPrice || 0) * Number(item.quantity || 0))}
-                </td>
-              </tr>
-            ))}
+            {items.map((item, idx) => {
+              const itemGst = item.gstRate !== undefined ? item.gstRate : (taxRate || 18);
+              return (
+                <tr key={item.id || idx} className="border-b border-black align-top">
+                  <td className="border-r border-black p-1 text-center font-mono font-semibold break-words [overflow-wrap:anywhere]">
+                    {item.code || '-'}
+                  </td>
+                  <td className="border-r border-black p-1 whitespace-pre-line leading-tight break-words [overflow-wrap:anywhere]">
+                    <div className="font-semibold">{item.description}</div>
+                  </td>
+                  <td className="border-r border-black p-1 text-center font-mono font-semibold text-[10px] print:text-[9px] break-words [overflow-wrap:anywhere]">
+                    {item.hsnCode || '-'}
+                  </td>
+                  <td className="border-r border-black p-1 text-center font-mono font-bold text-[#23324D]">
+                    {itemGst}%
+                  </td>
+                  <td className="border-r border-black p-1 text-right font-mono break-words">
+                    {formatCurrency(Number(item.unitPrice || 0))}
+                  </td>
+                  <td className="border-r border-black p-1 text-center font-mono font-semibold">
+                    {item.quantity}
+                  </td>
+                  <td className="p-1 text-right font-mono font-bold break-words">
+                    {formatCurrency(Number(item.unitPrice || 0) * Number(item.quantity || 0))}
+                  </td>
+                </tr>
+              );
+            })}
           </tbody>
         </table>
       </div>
@@ -229,25 +246,33 @@ export const ExactInvoicePreview = forwardRef<HTMLDivElement, ExactInvoicePrevie
                 <td className="p-1 text-right font-mono font-semibold">₹{formatCurrency(subtotal)}</td>
               </tr>
 
-              {taxType === 'IGST' && taxRate > 0 && (
-                <tr className="border-b border-black">
-                  <td className="border-r border-black p-1 font-bold">IGST {taxRate}%</td>
-                  <td className="p-1 text-right font-mono font-semibold">₹{formatCurrency(taxAmount)}</td>
-                </tr>
-              )}
+              {taxType === 'IGST' && Object.entries(gstBreakdownMap).map(([rate, amt]) => {
+                if (Number(rate) === 0 && Number(amt) === 0) return null;
+                return (
+                  <tr key={`igst-${rate}`} className="border-b border-black">
+                    <td className="border-r border-black p-1 font-bold">IGST {rate}%</td>
+                    <td className="p-1 text-right font-mono font-semibold">₹{formatCurrency(amt)}</td>
+                  </tr>
+                );
+              })}
 
-              {taxType === 'CGST_SGST' && taxRate > 0 && (
-                <>
-                  <tr className="border-b border-black">
-                    <td className="border-r border-black p-1 font-bold">CGST {taxRate / 2}%</td>
-                    <td className="p-1 text-right font-mono font-semibold">₹{formatCurrency(cgstAmount)}</td>
-                  </tr>
-                  <tr className="border-b border-black">
-                    <td className="border-r border-black p-1 font-bold">SGST {taxRate / 2}%</td>
-                    <td className="p-1 text-right font-mono font-semibold">₹{formatCurrency(sgstAmount)}</td>
-                  </tr>
-                </>
-              )}
+              {taxType === 'CGST_SGST' && Object.entries(gstBreakdownMap).map(([rate, amt]) => {
+                if (Number(rate) === 0 && Number(amt) === 0) return null;
+                const halfRate = Number(rate) / 2;
+                const halfAmt = amt / 2;
+                return (
+                  <React.Fragment key={`cgst-sgst-${rate}`}>
+                    <tr className="border-b border-black">
+                      <td className="border-r border-black p-1 font-bold">CGST {halfRate}%</td>
+                      <td className="p-1 text-right font-mono font-semibold">₹{formatCurrency(halfAmt)}</td>
+                    </tr>
+                    <tr className="border-b border-black">
+                      <td className="border-r border-black p-1 font-bold">SGST {halfRate}%</td>
+                      <td className="p-1 text-right font-mono font-semibold">₹{formatCurrency(halfAmt)}</td>
+                    </tr>
+                  </React.Fragment>
+                );
+              })}
 
               <tr className="border-b border-black">
                 <td className="border-r border-black p-1 font-bold">Total</td>

@@ -10,8 +10,12 @@ import { getStoredCompanyConfig } from '../utils/companyConfigStorage';
 import { SavedInvoicesList } from '../components/invoice/SavedInvoicesList';
 import { Printer, Download, Save, RefreshCw, FileText, CheckCircle2, AlertCircle, Eye, Edit3, History, X } from 'lucide-react';
 
-export const InvoiceMakerPage: React.FC = () => {
-  const [invoiceData, setInvoiceData] = useState<InvoiceData>(INITIAL_SAMPLE_INVOICE);
+interface InvoiceMakerPageProps {
+  initialInvoiceData?: InvoiceData | null;
+}
+
+export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoiceData }) => {
+  const [invoiceData, setInvoiceData] = useState<InvoiceData>(initialInvoiceData || INITIAL_SAMPLE_INVOICE);
   const [isSaving, setIsSaving] = useState(false);
   const [isFetchingNextNum, setIsFetchingNextNum] = useState(false);
   const [activeTab, setActiveTab] = useState<'split' | 'form' | 'preview'>('split');
@@ -21,20 +25,32 @@ export const InvoiceMakerPage: React.FC = () => {
 
   const previewRef = useRef<HTMLDivElement>(null);
 
-  // Auto-fetch next invoice number and load central company config on mount
   useEffect(() => {
-    handleFetchNextInvoiceNumber();
+    if (initialInvoiceData) {
+      setInvoiceData(initialInvoiceData);
+      setNotification({
+        type: 'success',
+        message: `Loaded invoice ${initialInvoiceData.invoiceNumber} into editor & preview.`
+      });
+    }
+  }, [initialInvoiceData]);
 
-    const config = getStoredCompanyConfig();
-    setInvoiceData((prev) => ({
-      ...prev,
-      bankDetails: { ...config.bankDetails },
-      paymentTerms: config.defaultPaymentTerms,
-      jurisdiction: config.defaultJurisdiction,
-      paymentNote: config.defaultPaymentNote,
-      companyName: config.signatoryHeading,
-      contactNumber: config.contactNumber
-    }));
+  // Auto-fetch next invoice number and load central company config on mount if creating new
+  useEffect(() => {
+    if (!initialInvoiceData) {
+      handleFetchNextInvoiceNumber();
+
+      const config = getStoredCompanyConfig();
+      setInvoiceData((prev) => ({
+        ...prev,
+        bankDetails: { ...config.bankDetails },
+        paymentTerms: config.defaultPaymentTerms,
+        jurisdiction: config.defaultJurisdiction,
+        paymentNote: config.defaultPaymentNote,
+        companyName: config.signatoryHeading,
+        contactNumber: config.contactNumber
+      }));
+    }
   }, []);
 
   const handleFetchNextInvoiceNumber = async () => {
@@ -108,12 +124,16 @@ export const InvoiceMakerPage: React.FC = () => {
 
     setIsSaving(true);
 
-    const subtotal = invoiceData.items.reduce(
-      (sum, item) => sum + Number(item.unitPrice || 0) * Number(item.quantity || 0),
-      0
-    );
-    const taxRate = invoiceData.taxRate || 0;
-    const taxAmount = (subtotal * taxRate) / 100;
+    let subtotal = 0;
+    let taxAmount = 0;
+    invoiceData.items.forEach((item) => {
+      const price = Number(item.unitPrice || 0);
+      const qty = Number(item.quantity || 0);
+      const itemTaxable = price * qty;
+      const rate = item.gstRate !== undefined ? Number(item.gstRate) : Number(invoiceData.taxRate || 0);
+      subtotal += itemTaxable;
+      taxAmount += (itemTaxable * rate) / 100;
+    });
     const finalAmount = Math.round(subtotal + taxAmount);
     const amountInWords = numberToIndianWords(finalAmount);
 

@@ -115,3 +115,17 @@ export function deleteSavedInvoice(invoiceNumber: string): SavedInvoiceRecord[] 
     return getSavedInvoices();
   }
 }
+
+/**
+ * Sync and update local invoices cache with remote Google Sheets records
+ */
+export function syncLocalInvoicesWithRemote(remoteInvoices: SavedInvoiceRecord[]): SavedInvoiceRecord[] {
+  try {
+    if (!Array.isArray(remoteInvoices)) return getSavedInvoices();
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(remoteInvoices));
+    return remoteInvoices;
+  } catch (err) {
+    console.error('Error syncing remote invoices to localStorage:', err);
+    return getSavedInvoices();
+  }
+}

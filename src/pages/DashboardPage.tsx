@@ -43,6 +43,7 @@ export const DashboardPage: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'overview' | 'invoice-maker' | 'saved-invoices' | 'quotes' | 'settings'>(
     (initialTab as any) || 'overview'
   );
+  const [loadedInvoiceForMaker, setLoadedInvoiceForMaker] = useState<InvoiceData | null>(null);
 
   useEffect(() => {
     const q = new URLSearchParams(location.search).get('tab');
@@ -367,15 +368,21 @@ export const DashboardPage: React.FC = () => {
         {/* TAB 2: TAX INVOICE MAKER MODULE */}
         {activeTab === 'invoice-maker' && (
           <div className="space-y-4">
-            <InvoiceMakerPage />
+            <InvoiceMakerPage initialInvoiceData={loadedInvoiceForMaker} />
           </div>
         )}
 
         {/* TAB 3: SAVED INVOICES & BILL HISTORY */}
         {activeTab === 'saved-invoices' && (
           <SavedInvoicesList
-            onLoadInvoice={() => {}}
-            onOpenInvoiceMaker={() => handleTabChange('invoice-maker')}
+            onLoadInvoice={(loadedData) => {
+              setLoadedInvoiceForMaker(loadedData);
+              handleTabChange('invoice-maker');
+            }}
+            onOpenInvoiceMaker={() => {
+              setLoadedInvoiceForMaker(null);
+              handleTabChange('invoice-maker');
+            }}
           />
         )}
 

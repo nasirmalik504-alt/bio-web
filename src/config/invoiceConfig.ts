@@ -1,7 +1,11 @@
 import { InvoiceData } from '../types/invoiceTypes';
+import { getTodayDDMMYYYY } from '../utils/dateFormatter';
 
 export interface CompanyInvoiceConfig {
   companyName: string;
+  companyAddressLine1: string;
+  companyAddressLine2: string;
+  companyGstin: string;
   signatoryHeading: string;
   contactNumber: string;
   bankDetails: {
@@ -23,6 +27,9 @@ export interface CompanyInvoiceConfig {
 
 export const DEFAULT_COMPANY_CONFIG: CompanyInvoiceConfig = {
   companyName: 'Biobusiness Development Agency',
+  companyAddressLine1: 'A-126 Ground Floor, Fateh Nagar, Jail Road',
+  companyAddressLine2: 'New Delhi - 110018, India',
+  companyGstin: '07ARMPN8877F1Z2',
   signatoryHeading: 'For Biobusiness Development Agency',
   contactNumber: '9899571171',
   bankDetails: {
@@ -44,9 +51,9 @@ export const DEFAULT_COMPANY_CONFIG: CompanyInvoiceConfig = {
 
 export const INITIAL_SAMPLE_INVOICE: InvoiceData = {
   invoiceNumber: 'BDA/001',
-  invoiceDate: new Date().toISOString().split('T')[0],
+  invoiceDate: getTodayDDMMYYYY(),
   orderNumber: '',
-  orderDate: new Date().toISOString().split('T')[0],
+  orderDate: getTodayDDMMYYYY(),
 
   customer: {
     title: '',

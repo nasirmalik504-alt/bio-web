@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import { getSavedInvoices, deleteSavedInvoice, SavedInvoiceRecord } from '../../utils/invoiceStorage';
+import { getSavedInvoices, SavedInvoiceRecord } from '../../utils/invoiceStorage';
+import { fetchInvoicesFromGoogleSheets, deleteInvoiceFromGoogleSheets } from '../../services/invoiceService';
 import { exportInvoicesToCSV } from '../../utils/excelExport';
 import { InvoiceData } from '../../types/invoiceTypes';
-import { FileText, Search, Trash2, Printer, Edit3, Calendar, Building2, CheckCircle2, RefreshCw, FileSpreadsheet, Download } from 'lucide-react';
+import { formatDateToDDMMYYYY } from '../../utils/dateFormatter';
+import { FileText, Search, Trash2, Edit3, CheckCircle2, RefreshCw, FileSpreadsheet, Cloud, CloudOff } from 'lucide-react';
 
 interface SavedInvoicesListProps {
   onLoadInvoice: (data: InvoiceData) => void;
@@ -15,15 +17,36 @@ export const SavedInvoicesList: React.FC<SavedInvoicesListProps> = ({
 }) => {
   const [invoices, setInvoices] = useState<SavedInvoiceRecord[]>([]);
   const [searchTerm, setSearchTerm] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSynced, setIsSynced] = useState(false);
+
+  const loadInvoices = async () => {
+    // 1. Immediately render cached invoices
+    setInvoices(getSavedInvoices());
+    setIsLoading(true);
+
+    try {
+      // 2. Fetch live data from Google Sheets database
+      const remoteInvoices = await fetchInvoicesFromGoogleSheets();
+      setInvoices(remoteInvoices);
+      setIsSynced(true);
+    } catch (err) {
+      console.warn('Could not sync with Google Sheets, using local cache:', err);
+      setIsSynced(false);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
   useEffect(() => {
-    setInvoices(getSavedInvoices());
+    loadInvoices();
   }, []);
 
-  const handleDelete = (invNo: string) => {
-    if (window.confirm(`Are you sure you want to delete invoice ${invNo} from saved history?`)) {
-      const updated = deleteSavedInvoice(invNo);
-      setInvoices(updated);
+  const handleDelete = async (invNo: string) => {
+    if (window.confirm(`Are you sure you want to delete invoice ${invNo} from Google Sheets & saved history?`)) {
+      setInvoices((prev) => prev.filter((item) => item.invoiceNumber !== invNo));
+      await deleteInvoiceFromGoogleSheets(invNo);
+      loadInvoices();
     }
   };
 
@@ -42,11 +65,26 @@ export const SavedInvoicesList: React.FC<SavedInvoicesListProps> = ({
     <div className="bg-white p-6 rounded-2xl border border-[#E6ECF5] shadow-2xs space-y-6">
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#E6ECF5] pb-4">
         <div>
-          <h3 className="text-lg font-bold text-[#23324D] flex items-center gap-2">
-            <span>💾</span> Saved Bills & Invoice History
-          </h3>
-          <p className="text-xs text-[#5F708A] mt-0.5">
-            View, recall, edit, and export generated tax bills saved in your agency database.
+          <div className="flex items-center gap-2">
+            <h3 className="text-lg font-bold text-[#23324D]">
+              💾 Saved Bills & Invoice History
+            </h3>
+            {isLoading ? (
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#EAF2FF] text-[#6EA8FE] text-[11px] font-bold border border-[#6EA8FE]/30 animate-pulse">
+                <RefreshCw className="w-3 h-3 animate-spin" /> Syncing Google Sheets...
+              </span>
+            ) : isSynced ? (
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#EAF7F2] text-[#1B6D4A] text-[11px] font-bold border border-[#A8E6CE]">
+                <Cloud className="w-3.5 h-3.5 text-[#1B6D4A]" /> Google Sheets Synced (Phone & Laptop)
+              </span>
+            ) : (
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#FAFBFD] text-[#5F708A] text-[11px] font-bold border border-[#E6ECF5]">
+                <CloudOff className="w-3.5 h-3.5 text-[#5F708A]" /> Local Cache
+              </span>
+            )}
+          </div>
+          <p className="text-xs text-[#5F708A] mt-1">
+            View, recall, edit, and export tax bills stored centrally in your Google Sheets database. Changes appear instantly on all devices.
           </p>
         </div>
 
@@ -73,11 +111,12 @@ export const SavedInvoicesList: React.FC<SavedInvoicesListProps> = ({
           </div>
 
           <button
-            onClick={() => setInvoices(getSavedInvoices())}
-            className="p-2 text-[#5F708A] hover:bg-[#F4F8FC] rounded-xl border border-[#E6ECF5] transition-colors"
-            title="Refresh List"
+            onClick={loadInvoices}
+            disabled={isLoading}
+            className="p-2 text-[#5F708A] hover:bg-[#F4F8FC] rounded-xl border border-[#E6ECF5] transition-colors cursor-pointer disabled:opacity-50"
+            title="Refresh List from Google Sheets"
           >
-            <RefreshCw className="w-4 h-4" />
+            <RefreshCw className={`w-4 h-4 ${isLoading ? 'animate-spin text-[#6EA8FE]' : ''}`} />
           </button>
         </div>
       </div>
@@ -87,7 +126,7 @@ export const SavedInvoicesList: React.FC<SavedInvoicesListProps> = ({
           <FileText className="w-10 h-10 text-[#6EA8FE] mx-auto opacity-70" />
           <div className="text-sm font-bold text-[#23324D]">No Saved Bills Found</div>
           <p className="text-xs text-[#5F708A] max-w-md mx-auto">
-            Bills generated using the Tax Invoice Maker are automatically saved here so you can recall, edit, and re-print them at any time.
+            Bills generated using the Tax Invoice Maker are automatically saved to Google Sheets so you can recall, edit, and re-print them from any Phone or Laptop.
           </p>
           <button
             onClick={onOpenInvoiceMaker}
@@ -105,7 +144,7 @@ export const SavedInvoicesList: React.FC<SavedInvoicesListProps> = ({
                 <th className="p-3">Institution / Customer</th>
                 <th className="p-3">Invoice Date</th>
                 <th className="p-3 text-right">Amount (₹)</th>
-                <th className="p-3 text-center">Status</th>
+                <th className="p-3 text-center">Sync Status</th>
                 <th className="p-3 text-right">Actions</th>
               </tr>
             </thead>
@@ -120,14 +159,14 @@ export const SavedInvoicesList: React.FC<SavedInvoicesListProps> = ({
                     <div className="text-[11px] text-[#5F708A]">{rec.customerName}</div>
                   </td>
                   <td className="p-3 font-mono text-[#5F708A]">
-                    {rec.date}
+                    {formatDateToDDMMYYYY(rec.date)}
                   </td>
                   <td className="p-3 text-right font-mono font-bold">
                     ₹{rec.totalAmount.toLocaleString('en-IN', { minimumFractionDigits: 2 })}
                   </td>
                   <td className="p-3 text-center">
                     <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-[#EAF7F2] text-[#1B6D4A] text-[10px] font-bold">
-                      <CheckCircle2 className="w-3 h-3" /> Saved
+                      <CheckCircle2 className="w-3 h-3 text-[#1B6D4A]" /> Google Sheets Live
                     </span>
                   </td>
                   <td className="p-3 text-right space-x-1">
@@ -139,7 +178,7 @@ export const SavedInvoicesList: React.FC<SavedInvoicesListProps> = ({
                       className="px-2.5 py-1 bg-[#6EA8FE] hover:bg-[#5896EE] text-white text-[11px] font-bold rounded-lg transition-all inline-flex items-center gap-1 cursor-pointer"
                       title="Load & Print Invoice"
                     >
-                      <Edit3 className="w-3 h-3" /> Load / Print
+                      <Edit3 className="w-3 h-3" /> Load / Edit / Print
                     </button>
                     <button
                       onClick={() => handleDelete(rec.invoiceNumber)}

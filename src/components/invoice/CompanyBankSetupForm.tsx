@@ -277,16 +277,16 @@ export const CompanyBankSetupForm: React.FC = () => {
         </div>
       </div>
 
-      {/* SECTION 2: Company Signatory & Terms */}
-      <div className="space-y-4">
+      {/* SECTION 2: Company Profile, Address, Terms & Signatories */}
+      <div className="space-y-4 pt-4 border-t border-[#E6ECF5]">
         <h4 className="text-sm font-bold text-[#23324D] flex items-center gap-2 border-b border-[#E6ECF5] pb-2">
-          <Building2 className="w-4 h-4 text-[#6EA8FE]" /> Company Name, Signatory & Payment Terms
+          <Building2 className="w-4 h-4 text-[#6EA8FE]" /> Agency Address, GSTIN & Invoice Header
         </h4>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <label className="block text-xs font-semibold text-[#5F708A] mb-1">
-              Authorised Signatory Company Heading
+              Authorized Signatory Heading
             </label>
             <input
               type="text"
@@ -307,6 +307,45 @@ export const CompanyBankSetupForm: React.FC = () => {
               onChange={(e) => handleFieldChange('contactNumber', e.target.value)}
               placeholder="e.g. 9899571171"
               className="w-full px-3 py-2 text-sm border border-[#E6ECF5] rounded-xl focus:ring-2 focus:ring-[#6EA8FE] focus:outline-none font-mono"
+            />
+          </div>
+
+          <div>
+            <label className="block text-xs font-semibold text-[#5F708A] mb-1">
+              Agency GSTIN / UIN
+            </label>
+            <input
+              type="text"
+              value={config.companyGstin}
+              onChange={(e) => handleFieldChange('companyGstin', e.target.value)}
+              placeholder="e.g. 07ARMPN8877F1Z2"
+              className="w-full px-3 py-2 text-sm border border-[#E6ECF5] rounded-xl focus:ring-2 focus:ring-[#6EA8FE] focus:outline-none font-mono font-bold uppercase"
+            />
+          </div>
+
+          <div>
+            <label className="block text-xs font-semibold text-[#5F708A] mb-1">
+              Official Address Line 1
+            </label>
+            <input
+              type="text"
+              value={config.companyAddressLine1}
+              onChange={(e) => handleFieldChange('companyAddressLine1', e.target.value)}
+              placeholder="e.g. A-126 Ground Floor, Fateh Nagar, Jail Road"
+              className="w-full px-3 py-2 text-sm border border-[#E6ECF5] rounded-xl focus:ring-2 focus:ring-[#6EA8FE] focus:outline-none"
+            />
+          </div>
+
+          <div className="md:col-span-2">
+            <label className="block text-xs font-semibold text-[#5F708A] mb-1">
+              Official Address Line 2 (City, State, PIN Code)
+            </label>
+            <input
+              type="text"
+              value={config.companyAddressLine2}
+              onChange={(e) => handleFieldChange('companyAddressLine2', e.target.value)}
+              placeholder="e.g. New Delhi - 110018, India"
+              className="w-full px-3 py-2 text-sm border border-[#E6ECF5] rounded-xl focus:ring-2 focus:ring-[#6EA8FE] focus:outline-none"
             />
           </div>
 

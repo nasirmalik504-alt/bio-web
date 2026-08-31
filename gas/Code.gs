@@ -19,6 +19,8 @@ function doGet(e) {
     const action = e && e.parameter ? e.parameter.action : "";
     if (action === "get_next_invoice_number") {
       return getNextInvoiceNumber();
+    } else if (action === "get_invoices") {
+      return getInvoices();
     }
     return jsonResponse({ success: true, message: "BioBusiness Apps Script API Operational" });
   } catch (err) {
@@ -43,6 +45,10 @@ function doPost(e) {
       return saveInvoice(data);
     } else if (action === "get_next_invoice_number") {
       return getNextInvoiceNumber();
+    } else if (action === "get_invoices") {
+      return getInvoices();
+    } else if (action === "delete_invoice") {
+      return deleteInvoice(data);
     }
 
     // 30-Second Rate Limiting Check to prevent duplicate spam for contact/quote forms
@@ -433,6 +439,8 @@ function getNextInvoiceNumber() {
 
 /**
  * Handle Save Invoice Request (Invoices & Invoice Items sheets)
+ * Supports Upserting (updating existing invoice if number matches, else creating new)
+ * Stores full JSON payload in Column 13 ("RawData") for seamless multi-device sync
  */
 function saveInvoice(data) {
   const lock = LockService.getScriptLock();
@@ -451,7 +459,7 @@ function saveInvoice(data) {
 
     const ss = SpreadsheetApp.getActiveSpreadsheet();
 
-    // 1. Prepare "Invoices" Sheet (Exact GST Tax Register Format)
+    // 1. Prepare "Invoices" Sheet (Exact GST Tax Register Format + RawData column 13)
     let invoicesSheet = ss.getSheetByName("Invoices");
     if (!invoicesSheet) {
       invoicesSheet = ss.insertSheet("Invoices");
@@ -467,9 +475,14 @@ function saveInvoice(data) {
         "IGST",
         "CGST",
         "SGST",
-        "Invoice Value"
+        "Invoice Value",
+        "RawData"
       ]);
-      invoicesSheet.getRange(1, 1, 1, 12).setFontWeight("bold").setBackground("#23324D").setFontColor("#FFFFFF");
+      invoicesSheet.getRange(1, 1, 1, 13).setFontWeight("bold").setBackground("#23324D").setFontColor("#FFFFFF");
+    } else {
+      if (invoicesSheet.getLastColumn() < 13) {
+        invoicesSheet.getRange(1, 13).setValue("RawData").setFontWeight("bold").setBackground("#23324D").setFontColor("#FFFFFF");
+      }
     }
 
     // 2. Prepare "Invoice Items" Sheet
@@ -504,35 +517,46 @@ function saveInvoice(data) {
       const nextNum = maxSeq + 1;
       const padSeq = nextNum < 1000 ? ("000" + nextNum).slice(-3) : nextNum;
       invoiceNumber = "BDA/" + padSeq;
+      data.invoiceNumber = invoiceNumber;
     }
 
     const timestamp = new Date();
-    const orderNumber = sanitizeInput(data.orderNumber || "N/A");
-    const invoiceDate = sanitizeInput(data.invoiceDate || "");
-    const orderDate = sanitizeInput(data.orderDate || "");
+    var rawDateStr = sanitizeInput(data.invoiceDate || "");
+    var invoiceDate = rawDateStr;
+    var ymdMatch = rawDateStr.match(/^(\d{4})[-/](\d{1,2})[-/](\d{1,2})/);
+    if (ymdMatch) {
+      var y = ymdMatch[1];
+      var m = ymdMatch[2].length === 1 ? "0" + ymdMatch[2] : ymdMatch[2];
+      var d = ymdMatch[3].length === 1 ? "0" + ymdMatch[3] : ymdMatch[3];
+      invoiceDate = d + "/" + m + "/" + y;
+    }
 
     const custTitle = sanitizeInput(customer.title || "");
     const custInstitution = sanitizeInput(customer.institution || "");
-    const custAddr1 = sanitizeInput(customer.addressLine1 || "");
-    const custAddr2 = sanitizeInput(customer.addressLine2 || "");
-    const custCityPin = sanitizeInput(customer.cityStatePin || "");
     const custState = sanitizeInput(customer.state || "");
     const custGstin = sanitizeInput(customer.gstin || "N/A");
 
-    // Financial Calculations
+    // Financial Calculations with per-item GST rates
     let subtotal = 0;
+    let taxAmount = 0;
+    const ratesSet = [];
+
     items.forEach(function(item) {
       const price = parseFloat(item.unitPrice) || 0;
       const qty = parseFloat(item.quantity) || 0;
-      subtotal += (price * qty);
+      const itemTaxable = price * qty;
+      subtotal += itemTaxable;
+
+      const itemRate = (item.gstRate !== undefined && item.gstRate !== null) ? parseFloat(item.gstRate) : (parseFloat(data.taxRate) || 18);
+      if (ratesSet.indexOf(itemRate) === -1) {
+        ratesSet.push(itemRate);
+      }
+      taxAmount += (itemTaxable * itemRate) / 100;
     });
 
     const taxType = sanitizeInput(data.taxType || "IGST");
-    const taxRate = parseFloat(data.taxRate) || 0;
-    const taxAmount = (subtotal * taxRate) / 100;
     const exactTotal = subtotal + taxAmount;
     const finalAmount = Math.round(exactTotal);
-    const roundOff = Math.round((finalAmount - exactTotal) * 100) / 100;
 
     let igst = 0;
     let cgst = 0;
@@ -547,12 +571,13 @@ function saveInvoice(data) {
 
     const hsnList = items.map(function(i) { return i.hsnCode || ""; }).filter(Boolean);
     const primaryHsn = hsnList.length > 0 ? hsnList.join(", ") : "";
+    const rateString = ratesSet.length > 0 ? ratesSet.map(function(r) { return r + "%"; }).join(", ") : ((data.taxRate || 18) + "%");
     const custFullName = (custInstitution + (custTitle ? " (" + custTitle + ")" : "")).trim();
     const pos = custState || "Delhi";
 
-    // Write Invoice Summary Row with EXACT 12 Columns Requested:
-    // Invoice Date | Invoice Number | Customer Name | GST Number | HSN Code | POS | Taxable Value | Rate | IGST | CGST | SGST | Invoice Value
-    invoicesSheet.appendRow([
+    const rawDataString = JSON.stringify(data);
+
+    const rowData = [
       invoiceDate,
       invoiceNumber,
       custFullName,
@@ -560,12 +585,44 @@ function saveInvoice(data) {
       primaryHsn,
       pos,
       subtotal.toFixed(2),
-      taxRate + "%",
+      rateString,
       igst.toFixed(2),
       cgst.toFixed(2),
       sgst.toFixed(2),
-      finalAmount.toFixed(2)
-    ]);
+      finalAmount.toFixed(2),
+      rawDataString
+    ];
+
+    // Check if invoice row already exists for update
+    let existingRowIndex = -1;
+    const lastRow = invoicesSheet.getLastRow();
+    if (lastRow > 1) {
+      const existingVals = invoicesSheet.getRange(2, 2, lastRow - 1, 1).getValues();
+      for (let i = 0; i < existingVals.length; i++) {
+        if (existingVals[i][0] && existingVals[i][0].toString().trim() === invoiceNumber.trim()) {
+          existingRowIndex = i + 2;
+          break;
+        }
+      }
+    }
+
+    if (existingRowIndex > 1) {
+      // Update existing row
+      invoicesSheet.getRange(existingRowIndex, 1, 1, 13).setValues([rowData]);
+
+      // Remove existing item rows in Invoice Items for this invoice
+      if (itemsSheet.getLastRow() > 1) {
+        const itemVals = itemsSheet.getRange(2, 2, itemsSheet.getLastRow() - 1, 1).getValues();
+        for (let j = itemVals.length - 1; j >= 0; j--) {
+          if (itemVals[j][0] && itemVals[j][0].toString().trim() === invoiceNumber.trim()) {
+            itemsSheet.deleteRow(j + 2);
+          }
+        }
+      }
+    } else {
+      // Append new row
+      invoicesSheet.appendRow(rowData);
+    }
 
     // Write Individual Invoice Items Rows
     items.forEach(function(item) {
@@ -594,6 +651,183 @@ function saveInvoice(data) {
       message: "Invoice " + invoiceNumber + " saved successfully to Google Sheets."
     });
 
+  } catch (err) {
+    return jsonResponse({ success: false, error: err.toString() });
+  } finally {
+    try { lock.releaseLock(); } catch (e) {}
+  }
+}
+
+/**
+ * Fetch All Saved Invoices from Google Sheets
+ */
+function getInvoices() {
+  try {
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+    const invoicesSheet = ss.getSheetByName("Invoices");
+    if (!invoicesSheet) {
+      return jsonResponse({ success: true, invoices: [] });
+    }
+
+    const lastRow = invoicesSheet.getLastRow();
+    if (lastRow <= 1) {
+      return jsonResponse({ success: true, invoices: [] });
+    }
+
+    // Get all invoices summary data
+    const values = invoicesSheet.getRange(2, 1, lastRow - 1, Math.max(13, invoicesSheet.getLastColumn())).getValues();
+
+    // Get items sheet data if available
+    const itemsSheet = ss.getSheetByName("Invoice Items");
+    let itemsMap = {};
+    if (itemsSheet && itemsSheet.getLastRow() > 1) {
+      const itemValues = itemsSheet.getRange(2, 1, itemsSheet.getLastRow() - 1, 8).getValues();
+      itemValues.forEach(function(row) {
+        const invNum = row[1] ? row[1].toString().trim() : "";
+        if (invNum) {
+          if (!itemsMap[invNum]) itemsMap[invNum] = [];
+          itemsMap[invNum].push({
+            id: 'item-' + Math.random().toString(36).substr(2, 9),
+            code: row[2] ? row[2].toString() : "",
+            description: row[3] ? row[3].toString() : "",
+            hsnCode: row[4] ? row[4].toString() : "",
+            unitPrice: parseFloat(row[5]) || 0,
+            quantity: parseFloat(row[6]) || 0,
+            totalPrice: parseFloat(row[7]) || 0
+          });
+        }
+      });
+    }
+
+    const records = [];
+    for (let i = 0; i < values.length; i++) {
+      const row = values[i];
+      const invDate = row[0] ? row[0].toString() : "";
+      const invNumber = row[1] ? row[1].toString().trim() : "";
+      const custFullName = row[2] ? row[2].toString() : "";
+      const gstin = row[3] ? row[3].toString() : "N/A";
+      const hsn = row[4] ? row[4].toString() : "";
+      const pos = row[5] ? row[5].toString() : "";
+      const taxableVal = parseFloat(row[6]) || 0;
+      const rateStr = row[7] ? row[7].toString() : "18%";
+      const igst = parseFloat(row[8]) || 0;
+      const cgst = parseFloat(row[9]) || 0;
+      const sgst = parseFloat(row[10]) || 0;
+      const invoiceVal = parseFloat(row[11]) || 0;
+
+      if (!invNumber) continue;
+
+      let invoiceDataObj = null;
+
+      // Check Column 13 (RawData - 0-indexed index 12)
+      if (row.length >= 13 && row[12]) {
+        try {
+          const rawText = row[12].toString();
+          if (rawText && rawText.trim().startsWith("{")) {
+            invoiceDataObj = JSON.parse(rawText);
+          }
+        } catch (e) {
+          Logger.log("Failed to parse RawData JSON for " + invNumber + ": " + e.toString());
+        }
+      }
+
+      // If no RawData object stored, construct fallback InvoiceData object
+      if (!invoiceDataObj) {
+        const taxRate = parseFloat(rateStr.replace("%", "")) || 18;
+        const taxType = (igst > 0) ? "IGST" : "CGST_SGST";
+        const items = itemsMap[invNumber] || [];
+
+        invoiceDataObj = {
+          invoiceNumber: invNumber,
+          invoiceDate: invDate,
+          orderNumber: "N/A",
+          orderDate: "",
+          customer: {
+            title: custFullName,
+            institution: custFullName,
+            addressLine1: pos,
+            addressLine2: "",
+            cityStatePin: pos,
+            state: pos,
+            gstin: gstin,
+            phone: "",
+            email: ""
+          },
+          items: items,
+          taxType: taxType,
+          taxRate: taxRate,
+          discountAmount: 0,
+          paymentTerms: "Payment, within 20 days from the date of submission of the invoice, through bankers cheque or demand draft or RTGS is acceptable to us",
+          jurisdiction: "Delhi",
+          paymentNote: "If the Invoice not paid within the due date, an interest @18% PA will be charged from the date of invoice",
+          signatoryName: "For BIOBUSINESS DEVELOPMENT AGENCY",
+          companyName: "For BIOBUSINESS DEVELOPMENT AGENCY",
+          contactNumber: "9899571171 / 9312217643"
+        };
+      }
+
+      records.push({
+        id: "inv-" + invNumber.replace(/[^a-zA-Z0-9]/g, "-"),
+        invoiceNumber: invNumber,
+        customerName: custFullName,
+        institution: custFullName,
+        date: invDate,
+        totalAmount: invoiceVal || taxableVal,
+        savedAt: new Date().toISOString(),
+        data: invoiceDataObj,
+        syncedToGoogleSheets: true
+      });
+    }
+
+    // Sort newest invoices first
+    records.reverse();
+
+    return jsonResponse({ success: true, invoices: records });
+  } catch (err) {
+    return jsonResponse({ success: false, error: err.toString() });
+  }
+}
+
+/**
+ * Delete Invoice from Google Sheets
+ */
+function deleteInvoice(data) {
+  const lock = LockService.getScriptLock();
+  try {
+    lock.waitLock(10000);
+    const invoiceNumber = sanitizeInput(data.invoiceNumber || "");
+    if (!invoiceNumber) {
+      return jsonResponse({ success: false, error: "Invoice number is required for deletion." });
+    }
+
+    const ss = SpreadsheetApp.getActiveSpreadsheet();
+
+    // 1. Delete from Invoices Sheet
+    const invoicesSheet = ss.getSheetByName("Invoices");
+    if (invoicesSheet && invoicesSheet.getLastRow() > 1) {
+      const values = invoicesSheet.getRange(2, 2, invoicesSheet.getLastRow() - 1, 1).getValues();
+      for (let i = values.length - 1; i >= 0; i--) {
+        if (values[i][0] && values[i][0].toString().trim() === invoiceNumber.trim()) {
+          invoicesSheet.deleteRow(i + 2);
+        }
+      }
+    }
+
+    // 2. Delete from Invoice Items Sheet
+    const itemsSheet = ss.getSheetByName("Invoice Items");
+    if (itemsSheet && itemsSheet.getLastRow() > 1) {
+      const itemValues = itemsSheet.getRange(2, 2, itemsSheet.getLastRow() - 1, 1).getValues();
+      for (let j = itemValues.length - 1; j >= 0; j--) {
+        if (itemValues[j][0] && itemValues[j][0].toString().trim() === invoiceNumber.trim()) {
+          itemsSheet.deleteRow(j + 2);
+        }
+      }
+    }
+
+    return jsonResponse({
+      success: true,
+      message: "Invoice " + invoiceNumber + " deleted successfully from Google Sheets."
+    });
   } catch (err) {
     return jsonResponse({ success: false, error: err.toString() });
   } finally {

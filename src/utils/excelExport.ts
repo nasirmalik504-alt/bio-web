@@ -1,4 +1,5 @@
 import { SavedInvoiceRecord } from './invoiceStorage';
+import { formatDateToDDMMYYYY } from './dateFormatter';
 
 /**
  * Export saved invoices as CSV with exact GST Tax Register Header:
@@ -23,45 +24,53 @@ export function exportInvoicesToCSV(invoices: SavedInvoiceRecord[]) {
   const rows = invoices.map((rec) => {
     const data = rec.data;
     const items = data.items || [];
-    
-    // Subtotal / Taxable Value
-    const subtotal = items.reduce(
-      (sum, item) => sum + (Number(item.unitPrice || 0) * Number(item.quantity || 0)),
-      0
-    );
-    const taxRate = Number(data.taxRate || 0);
     const taxType = data.taxType || 'IGST';
+    
+    let subtotal = 0;
+    let totalTax = 0;
+    const ratesSet = new Set<number>();
+
+    items.forEach((item) => {
+      const price = Number(item.unitPrice || 0);
+      const qty = Number(item.quantity || 0);
+      const itemTaxable = price * qty;
+      const r = item.gstRate !== undefined ? Number(item.gstRate) : Number(data.taxRate || 0);
+      subtotal += itemTaxable;
+      ratesSet.add(r);
+      totalTax += (itemTaxable * r) / 100;
+    });
 
     let igst = 0;
     let cgst = 0;
     let sgst = 0;
 
     if (taxType === 'IGST') {
-      igst = (subtotal * taxRate) / 100;
+      igst = totalTax;
     } else if (taxType === 'CGST_SGST') {
-      cgst = (subtotal * (taxRate / 2)) / 100;
-      sgst = (subtotal * (taxRate / 2)) / 100;
+      cgst = totalTax / 2;
+      sgst = totalTax / 2;
     }
 
-    const exactTotal = subtotal + igst + cgst + sgst;
+    const exactTotal = subtotal + totalTax;
     const invoiceValue = Math.round(exactTotal);
 
-    // HSN Codes (joined)
+    // HSN Codes & Rates
     const hsnCodes = Array.from(new Set(items.map((i) => i.hsnCode).filter(Boolean))).join(', ');
+    const rateStr = Array.from(ratesSet).map((r) => `${r}%`).join(', ') || `${data.taxRate || 18}%`;
 
     const customerName = (data.customer.title || data.customer.institution || 'Customer').trim();
     const gstNumber = data.customer.gstin || 'N/A';
     const pos = data.customer.state || 'Delhi';
 
     return [
-      `"${data.invoiceDate || ''}"`,
+      `"${formatDateToDDMMYYYY(data.invoiceDate)}"`,
       `"${data.invoiceNumber || ''}"`,
       `"${customerName.replace(/"/g, '""')}"`,
       `"${gstNumber}"`,
       `"${hsnCodes}"`,
       `"${pos}"`,
       subtotal.toFixed(2),
-      `"${taxRate}%"`,
+      `"${rateStr}"`,
       igst.toFixed(2),
       cgst.toFixed(2),
       sgst.toFixed(2),
