@@ -360,13 +360,7 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
               activeTab === 'form' ? 'hidden lg:block' : 'block'
             }`}
           >
-            <div className="no-print bg-[#23324D] text-white p-3 rounded-t-2xl flex items-center justify-between text-xs font-bold px-4">
-              <span className="flex items-center gap-2">
-                <FileText className="w-4 h-4 text-[#6EA8FE]" /> Realtime A4 Tax Invoice Preview
-              </span>
-              <span className="text-[11px] font-normal text-gray-300">Exact Visual Layout</span>
-            </div>
-            <div className="bg-white rounded-b-2xl overflow-x-auto border-x border-b border-[#E6ECF5]">
+            <div className="bg-white overflow-x-auto shadow-sm">
               <ExactInvoicePreview ref={previewRef} data={invoiceData} />
             </div>
           </div>
