@@ -609,6 +609,22 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
                     />
                   </div>
 
+                  {/* Tax Type per Product */}
+                  <div>
+                    <label className="block text-[11px] font-semibold text-[#5F708A] mb-1">
+                      Tax Type <span className="text-red-500">*</span>
+                    </label>
+                    <select
+                      value={item.taxType || data.taxType || 'IGST'}
+                      onChange={(e) => handleItemChange(idx, 'taxType', e.target.value)}
+                      className="w-full px-3 py-2 text-xs border border-[#6EA8FE]/40 bg-[#F4F8FC] rounded-xl font-mono font-bold focus:ring-2 focus:ring-[#6EA8FE] focus:outline-none text-[#23324D]"
+                    >
+                      <option value="IGST">IGST</option>
+                      <option value="CGST_SGST">CGST + SGST</option>
+                      <option value="NONE">No Tax (0%)</option>
+                    </select>
+                  </div>
+
                   {/* GST Rate (%) per Product */}
                   <div>
                     <label className="block text-[11px] font-semibold text-[#5F708A] mb-1">
@@ -711,44 +727,6 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
               </div>
             </div>
           ))}
-        </div>
-      </div>
-
-      {/* SECTION 4: Tax Configuration */}
-      <div>
-        <h3 className="text-base font-bold text-[#23324D] border-b border-[#E6ECF5] pb-2 flex items-center gap-2">
-          <span>⚙️</span> Tax & Calculation Settings
-        </h3>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <div>
-            <label className="block text-xs font-semibold text-[#5F708A] mb-1">
-              Applicable Tax Type
-            </label>
-            <select
-              value={data.taxType}
-              onChange={(e) => handleFieldChange('taxType', e.target.value)}
-              className="w-full px-3 py-2 text-sm border border-[#E6ECF5] rounded-xl focus:ring-2 focus:ring-[#6EA8FE] focus:outline-none bg-white"
-            >
-              <option value="IGST">IGST (Integrated GST)</option>
-              <option value="CGST_SGST">CGST + SGST (Central + State GST)</option>
-              <option value="NONE">No Tax (0%)</option>
-            </select>
-          </div>
-
-          <div>
-            <label className="block text-xs font-semibold text-[#5F708A] mb-1">
-              Default GST Rate for New Items (%)
-            </label>
-            <input
-              type="number"
-              min="0"
-              max="100"
-              value={data.taxRate}
-              onChange={(e) => handleFieldChange('taxRate', Number(e.target.value))}
-              className="w-full px-3 py-2 text-sm border border-[#E6ECF5] rounded-xl font-mono focus:ring-2 focus:ring-[#6EA8FE] focus:outline-none"
-            />
-          </div>
         </div>
       </div>
 

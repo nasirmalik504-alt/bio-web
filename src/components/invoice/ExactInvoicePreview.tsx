@@ -43,10 +43,11 @@ export const ExactInvoicePreview = forwardRef<HTMLDivElement, ExactInvoicePrevie
     phone: customer.phone
   };
 
-  // Calculate financial totals safely with per-item GST rates
+  // Calculate financial totals safely with per-item GST rates and Tax Types
   let subtotal = 0;
   let totalTaxAmount = 0;
-  const gstBreakdownMap: Record<number, number> = {};
+  const igstBreakdownMap: Record<number, number> = {};
+  const cgstSgstBreakdownMap: Record<number, number> = {};
 
   items.forEach((item) => {
     const qty = Number(item.quantity || 0);
@@ -55,10 +56,16 @@ export const ExactInvoicePreview = forwardRef<HTMLDivElement, ExactInvoicePrevie
     subtotal += itemTaxable;
 
     const itemGstRate = item.gstRate !== undefined ? Number(item.gstRate) : Number(taxRate || 0);
+    const itemTaxType = item.taxType || taxType || 'IGST';
     const itemTax = (itemTaxable * itemGstRate) / 100;
+    
     totalTaxAmount += itemTax;
 
-    gstBreakdownMap[itemGstRate] = (gstBreakdownMap[itemGstRate] || 0) + itemTax;
+    if (itemTaxType === 'IGST') {
+      igstBreakdownMap[itemGstRate] = (igstBreakdownMap[itemGstRate] || 0) + itemTax;
+    } else if (itemTaxType === 'CGST_SGST') {
+      cgstSgstBreakdownMap[itemGstRate] = (cgstSgstBreakdownMap[itemGstRate] || 0) + itemTax;
+    }
   });
 
   const rawTotal = subtotal + totalTaxAmount;
@@ -246,7 +253,7 @@ export const ExactInvoicePreview = forwardRef<HTMLDivElement, ExactInvoicePrevie
                 <td className="p-1 text-right font-mono font-semibold">₹{formatCurrency(subtotal)}</td>
               </tr>
 
-              {taxType === 'IGST' && Object.entries(gstBreakdownMap).map(([rate, amt]) => {
+              {Object.entries(igstBreakdownMap).map(([rate, amt]) => {
                 if (Number(rate) === 0 && Number(amt) === 0) return null;
                 return (
                   <tr key={`igst-${rate}`} className="border-b border-black">
@@ -256,7 +263,7 @@ export const ExactInvoicePreview = forwardRef<HTMLDivElement, ExactInvoicePrevie
                 );
               })}
 
-              {taxType === 'CGST_SGST' && Object.entries(gstBreakdownMap).map(([rate, amt]) => {
+              {Object.entries(cgstSgstBreakdownMap).map(([rate, amt]) => {
                 if (Number(rate) === 0 && Number(amt) === 0) return null;
                 const halfRate = Number(rate) / 2;
                 const halfAmt = amt / 2;

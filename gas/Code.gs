@@ -584,33 +584,34 @@ function saveInvoice(data) {
 
     // ── Financial calculations ────────────────────────────
     var subtotal = 0, taxTotal = 0;
-    var ratesUsed = [];
+    var igst = 0, cgst = 0, sgst = 0;
+    var igstRates = [], cgstRates = [], sgstRates = [];
+
     items.forEach(function(item) {
       var p = parseFloat(item.unitPrice) || 0;
       var q = parseFloat(item.quantity)  || 0;
       var taxable = p * q;
       var r = (item.gstRate !== undefined && item.gstRate !== null) ? parseFloat(item.gstRate) : (parseFloat(data.taxRate) || 18);
+      var itemTaxType = (item.taxType || data.taxType || "IGST").toString();
+      
+      var taxAmt = (taxable * r) / 100;
       subtotal += taxable;
-      taxTotal += (taxable * r) / 100;
-      if (ratesUsed.indexOf(r) === -1) ratesUsed.push(r);
+      taxTotal += taxAmt;
+      
+      if (itemTaxType === "IGST") {
+        igst += taxAmt;
+        if (igstRates.indexOf(r) === -1) igstRates.push(r);
+      } else if (itemTaxType === "CGST_SGST") {
+        cgst += taxAmt / 2;
+        sgst += taxAmt / 2;
+        if (cgstRates.indexOf(r/2) === -1) cgstRates.push(r/2);
+        if (sgstRates.indexOf(r/2) === -1) sgstRates.push(r/2);
+      }
     });
 
-    var taxType = (data.taxType || "IGST").toString();
-    var gstRate = ratesUsed.length === 1 ? ratesUsed[0] : (parseFloat(data.taxRate) || 18);
-    var igst = 0, igstRate = 0;
-    var cgst = 0, cgstRate = 0;
-    var sgst = 0, sgstRate = 0;
-
-    if (taxType === "IGST") {
-      igst     = taxTotal;
-      igstRate = gstRate;
-    } else if (taxType === "CGST_SGST") {
-      cgst     = taxTotal / 2;
-      cgstRate = gstRate / 2;
-      sgst     = taxTotal / 2;
-      sgstRate = gstRate / 2;
-    }
-
+    var igstRateStr = igstRates.length > 0 ? igstRates.join(", ") : "";
+    var cgstRateStr = cgstRates.length > 0 ? cgstRates.join(", ") : "";
+    var sgstRateStr = sgstRates.length > 0 ? sgstRates.join(", ") : "";
     var finalTotal = Math.round(subtotal + taxTotal);
     var hsnList  = items.map(function(i){ return (i.hsnCode || "").toString().trim(); }).filter(Boolean);
     var primaryHsn = hsnList.join(", ");
@@ -627,9 +628,9 @@ function saveInvoice(data) {
       fmtDate, invoiceNumber, displayName, custGstin,
       primaryHsn, custState,
       subtotal.toFixed(2),
-      igstRate > 0 ? igstRate + "%" : "", igst > 0 ? igst.toFixed(2) : "",
-      cgstRate > 0 ? cgstRate + "%" : "", cgst > 0 ? cgst.toFixed(2) : "",
-      sgstRate > 0 ? sgstRate + "%" : "", sgst > 0 ? sgst.toFixed(2) : "",
+      igstRateStr ? igstRateStr + "%" : "", igst > 0 ? igst.toFixed(2) : "",
+      cgstRateStr ? cgstRateStr + "%" : "", cgst > 0 ? cgst.toFixed(2) : "",
+      sgstRateStr ? sgstRateStr + "%" : "", sgst > 0 ? sgst.toFixed(2) : "",
       finalTotal.toFixed(2),
       rawDataStr
     ];

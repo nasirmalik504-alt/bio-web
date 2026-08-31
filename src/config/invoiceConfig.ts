@@ -93,7 +93,8 @@ export const INITIAL_SAMPLE_INVOICE: InvoiceData = {
       unitPrice: 0,
       quantity: 1,
       totalPrice: 0,
-      gstRate: 18
+      gstRate: 18,
+      taxType: 'IGST'
     }
   ],
 
