@@ -360,9 +360,7 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
               activeTab === 'form' ? 'hidden lg:block' : 'block'
             }`}
           >
-            <div className="bg-white overflow-x-auto shadow-sm">
-              <ExactInvoicePreview ref={previewRef} data={invoiceData} />
-            </div>
+            <ExactInvoicePreview ref={previewRef} data={invoiceData} />
           </div>
         </div>
 
