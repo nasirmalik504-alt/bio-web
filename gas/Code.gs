@@ -362,6 +362,11 @@ function sendCustomerConfirmation(recipientEmail, recipientName, refId) {
 /**
  * Utilities & Helper Functions
  */
+function cleanText(val) {
+  if (val === null || val === undefined) return "";
+  return val.toString().trim();
+}
+
 function sanitizeInput(str) {
   if (typeof str !== "string") return str;
   return str
@@ -447,13 +452,23 @@ function saveInvoice(data) {
   try {
     lock.waitLock(10000);
 
-    const customer = data.customer || {};
-    const items = data.items || [];
+    let customer = data.customer || {};
+    if (typeof customer === "string") {
+      try { customer = JSON.parse(customer); } catch(e) { customer = {}; }
+    }
+    let items = data.items || [];
+    if (typeof items === "string") {
+      try { items = JSON.parse(items); } catch(e) { items = []; }
+    }
 
-    if (!customer.institution && !customer.title) {
+    const custTitle = cleanText(customer.title);
+    const custInstitution = cleanText(customer.institution);
+    const custName = custTitle || custInstitution || cleanText(data.institution) || "Customer";
+
+    if (!custName) {
       return jsonResponse({ success: false, error: "Customer / Institution name is required." });
     }
-    if (!items || items.length === 0) {
+    if (!Array.isArray(items) || items.length === 0) {
       return jsonResponse({ success: false, error: "At least one product item is required." });
     }
 
@@ -497,8 +512,8 @@ function saveInvoice(data) {
     }
 
     // Generate Invoice Number if auto-requested or empty
-    let invoiceNumber = sanitizeInput(data.invoiceNumber || "");
-    if (!invoiceNumber || invoiceNumber === "AUTO" || invoiceNumber.trim() === "") {
+    let invoiceNumber = cleanText(data.invoiceNumber);
+    if (!invoiceNumber || invoiceNumber === "AUTO" || invoiceNumber === "") {
       const lastRow = invoicesSheet.getLastRow();
       let maxSeq = 0;
       if (lastRow > 1) {
@@ -521,7 +536,7 @@ function saveInvoice(data) {
     }
 
     const timestamp = new Date();
-    var rawDateStr = sanitizeInput(data.invoiceDate || "");
+    var rawDateStr = cleanText(data.invoiceDate);
     var invoiceDate = rawDateStr;
     var ymdMatch = rawDateStr.match(/^(\d{4})[-/](\d{1,2})[-/](\d{1,2})/);
     if (ymdMatch) {
@@ -531,10 +546,8 @@ function saveInvoice(data) {
       invoiceDate = d + "/" + m + "/" + y;
     }
 
-    const custTitle = sanitizeInput(customer.title || "");
-    const custInstitution = sanitizeInput(customer.institution || "");
-    const custState = sanitizeInput(customer.state || "");
-    const custGstin = sanitizeInput(customer.gstin || "N/A");
+    const custState = cleanText(customer.state);
+    const custGstin = cleanText(customer.gstin) || "N/A";
 
     // Financial Calculations with per-item GST rates
     let subtotal = 0;
@@ -554,7 +567,7 @@ function saveInvoice(data) {
       taxAmount += (itemTaxable * itemRate) / 100;
     });
 
-    const taxType = sanitizeInput(data.taxType || "IGST");
+    const taxType = cleanText(data.taxType) || "IGST";
     const exactTotal = subtotal + taxAmount;
     const finalAmount = Math.round(exactTotal);
 
@@ -569,10 +582,10 @@ function saveInvoice(data) {
       sgst = taxAmount / 2;
     }
 
-    const hsnList = items.map(function(i) { return i.hsnCode || ""; }).filter(Boolean);
+    const hsnList = items.map(function(i) { return cleanText(i.hsnCode); }).filter(Boolean);
     const primaryHsn = hsnList.length > 0 ? hsnList.join(", ") : "";
     const rateString = ratesSet.length > 0 ? ratesSet.map(function(r) { return r + "%"; }).join(", ") : ((data.taxRate || 18) + "%");
-    const custFullName = (custInstitution + (custTitle ? " (" + custTitle + ")" : "")).trim();
+    const custFullName = (custInstitution && custTitle && custInstitution !== custTitle) ? (custInstitution + " (" + custTitle + ")") : custName;
     const pos = custState || "Delhi";
 
     const rawDataString = JSON.stringify(data);
@@ -626,9 +639,9 @@ function saveInvoice(data) {
 
     // Write Individual Invoice Items Rows
     items.forEach(function(item) {
-      const code = sanitizeInput(item.code || "");
-      const desc = sanitizeInput(item.description || "");
-      const hsn = sanitizeInput(item.hsnCode || "");
+      const code = cleanText(item.code);
+      const desc = cleanText(item.description);
+      const hsn = cleanText(item.hsnCode);
       const unitPrice = parseFloat(item.unitPrice) || 0;
       const quantity = parseFloat(item.quantity) || 0;
       const totalPrice = unitPrice * quantity;

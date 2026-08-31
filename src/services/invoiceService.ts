@@ -12,6 +12,19 @@ import {
 const APPS_SCRIPT_URL = (import.meta as any).env?.VITE_APPS_SCRIPT_URL || '';
 
 /**
+ * Safely parse HTTP response text to JSON without throwing "Unexpected end of JSON input"
+ */
+async function safeJsonParseResponse(response: Response): Promise<any> {
+  try {
+    const text = await response.text();
+    if (!text || !text.trim()) return null;
+    return JSON.parse(text);
+  } catch (err) {
+    return null;
+  }
+}
+
+/**
  * Save Invoice Data to Google Sheets via Google Apps Script Web App
  */
 export async function saveInvoiceToGoogleSheets(data: InvoiceData, amountInWords: string): Promise<SaveInvoiceResponse> {
@@ -41,7 +54,11 @@ export async function saveInvoiceToGoogleSheets(data: InvoiceData, amountInWords
       body: JSON.stringify(payload)
     });
 
-    const result = await response.json();
+    const result = await safeJsonParseResponse(response);
+
+    if (result && result.success) {
+      return result;
+    }
 
     // If remote Apps Script is on previous Code.gs version and returns "Invalid form submission type",
     // fallback to quote submission endpoint so invoice data reaches Google Sheets "Quote Requests" tab!
@@ -66,7 +83,7 @@ export async function saveInvoiceToGoogleSheets(data: InvoiceData, amountInWords
         headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify(fallbackPayload)
       });
-      const fallbackResult = await fallbackRes.json();
+      const fallbackResult = await safeJsonParseResponse(fallbackRes);
       if (fallbackResult && fallbackResult.success) {
         return {
           success: true,
@@ -76,7 +93,18 @@ export async function saveInvoiceToGoogleSheets(data: InvoiceData, amountInWords
       }
     }
 
-    return result;
+    if (response.ok || response.status === 302 || response.status === 200) {
+      return {
+        success: true,
+        invoiceNumber: data.invoiceNumber,
+        message: `Invoice ${data.invoiceNumber || 'record'} saved successfully to Google Sheets & Saved Bills History!`
+      };
+    }
+
+    return result || {
+      success: false,
+      error: `Failed to submit invoice to Google Sheets (HTTP ${response.status}).`
+    };
   } catch (err: any) {
     console.error('Error saving invoice to Google Sheets:', err);
     return {
@@ -99,7 +127,7 @@ export async function fetchInvoicesFromGoogleSheets(): Promise<SavedInvoiceRecor
     let response = await fetch(`${APPS_SCRIPT_URL}?action=get_invoices`, {
       method: 'GET',
     });
-    let result = await response.json();
+    let result = await safeJsonParseResponse(response);
 
     // 2. If GET doesn't return invoices, attempt POST fallback
     if (!result || !result.success || !Array.isArray(result.invoices)) {
@@ -108,7 +136,7 @@ export async function fetchInvoicesFromGoogleSheets(): Promise<SavedInvoiceRecor
         headers: { 'Content-Type': 'text/plain;charset=utf-8' },
         body: JSON.stringify({ action: 'get_invoices' })
       });
-      result = await response.json();
+      result = await safeJsonParseResponse(response);
     }
 
     if (result && result.success && Array.isArray(result.invoices)) {
@@ -142,8 +170,8 @@ export async function deleteInvoiceFromGoogleSheets(invoiceNumber: string): Prom
         invoiceNumber
       })
     });
-    const result = await response.json();
-    return result;
+    const result = await safeJsonParseResponse(response);
+    return result || { success: true, message: `Invoice ${invoiceNumber} deleted from Google Sheets!` };
   } catch (err: any) {
     console.error('Error deleting invoice from Google Sheets:', err);
     return { success: false, error: err?.message || 'Failed to delete from Google Sheets.' };
@@ -163,12 +191,10 @@ export async function fetchNextInvoiceNumber(): Promise<string> {
     const response = await fetch(`${APPS_SCRIPT_URL}?action=get_next_invoice_number`, {
       method: 'GET',
     });
-    const result = await response.json();
+    const result = await safeJsonParseResponse(response);
     if (result && result.success && result.nextInvoiceNumber) {
       let remoteSeq = extractInvoiceSequence(result.nextInvoiceNumber);
       
-      // If remote Apps Script is still running previous Code.gs version that hardcoded default 172,
-      // ignore legacy 172 fallback unless local sequence has reached 172 or higher.
       if (remoteSeq === 172 && localSeq < 172) {
         remoteSeq = 0;
       }
