@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { getSavedInvoices, SavedInvoiceRecord } from '../../utils/invoiceStorage';
+import { SavedInvoiceRecord } from '../../utils/invoiceStorage';
 import { fetchInvoicesFromGoogleSheets, deleteInvoiceFromGoogleSheets, fetchSingleInvoiceFromGoogleSheets } from '../../services/invoiceService';
 import { exportInvoicesToCSV } from '../../utils/excelExport';
 import { InvoiceData } from '../../types/invoiceTypes';
@@ -19,20 +19,20 @@ export const SavedInvoicesList: React.FC<SavedInvoicesListProps> = ({
   const [searchTerm, setSearchTerm] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isSynced, setIsSynced] = useState(false);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   const loadInvoices = async () => {
-    // 1. Immediately render cached invoices
-    setInvoices(getSavedInvoices());
     setIsLoading(true);
+    setErrorMessage(null);
 
     try {
-      // 2. Fetch live data from Google Sheets database
       const remoteInvoices = await fetchInvoicesFromGoogleSheets();
       setInvoices(remoteInvoices);
       setIsSynced(true);
-    } catch (err) {
-      console.warn('Could not sync with Google Sheets, using local cache:', err);
+    } catch (err: any) {
+      console.error('Could not fetch invoices from Google Sheets backend:', err);
       setIsSynced(false);
+      setErrorMessage('Unable to load invoices from Google Sheets.');
     } finally {
       setIsLoading(false);
     }

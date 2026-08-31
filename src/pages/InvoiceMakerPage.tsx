@@ -5,7 +5,6 @@ import { InvoiceForm } from '../components/invoice/InvoiceForm';
 import { ExactInvoicePreview } from '../components/invoice/ExactInvoicePreview';
 import { saveInvoiceToGoogleSheets, fetchNextInvoiceNumber, fetchInvoicesFromGoogleSheets } from '../services/invoiceService';
 import { numberToIndianWords } from '../utils/numberToWords';
-import { saveInvoiceToStorage } from '../utils/invoiceStorage';
 import { getStoredCompanyConfig } from '../utils/companyConfigStorage';
 import { SavedInvoicesList } from '../components/invoice/SavedInvoicesList';
 import { Printer, Download, Save, RefreshCw, FileText, CheckCircle2, AlertCircle, Eye, Edit3, History, X } from 'lucide-react';
@@ -168,31 +167,21 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
 
     const result = await saveInvoiceToGoogleSheets(invoiceData, amountInWords);
 
-    // Save to local storage bill history
-    const targetData = { ...invoiceData };
-    if (result.invoiceNumber) {
-      targetData.invoiceNumber = result.invoiceNumber;
-    }
-    saveInvoiceToStorage(targetData, result.success);
-
     setIsSaving(false);
 
     if (result.success) {
       const savedNum = result.invoiceNumber || invoiceData.invoiceNumber;
       setNotification({
         type: 'success',
-        message: result.message || `Invoice ${savedNum} saved successfully to Google Sheets & Saved Bills History!`
+        message: result.message || `Invoice ${savedNum} saved successfully to Google Sheets!`
       });
 
-      // Immediately fetch live invoices to sync local storage across devices
-      fetchInvoicesFromGoogleSheets();
-
-      // Automatically advance form to next sequential invoice number (e.g. BDA/201 -> BDA/202)
+      // Automatically advance form to next sequential invoice number from Google Apps Script backend
       handleFetchNextInvoiceNumber();
     } else {
       setNotification({
         type: 'error',
-        message: result.error || 'Failed to save invoice to Google Sheets (Saved locally in history).'
+        message: result.error || 'Unable to save invoice to Google Sheets.'
       });
     }
   };
