@@ -40,6 +40,18 @@ export const SavedInvoicesList: React.FC<SavedInvoicesListProps> = ({
 
   useEffect(() => {
     loadInvoices();
+
+    // Auto-sync live invoices from Google Sheets every 10 seconds for real-time cross-device sync
+    const interval = setInterval(() => {
+      fetchInvoicesFromGoogleSheets().then((remoteInvoices) => {
+        if (Array.isArray(remoteInvoices) && remoteInvoices.length > 0) {
+          setInvoices(remoteInvoices);
+          setIsSynced(true);
+        }
+      }).catch(() => {});
+    }, 10000);
+
+    return () => clearInterval(interval);
   }, []);
 
   const handleDelete = async (invNo: string) => {

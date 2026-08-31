@@ -190,8 +190,10 @@ export async function fetchNextInvoiceNumber(): Promise<string> {
   if (!APPS_SCRIPT_URL) return localNext;
 
   try {
-    const response = await fetch(`${APPS_SCRIPT_URL}?action=get_next_invoice_number`, {
+    const response = await fetch(`${APPS_SCRIPT_URL}?action=get_next_invoice_number&_t=${Date.now()}`, {
       method: 'GET',
+      cache: 'no-store',
+      headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate' }
     });
     const result = await safeJsonParseResponse(response);
     if (result && result.success && result.nextInvoiceNumber) {

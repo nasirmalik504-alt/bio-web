@@ -122,8 +122,33 @@ export function deleteSavedInvoice(invoiceNumber: string): SavedInvoiceRecord[] 
 export function syncLocalInvoicesWithRemote(remoteInvoices: SavedInvoiceRecord[]): SavedInvoiceRecord[] {
   try {
     if (!Array.isArray(remoteInvoices)) return getSavedInvoices();
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(remoteInvoices));
-    return remoteInvoices;
+    const local = getSavedInvoices();
+
+    const map = new Map<string, SavedInvoiceRecord>();
+
+    // Add local records first
+    for (const inv of local) {
+      if (inv && inv.invoiceNumber) {
+        map.set(inv.invoiceNumber.trim(), inv);
+      }
+    }
+
+    // Remote Google Sheets records take priority and update map
+    for (const inv of remoteInvoices) {
+      if (inv && inv.invoiceNumber) {
+        map.set(inv.invoiceNumber.trim(), inv);
+      }
+    }
+
+    // Sort by numerical sequence or date descending
+    const merged = Array.from(map.values()).sort((a, b) => {
+      const seqA = extractInvoiceSequence(a.invoiceNumber);
+      const seqB = extractInvoiceSequence(b.invoiceNumber);
+      return seqB - seqA;
+    });
+
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(merged));
+    return merged;
   } catch (err) {
     console.error('Error syncing remote invoices to localStorage:', err);
     return getSavedInvoices();
