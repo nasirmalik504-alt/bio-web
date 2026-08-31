@@ -104,6 +104,7 @@ export const ExactInvoicePreview = forwardRef<HTMLDivElement, ExactInvoicePrevie
           <div>{addressLine1}</div>
           <div>{addressLine2}</div>
           <div><strong>GSTIN/UIN:</strong> {companyGstin}</div>
+          <div><strong>PAN Number:</strong> {companyGstin.length === 15 ? companyGstin.substring(2, 12).toUpperCase() : 'ARMPN8877F'}</div>
           <div><strong>State Name:</strong> Delhi, <strong>Code:</strong> 07</div>
           <div><strong>Contact No.:</strong> {contactNumber || companyConfig.contactNumber || '9899571171'}</div>
           <div><strong>Email:</strong> sales@biobusiness.in | <strong>Website:</strong> www.biobusiness.in</div>
