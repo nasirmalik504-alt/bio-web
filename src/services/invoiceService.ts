@@ -123,9 +123,11 @@ export async function fetchInvoicesFromGoogleSheets(): Promise<SavedInvoiceRecor
   }
 
   try {
-    // 1. Attempt GET request
-    let response = await fetch(`${APPS_SCRIPT_URL}?action=get_invoices`, {
+    // 1. Attempt GET request with cache-busting timestamp
+    let response = await fetch(`${APPS_SCRIPT_URL}?action=get_invoices&_t=${Date.now()}`, {
       method: 'GET',
+      cache: 'no-store',
+      headers: { 'Cache-Control': 'no-cache, no-store, must-revalidate' }
     });
     let result = await safeJsonParseResponse(response);
 
