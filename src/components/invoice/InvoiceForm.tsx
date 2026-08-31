@@ -424,22 +424,23 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-4">
           <div>
             <label className="block text-xs font-semibold text-[#5F708A] mb-1 flex items-center justify-between">
-              <span>Invoice Number <span className="text-red-500">*</span></span>
+              <span>Invoice Number <span className="text-xs text-[#6EA8FE] font-normal">(Auto-assigned on Save)</span></span>
               <button
                 type="button"
                 onClick={onFetchNextInvoiceNumber}
                 disabled={isFetchingNextNum}
                 className="text-[11px] text-[#6EA8FE] hover:underline flex items-center gap-1 font-normal cursor-pointer"
+                title="Fetch next sequential number from Google Sheets"
               >
-                <RefreshCw className={`w-3 h-3 ${isFetchingNextNum ? 'animate-spin' : ''}`} /> Auto
+                <RefreshCw className={`w-3 h-3 ${isFetchingNextNum ? 'animate-spin' : ''}`} /> Refresh Sequence
               </button>
             </label>
             <input
               type="text"
               value={data.invoiceNumber}
               onChange={(e) => handleFieldChange('invoiceNumber', e.target.value)}
-              placeholder="e.g. BDA/001"
-              className="w-full px-3 py-2 text-sm border border-[#E6ECF5] rounded-xl font-mono font-bold focus:ring-2 focus:ring-[#6EA8FE] focus:outline-none"
+              placeholder="Auto-assigned on save (e.g. BDA/004)"
+              className="w-full px-3 py-2 text-sm border border-[#E6ECF5] rounded-xl font-mono font-bold focus:ring-2 focus:ring-[#6EA8FE] focus:outline-none bg-[#FAFBFD]"
             />
             {errors.invoiceNumber && <p className="text-xs text-red-500 mt-1 flex items-center gap-1"><AlertCircle className="w-3 h-3"/>{errors.invoiceNumber}</p>}
           </div>

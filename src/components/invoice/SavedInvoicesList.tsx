@@ -83,15 +83,15 @@ export const SavedInvoicesList: React.FC<SavedInvoicesListProps> = ({
             </h3>
             {isLoading ? (
               <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#EAF2FF] text-[#6EA8FE] text-[11px] font-bold border border-[#6EA8FE]/30 animate-pulse">
-                <RefreshCw className="w-3 h-3 animate-spin" /> Syncing Google Sheets...
+                <RefreshCw className="w-3 h-3 animate-spin" /> Fetching from Google Sheets...
               </span>
             ) : isSynced ? (
               <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#EAF7F2] text-[#1B6D4A] text-[11px] font-bold border border-[#A8E6CE]">
-                <Cloud className="w-3.5 h-3.5 text-[#1B6D4A]" /> Google Sheets Synced (Phone & Laptop)
+                <Cloud className="w-3.5 h-3.5 text-[#1B6D4A]" /> Google Sheets Live (Phone & Laptop)
               </span>
             ) : (
-              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#FAFBFD] text-[#5F708A] text-[11px] font-bold border border-[#E6ECF5]">
-                <CloudOff className="w-3.5 h-3.5 text-[#5F708A]" /> Local Cache
+              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#FFF5F5] text-red-600 text-[11px] font-bold border border-red-200">
+                <CloudOff className="w-3.5 h-3.5 text-red-600" /> Unable to connect to Google Sheets
               </span>
             )}
           </div>
@@ -132,6 +132,13 @@ export const SavedInvoicesList: React.FC<SavedInvoicesListProps> = ({
           </button>
         </div>
       </div>
+
+      {errorMessage && (
+        <div className="p-4 bg-red-50 border border-red-200 rounded-xl text-xs text-red-600 font-medium flex items-center justify-between">
+          <span>⚠️ {errorMessage}</span>
+          <button onClick={loadInvoices} className="underline font-bold hover:text-red-800 cursor-pointer">Retry Fetch</button>
+        </div>
+      )}
 
       {filteredInvoices.length === 0 ? (
         <div className="p-12 text-center bg-[#FAFBFD] rounded-xl border border-dashed border-[#E6ECF5] space-y-3">
