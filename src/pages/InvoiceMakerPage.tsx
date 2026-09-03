@@ -84,6 +84,9 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
     if (!invoiceData.invoiceNumber.trim()) {
       newErrors.invoiceNumber = 'Invoice Number is required.';
     }
+    if (!invoiceData.orderNumber.trim()) {
+      newErrors.orderNumber = 'Order Number is required.';
+    }
     if (!invoiceData.invoiceDate.trim()) {
       newErrors.invoiceDate = 'Invoice Date is required.';
     }
@@ -137,6 +140,19 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
         type: 'success',
         message: result.message || `Invoice ${result.invoiceNumber || invoiceData.invoiceNumber} saved to Google Sheets!`
       });
+      
+      // Reset form but retain company config
+      const config = getStoredCompanyConfig();
+      setInvoiceData({
+        ...INITIAL_SAMPLE_INVOICE,
+        bankDetails: { ...config.bankDetails },
+        paymentTerms: config.defaultPaymentTerms,
+        jurisdiction: config.defaultJurisdiction,
+        paymentNote: config.defaultPaymentNote,
+        companyName: config.signatoryHeading,
+        contactNumber: config.contactNumber
+      });
+
       // Advance to next invoice number from server
       handleFetchNextInvoiceNumber();
     } else {

@@ -460,7 +460,7 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
 
           <div>
             <label className="block text-xs font-semibold text-[#5F708A] mb-1">
-              Order Number
+              Order Number <span className="text-red-500">*</span>
             </label>
             <input
               type="text"
@@ -469,6 +469,7 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
               placeholder="e.g. CPRI/2026/01"
               className="w-full px-3 py-2 text-sm border border-[#E6ECF5] rounded-xl font-mono focus:ring-2 focus:ring-[#6EA8FE] focus:outline-none"
             />
+            {errors.orderNumber && <p className="text-xs text-red-500 mt-1 flex items-center gap-1"><AlertCircle className="w-3 h-3"/>{errors.orderNumber}</p>}
           </div>
 
           <div>

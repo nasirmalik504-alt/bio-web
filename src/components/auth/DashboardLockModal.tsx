@@ -31,7 +31,7 @@ export const DashboardLockModal: React.FC<DashboardLockModalProps> = ({ onUnlock
         setSessionAuthenticated(true, remember);
         onUnlock();
       } else {
-        setError('Incorrect password. Default password is "biobusiness".');
+        setError('Incorrect password.');
         setIsSubmitting(false);
       }
     }, 300);
@@ -74,7 +74,6 @@ export const DashboardLockModal: React.FC<DashboardLockModalProps> = ({ onUnlock
           <div>
             <label className="block text-xs font-bold text-[#23324D] mb-1 flex items-center justify-between">
               <span>Dashboard Password</span>
-              <span className="text-[11px] text-[#6EA8FE] font-normal">Default: biobusiness</span>
             </label>
             <div className="relative">
               <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-gray-400">
