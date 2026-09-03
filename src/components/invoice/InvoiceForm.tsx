@@ -565,7 +565,21 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
               </div>
 
               <div className="space-y-3">
-                {/* Row 1: Code, HSN, Quantity, GST Rate */}
+                {/* Row 1: Description of Articles */}
+                <div>
+                  <label className="block text-[11px] font-semibold text-[#5F708A] mb-1">
+                    Description of Articles <span className="text-red-500">*</span>
+                  </label>
+                  <textarea
+                    rows={3}
+                    value={item.description}
+                    onChange={(e) => handleItemChange(idx, 'description', e.target.value)}
+                    placeholder="Axiva Syringe Filter PES&#10;Pore Size 0.2 Micrometer&#10;Membrane Diameter 4 mm&#10;Pack Size: 100/Pack"
+                    className="w-full px-3 py-2 text-xs border border-[#E6ECF5] rounded-xl focus:ring-2 focus:ring-[#6EA8FE] focus:outline-none font-sans"
+                  />
+                </div>
+
+                {/* Row 2: Code, HSN, Quantity, GST Rate */}
                 <div className="grid grid-cols-1 sm:grid-cols-4 gap-3">
                   {/* Code / SKU */}
                   <div>
@@ -645,7 +659,7 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
                   </div>
                 </div>
 
-                {/* Row 2: Dual Unit Prices (Excl. GST & Incl. GST) */}
+                {/* Row 3: Dual Unit Prices (Excl. GST & Incl. GST) */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {/* Unit Price (Excl. GST) */}
                   <div>
@@ -682,20 +696,6 @@ export const InvoiceForm: React.FC<InvoiceFormProps> = ({
                       className="w-full px-3 py-2 text-xs border border-[#A8E6CE] bg-[#F4FDF9] rounded-xl font-mono font-bold text-[#1B6D4A] focus:ring-2 focus:ring-[#1B6D4A] focus:outline-none"
                     />
                   </div>
-                </div>
-
-                {/* Row 3: Description of Articles */}
-                <div>
-                  <label className="block text-[11px] font-semibold text-[#5F708A] mb-1">
-                    Description of Articles <span className="text-red-500">*</span>
-                  </label>
-                  <textarea
-                    rows={3}
-                    value={item.description}
-                    onChange={(e) => handleItemChange(idx, 'description', e.target.value)}
-                    placeholder="Axiva Syringe Filter PES&#10;Pore Size 0.2 Micrometer&#10;Membrane Diameter 4 mm&#10;Pack Size: 100/Pack"
-                    className="w-full px-3 py-2 text-xs border border-[#E6ECF5] rounded-xl focus:ring-2 focus:ring-[#6EA8FE] focus:outline-none font-sans"
-                  />
                 </div>
 
                 {/* Row 4: Line Amount Summary & Delete Button */}

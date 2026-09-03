@@ -184,7 +184,7 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
         @media print {
           @page {
             size: A4 portrait;
-            margin: 6mm;
+            margin: 0;
           }
           html, body {
             background: #ffffff !important;
@@ -212,7 +212,7 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
             min-height: 0 !important;
             height: auto !important;
             margin: 0 !important;
-            padding: 0 !important;
+            padding: 6mm !important;
             break-inside: avoid !important;
             page-break-inside: avoid !important;
           }

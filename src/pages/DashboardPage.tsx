@@ -111,7 +111,7 @@ export const DashboardPage: React.FC = () => {
           {/* Quick Action Navigation Buttons */}
           <div className="flex items-center gap-2">
             <button
-              onClick={() => handleTabChange('invoice-maker')}
+              onClick={() => { setLoadedInvoiceForMaker(null); handleTabChange('invoice-maker'); }}
               className={`px-3.5 py-2 text-xs font-bold rounded-xl transition-all flex items-center gap-1.5 cursor-pointer ${
                 activeTab === 'invoice-maker'
                   ? 'bg-[#6EA8FE] text-white shadow-xs'

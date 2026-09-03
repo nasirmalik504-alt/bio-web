@@ -202,8 +202,8 @@ export const ExactInvoicePreview = forwardRef<HTMLDivElement, ExactInvoicePrevie
         <table className="w-full table-fixed border-collapse border border-black text-left">
           <thead>
             <tr className="border-b border-black bg-gray-100 print:bg-transparent font-bold text-[10px] print:text-[9px]">
-              <th className="border-r border-black p-1 text-center w-[11%]">Code</th>
               <th className="border-r border-black p-1 text-left w-[38%]">Description Of Articles</th>
+              <th className="border-r border-black p-1 text-center w-[11%]">Code</th>
               <th className="border-r border-black p-1 text-center w-[12%]">HSN Code</th>
               <th className="border-r border-black p-1 text-center w-[8%]">GST %</th>
               <th className="border-r border-black p-1 text-right w-[12%]">Unit Price (₹)</th>
@@ -216,11 +216,11 @@ export const ExactInvoicePreview = forwardRef<HTMLDivElement, ExactInvoicePrevie
               const itemGst = item.gstRate !== undefined ? item.gstRate : (taxRate || 18);
               return (
                 <tr key={item.id || idx} className="border-b border-black align-top">
-                  <td className="border-r border-black p-1 text-center font-mono font-semibold break-words [overflow-wrap:anywhere]">
-                    {item.code || '-'}
-                  </td>
                   <td className="border-r border-black p-1 whitespace-pre-line leading-tight break-words [overflow-wrap:anywhere]">
                     <div className="font-semibold">{item.description}</div>
+                  </td>
+                  <td className="border-r border-black p-1 text-center font-mono font-semibold break-words [overflow-wrap:anywhere]">
+                    {item.code || '-'}
                   </td>
                   <td className="border-r border-black p-1 text-center font-mono font-semibold text-[10px] print:text-[9px] break-words [overflow-wrap:anywhere]">
                     {item.hsnCode || '-'}
@@ -344,8 +344,6 @@ export const ExactInvoicePreview = forwardRef<HTMLDivElement, ExactInvoicePrevie
       {/* 10. Authorized Signatory Block */}
       <div className="flex justify-between items-end pt-2 mt-2 invoice-section">
         <div>
-          <div className="text-[9px] text-gray-500">System Generated Tax Invoice</div>
-          <div className="text-[9px] text-gray-500">Biobusiness Development Agency</div>
         </div>
 
         <div className="text-right">

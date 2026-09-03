@@ -1,25 +1,12 @@
-/**
- * SavedInvoicesList.tsx
- *
- * Saved Bills & Invoice History
- * ─────────────────────────────
- * Fetches invoices directly from Google Sheets (via invoiceService).
- * NO localStorage. NO local fallback. NO stale cache.
- *
- * Data flow:
- *   mount / Refresh → getInvoices() → Google Apps Script → Google Sheets → render
- *   Load / Edit     → opens invoice editor with server data
- *   Delete          → deleteInvoice() → Google Sheets → re-fetch → re-render
- */
-
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import { getInvoices, deleteInvoice, InvoiceRecord } from '../../services/invoiceService';
 import { exportInvoicesToCSV } from '../../utils/excelExport';
 import { InvoiceData } from '../../types/invoiceTypes';
 import { formatDateToDDMMYYYY } from '../../utils/dateFormatter';
+import { ExactInvoicePreview } from './ExactInvoicePreview';
 import {
-  FileText, Search, Trash2, Edit3, CheckCircle2,
-  RefreshCw, FileSpreadsheet, Cloud, CloudOff
+  FileText, Search, Trash2, Eye, CheckCircle2,
+  RefreshCw, FileSpreadsheet, Cloud, CloudOff, X, Printer
 } from 'lucide-react';
 
 interface Props {
@@ -33,6 +20,9 @@ export const SavedInvoicesList: React.FC<Props> = ({ onLoadInvoice, onOpenInvoic
   const [loading, setLoading] = useState(false);
   const [synced, setSynced] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  const [previewInvoice, setPreviewInvoice] = useState<InvoiceData | null>(null);
+  const previewRef = useRef<HTMLDivElement>(null);
 
   // ── Fetch all invoices from Google Sheets ──────────────────
   const loadInvoices = useCallback(async () => {
@@ -58,180 +48,238 @@ export const SavedInvoicesList: React.FC<Props> = ({ onLoadInvoice, onOpenInvoic
     return () => clearInterval(timer);
   }, [loadInvoices]);
 
-  // ── Delete ────────────────────────────────────────────────
-  const handleDelete = async (invNo: string) => {
-    if (!window.confirm(`Delete invoice ${invNo} from Google Sheets?`)) return;
-    // Optimistic UI update
-    setInvoices(prev => prev.filter(r => r.invoiceNumber !== invNo));
-    const result = await deleteInvoice(invNo);
-    if (!result.success) {
-      setError(`Delete failed: ${result.error}`);
+  // ── Delete Invoice (Requires Confirmation) ──────────────────
+  const handleDelete = async (invoiceNumber: string) => {
+    if (!window.confirm(`Are you absolutely sure you want to permanently delete invoice ${invoiceNumber} from Google Sheets? This action cannot be undone.`)) {
+      return;
     }
-    // Refresh to reflect true server state
-    loadInvoices();
+    setLoading(true);
+    try {
+      await deleteInvoice(invoiceNumber);
+      await loadInvoices();
+    } catch (err: any) {
+      alert(err.message || 'Failed to delete invoice.');
+    } finally {
+      setLoading(false);
+    }
   };
 
-  // ── Filter ────────────────────────────────────────────────
-  const filtered = invoices.filter(rec => {
-    if (!searchTerm) return true;
-    const q = searchTerm.toLowerCase();
-    return (
-      rec.invoiceNumber.toLowerCase().includes(q) ||
-      rec.institution.toLowerCase().includes(q) ||
-      rec.customerName.toLowerCase().includes(q) ||
-      rec.date.includes(q)
-    );
-  });
+  const handlePrint = () => {
+    window.print();
+  };
 
-  // ── Render ────────────────────────────────────────────────
+  const filteredInvoices = invoices.filter(
+    (inv) =>
+      inv.invoiceNumber.toLowerCase().includes(searchTerm.toLowerCase()) ||
+      inv.customerName.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
-    <div className="bg-white p-6 rounded-2xl border border-[#E6ECF5] shadow-2xs space-y-6">
+    <div className="bg-white p-6 rounded-2xl border border-[#E6ECF5] shadow-2xs">
+      
+      {/* Strict 1-Page A4 Portrait Print Styles for the Preview Modal */}
+      <style>{`
+        @media print {
+          @page {
+            size: A4 portrait;
+            margin: 0;
+          }
+          html, body {
+            background: #ffffff !important;
+            color: #000000 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            overflow: hidden !important;
+            -webkit-print-color-adjust: exact !important;
+            print-color-adjust: exact !important;
+          }
+          header, footer, nav, button, .no-print, .print-hide, .dashboard-sidebar, .dashboard-header {
+            display: none !important;
+          }
+          .modal-overlay {
+            background: none !important;
+          }
+          .modal-content {
+            box-shadow: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            max-height: none !important;
+            overflow: visible !important;
+          }
+          #invoice-document, .invoice-document {
+            border: none !important;
+            box-shadow: none !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            min-height: 0 !important;
+            height: auto !important;
+            margin: 0 !important;
+            padding: 6mm !important;
+            break-inside: avoid !important;
+            page-break-inside: avoid !important;
+          }
+        }
+      `}</style>
 
-      {/* Header */}
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-[#E6ECF5] pb-4">
+      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6 no-print">
         <div>
-          <div className="flex items-center gap-2 flex-wrap">
-            <h3 className="text-lg font-bold text-[#23324D]">💾 Saved Bills & Invoice History</h3>
-
-            {loading ? (
-              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#EAF2FF] text-[#6EA8FE] text-[11px] font-bold border border-[#6EA8FE]/30 animate-pulse">
-                <RefreshCw className="w-3 h-3 animate-spin" /> Fetching from Google Sheets...
-              </span>
-            ) : synced ? (
-              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#EAF7F2] text-[#1B6D4A] text-[11px] font-bold border border-[#A8E6CE]">
-                <Cloud className="w-3.5 h-3.5" /> Google Sheets Live
+          <h2 className="text-xl font-bold text-[#23324D] flex items-center gap-2">
+            <span>📜</span> History & Saved Bills
+          </h2>
+          <div className="flex items-center gap-2 mt-1">
+            {synced ? (
+              <span className="inline-flex items-center gap-1 text-[11px] font-bold text-[#7CC9A5] bg-[#EAF7F2] px-2 py-0.5 rounded-md">
+                <Cloud className="w-3 h-3" /> Live Synced with Google Sheets
               </span>
             ) : (
-              <span className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full bg-[#FFF5F5] text-red-600 text-[11px] font-bold border border-red-200">
-                <CloudOff className="w-3.5 h-3.5" /> Disconnected
+              <span className="inline-flex items-center gap-1 text-[11px] font-bold text-red-500 bg-red-50 px-2 py-0.5 rounded-md">
+                <CloudOff className="w-3 h-3" /> Disconnected
               </span>
             )}
+            <p className="text-xs text-[#5F708A]">
+              • {invoices.length} invoices found
+            </p>
           </div>
-          <p className="text-xs text-[#5F708A] mt-1">
-            All bills are stored in Google Sheets — same on every phone, laptop, and device.
-          </p>
         </div>
 
-        <div className="flex items-center gap-3 flex-wrap">
-          {invoices.length > 0 && (
-            <button
-              onClick={() => exportInvoicesToCSV(filtered)}
-              className="px-3 py-1.5 bg-[#EAF7F2] hover:bg-[#D6F2E7] text-[#1B6D4A] text-xs font-bold rounded-xl border border-[#A8E6CE] transition-all flex items-center gap-1.5 cursor-pointer"
-            >
-              <FileSpreadsheet className="w-4 h-4" /> Export CSV
-            </button>
-          )}
-
+        <div className="flex items-center gap-2">
           <div className="relative">
-            <Search className="w-4 h-4 text-[#5F708A] absolute left-3 top-1/2 -translate-y-1/2 pointer-events-none" />
+            <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#5F708A]" />
             <input
               type="text"
+              placeholder="Search by Bill No. or Customer..."
+              className="pl-9 pr-4 py-2 border border-[#E6ECF5] rounded-xl text-sm w-full md:w-64 focus:outline-none focus:ring-2 focus:ring-[#6EA8FE]/30"
               value={searchTerm}
-              onChange={e => setSearchTerm(e.target.value)}
-              placeholder="Search invoice / institution..."
-              className="pl-9 pr-3 py-1.5 text-xs border border-[#E6ECF5] rounded-xl focus:ring-2 focus:ring-[#6EA8FE] focus:outline-none w-56"
+              onChange={(e) => setSearchTerm(e.target.value)}
             />
           </div>
-
           <button
             onClick={loadInvoices}
             disabled={loading}
+            className="p-2 border border-[#E6ECF5] text-[#5F708A] hover:bg-[#F4F8FC] hover:text-[#23324D] rounded-xl transition-all disabled:opacity-50"
             title="Refresh from Google Sheets"
-            className="p-2 text-[#5F708A] hover:bg-[#F4F8FC] rounded-xl border border-[#E6ECF5] transition-colors cursor-pointer disabled:opacity-40"
           >
-            <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin text-[#6EA8FE]' : ''}`} />
+            <RefreshCw className={`w-4 h-4 ${loading ? 'animate-spin' : ''}`} />
+          </button>
+          <button
+            onClick={() => exportInvoicesToCSV(invoices)}
+            disabled={invoices.length === 0}
+            className="px-3.5 py-2 bg-[#EAF7F2] hover:bg-[#D6F2E7] text-[#1B6D4A] text-xs font-bold rounded-xl transition-all flex items-center gap-1.5 cursor-pointer disabled:opacity-50"
+          >
+            <FileSpreadsheet className="w-3.5 h-3.5" /> Export Excel
           </button>
         </div>
       </div>
 
-      {/* Error banner */}
       {error && (
-        <div className="p-4 bg-red-50 border border-red-200 rounded-xl text-xs text-red-700 font-medium flex items-center justify-between gap-3">
-          <span>⚠️ {error}</span>
-          <button onClick={loadInvoices} className="underline font-bold hover:text-red-900 cursor-pointer whitespace-nowrap">
-            Retry
-          </button>
+        <div className="mb-4 p-3 rounded-lg bg-red-50 border border-red-100 text-red-600 text-sm no-print">
+          {error}
         </div>
       )}
 
-      {/* Table or empty state */}
-      {loading && invoices.length === 0 ? (
-        <div className="p-12 text-center text-xs text-[#5F708A] animate-pulse">
-          <RefreshCw className="w-8 h-8 text-[#6EA8FE] mx-auto mb-3 animate-spin" />
-          Loading invoices from Google Sheets...
-        </div>
-      ) : filtered.length === 0 ? (
-        <div className="p-12 text-center bg-[#FAFBFD] rounded-xl border border-dashed border-[#E6ECF5] space-y-3">
-          <FileText className="w-10 h-10 text-[#6EA8FE] mx-auto opacity-70" />
-          <div className="text-sm font-bold text-[#23324D]">
-            {searchTerm ? 'No matching invoices found.' : 'No invoices in Google Sheets yet.'}
-          </div>
-          <p className="text-xs text-[#5F708A] max-w-sm mx-auto">
-            {searchTerm
-              ? 'Try a different search term.'
-              : 'Create an invoice and save it — it will appear here on every device instantly.'}
-          </p>
-          {!searchTerm && (
-            <button
-              onClick={onOpenInvoiceMaker}
-              className="px-4 py-2 bg-[#6EA8FE] hover:bg-[#5896EE] text-white text-xs font-bold rounded-xl transition-all inline-flex items-center gap-1.5 cursor-pointer"
-            >
-              <FileText className="w-4 h-4" /> Create New Invoice
-            </button>
-          )}
-        </div>
-      ) : (
-        <div className="overflow-x-auto">
-          <table className="w-full text-left border-collapse">
-            <thead>
-              <tr className="border-b border-[#E6ECF5] bg-[#F4F8FC] text-xs font-bold text-[#23324D]">
-                <th className="p-3">Invoice No.</th>
-                <th className="p-3">Institution / Customer</th>
-                <th className="p-3">Date</th>
-                <th className="p-3 text-right">Amount (₹)</th>
-                <th className="p-3 text-center">Status</th>
-                <th className="p-3 text-right">Actions</th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-[#E6ECF5] text-xs text-[#23324D]">
-              {filtered.map(rec => (
-                <tr key={rec.id} className="hover:bg-[#F9FAFC] transition-colors">
-                  <td className="p-3 font-mono font-bold text-[#6EA8FE]">{rec.invoiceNumber}</td>
-                  <td className="p-3">
-                    <div className="font-semibold">{rec.institution || rec.customerName}</div>
-                    {rec.institution && rec.customerName && rec.institution !== rec.customerName && (
-                      <div className="text-[11px] text-[#5F708A]">{rec.customerName}</div>
-                    )}
+      {/* Modern Data Table */}
+      <div className="overflow-x-auto rounded-xl border border-[#E6ECF5] no-print">
+        <table className="w-full text-left text-sm whitespace-nowrap">
+          <thead className="bg-[#FAFBFD] text-[#5F708A] text-xs uppercase font-bold border-b border-[#E6ECF5]">
+            <tr>
+              <th className="p-4 w-32">Invoice No.</th>
+              <th className="p-4 w-32">Date</th>
+              <th className="p-4">Customer Name / Institution</th>
+              <th className="p-4 text-right w-32">Total Value</th>
+              <th className="p-4 text-center w-32">Sync Status</th>
+              <th className="p-4 text-right w-40">Actions</th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-[#E6ECF5]">
+            {filteredInvoices.length > 0 ? (
+              filteredInvoices.map((rec) => (
+                <tr key={rec.id} className="hover:bg-[#F4F8FC] transition-colors group">
+                  <td className="p-4 font-bold text-[#23324D] font-mono">
+                    {rec.invoiceNumber}
                   </td>
-                  <td className="p-3 font-mono text-[#5F708A]">{formatDateToDDMMYYYY(rec.date)}</td>
-                  <td className="p-3 text-right font-mono font-bold">
-                    ₹{rec.totalAmount.toLocaleString('en-IN', { minimumFractionDigits: 2 })}
+                  <td className="p-4 text-[#5F708A]">
+                    {formatDateToDDMMYYYY(rec.date)}
                   </td>
-                  <td className="p-3 text-center">
-                    <span className="inline-flex items-center gap-1 px-2 py-0.5 rounded-md bg-[#EAF7F2] text-[#1B6D4A] text-[10px] font-bold">
-                      <CheckCircle2 className="w-3 h-3" /> Saved in Sheets
+                  <td className="p-4 text-[#23324D] font-semibold">
+                    <div className="flex items-center gap-2">
+                      <div className="w-8 h-8 rounded-full bg-[#EAF2FF] text-[#6EA8FE] flex items-center justify-center font-bold text-xs shrink-0">
+                        {rec.customerName.charAt(0).toUpperCase()}
+                      </div>
+                      <span className="truncate max-w-[200px] sm:max-w-xs">{rec.customerName}</span>
+                    </div>
+                  </td>
+                  <td className="p-4 text-right font-bold text-[#23324D] font-mono">
+                    ₹{Number(rec.totalAmount).toFixed(2)}
+                  </td>
+                  <td className="p-4 text-center">
+                    <span className="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg bg-[#EAF7F2] text-[#1B6D4A] text-[10px] font-bold font-mono">
+                      <CheckCircle2 className="w-3 h-3" /> Sheets
                     </span>
                   </td>
-                  <td className="p-3 text-right space-x-1">
+                  <td className="p-4 text-right space-x-1">
                     <button
-                      onClick={() => { onLoadInvoice(rec.data); onOpenInvoiceMaker(); }}
+                      onClick={() => setPreviewInvoice(rec.data)}
                       className="px-2.5 py-1 bg-[#6EA8FE] hover:bg-[#5896EE] text-white text-[11px] font-bold rounded-lg transition-all inline-flex items-center gap-1 cursor-pointer"
-                      title="Load & Edit Invoice"
+                      title="Preview Invoice"
                     >
-                      <Edit3 className="w-3 h-3" /> Load / Edit
+                      <Eye className="w-3 h-3" /> View / Print
                     </button>
                     <button
                       onClick={() => handleDelete(rec.invoiceNumber)}
-                      className="p-1 text-red-500 hover:bg-red-50 rounded-lg transition-colors cursor-pointer"
-                      title="Delete Invoice"
+                      className="p-1.5 text-gray-400 hover:text-red-500 hover:bg-red-50 rounded-lg transition-all cursor-pointer opacity-0 group-hover:opacity-100"
+                      title="Permanently Delete from Sheets"
                     >
-                      <Trash2 className="w-3.5 h-3.5" />
+                      <Trash2 className="w-4 h-4" />
                     </button>
                   </td>
                 </tr>
-              ))}
-            </tbody>
-          </table>
+              ))
+            ) : (
+              <tr>
+                <td colSpan={6} className="p-8 text-center text-[#5F708A]">
+                  <FileText className="w-10 h-10 mx-auto mb-3 opacity-20" />
+                  <p className="font-semibold">No invoices found</p>
+                  <p className="text-xs mt-1">Try adjusting your search or generate a new invoice.</p>
+                </td>
+              </tr>
+            )}
+          </tbody>
+        </table>
+      </div>
+
+      {/* Invoice Preview Modal */}
+      {previewInvoice && (
+        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 modal-overlay no-print">
+          <div className="bg-[#F4F8FC] w-full max-w-5xl max-h-[90vh] rounded-2xl shadow-2xl flex flex-col modal-content relative">
+            <div className="flex justify-between items-center p-4 bg-white border-b border-[#E6ECF5] rounded-t-2xl no-print shrink-0">
+              <h3 className="font-bold text-[#23324D] text-lg flex items-center gap-2">
+                <FileText className="w-5 h-5 text-[#6EA8FE]" />
+                Preview: {previewInvoice.invoiceNumber}
+              </h3>
+              <div className="flex items-center gap-2">
+                <button
+                  onClick={handlePrint}
+                  className="px-4 py-2 bg-[#6EA8FE] hover:bg-[#5896EE] text-white text-sm font-bold rounded-xl transition-all flex items-center gap-2 cursor-pointer shadow-md"
+                >
+                  <Printer className="w-4 h-4" /> Print / PDF
+                </button>
+                <button
+                  onClick={() => setPreviewInvoice(null)}
+                  className="p-2 hover:bg-gray-100 text-gray-500 rounded-xl transition-all cursor-pointer"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+            </div>
+            
+            <div className="p-6 overflow-y-auto w-full flex justify-center print:overflow-visible print:p-0">
+              <div className="w-[210mm] shrink-0 bg-white shadow-2xl print:shadow-none print:w-full print:bg-transparent">
+                <ExactInvoicePreview ref={previewRef} data={previewInvoice} />
+              </div>
+            </div>
+          </div>
         </div>
       )}
     </div>
