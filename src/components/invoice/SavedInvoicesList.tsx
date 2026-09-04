@@ -100,6 +100,12 @@ export const SavedInvoicesList: React.FC<Props> = ({ onLoadInvoice, onOpenInvoic
           }
           .modal-overlay {
             background: none !important;
+            display: block !important;
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            padding: 0 !important;
+            margin: 0 !important;
           }
           .modal-content {
             box-shadow: none !important;
@@ -107,6 +113,9 @@ export const SavedInvoicesList: React.FC<Props> = ({ onLoadInvoice, onOpenInvoic
             margin: 0 !important;
             max-height: none !important;
             overflow: visible !important;
+            display: block !important;
+            width: 100% !important;
+            height: 100% !important;
           }
           #invoice-document, .invoice-document {
             border: none !important;
@@ -116,7 +125,7 @@ export const SavedInvoicesList: React.FC<Props> = ({ onLoadInvoice, onOpenInvoic
             min-height: 0 !important;
             height: auto !important;
             margin: 0 !important;
-            padding: 6mm !important;
+            padding: 12mm 24mm !important;
             break-inside: avoid !important;
             page-break-inside: avoid !important;
           }
@@ -251,7 +260,7 @@ export const SavedInvoicesList: React.FC<Props> = ({ onLoadInvoice, onOpenInvoic
 
       {/* Invoice Preview Modal */}
       {previewInvoice && (
-        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 modal-overlay no-print">
+        <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 modal-overlay">
           <div className="bg-[#F4F8FC] w-full max-w-5xl max-h-[90vh] rounded-2xl shadow-2xl flex flex-col modal-content relative">
             <div className="flex justify-between items-center p-4 bg-white border-b border-[#E6ECF5] rounded-t-2xl no-print shrink-0">
               <h3 className="font-bold text-[#23324D] text-lg flex items-center gap-2">
@@ -274,7 +283,7 @@ export const SavedInvoicesList: React.FC<Props> = ({ onLoadInvoice, onOpenInvoic
               </div>
             </div>
             
-            <div className="p-6 overflow-y-auto w-full flex justify-center print:overflow-visible print:p-0">
+            <div className="p-6 overflow-y-auto w-full flex justify-center print:flex print:flex-col print:justify-center print:min-h-[100vh] print:overflow-visible print:p-0">
               <div className="w-[210mm] shrink-0 bg-white shadow-2xl print:shadow-none print:w-full print:bg-transparent">
                 <ExactInvoicePreview ref={previewRef} data={previewInvoice} />
               </div>

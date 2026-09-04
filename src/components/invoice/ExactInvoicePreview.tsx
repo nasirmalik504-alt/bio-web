@@ -86,7 +86,7 @@ export const ExactInvoicePreview = forwardRef<HTMLDivElement, ExactInvoicePrevie
     <div
       ref={ref}
       id="invoice-document"
-      className="invoice-document bg-white text-black p-6 print:p-2 w-full text-[11px] print:text-[10px] leading-tight font-sans select-text space-y-2 print:space-y-1.5"
+      className="invoice-document bg-white text-black p-6 w-full text-[11px] print:text-[12px] leading-tight font-sans select-text space-y-2 print:space-y-3"
       style={{ fontFamily: 'Arial, "Helvetica Neue", Helvetica, sans-serif' }}
     >
       {/* 1. Header: Logo (Left) + Company Details (Right) */}

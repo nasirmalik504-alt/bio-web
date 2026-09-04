@@ -212,7 +212,7 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
             min-height: 0 !important;
             height: auto !important;
             margin: 0 !important;
-            padding: 6mm !important;
+            padding: 12mm 24mm !important;
             break-inside: avoid !important;
             page-break-inside: avoid !important;
           }
@@ -223,7 +223,7 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
         }
       `}</style>
 
-      <div className="max-w-[1600px] mx-auto space-y-6">
+      <div className="max-w-[1600px] mx-auto space-y-6 print:m-0 print:p-0 print:space-y-0">
         
         {/* Page Title & Action Bar (Hidden on Print) */}
         <div className="no-print bg-white p-6 rounded-2xl border border-[#E6ECF5] shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
@@ -372,7 +372,7 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
 
           {/* Right Column: Live Exact Invoice Preview */}
           <div
-            className={`lg:col-span-6 xl:col-span-7 sticky top-24 ${
+            className={`lg:col-span-6 xl:col-span-7 sticky top-24 print:static print:flex print:flex-col print:justify-center print:min-h-[100vh] print:p-0 print:w-full ${
               activeTab === 'form' ? 'hidden lg:block' : 'block'
             }`}
           >
@@ -382,8 +382,8 @@ export const InvoiceMakerPage: React.FC<InvoiceMakerPageProps> = ({ initialInvoi
 
         {/* Saved Bills History Modal */}
         {showHistoryModal && (
-          <div className="no-print fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
-            <div className="bg-white w-full max-w-4xl max-h-[90vh] rounded-2xl shadow-2xl overflow-y-auto relative p-6 space-y-4">
+          <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-xs flex items-center justify-center p-4">
+            <div className="bg-white w-full max-w-4xl max-h-[90vh] rounded-2xl shadow-2xl overflow-y-auto relative p-6 space-y-4 history-modal-content">
               <button
                 onClick={() => setShowHistoryModal(false)}
                 className="absolute top-4 right-4 p-2 text-gray-400 hover:text-black rounded-xl transition-colors cursor-pointer"
